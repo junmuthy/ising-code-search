@@ -1,0 +1,6 @@
+# qLDPC and its dependencies are installed from the local editable checkout.
+-e /home/judah_unmuth/Documents/multistaq/qLDPC
+ipykernel>=6
+matplotlib>=3.9
+nbclient>=0.10
+nbformat>=5
