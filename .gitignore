@@ -1,5 +1,26 @@
 .venv/
 .pytest_cache/
 __pycache__/
-*.pyc
+*.py[cod]
+*.py~
+*~
+
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+texfrag/
+**/texfrag/
+*.log
+*.fmt
+
+*.npz
+*.db
 results/cache/
+**/results/**/cache/
+
+# Raw searches are retained locally.  Commit compact summaries, validation
+# records, winners, and schedules explicitly with `git add -f`.
+results/**/*.json
+results/**/*.jsonl
+**/results/**/*.json
+**/results/**/*.jsonl
