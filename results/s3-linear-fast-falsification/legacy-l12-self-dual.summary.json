@@ -1,0 +1,34 @@
+{
+  "family_counts": {
+    "l12-self-dual": 1225
+  },
+  "inputs": [
+    "results/s3-many-copy/l12-j3-w12-even-a.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-b-batch2.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-b.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-c-batch2.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-c.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-d-batch2.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even-e.jsonl",
+    "results/s3-many-copy/l12-j3-w12-even.jsonl"
+  ],
+  "records": 1225,
+  "source_counts": {
+    "results/s3-many-copy/l12-j3-w12-even-a.jsonl": 75,
+    "results/s3-many-copy/l12-j3-w12-even-b-batch2.jsonl": 300,
+    "results/s3-many-copy/l12-j3-w12-even-b.jsonl": 75,
+    "results/s3-many-copy/l12-j3-w12-even-c-batch2.jsonl": 300,
+    "results/s3-many-copy/l12-j3-w12-even-c.jsonl": 75,
+    "results/s3-many-copy/l12-j3-w12-even-d-batch2.jsonl": 300,
+    "results/s3-many-copy/l12-j3-w12-even.jsonl": 100
+  },
+  "status_counts": {
+    "logical_up_to_weight_four": 1223,
+    "survivor": 2
+  },
+  "survivor_parameter_counts": {
+    "n=768,k=384,w=17": 1,
+    "n=768,k=384,w=18": 1
+  },
+  "weight_four_screened": true
+}

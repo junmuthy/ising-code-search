@@ -1,0 +1,35 @@
+{
+  "check_weight_ceiling": 12,
+  "complete": true,
+  "connected_weight_12": 2,
+  "distance_at_least_six": 134,
+  "distance_histogram": {
+    "2": 3,
+    "3": 2,
+    "4": 56,
+    "6": 34,
+    "7": 100
+  },
+  "fully_usable": 0,
+  "high_distance_displacement_subgroup_histogram": {
+    "1": 4,
+    "14": 4,
+    "28": 6,
+    "56": 22,
+    "112": 98
+  },
+  "maximum": null,
+  "normalized_sparse_catalog": 220,
+  "physical_group": "C28 x C4",
+  "quotient_ring": "GF(8)[C4 x C4]",
+  "raw_counts": {
+    "binomial": 9,
+    "monomial": 1,
+    "monomial_ideal": 70,
+    "trinomial": 210
+  },
+  "saved_high_distance_matrices": 100,
+  "total_seconds": 49.336,
+  "unique_ideal_candidates": 195,
+  "weight_12_generated": 11
+}

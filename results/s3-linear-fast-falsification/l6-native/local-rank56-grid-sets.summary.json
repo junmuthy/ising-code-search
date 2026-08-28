@@ -1,0 +1,16 @@
+{
+  "exhaustive": 116,
+  "input": "results/s3-linear-fast-falsification/l6-native/local-rank56-distance.jsonl",
+  "max_nodes": 1000000,
+  "max_orbits": 100,
+  "pilot_status_counts": {
+    "l6-j2-w8-local": {
+      "no_target_grid_set": 116
+    }
+  },
+  "status_counts": {
+    "no_target_grid_set": 116
+  },
+  "targets": 116,
+  "total_grid_orbits": 221
+}

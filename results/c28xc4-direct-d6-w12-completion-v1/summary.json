@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "complete_weight_12_span": 18,
+  "connected_weight_12_presentation": 0,
+  "final_rank_histogram": {
+    "24": 4,
+    "36": 6,
+    "42": 4,
+    "45": 2,
+    "48": 18
+  },
+  "final_subgroup_histogram": {
+    "112": 2,
+    "14": 4,
+    "28": 6,
+    "56": 22
+  },
+  "records": 34,
+  "selected_candidates": 34,
+  "total_seconds_this_run": 757.961
+}

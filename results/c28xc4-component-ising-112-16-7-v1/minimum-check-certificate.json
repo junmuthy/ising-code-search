@@ -1,0 +1,11 @@
+{
+  "certified_minimum_check_weight": 16,
+  "coordinate_fix_justification": "C28 x C4 translations are transitive",
+  "coordinate_zero_fixed": true,
+  "doubly_even_check_space": true,
+  "elapsed_seconds": 205.2949227800127,
+  "known_check_upper_bound": 16,
+  "solver": "HIGHS",
+  "status": "infeasible",
+  "tested_maximum_weight": 12
+}

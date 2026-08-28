@@ -1,0 +1,1422 @@
+{
+  "cnot_count": 256,
+  "cnot_depth": 16,
+  "each_one_type_layer_is_fixed_by_physical_C4_translation": true,
+  "fold_P_exchanges_css_types_and_reverses_time": true,
+  "instructions": "Apply the eight Z layers, then the eight X layers.",
+  "layers": [
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 25,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 17,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 9,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 1,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 30,
+          "type": "Z"
+        }
+      ],
+      "round": 1,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 9,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 1,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 25,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 17,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 5,
+          "type": "Z"
+        }
+      ],
+      "round": 2,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 3,
+          "type": "Z"
+        }
+      ],
+      "round": 3,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 18,
+          "type": "Z"
+        }
+      ],
+      "round": 4,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 10,
+          "type": "Z"
+        }
+      ],
+      "round": 5,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 15,
+          "type": "Z"
+        }
+      ],
+      "round": 6,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 16,
+          "type": "Z"
+        }
+      ],
+      "round": 7,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 7,
+          "type": "Z"
+        }
+      ],
+      "round": 8,
+      "type": "Z"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 7,
+          "type": "X"
+        }
+      ],
+      "round": 9,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 16,
+          "type": "X"
+        }
+      ],
+      "round": 10,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 31,
+          "type": "X"
+        }
+      ],
+      "round": 11,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 26,
+          "type": "X"
+        }
+      ],
+      "round": 12,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 18,
+          "type": "X"
+        }
+      ],
+      "round": 13,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 19,
+          "type": "X"
+        }
+      ],
+      "round": 14,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 25,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 1,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 9,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 17,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 21,
+          "type": "X"
+        }
+      ],
+      "round": 15,
+      "type": "X"
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 9,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 17,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 25,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 1,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 30,
+          "type": "X"
+        }
+      ],
+      "round": 16,
+      "type": "X"
+    }
+  ],
+  "name": "safe all-weight-eight translation-invariant folded schedule",
+  "presentation": "presentation.json",
+  "schema_version": 1,
+  "x_edge_orbit_colors_zero_based": [
+    4,
+    3,
+    6,
+    2,
+    0,
+    7,
+    5,
+    1,
+    1,
+    7,
+    0,
+    3,
+    2,
+    6,
+    4,
+    5,
+    2,
+    1,
+    7,
+    4,
+    0,
+    6,
+    3,
+    5,
+    3,
+    7,
+    2,
+    0,
+    1,
+    4,
+    5,
+    6
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "arguments": {
+    "check_fold_index": null,
+    "feasibility_only": false,
+    "logical_weight": 6,
+    "maximum_terms": 16,
+    "milp_seconds": 10,
+    "polynomial_witnesses": 20,
+    "probe_only": true,
+    "rank_probe_restarts": 10,
+    "rank_probe_trials": 1000,
+    "run_name": "gl2-l4-j2-rank-probe-first20",
+    "seed": 260826,
+    "seed_only": false,
+    "standard_trials": 100,
+    "target_witnesses": 100,
+    "trials_per_fold": 20,
+    "witness_index": null
+  },
+  "files": {
+    "polynomial_attempts": "/home/judah_unmuth/gala-code-search/results/half-grid/gl2-l4-j2-rank-probe-first20/polynomial-attempts.jsonl",
+    "seed_witnesses": "/home/judah_unmuth/gala-code-search/results/half-grid/gl2-l4-j2-rank-probe-first20/seed-witnesses.jsonl"
+  },
+  "polynomial_attempts": 80,
+  "polynomial_status_counts": {
+    "solver_status_3": 76,
+    "solver_status_4": 4
+  },
+  "schema_version": 1,
+  "seed_stage": {
+    "complete_fold_sweep": false,
+    "rank_counts": {
+      "0": 3,
+      "8": 4,
+      "12": 3,
+      "16": 25,
+      "18": 17,
+      "20": 8,
+      "21": 18,
+      "24": 138,
+      "28": 119,
+      "32": 100
+    },
+    "seconds": 0.571613,
+    "seed": 260826,
+    "tested": 435,
+    "trials_per_fold": 20,
+    "weight": 6,
+    "witnesses": 100
+  },
+  "standard_fold_control": {
+    "folds": {
+      "fixed_blocks": {
+        "fold": {
+          "backward_blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "cycle_length_counts": {
+            "2": 128
+          },
+          "forward_blocks": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "order": 2,
+          "top_independent": true
+        },
+        "maximum_sampled_rank": 24,
+        "rank_counts": {
+          "0": 8,
+          "8": 7,
+          "12": 5,
+          "16": 16,
+          "18": 14,
+          "24": 50
+        }
+      },
+      "half_reflection": {
+        "fold": {
+          "backward_blocks": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "cycle_length_counts": {
+            "2": 128
+          },
+          "forward_blocks": [
+            1,
+            0,
+            3,
+            2
+          ],
+          "order": 2,
+          "top_independent": true
+        },
+        "maximum_sampled_rank": 24,
+        "rank_counts": {
+          "0": 7,
+          "8": 4,
+          "12": 4,
+          "16": 21,
+          "18": 13,
+          "24": 51
+        }
+      }
+    },
+    "seed": 260827,
+    "trials_per_fold": 100,
+    "weight": 6
+  },
+  "target": {
+    "logical_weight": 6,
+    "parameters": "[[256,32,>=6]]",
+    "protograph": {
+      "J": 2,
+      "L": 4
+    },
+    "representation": "GL(2,2) ~= S3",
+    "translation_group": "C8 x C4",
+    "two_checkerboard_total_n": 512
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "automorphisms": {
+    "half_swap_inversion_automorphism": true,
+    "x_power_r_stabilizer_automorphism": true,
+    "x_translation_stabilizer_automorphism": true,
+    "y_translation_stabilizer_automorphism": true
+  },
+  "candidate": {
+    "copies_per_half": 2,
+    "family": "many_copy_weight12",
+    "m": 7,
+    "p1": 0,
+    "p2": 1,
+    "r0": 1,
+    "r1": 3,
+    "r2": 2
+  },
+  "candidate_id": "manycopy-r2-m7-r1-3-2-p0-1",
+  "cnot_schedule": {
+    "all_layers_collision_free": true,
+    "covers_each_check_edge_once": true,
+    "layers": [
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 0,
+        "monomial": "1",
+        "num_interactions": 448,
+        "power_x": 0,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 1,
+        "monomial": "x^1",
+        "num_interactions": 448,
+        "power_x": 1,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 2,
+        "monomial": "x^16",
+        "num_interactions": 448,
+        "power_x": 16,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 3,
+        "monomial": "x^16 y^1",
+        "num_interactions": 448,
+        "power_x": 16,
+        "power_y": 1
+      },
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 4,
+        "monomial": "x^48 y^1",
+        "num_interactions": 448,
+        "power_x": 48,
+        "power_y": 1
+      },
+      {
+        "collision_free": true,
+        "data_half": "L",
+        "index": 5,
+        "monomial": "x^49",
+        "num_interactions": 448,
+        "power_x": 49,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 6,
+        "monomial": "1",
+        "num_interactions": 448,
+        "power_x": 0,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 7,
+        "monomial": "x^111",
+        "num_interactions": 448,
+        "power_x": 111,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 8,
+        "monomial": "x^96",
+        "num_interactions": 448,
+        "power_x": 96,
+        "power_y": 0
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 9,
+        "monomial": "x^96 y^3",
+        "num_interactions": 448,
+        "power_x": 96,
+        "power_y": 3
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 10,
+        "monomial": "x^64 y^3",
+        "num_interactions": 448,
+        "power_x": 64,
+        "power_y": 3
+      },
+      {
+        "collision_free": true,
+        "data_half": "R",
+        "index": 11,
+        "monomial": "x^63",
+        "num_interactions": 448,
+        "power_x": 63,
+        "power_y": 0
+      }
+    ],
+    "lower_bound_from_check_weight": 12,
+    "num_layers_per_css_type": 12,
+    "optimal": true
+  },
+  "distance": {
+    "candidate": {
+      "copies_per_half": 2,
+      "family": "many_copy_weight12",
+      "m": 7,
+      "p1": 0,
+      "p2": 1,
+      "r0": 1,
+      "r1": 3,
+      "r2": 2
+    },
+    "candidate_id": "manycopy-r2-m7-r1-3-2-p0-1",
+    "canonical_support": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        79,
+        0
+      ],
+      [
+        80,
+        1
+      ]
+    ],
+    "certified_by_translation_symmetry": true,
+    "certified_distance": 7,
+    "class_results": [
+      {
+        "logical_index": 0,
+        "minimum_weight": 7,
+        "seconds": 13.540794,
+        "solver_status": "optimal",
+        "support": [
+          0,
+          64,
+          128,
+          192,
+          256,
+          320,
+          384
+        ]
+      },
+      {
+        "logical_index": 64,
+        "minimum_weight": 7,
+        "seconds": 7.375119,
+        "solver_status": "optimal",
+        "support": [
+          448,
+          512,
+          576,
+          640,
+          704,
+          768,
+          832
+        ]
+      }
+    ],
+    "complete": true,
+    "distance_upper_bound": 7,
+    "logical_indices": [
+      0,
+      64
+    ],
+    "polynomial": "1 + x^1 + x^16 + x^16 y^1 + x^48 y^1 + x^49",
+    "schema_version": 1,
+    "solver": "HIGHS",
+    "target_distance": 7,
+    "threshold_passed": true,
+    "total_seconds": 20.915913,
+    "translation_representatives": [
+      0,
+      64
+    ]
+  },
+  "parameters": {
+    "d": 7,
+    "k": 128,
+    "n": 896
+  },
+  "polynomial": "1 + x^1 + x^16 + x^16 y^1 + x^48 y^1 + x^49",
+  "structure": {
+    "accepted": true,
+    "candidate": {
+      "copies_per_half": 2,
+      "family": "many_copy_weight12",
+      "m": 7,
+      "p1": 0,
+      "p2": 1,
+      "r0": 1,
+      "r1": 3,
+      "r2": 2
+    },
+    "candidate_id": "manycopy-r2-m7-r1-3-2-p0-1",
+    "canonical_support": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        79,
+        0
+      ],
+      [
+        80,
+        1
+      ]
+    ],
+    "check_weight": 12,
+    "checks": {
+      "candidate_logicals_commute": true,
+      "candidate_logicals_complete": true,
+      "candidate_logicals_have_target_rank": true,
+      "candidate_logicals_orthonormal": true,
+      "candidate_logicals_partition_qubits": true,
+      "candidate_logicals_weight_m": true,
+      "css_orthogonal": true,
+      "dimension_is_target": true,
+      "even_syndrome_parity": true,
+      "rank_is_group_order_minus_logicals_per_half": true,
+      "self_dual": true,
+      "six_distinct_terms": true,
+      "tanner_connected": true,
+      "uniform_check_weight_12": true,
+      "uniform_qubit_degree_6": true,
+      "x_is_C8r_across_copies": true,
+      "x_power_r_is_C8_on_each_copy": true,
+      "y_is_C4_on_each_copy": true
+    },
+    "distance_upper_bound": 7,
+    "expected_rank_h": 384,
+    "k": 128,
+    "logical_weight": 7,
+    "minimum_cnot_layers_per_css_type": 12,
+    "n": 896,
+    "num_four_cycles_per_css_tanner_graph": 6720,
+    "num_logicals": 128,
+    "num_simulation_copies": 4,
+    "polynomial": "1 + x^1 + x^16 + x^16 y^1 + x^48 y^1 + x^49",
+    "qubit_degree": 6,
+    "rank_h": 384,
+    "rejection_reasons": [],
+    "schema_version": 1,
+    "total_seconds": 0.968244
+  }
+}

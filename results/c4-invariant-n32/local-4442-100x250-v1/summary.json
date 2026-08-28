@@ -1,0 +1,30 @@
+{
+  "accepted": 0,
+  "aggregate_counters": {
+    "disconnected": 3468,
+    "iterations": 25000,
+    "move_accepted": 640,
+    "neighbor_distance_2": 480,
+    "neighbor_distance_3": 3132,
+    "neighbor_distance_4": 3197,
+    "neighbor_distance_5": 14713,
+    "replacement_failed": 10
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "input": "results/c4-invariant-n32/fresh-4442-20k-v1/best-candidates.jsonl",
+    "iterations": 250,
+    "maximum_check_weight": 12,
+    "run_name": "local-4442-100x250-v1",
+    "seed": 320403,
+    "starts": 100,
+    "workers": 8
+  },
+  "best_distance": 5,
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-n32/local-4442-100x250-v1",
+  "schema_version": 1,
+  "seconds": 167.071848,
+  "starts": 100,
+  "target": "local (4,4,4,2) refinement for [[32,4,>=6]]",
+  "worker_errors": 0
+}

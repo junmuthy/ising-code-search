@@ -1,0 +1,14 @@
+{
+  "algebraic_counts": {
+    "active_orthogonality_rejected": 264,
+    "algebraic_survivors": 201,
+    "bottom_disconnected_rejected": 106,
+    "raw": 571
+  },
+  "max_check_weight": 16,
+  "parent_candidate_id": "s3-linear-l6-j2-w8-f54266873942780c",
+  "structural_status_counts": {
+    "logical_up_to_weight_four": 22,
+    "survivor": 179
+  }
+}

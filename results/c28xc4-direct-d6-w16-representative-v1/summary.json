@@ -1,0 +1,57 @@
+{
+  "candidate_id": "ideal-6c21985b5722a169",
+  "distance": 6,
+  "distance_method": "exact exclusion through five plus weight-six meet-in-the-middle witness",
+  "distance_seconds": 0.2980470710026566,
+  "distance_support": [
+    0,
+    1,
+    16,
+    17,
+    80,
+    81
+  ],
+  "doubly_even_check_space": true,
+  "exact_zx_self_dual": true,
+  "fibres_commute": true,
+  "fibres_complete": true,
+  "fibres_orthonormal": true,
+  "independent_ancillas_per_css_type": 48,
+  "independent_check_weight_histogram": {
+    "8": 36,
+    "16": 12
+  },
+  "independent_cnot_count_per_css_type": 480,
+  "independent_cnot_depth_per_css_type": 16,
+  "independent_qubit_degree_histogram": {
+    "2": 4,
+    "3": 22,
+    "4": 43,
+    "5": 29,
+    "6": 9,
+    "7": 5
+  },
+  "k": 16,
+  "logical_count": 16,
+  "logical_supports_pairwise_disjoint": true,
+  "logical_translation_group": "C4 x C4",
+  "logical_weights": [
+    7
+  ],
+  "minimum_complete_presentation_maximum_check_weight": 16,
+  "n": 112,
+  "rank": 48,
+  "self_orthogonal": true,
+  "translation_symmetric_ancillas_per_css_type": 140,
+  "translation_symmetric_check_weight_histogram": {
+    "16": 140
+  },
+  "translation_symmetric_checks": 140,
+  "translation_symmetric_cnot_depth_per_css_type": 20,
+  "translation_symmetric_qubit_degree_histogram": {
+    "20": 112
+  },
+  "translation_symmetric_seed_types": 2,
+  "translation_symmetric_syndrome_parity_even": true,
+  "weight_12_exclusion": "exact mixed-sector MILP: light span rank 36; no outside stabilizer through weight 12"
+}

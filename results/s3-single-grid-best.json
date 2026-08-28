@@ -1,0 +1,543 @@
+{
+  "candidate": {
+    "f0": [
+      {
+        "top": 0,
+        "x": 0,
+        "y": 0
+      },
+      {
+        "top": 0,
+        "x": 6,
+        "y": 2
+      },
+      {
+        "top": 2,
+        "x": 4,
+        "y": 1
+      },
+      {
+        "top": 5,
+        "x": 0,
+        "y": 1
+      }
+    ],
+    "f1": [
+      {
+        "top": 0,
+        "x": 2,
+        "y": 0
+      },
+      {
+        "top": 0,
+        "x": 4,
+        "y": 3
+      },
+      {
+        "top": 3,
+        "x": 4,
+        "y": 0
+      },
+      {
+        "top": 3,
+        "x": 5,
+        "y": 2
+      }
+    ],
+    "family": "s3_l4_j1_self_dual_weight16"
+  },
+  "candidate_id": "s3-l4-j1-self-dual-w16-36d018790fa7a28a",
+  "distance_searches": [
+    {
+      "nodes": 12,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 1.2e-05,
+      "support": null,
+      "weight": 1
+    },
+    {
+      "nodes": 12,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 1.3e-05,
+      "support": null,
+      "weight": 2
+    },
+    {
+      "nodes": 192,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 0.000331,
+      "support": null,
+      "weight": 3
+    },
+    {
+      "nodes": 2892,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 0.00571,
+      "support": null,
+      "weight": 4
+    },
+    {
+      "nodes": 42888,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 0.101368,
+      "support": null,
+      "weight": 5
+    },
+    {
+      "nodes": 391802,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 1.007532,
+      "support": null,
+      "weight": 6
+    }
+  ],
+  "generator_relation": "G_i = F_i.T",
+  "logical_grid": {
+    "graph_supported": true,
+    "identity_zx_fold": true,
+    "internal_occupancies": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "internal_orbits": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10
+    ],
+    "logical_support_union_weight": 224,
+    "orbit_rank_mod_stabilizers": 32,
+    "pairing_is_identity": true,
+    "pairwise_disjoint": true,
+    "seed_support": [
+      32,
+      122,
+      164,
+      209,
+      266,
+      298,
+      329
+    ],
+    "translated_supports": [
+      [
+        32,
+        122,
+        164,
+        209,
+        266,
+        298,
+        329
+      ],
+      [
+        35,
+        121,
+        167,
+        208,
+        265,
+        297,
+        328
+      ],
+      [
+        34,
+        120,
+        166,
+        211,
+        264,
+        296,
+        331
+      ],
+      [
+        33,
+        123,
+        165,
+        210,
+        267,
+        299,
+        330
+      ],
+      [
+        60,
+        118,
+        160,
+        205,
+        262,
+        294,
+        325
+      ],
+      [
+        63,
+        117,
+        163,
+        204,
+        261,
+        293,
+        324
+      ],
+      [
+        62,
+        116,
+        162,
+        207,
+        260,
+        292,
+        327
+      ],
+      [
+        61,
+        119,
+        161,
+        206,
+        263,
+        295,
+        326
+      ],
+      [
+        56,
+        114,
+        188,
+        201,
+        258,
+        290,
+        321
+      ],
+      [
+        59,
+        113,
+        191,
+        200,
+        257,
+        289,
+        320
+      ],
+      [
+        58,
+        112,
+        190,
+        203,
+        256,
+        288,
+        323
+      ],
+      [
+        57,
+        115,
+        189,
+        202,
+        259,
+        291,
+        322
+      ],
+      [
+        52,
+        110,
+        184,
+        197,
+        286,
+        318,
+        349
+      ],
+      [
+        55,
+        109,
+        187,
+        196,
+        285,
+        317,
+        348
+      ],
+      [
+        54,
+        108,
+        186,
+        199,
+        284,
+        316,
+        351
+      ],
+      [
+        53,
+        111,
+        185,
+        198,
+        287,
+        319,
+        350
+      ],
+      [
+        48,
+        106,
+        180,
+        193,
+        282,
+        314,
+        345
+      ],
+      [
+        51,
+        105,
+        183,
+        192,
+        281,
+        313,
+        344
+      ],
+      [
+        50,
+        104,
+        182,
+        195,
+        280,
+        312,
+        347
+      ],
+      [
+        49,
+        107,
+        181,
+        194,
+        283,
+        315,
+        346
+      ],
+      [
+        44,
+        102,
+        176,
+        221,
+        278,
+        310,
+        341
+      ],
+      [
+        47,
+        101,
+        179,
+        220,
+        277,
+        309,
+        340
+      ],
+      [
+        46,
+        100,
+        178,
+        223,
+        276,
+        308,
+        343
+      ],
+      [
+        45,
+        103,
+        177,
+        222,
+        279,
+        311,
+        342
+      ],
+      [
+        40,
+        98,
+        172,
+        217,
+        274,
+        306,
+        337
+      ],
+      [
+        43,
+        97,
+        175,
+        216,
+        273,
+        305,
+        336
+      ],
+      [
+        42,
+        96,
+        174,
+        219,
+        272,
+        304,
+        339
+      ],
+      [
+        41,
+        99,
+        173,
+        218,
+        275,
+        307,
+        338
+      ],
+      [
+        36,
+        126,
+        168,
+        213,
+        270,
+        302,
+        333
+      ],
+      [
+        39,
+        125,
+        171,
+        212,
+        269,
+        301,
+        332
+      ],
+      [
+        38,
+        124,
+        170,
+        215,
+        268,
+        300,
+        335
+      ],
+      [
+        37,
+        127,
+        169,
+        214,
+        271,
+        303,
+        334
+      ]
+    ],
+    "translation_orbit_size": 32,
+    "unused_physical_qubits": 160,
+    "weight": 7,
+    "x_partner_orbit_in_kernel": true,
+    "x_translation_is_C8_grid_shift": true,
+    "y_translation_is_C4_grid_shift": true,
+    "z_orbit_in_kernel": true,
+    "zx_pairing_rank": 32
+  },
+  "logical_grid_seed_support": [
+    32,
+    122,
+    164,
+    209,
+    266,
+    298,
+    329
+  ],
+  "parameters": {
+    "d": 7,
+    "k": 200,
+    "n": 384
+  },
+  "polynomials": [
+    "1 + x^6 y^2 + tau_1 x^4 y + tau_2 y",
+    "x^2 + x^4 y^3 + sigma x^4 + sigma x^5 y^2"
+  ],
+  "structure": {
+    "accepted": true,
+    "candidate": {
+      "f0": [
+        {
+          "top": 0,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "top": 0,
+          "x": 6,
+          "y": 2
+        },
+        {
+          "top": 2,
+          "x": 4,
+          "y": 1
+        },
+        {
+          "top": 5,
+          "x": 0,
+          "y": 1
+        }
+      ],
+      "f1": [
+        {
+          "top": 0,
+          "x": 2,
+          "y": 0
+        },
+        {
+          "top": 0,
+          "x": 4,
+          "y": 3
+        },
+        {
+          "top": 3,
+          "x": 4,
+          "y": 0
+        },
+        {
+          "top": 3,
+          "x": 5,
+          "y": 2
+        }
+      ],
+      "family": "s3_l4_j1_self_dual_weight16"
+    },
+    "candidate_id": "s3-l4-j1-self-dual-w16-36d018790fa7a28a",
+    "check_weight_x": 16,
+    "check_weight_z": 16,
+    "checks": {
+      "SWEL_odd_logical_exists": true,
+      "active_psi_zero": true,
+      "bottom_support_generates_C8xC4": true,
+      "css_orthogonal": true,
+      "doubly_even_stabilizer_generators": true,
+      "even_syndrome_parity": true,
+      "exact_ZX_self_dual": true,
+      "latent_psi_nonzero": true,
+      "rate_at_least_half": true,
+      "tanner_x_connected": true,
+      "tanner_z_connected": true,
+      "uniform_check_weight_16": true,
+      "x_translation_stabilizer_automorphism": true,
+      "y_translation_stabilizer_automorphism": true
+    },
+    "column_degrees_x": [
+      4
+    ],
+    "column_degrees_z": [
+      4
+    ],
+    "k": 200,
+    "n": 384,
+    "polynomials": [
+      "1 + x^6 y^2 + tau_1 x^4 y + tau_2 y",
+      "x^2 + x^4 y^3 + sigma x^4 + sigma x^5 y^2"
+    ],
+    "rank_x": 92,
+    "rank_z": 92,
+    "rejection_reasons": [],
+    "schema_version": 1,
+    "total_seconds": 0.216773
+  }
+}

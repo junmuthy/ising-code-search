@@ -1,0 +1,46 @@
+{
+  "target": "[[28,4,>=6]] one-block weakly self-dual C28 CSS",
+  "method": "exhaustive-even-sector-weight-6-8-10-12",
+  "enumeration": {
+    "even_sector_polynomials": 16777216,
+    "search_weights": [
+      6,
+      8,
+      10,
+      12
+    ],
+    "considered_by_weight": {
+      "6": 45892,
+      "8": 388815,
+      "10": 1645224,
+      "12": 3795932
+    },
+    "self_orthogonal_by_weight": {
+      "6": 0,
+      "8": 1239,
+      "10": 0,
+      "12": 7252
+    },
+    "rank_twelve_by_weight": {
+      "6": 0,
+      "8": 1050,
+      "10": 0,
+      "12": 6580
+    },
+    "canonical_by_weight": {
+      "6": 0,
+      "8": 33,
+      "10": 0,
+      "12": 143
+    }
+  },
+  "canonical_structural_candidates": 176,
+  "distance_certifications": 1,
+  "low_logical_weight_counts": {
+    "3": 1
+  },
+  "distance_at_least_six_survivors": 0,
+  "survivors": [],
+  "seconds": 2.129075,
+  "output": "results/c28-one-block/exhaustive-w6-12-structural-v1"
+}

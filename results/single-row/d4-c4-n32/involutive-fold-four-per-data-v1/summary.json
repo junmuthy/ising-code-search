@@ -1,0 +1,49 @@
+{
+  "aggregate_counters": {
+    "check_weight_accepted": 1576,
+    "check_weight_too_large": 9644,
+    "css": 1576,
+    "dimension_at_least_four": 11220,
+    "distance_2": 336,
+    "failed_tanner_connected": 1240,
+    "generators_tested": 11220,
+    "structural_candidates": 336
+  },
+  "arguments": {
+    "maximum_check_weight": 12,
+    "maximum_nullity": 22,
+    "maximum_saved_near_misses": 10,
+    "run_name": "involutive-fold-four-per-data-v1",
+    "seed": 440402,
+    "witnesses_per_data_fold": 4,
+    "workers": 8
+  },
+  "dimension_counts": {
+    "16": 5632,
+    "18": 1408,
+    "20": 2112,
+    "22": 704,
+    "24": 880,
+    "26": 264,
+    "28": 176,
+    "30": 44
+  },
+  "feasible_data_folds": 3,
+  "fold_spaces": 68,
+  "geometrically_impossible_data_folds": 3,
+  "method": "exhaustive involutive D4 data/check-fold constraint spaces",
+  "nullity_counts": {
+    "0": 24,
+    "8": 44
+  },
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/d4-c4-n32/involutive-fold-four-per-data-v1",
+  "protograph": "L=2, J=1 two-block GALA",
+  "representation": "faithful four-point D4 permutation module times C4",
+  "saved_near_misses": 226,
+  "schema_version": 1,
+  "seconds": 0.805709,
+  "survivors": 0,
+  "target": "[[32,k,>=6]] with k>=4 and one protected C4 row",
+  "witnesses": 12,
+  "worker_errors": 0
+}

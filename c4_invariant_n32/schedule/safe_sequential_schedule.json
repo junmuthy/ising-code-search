@@ -1,0 +1,693 @@
+{
+  "code": "[[32,4,5]]",
+  "generator_rows": [
+    [
+      8,
+      9,
+      18,
+      20,
+      23,
+      26,
+      30,
+      31
+    ],
+    [
+      5,
+      6,
+      7,
+      12,
+      14,
+      15,
+      24,
+      27
+    ],
+    [
+      1,
+      5,
+      10,
+      11,
+      16,
+      19,
+      24,
+      28
+    ],
+    [
+      7,
+      15,
+      23,
+      31
+    ],
+    [
+      1,
+      4,
+      18,
+      21,
+      25,
+      26,
+      28,
+      29
+    ],
+    [
+      2,
+      5,
+      9,
+      10,
+      12,
+      13,
+      17,
+      20
+    ],
+    [
+      0,
+      3,
+      13,
+      14,
+      15,
+      20,
+      22,
+      23
+    ],
+    [
+      4,
+      6,
+      8,
+      11,
+      24,
+      26
+    ],
+    [
+      0,
+      4,
+      8,
+      14,
+      18,
+      21,
+      27,
+      29
+    ],
+    [
+      3,
+      5,
+      9,
+      14,
+      19,
+      21,
+      25,
+      30
+    ],
+    [
+      1,
+      2,
+      17,
+      18,
+      19,
+      21,
+      25,
+      30
+    ],
+    [
+      1,
+      6,
+      11,
+      13,
+      17,
+      22,
+      27,
+      29
+    ],
+    [
+      4,
+      6,
+      15,
+      16,
+      19,
+      23,
+      29,
+      30
+    ],
+    [
+      8,
+      10,
+      20,
+      22,
+      24,
+      27
+    ],
+    [
+      9,
+      10,
+      11,
+      13,
+      17,
+      22,
+      25,
+      26
+    ]
+  ],
+  "independent_checks": 14,
+  "measured_checks_per_type": 15,
+  "redundant_check": 14,
+  "row_weights": [
+    8,
+    8,
+    8,
+    4,
+    8,
+    8,
+    8,
+    6,
+    8,
+    8,
+    8,
+    8,
+    8,
+    6,
+    8
+  ],
+  "column_degrees_per_type": [
+    2,
+    4,
+    2,
+    2,
+    4,
+    4,
+    4,
+    2,
+    4,
+    4,
+    4,
+    4,
+    2,
+    4,
+    4,
+    4,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    2,
+    4,
+    4,
+    2
+  ],
+  "syndrome_parity_even": true,
+  "corrected_transversal_s": {
+    "physical_operation": "Z(t) S^tensor32",
+    "t_support": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      14,
+      15,
+      16,
+      24
+    ],
+    "logical_action": "S on each of the four disjoint logical qubits",
+    "note": "Plain S^tensor32 is not code-preserving because weight-6 stabilizers occur."
+  },
+  "safe_schedule": {
+    "cnot_layers": 16,
+    "instructions": "Apply layers 1..8 as data->Z-ancilla CNOTs, then apply layers 1..8 again as X-ancilla->data CNOTs.",
+    "per_type_layers": [
+      [
+        {
+          "check": 0,
+          "data": 18
+        },
+        {
+          "check": 1,
+          "data": 14
+        },
+        {
+          "check": 2,
+          "data": 10
+        },
+        {
+          "check": 3,
+          "data": 7
+        },
+        {
+          "check": 4,
+          "data": 26
+        },
+        {
+          "check": 5,
+          "data": 5
+        },
+        {
+          "check": 6,
+          "data": 3
+        },
+        {
+          "check": 7,
+          "data": 6
+        },
+        {
+          "check": 8,
+          "data": 29
+        },
+        {
+          "check": 9,
+          "data": 21
+        },
+        {
+          "check": 10,
+          "data": 17
+        },
+        {
+          "check": 11,
+          "data": 27
+        },
+        {
+          "check": 12,
+          "data": 23
+        },
+        {
+          "check": 14,
+          "data": 22
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 20
+        },
+        {
+          "check": 1,
+          "data": 5
+        },
+        {
+          "check": 2,
+          "data": 28
+        },
+        {
+          "check": 3,
+          "data": 23
+        },
+        {
+          "check": 4,
+          "data": 25
+        },
+        {
+          "check": 5,
+          "data": 9
+        },
+        {
+          "check": 6,
+          "data": 13
+        },
+        {
+          "check": 7,
+          "data": 4
+        },
+        {
+          "check": 8,
+          "data": 21
+        },
+        {
+          "check": 9,
+          "data": 30
+        },
+        {
+          "check": 10,
+          "data": 19
+        },
+        {
+          "check": 11,
+          "data": 22
+        },
+        {
+          "check": 12,
+          "data": 15
+        },
+        {
+          "check": 13,
+          "data": 8
+        },
+        {
+          "check": 14,
+          "data": 10
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 30
+        },
+        {
+          "check": 1,
+          "data": 24
+        },
+        {
+          "check": 2,
+          "data": 16
+        },
+        {
+          "check": 3,
+          "data": 15
+        },
+        {
+          "check": 4,
+          "data": 18
+        },
+        {
+          "check": 5,
+          "data": 10
+        },
+        {
+          "check": 6,
+          "data": 22
+        },
+        {
+          "check": 7,
+          "data": 11
+        },
+        {
+          "check": 8,
+          "data": 27
+        },
+        {
+          "check": 9,
+          "data": 14
+        },
+        {
+          "check": 10,
+          "data": 21
+        },
+        {
+          "check": 11,
+          "data": 29
+        },
+        {
+          "check": 12,
+          "data": 6
+        },
+        {
+          "check": 14,
+          "data": 9
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 23
+        },
+        {
+          "check": 1,
+          "data": 6
+        },
+        {
+          "check": 2,
+          "data": 1
+        },
+        {
+          "check": 4,
+          "data": 29
+        },
+        {
+          "check": 5,
+          "data": 2
+        },
+        {
+          "check": 6,
+          "data": 20
+        },
+        {
+          "check": 7,
+          "data": 24
+        },
+        {
+          "check": 8,
+          "data": 8
+        },
+        {
+          "check": 9,
+          "data": 5
+        },
+        {
+          "check": 10,
+          "data": 30
+        },
+        {
+          "check": 11,
+          "data": 17
+        },
+        {
+          "check": 12,
+          "data": 19
+        },
+        {
+          "check": 13,
+          "data": 10
+        },
+        {
+          "check": 14,
+          "data": 13
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 9
+        },
+        {
+          "check": 1,
+          "data": 7
+        },
+        {
+          "check": 2,
+          "data": 5
+        },
+        {
+          "check": 4,
+          "data": 28
+        },
+        {
+          "check": 5,
+          "data": 12
+        },
+        {
+          "check": 6,
+          "data": 0
+        },
+        {
+          "check": 7,
+          "data": 8
+        },
+        {
+          "check": 8,
+          "data": 18
+        },
+        {
+          "check": 9,
+          "data": 19
+        },
+        {
+          "check": 10,
+          "data": 25
+        },
+        {
+          "check": 11,
+          "data": 1
+        },
+        {
+          "check": 12,
+          "data": 30
+        },
+        {
+          "check": 13,
+          "data": 22
+        },
+        {
+          "check": 14,
+          "data": 26
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 8
+        },
+        {
+          "check": 1,
+          "data": 15
+        },
+        {
+          "check": 2,
+          "data": 11
+        },
+        {
+          "check": 4,
+          "data": 21
+        },
+        {
+          "check": 5,
+          "data": 17
+        },
+        {
+          "check": 6,
+          "data": 14
+        },
+        {
+          "check": 8,
+          "data": 0
+        },
+        {
+          "check": 9,
+          "data": 3
+        },
+        {
+          "check": 10,
+          "data": 2
+        },
+        {
+          "check": 11,
+          "data": 13
+        },
+        {
+          "check": 12,
+          "data": 4
+        },
+        {
+          "check": 13,
+          "data": 24
+        },
+        {
+          "check": 14,
+          "data": 25
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 26
+        },
+        {
+          "check": 1,
+          "data": 27
+        },
+        {
+          "check": 2,
+          "data": 24
+        },
+        {
+          "check": 3,
+          "data": 31
+        },
+        {
+          "check": 4,
+          "data": 1
+        },
+        {
+          "check": 5,
+          "data": 13
+        },
+        {
+          "check": 6,
+          "data": 15
+        },
+        {
+          "check": 8,
+          "data": 4
+        },
+        {
+          "check": 9,
+          "data": 25
+        },
+        {
+          "check": 10,
+          "data": 18
+        },
+        {
+          "check": 11,
+          "data": 6
+        },
+        {
+          "check": 12,
+          "data": 29
+        },
+        {
+          "check": 13,
+          "data": 20
+        },
+        {
+          "check": 14,
+          "data": 11
+        }
+      ],
+      [
+        {
+          "check": 0,
+          "data": 31
+        },
+        {
+          "check": 1,
+          "data": 12
+        },
+        {
+          "check": 2,
+          "data": 19
+        },
+        {
+          "check": 4,
+          "data": 4
+        },
+        {
+          "check": 5,
+          "data": 20
+        },
+        {
+          "check": 6,
+          "data": 23
+        },
+        {
+          "check": 7,
+          "data": 26
+        },
+        {
+          "check": 8,
+          "data": 14
+        },
+        {
+          "check": 9,
+          "data": 9
+        },
+        {
+          "check": 10,
+          "data": 1
+        },
+        {
+          "check": 11,
+          "data": 11
+        },
+        {
+          "check": 12,
+          "data": 16
+        },
+        {
+          "check": 13,
+          "data": 27
+        },
+        {
+          "check": 14,
+          "data": 17
+        }
+      ]
+    ]
+  },
+  "simultaneous_target": {
+    "lower_bound_cnot_layers": 8,
+    "status": "An 8-layer collision-free edge coloring exists, but a hook-aware simultaneous X/Z ordering and its circuit fault distance are not certified."
+  }
+}

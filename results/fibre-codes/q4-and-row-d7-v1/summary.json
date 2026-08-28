@@ -1,0 +1,33 @@
+{
+  "arguments": {
+    "no_symmetry_quotient": false,
+    "run_name": "q4-and-row-d7-v1",
+    "skip_graph_metrics": false,
+    "target": null,
+    "workers": 8
+  },
+  "output": "/home/judah_unmuth/gala-code-search/results/fibre-codes/q4-and-row-d7-v1",
+  "schema_version": 1,
+  "targets": [
+    {
+      "accepted": 1293,
+      "candidates": 1323,
+      "status_counts": {
+        "accepted": 1293,
+        "target_check_rank": 30
+      },
+      "structural_results": "/home/judah_unmuth/gala-code-search/results/fibre-codes/q4-and-row-d7-v1/n224-k32-structural.jsonl",
+      "target": "n224-k32"
+    },
+    {
+      "accepted": 438,
+      "candidates": 450,
+      "status_counts": {
+        "accepted": 438,
+        "target_check_rank": 12
+      },
+      "structural_results": "/home/judah_unmuth/gala-code-search/results/fibre-codes/q4-and-row-d7-v1/n56-k8-structural.jsonl",
+      "target": "n56-k8"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "counters": {
+    "css_folded": 10,
+    "logical_pairing_permutation": 10,
+    "pairs_tested": 46300,
+    "tanner_connected": 10
+  },
+  "distinct_connected_hits": 0,
+  "folds_per_start": 463,
+  "hits": 10,
+  "input": "/home/judah_unmuth/gala-code-search/results/c4-invariant-n32/local-4442-100x250-v1/best-candidates.jsonl",
+  "involutions_on_active_thickness": 232,
+  "scope": "zero internal logical-coordinate shifts; spectator fibre fixed",
+  "seconds": 0.489771,
+  "starts": 100,
+  "target": "nontrivial permutation-ZX folds of saved [[32,4,5]] seeds"
+}

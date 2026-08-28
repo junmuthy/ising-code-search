@@ -1,0 +1,16 @@
+{
+  "conclusion": "every physical permutation P gives singular logical ZX pairing",
+  "disjoint_support_bound": "four supports of weight >=6 fill all 24 qubits",
+  "distance_lower_bound": 6,
+  "k": 4,
+  "kernel_vector": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "n": 24,
+  "pairing_equation": "M_ij = z_i dot P(z_j)",
+  "row_sum_equation": "sum_j M_ij = z_i dot P(1) = wt(z_i) = 0 mod 2",
+  "scope": "four disjoint logicals exchanged with X logicals by transversal H plus a physical permutation"
+}

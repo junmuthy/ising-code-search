@@ -1,0 +1,24 @@
+{
+  "input": "results/s3-linear-fast-falsification/l6-native/local-rank56-structural.jsonl",
+  "max_check_weight": 16,
+  "max_nodes": 1000000,
+  "pilot_status_counts": {
+    "l6-j2-w8-local": {
+      "distance_at_least_seven_graph_seven": 9,
+      "distance_at_least_seven_no_graph_seven": 18,
+      "distance_six_graph": 107,
+      "distance_six_no_graph": 28,
+      "logical_weight_five": 17
+    }
+  },
+  "require_even_syndrome": false,
+  "source_records": 201,
+  "status_counts": {
+    "distance_at_least_seven_graph_seven": 9,
+    "distance_at_least_seven_no_graph_seven": 18,
+    "distance_six_graph": 107,
+    "distance_six_no_graph": 28,
+    "logical_weight_five": 17
+  },
+  "survivors_screened": 179
+}

@@ -1,0 +1,30 @@
+{
+  "accepted": 0,
+  "aggregate_counters": {
+    "best_improvement": 30,
+    "disconnected": 2478,
+    "iterations": 37500,
+    "move_accepted": 418,
+    "neighbor_distance_2": 4543,
+    "neighbor_distance_3": 11108,
+    "neighbor_distance_4": 9343,
+    "neighbor_distance_5": 10028
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "input": "results/c4-invariant-lagrangian/random-free-module-100k-v1/near-misses.jsonl",
+    "iterations": 500,
+    "maximum_check_weight": 12,
+    "run_name": "orbit-replacement-all75x500-v1",
+    "seed": 470402,
+    "starts": 75,
+    "workers": 8
+  },
+  "best_distance": 5,
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-lagrangian/orbit-replacement-all75x500-v1",
+  "schema_version": 1,
+  "seconds": 107.10586,
+  "starts": 75,
+  "target": "[[28,4,>=6]] local C4-orbit refinement",
+  "worker_errors": 0
+}

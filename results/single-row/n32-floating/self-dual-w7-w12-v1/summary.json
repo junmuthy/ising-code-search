@@ -1,0 +1,38 @@
+{
+  "accepted": false,
+  "arguments": {
+    "maximum_certifications": 200,
+    "maximum_check_weight": 12,
+    "maximum_saved_hits_per_k": 20,
+    "run_name": "self-dual-w7-w12-v1",
+    "seed": 320806,
+    "seed_witnesses": 16,
+    "workers": 8
+  },
+  "dimension_counts": {
+    "0": 524288,
+    "4": 131072,
+    "6": 65536,
+    "8": 163840,
+    "10": 49152,
+    "12": 53248,
+    "14": 22528,
+    "16": 24528,
+    "18": 6144,
+    "20": 5092,
+    "22": 1408,
+    "24": 1244,
+    "26": 224,
+    "28": 96,
+    "30": 16
+  },
+  "distance_certifications": 200,
+  "generator_spaces": 16,
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/n32-floating/self-dual-w7-w12-v1",
+  "recommended": null,
+  "schema_version": 1,
+  "structural_candidates": 714,
+  "target": "[[32,k,>=6]] with k>=4 and one protected C4 row",
+  "witnesses": 16,
+  "worker_errors": 0
+}

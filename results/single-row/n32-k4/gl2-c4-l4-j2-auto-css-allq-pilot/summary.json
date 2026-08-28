@@ -1,0 +1,46 @@
+{
+  "accepted_candidates": 0,
+  "arguments": {
+    "enumeration_limit": 20,
+    "maximum_check_weight": 12,
+    "maximum_hits": 3,
+    "polynomial_witnesses": 20,
+    "q_mode": "all",
+    "random_samples": 20000,
+    "run_name": "gl2-c4-l4-j2-auto-css-allq-pilot",
+    "seed": 260827,
+    "seed_only": false,
+    "target_witnesses": 100,
+    "trials_per_fold": 20,
+    "witness_index": null
+  },
+  "attempts": 3600,
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/n32-k4/gl2-c4-l4-j2-auto-css-allq-pilot",
+  "schema_version": 1,
+  "seed_stage": {
+    "complete_fold_sweep": false,
+    "rank_counts": {
+      "0": 75,
+      "1": 24,
+      "2": 135,
+      "3": 161,
+      "4": 100
+    },
+    "seconds": 0.281933,
+    "seed": 260827,
+    "tested": 495
+  },
+  "status_counts": {
+    "exact_rank_capacity_no_go": 3600
+  },
+  "target": {
+    "parameters": "[[32,4,6]]",
+    "protograph": {
+      "J": 2,
+      "L": 4
+    },
+    "representation": "GL(2,2) ~= S3",
+    "translation_group": "C4"
+  },
+  "witnesses": 100
+}

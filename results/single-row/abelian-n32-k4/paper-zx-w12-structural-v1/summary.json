@@ -1,0 +1,18 @@
+{
+  "accepted_candidates": 0,
+  "arguments": {
+    "family": null,
+    "maximum_check_weight": 12,
+    "maximum_saved_near_misses": 20,
+    "no_distance": true,
+    "run_name": "paper-zx-w12-structural-v1"
+  },
+  "families": [
+    "c8",
+    "c2xc4",
+    "c4xc4"
+  ],
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/abelian-n32-k4/paper-zx-w12-structural-v1",
+  "schema_version": 1,
+  "target": "[[32,4,>=6]]"
+}

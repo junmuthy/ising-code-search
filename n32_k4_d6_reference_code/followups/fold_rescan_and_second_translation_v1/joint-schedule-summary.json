@@ -1,0 +1,259 @@
+{
+  "best_depth": 12,
+  "best_fold_index": 0,
+  "depth_range": [
+    12,
+    15
+  ],
+  "fold_count": 24,
+  "results": [
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.03964,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 0
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.047753,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 1
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.051648,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 2
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.135695,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 3
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.041344,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 4
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.0492,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 5
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.107938,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 6
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.106022,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 7
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.397439,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 8
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.189924,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 9
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.121191,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 10
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.309588,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 11
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.048283,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 12
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.111565,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 13
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.06984,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 14
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.342377,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 15
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.216909,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 16
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.164304,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 17
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.273462,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 18
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.066013,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 19
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.123281,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 20
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.191837,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 21
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.416007,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 22
+    },
+    {
+      "attempts": [
+        {
+          "depth": 12,
+          "seconds": 0.130117,
+          "status": "sat"
+        }
+      ],
+      "fold_index": 23
+    }
+  ],
+  "schema_version": 1,
+  "scope": "all 24 connected distance-six affine folds, C4-invariant layers, fold P plus time reversal, and exact clean-backaction constraints",
+  "seconds": 5.199781,
+  "solver_status_histogram": {
+    "sat": 24
+  },
+  "timeout_seconds_per_attempt": 3.0,
+  "translated_x_edge_orbits": 32
+}

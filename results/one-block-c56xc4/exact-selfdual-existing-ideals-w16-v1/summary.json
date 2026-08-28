@@ -1,0 +1,29 @@
+{
+  "check_weight_histogram": {
+    "4": 2,
+    "8": 3,
+    "12": 6,
+    "16": 26
+  },
+  "complete": true,
+  "connected_weight_16_presentations": 0,
+  "distance_at_least_six_connected": 0,
+  "distance_at_least_six_joint": 2,
+  "distance_seven_connected": 0,
+  "distance_seven_joint": 2,
+  "existing_ideals_screened": 731,
+  "joint_weight_16_presentations": 37,
+  "normalized_tetranomials": 48403,
+  "old_sparse_polynomials": 948,
+  "physical_check_weight_ceiling": 16,
+  "previous_result": "/home/judah_unmuth/gala-code-search/results/one-block-c56xc4/exact-selfdual-monomial-sparse-w12-v1",
+  "raw_original_ideal_counts": {
+    "binomial": 17,
+    "monomial": 1,
+    "monomial_ideal": 495,
+    "trinomial": 930
+  },
+  "scope": "existing_731_distance_certified_ideals_only",
+  "total_generator_catalog": 49351,
+  "total_seconds": 205.865
+}

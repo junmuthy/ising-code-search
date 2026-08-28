@@ -1,0 +1,12 @@
+{
+  "candidates": [],
+  "counters": {
+    "permutes_four_check_orbits": 4,
+    "tanner_automorphisms": 4
+  },
+  "found_order_16_translation": false,
+  "found_second_translation": false,
+  "schema_version": 1,
+  "search_scope": "all exact color-preserving Tanner-graph automorphisms of the saved 16-row X presentation",
+  "seconds": 0.099508
+}

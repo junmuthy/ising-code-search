@@ -1,0 +1,16 @@
+{
+  "counters": {
+    "css_folded": 1100,
+    "distinct_check_spaces": 800,
+    "pairs_tested": 3353500,
+    "tanner_connected": 1100
+  },
+  "distinct_connected_hits": 800,
+  "folds_per_start": 33535,
+  "hits": 1100,
+  "input": "/home/judah_unmuth/gala-code-search/results/c4-invariant-n32/local-4442-100x250-v1/best-candidates.jsonl",
+  "scope": "identity permutation of thickness fibres; all involutive shifts",
+  "seconds": 36.618856,
+  "starts": 100,
+  "target": "thickness-dependent shifted ZX folds of saved [[32,4,5]] seeds"
+}

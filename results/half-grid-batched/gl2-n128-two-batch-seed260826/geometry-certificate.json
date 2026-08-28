@@ -1,0 +1,290 @@
+{
+  "exact_certificate": {
+    "schema_version": 1,
+    "lift": "GL(2,2) x C8 x C4",
+    "n": 128,
+    "target_logicals": 32,
+    "minimum_distance": 7,
+    "batches": 2,
+    "batch_size": 16,
+    "maximum_seed_weight_under_batching": 8,
+    "num_strict_structured_folds": 4,
+    "all_folds_fixed_point_free": true,
+    "all_allowed_augmentations_zero": true,
+    "pairing_singular_for_every_allowed_seed": true,
+    "generator_search_pruned": true,
+    "reason": "Every allowed translation-circulant ZX pairing has even row parity, so the all-ones logical vector is in its kernel.",
+    "cases": [
+      {
+        "weight": 7,
+        "fold_index": 0,
+        "fold": {
+          "forward_blocks": [
+            0,
+            1
+          ],
+          "backward_blocks": [
+            0,
+            1
+          ],
+          "top_independent": true,
+          "cycle_length_counts": {
+            "2": 64
+          },
+          "order": 2
+        },
+        "sheet_permutation": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 4,
+        "augmentation_counts": {
+          "0": 4
+        }
+      },
+      {
+        "weight": 7,
+        "fold_index": 1,
+        "fold": {
+          "forward_blocks": [
+            0,
+            1
+          ],
+          "backward_blocks": [
+            1,
+            0
+          ],
+          "top_independent": false,
+          "cycle_length_counts": {
+            "4": 32
+          },
+          "order": 4
+        },
+        "sheet_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 4,
+        "augmentation_counts": {
+          "0": 4
+        }
+      },
+      {
+        "weight": 7,
+        "fold_index": 2,
+        "fold": {
+          "forward_blocks": [
+            1,
+            0
+          ],
+          "backward_blocks": [
+            0,
+            1
+          ],
+          "top_independent": false,
+          "cycle_length_counts": {
+            "4": 32
+          },
+          "order": 4
+        },
+        "sheet_permutation": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 4,
+        "augmentation_counts": {
+          "0": 4
+        }
+      },
+      {
+        "weight": 7,
+        "fold_index": 3,
+        "fold": {
+          "forward_blocks": [
+            1,
+            0
+          ],
+          "backward_blocks": [
+            1,
+            0
+          ],
+          "top_independent": true,
+          "cycle_length_counts": {
+            "2": 64
+          },
+          "order": 2
+        },
+        "sheet_permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 4,
+        "augmentation_counts": {
+          "0": 4
+        }
+      },
+      {
+        "weight": 8,
+        "fold_index": 0,
+        "fold": {
+          "forward_blocks": [
+            0,
+            1
+          ],
+          "backward_blocks": [
+            0,
+            1
+          ],
+          "top_independent": true,
+          "cycle_length_counts": {
+            "2": 64
+          },
+          "order": 2
+        },
+        "sheet_permutation": [
+          1,
+          0,
+          3,
+          2
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 1,
+        "augmentation_counts": {
+          "0": 1
+        }
+      },
+      {
+        "weight": 8,
+        "fold_index": 1,
+        "fold": {
+          "forward_blocks": [
+            0,
+            1
+          ],
+          "backward_blocks": [
+            1,
+            0
+          ],
+          "top_independent": false,
+          "cycle_length_counts": {
+            "4": 32
+          },
+          "order": 4
+        },
+        "sheet_permutation": [
+          1,
+          2,
+          3,
+          0
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 1,
+        "augmentation_counts": {
+          "0": 1
+        }
+      },
+      {
+        "weight": 8,
+        "fold_index": 2,
+        "fold": {
+          "forward_blocks": [
+            1,
+            0
+          ],
+          "backward_blocks": [
+            0,
+            1
+          ],
+          "top_independent": false,
+          "cycle_length_counts": {
+            "4": 32
+          },
+          "order": 4
+        },
+        "sheet_permutation": [
+          3,
+          0,
+          1,
+          2
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 1,
+        "augmentation_counts": {
+          "0": 1
+        }
+      },
+      {
+        "weight": 8,
+        "fold_index": 3,
+        "fold": {
+          "forward_blocks": [
+            1,
+            0
+          ],
+          "backward_blocks": [
+            1,
+            0
+          ],
+          "top_independent": true,
+          "cycle_length_counts": {
+            "2": 64
+          },
+          "order": 2
+        },
+        "sheet_permutation": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "fixed_points": 0,
+        "occupancy_patterns": 1,
+        "augmentation_counts": {
+          "0": 1
+        }
+      }
+    ]
+  },
+  "sampled_screen": {
+    "seed": 260826,
+    "samples_per_fold_per_weight": 5000,
+    "tested": 40000,
+    "rank_counts": {
+      "0": 111,
+      "2": 5,
+      "4": 62,
+      "6": 206,
+      "7": 17,
+      "8": 522,
+      "9": 47,
+      "10": 197,
+      "11": 49,
+      "12": 3003,
+      "13": 95,
+      "14": 322,
+      "15": 854,
+      "16": 6479,
+      "18": 8999,
+      "20": 2849,
+      "21": 1179,
+      "24": 9927,
+      "28": 5077
+    },
+    "maximum_sampled_rank": 28,
+    "full_rank_hits": 0,
+    "violations": [],
+    "seconds": 74.022503
+  }
+}

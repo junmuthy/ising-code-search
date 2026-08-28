@@ -1,0 +1,45 @@
+{
+  "algebraic_counts": {
+    "l6-j1-w10": {
+      "active_orthogonality": 907,
+      "active_orthogonality_rejected": 4563,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 67,
+      "latent_zero_rejected": 640,
+      "raw": 5470
+    },
+    "l6-j1-w12": {
+      "active_orthogonality": 307,
+      "active_orthogonality_rejected": 1526,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 22,
+      "latent_zero_rejected": 85,
+      "raw": 1833
+    },
+    "l6-j1-w8": {
+      "active_orthogonality": 1177,
+      "active_orthogonality_rejected": 1996,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 113,
+      "latent_zero_rejected": 864,
+      "raw": 3173
+    }
+  },
+  "max_check_weight": 16,
+  "raw_per_pattern": 100000,
+  "seed": 606060,
+  "status_counts": {
+    "l6-j1-w10": {
+      "logical_up_to_weight_four": 198,
+      "maximum_check_weight_at_most_16": 2
+    },
+    "l6-j1-w12": {
+      "logical_up_to_weight_four": 148,
+      "maximum_check_weight_at_most_16": 52
+    },
+    "l6-j1-w8": {
+      "logical_up_to_weight_four": 200
+    }
+  },
+  "target_per_pattern": 200
+}

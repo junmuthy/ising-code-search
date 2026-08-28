@@ -1,0 +1,19 @@
+{
+  "exhaustive": 15,
+  "input": "results/s3-linear-fast-falsification/resized-l14-l16-distance.jsonl",
+  "max_nodes": 1000000,
+  "max_orbits": 100,
+  "pilot_status_counts": {
+    "l14-j3-insert-one-zero": {
+      "no_target_grid_set": 4
+    },
+    "l16-j4-insert-two-zero": {
+      "no_target_grid_set": 13
+    }
+  },
+  "status_counts": {
+    "no_target_grid_set": 17
+  },
+  "targets": 17,
+  "total_grid_orbits": 46
+}

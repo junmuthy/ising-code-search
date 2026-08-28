@@ -1,0 +1,13 @@
+{
+  "exhaustive": 5,
+  "inputs": [
+    "results/s3-linear-fast-falsification/legacy-l4-l8-distance.jsonl"
+  ],
+  "max_check_weight": null,
+  "status_counts": {
+    "no_full_rank_grid_set": 5
+  },
+  "targets": 5,
+  "total_grid_orbits": 7,
+  "truncated": 0
+}

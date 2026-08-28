@@ -1,0 +1,35 @@
+{
+  "target": "[[40,k,>=6]] general two-polynomial C4xC5 BB",
+  "method": "bounded-random-sparse-pairs-exact-seed-and-distance-screen",
+  "trials": 2000,
+  "seed_restarts": 2,
+  "random_seed": 40501,
+  "check_weights": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "counters": {
+    "check_weight_10": 500,
+    "check_weight_12": 500,
+    "check_weight_6": 500,
+    "check_weight_8": 500,
+    "connected": 198,
+    "dimension_below_four": 1794,
+    "disconnected": 8,
+    "k_0": 1135,
+    "k_10": 4,
+    "k_2": 659,
+    "k_4": 155,
+    "k_6": 27,
+    "k_8": 20,
+    "no_paired_logical_seed": 198,
+    "pairs": 2000
+  },
+  "survivors": [],
+  "near_misses": [],
+  "seconds": 2.821332,
+  "records_path": "results/c4xc5-search/general-two-poly-pilot-v1/paired-logical-candidates.jsonl",
+  "output": "results/c4xc5-search/general-two-poly-pilot-v1"
+}

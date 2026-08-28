@@ -1,0 +1,98 @@
+{
+  "accepted": 0,
+  "aggregate_counters": {
+    "connected": 383,
+    "constructed": 505,
+    "construction_failed": 2795,
+    "disconnected": 14,
+    "distance_2": 244,
+    "distance_3": 16,
+    "distance_4": 123,
+    "duplicate": 108,
+    "trials": 3300
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "include_free_type": false,
+    "maximum_check_weight": 12,
+    "run_name": "nonfree-module-types-pilot-100-v1",
+    "saved_near_misses_per_type": 10,
+    "seed": 470403,
+    "trials_per_type": 100,
+    "workers": 8
+  },
+  "best_distance": 4,
+  "module_types": 33,
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-lagrangian/nonfree-module-types-pilot-100-v1",
+  "schema_version": 1,
+  "seconds": 10.029286,
+  "target": "[[28,4,>=6]] all cyclic C4 module types",
+  "viable_module_types": [
+    [
+      4,
+      4,
+      3,
+      1
+    ],
+    [
+      4,
+      4,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      3,
+      1,
+      1
+    ],
+    [
+      4,
+      3,
+      2,
+      2,
+      1
+    ],
+    [
+      4,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      3,
+      1,
+      1,
+      1
+    ],
+    [
+      3,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  ],
+  "worker_errors": 0
+}

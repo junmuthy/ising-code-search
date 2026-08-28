@@ -1,0 +1,43 @@
+{
+  "family_counts": {
+    "l4-fold": 100,
+    "l4-self-dual": 3,
+    "l8-fold": 100
+  },
+  "inputs": [
+    "results/s3-l4-w16-seed240828.jsonl",
+    "results/s3-l8-w16-seed240827.jsonl",
+    "results/s3-l4-self-dual-single-grid-seed260828.jsonl"
+  ],
+  "records": 203,
+  "source_counts": {
+    "results/s3-l4-self-dual-single-grid-seed260828.jsonl": 3,
+    "results/s3-l4-w16-seed240828.jsonl": 100,
+    "results/s3-l8-w16-seed240827.jsonl": 100
+  },
+  "status_counts": {
+    "logical_up_to_weight_four": 129,
+    "survivor": 74
+  },
+  "survivor_parameter_counts": {
+    "n=256,k=128,w=15": 1,
+    "n=256,k=128,w=18": 6,
+    "n=256,k=128,w=19": 9,
+    "n=256,k=128,w=20": 6,
+    "n=256,k=128,w=21": 5,
+    "n=256,k=128,w=22": 2,
+    "n=256,k=128,w=23": 2,
+    "n=256,k=128,w=24": 2,
+    "n=256,k=132,w=20": 1,
+    "n=512,k=256,w=15": 1,
+    "n=512,k=256,w=16": 1,
+    "n=512,k=256,w=17": 4,
+    "n=512,k=256,w=18": 6,
+    "n=512,k=256,w=19": 7,
+    "n=512,k=256,w=20": 9,
+    "n=512,k=256,w=21": 7,
+    "n=512,k=256,w=22": 4,
+    "n=512,k=256,w=23": 1
+  },
+  "weight_four_screened": true
+}

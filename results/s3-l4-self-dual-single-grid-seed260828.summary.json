@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "SWEL": 268,
+    "accepted_single_grid": 3,
+    "algebraic_survivors": 2107,
+    "distance_at_least_6": 25,
+    "kernel_weight_1": 2,
+    "kernel_weight_2": 112,
+    "kernel_weight_3": 1,
+    "kernel_weight_4": 126,
+    "kernel_weight_5": 2,
+    "no_weight_7_grid": 21,
+    "non_SWEL": 1839,
+    "structural_grid_rejected": 1
+  },
+  "hits": 3,
+  "output": "results/s3-l4-self-dual-single-grid-seed260828.jsonl",
+  "raw": 89550,
+  "seconds": 214.807
+}

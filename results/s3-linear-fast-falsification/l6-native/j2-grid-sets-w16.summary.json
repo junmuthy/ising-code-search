@@ -1,0 +1,22 @@
+{
+  "exhaustive": 100,
+  "input": "results/s3-linear-fast-falsification/l6-native/j2-distance-w16.jsonl",
+  "max_nodes": 1000000,
+  "max_orbits": 100,
+  "pilot_status_counts": {
+    "l6-j2-w10": {
+      "no_target_grid_set": 17
+    },
+    "l6-j2-w12": {
+      "no_target_grid_set": 16
+    },
+    "l6-j2-w8": {
+      "no_target_grid_set": 67
+    }
+  },
+  "status_counts": {
+    "no_target_grid_set": 100
+  },
+  "targets": 100,
+  "total_grid_orbits": 186
+}

@@ -1,0 +1,28 @@
+{
+  "input": "results/s3-linear-fast-falsification/resized-l10-l14-l16-corrected-structural.jsonl",
+  "max_nodes": 1000000,
+  "pilot_status_counts": {
+    "l14-j3-insert-one-zero": {
+      "distance_six_graph": 4,
+      "distance_six_no_graph": 1,
+      "logical_weight_five": 3
+    },
+    "l16-j4-insert-two-zero": {
+      "distance_at_least_seven_graph_incomplete": 13,
+      "distance_at_least_seven_graph_seven": 2,
+      "distance_six_graph": 11,
+      "distance_six_no_graph": 1,
+      "weight_six_incomplete": 6
+    }
+  },
+  "source_records": 400,
+  "status_counts": {
+    "distance_at_least_seven_graph_incomplete": 13,
+    "distance_at_least_seven_graph_seven": 2,
+    "distance_six_graph": 15,
+    "distance_six_no_graph": 2,
+    "logical_weight_five": 3,
+    "weight_six_incomplete": 6
+  },
+  "survivors_screened": 41
+}

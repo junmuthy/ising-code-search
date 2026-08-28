@@ -1,0 +1,26 @@
+{
+  "complete": true,
+  "distance_at_least_six": 439,
+  "distance_histogram": {
+    "2": 3,
+    "3": 2,
+    "4": 287,
+    "6": 243,
+    "7": 196
+  },
+  "distance_seven": 196,
+  "exact_distance_enabled": true,
+  "normalized_sparse_catalog": 948,
+  "raw_counts": {
+    "binomial": 17,
+    "monomial": 1,
+    "monomial_ideal": 495,
+    "trinomial": 930
+  },
+  "saved_high_distance_matrices": 20,
+  "structurally_accepted": 0,
+  "total_seconds": 2202.539,
+  "unique_ideal_candidates": 731,
+  "unresolved": 0,
+  "usable_distance_survivors": 0
+}

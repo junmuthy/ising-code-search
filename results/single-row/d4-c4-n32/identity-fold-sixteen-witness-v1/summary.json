@@ -1,0 +1,41 @@
+{
+  "aggregate_counters": {
+    "check_weight_accepted": 440,
+    "check_weight_too_large": 3640,
+    "css": 440,
+    "dimension_at_least_four": 4080,
+    "distance_2": 208,
+    "failed_tanner_connected": 232,
+    "generators_tested": 4080,
+    "structural_candidates": 208
+  },
+  "arguments": {
+    "maximum_check_weight": 12,
+    "maximum_saved_near_misses": 20,
+    "run_name": "identity-fold-sixteen-witness-v1",
+    "seed": 440401,
+    "seed_witnesses": 16,
+    "workers": 8
+  },
+  "dimension_counts": {
+    "16": 2048,
+    "18": 512,
+    "20": 768,
+    "22": 256,
+    "24": 320,
+    "26": 96,
+    "28": 64,
+    "30": 16
+  },
+  "method": "exact identity-ZX-fold seed-constrained spaces",
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/d4-c4-n32/identity-fold-sixteen-witness-v1",
+  "protograph": "L=2, J=1 two-block GALA",
+  "representation": "faithful four-point D4 permutation module times C4",
+  "saved_near_misses": 184,
+  "schema_version": 1,
+  "seconds": 0.239091,
+  "survivors": 0,
+  "target": "[[32,k,>=6]] with k>=4 and one protected C4 row",
+  "witnesses": 16,
+  "worker_errors": 0
+}

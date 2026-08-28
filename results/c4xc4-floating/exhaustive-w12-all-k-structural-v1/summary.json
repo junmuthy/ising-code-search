@@ -1,0 +1,27 @@
+{
+  "target": "[[32,k,>=6]] with k >= 4 and one protected C4 row",
+  "family": "floating-k-self-dual-C4xC4-BB",
+  "maximum_polynomial_weight": 6,
+  "maximum_check_weight": 12,
+  "counters": {
+    "connected": 9248,
+    "dimension_outside_target": 4944,
+    "dimension_target": 9948,
+    "disconnected": 700,
+    "k_0": 4944,
+    "k_12": 320,
+    "k_14": 960,
+    "k_16": 912,
+    "k_18": 64,
+    "k_20": 176,
+    "k_24": 28,
+    "k_8": 7488,
+    "no_disjoint_logical_seed": 9948,
+    "polynomials": 14892
+  },
+  "distance_at_least_six_survivors": [],
+  "near_misses": [],
+  "seconds": 28.445917,
+  "structural_candidates_path": "results/c4xc4-floating/exhaustive-w12-all-k-structural-v1/structural-candidates.jsonl",
+  "output": "results/c4xc4-floating/exhaustive-w12-all-k-structural-v1"
+}

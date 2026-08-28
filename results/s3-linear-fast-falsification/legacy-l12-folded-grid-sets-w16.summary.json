@@ -1,0 +1,14 @@
+{
+  "exhaustive": 126,
+  "inputs": [
+    "results/s3-linear-fast-falsification/legacy-l12-folded-distance.jsonl"
+  ],
+  "max_check_weight": 16,
+  "status_counts": {
+    "full_rank_grid_set": 8,
+    "no_full_rank_grid_set": 145
+  },
+  "targets": 153,
+  "total_grid_orbits": 436,
+  "truncated": 0
+}

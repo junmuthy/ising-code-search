@@ -1,0 +1,54 @@
+{
+  "counters": {
+    "connected": 69720,
+    "dimension_below_four": 108600,
+    "disconnected": 3057,
+    "k_0": 46920,
+    "k_10": 4140,
+    "k_12": 1680,
+    "k_14": 840,
+    "k_16": 1020,
+    "k_2": 61680,
+    "k_20": 390,
+    "k_22": 60,
+    "k_24": 60,
+    "k_30": 15,
+    "k_32": 12,
+    "k_4": 30840,
+    "k_6": 15960,
+    "k_8": 17760,
+    "no_paired_logical_seed": 69720,
+    "polynomials": 181377,
+    "sigma_1_4_polynomials": 60459,
+    "sigma_3_1_polynomials": 60459,
+    "sigma_3_4_polynomials": 60459
+  },
+  "involutions": [
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "maximum_check_weight": 12,
+  "maximum_polynomial_weight": 6,
+  "method": "exhaustive-a-with-b-equal-sigma-a-dagger",
+  "near_misses": 0,
+  "near_misses_path": "results/c4xc5-search/exhaustive-automorphism-dual-structural-v1/near-misses.jsonl",
+  "output": "results/c4xc5-search/exhaustive-automorphism-dual-structural-v1",
+  "random_seed": 40504,
+  "seconds": 986.231814,
+  "seed_restarts": 4,
+  "structural_candidates": 0,
+  "structural_candidates_path": "results/c4xc5-search/exhaustive-automorphism-dual-structural-v1/structural-candidates.jsonl",
+  "survivors": 0,
+  "survivors_path": "results/c4xc5-search/exhaustive-automorphism-dual-structural-v1/survivors.jsonl",
+  "target": "[[40,k,>=6]] half-preserving ZX-dual C4xC5 BB"
+}

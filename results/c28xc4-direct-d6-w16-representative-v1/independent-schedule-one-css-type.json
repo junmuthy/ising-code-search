@@ -1,0 +1,1981 @@
+{
+  "checks": 48,
+  "cnot_count": 480,
+  "cnots_per_layer": [
+    42,
+    39,
+    34,
+    38,
+    37,
+    32,
+    33,
+    27,
+    30,
+    24,
+    24,
+    25,
+    24,
+    26,
+    24,
+    21
+  ],
+  "layers": 16,
+  "optimal": true,
+  "optimality_reason": "maximum Tanner degree is 16",
+  "qubits": 112,
+  "schedule": [
+    [
+      {
+        "check": 0,
+        "qubit": 84
+      },
+      {
+        "check": 1,
+        "qubit": 104
+      },
+      {
+        "check": 2,
+        "qubit": 86
+      },
+      {
+        "check": 3,
+        "qubit": 67
+      },
+      {
+        "check": 4,
+        "qubit": 87
+      },
+      {
+        "check": 5,
+        "qubit": 73
+      },
+      {
+        "check": 6,
+        "qubit": 5
+      },
+      {
+        "check": 7,
+        "qubit": 106
+      },
+      {
+        "check": 8,
+        "qubit": 4
+      },
+      {
+        "check": 9,
+        "qubit": 80
+      },
+      {
+        "check": 11,
+        "qubit": 9
+      },
+      {
+        "check": 12,
+        "qubit": 91
+      },
+      {
+        "check": 13,
+        "qubit": 41
+      },
+      {
+        "check": 16,
+        "qubit": 93
+      },
+      {
+        "check": 17,
+        "qubit": 58
+      },
+      {
+        "check": 18,
+        "qubit": 21
+      },
+      {
+        "check": 19,
+        "qubit": 111
+      },
+      {
+        "check": 20,
+        "qubit": 62
+      },
+      {
+        "check": 23,
+        "qubit": 108
+      },
+      {
+        "check": 24,
+        "qubit": 68
+      },
+      {
+        "check": 25,
+        "qubit": 89
+      },
+      {
+        "check": 26,
+        "qubit": 100
+      },
+      {
+        "check": 27,
+        "qubit": 60
+      },
+      {
+        "check": 28,
+        "qubit": 48
+      },
+      {
+        "check": 29,
+        "qubit": 50
+      },
+      {
+        "check": 30,
+        "qubit": 18
+      },
+      {
+        "check": 31,
+        "qubit": 95
+      },
+      {
+        "check": 32,
+        "qubit": 76
+      },
+      {
+        "check": 33,
+        "qubit": 98
+      },
+      {
+        "check": 35,
+        "qubit": 65
+      },
+      {
+        "check": 36,
+        "qubit": 34
+      },
+      {
+        "check": 37,
+        "qubit": 101
+      },
+      {
+        "check": 38,
+        "qubit": 103
+      },
+      {
+        "check": 39,
+        "qubit": 90
+      },
+      {
+        "check": 40,
+        "qubit": 8
+      },
+      {
+        "check": 41,
+        "qubit": 79
+      },
+      {
+        "check": 42,
+        "qubit": 96
+      },
+      {
+        "check": 43,
+        "qubit": 69
+      },
+      {
+        "check": 44,
+        "qubit": 38
+      },
+      {
+        "check": 45,
+        "qubit": 109
+      },
+      {
+        "check": 46,
+        "qubit": 102
+      },
+      {
+        "check": 47,
+        "qubit": 66
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 37
+      },
+      {
+        "check": 1,
+        "qubit": 107
+      },
+      {
+        "check": 2,
+        "qubit": 85
+      },
+      {
+        "check": 4,
+        "qubit": 86
+      },
+      {
+        "check": 5,
+        "qubit": 41
+      },
+      {
+        "check": 6,
+        "qubit": 101
+      },
+      {
+        "check": 8,
+        "qubit": 68
+      },
+      {
+        "check": 10,
+        "qubit": 96
+      },
+      {
+        "check": 11,
+        "qubit": 89
+      },
+      {
+        "check": 12,
+        "qubit": 90
+      },
+      {
+        "check": 14,
+        "qubit": 15
+      },
+      {
+        "check": 15,
+        "qubit": 91
+      },
+      {
+        "check": 16,
+        "qubit": 92
+      },
+      {
+        "check": 17,
+        "qubit": 75
+      },
+      {
+        "check": 18,
+        "qubit": 100
+      },
+      {
+        "check": 19,
+        "qubit": 44
+      },
+      {
+        "check": 20,
+        "qubit": 61
+      },
+      {
+        "check": 21,
+        "qubit": 13
+      },
+      {
+        "check": 23,
+        "qubit": 94
+      },
+      {
+        "check": 26,
+        "qubit": 84
+      },
+      {
+        "check": 27,
+        "qubit": 111
+      },
+      {
+        "check": 28,
+        "qubit": 97
+      },
+      {
+        "check": 29,
+        "qubit": 67
+      },
+      {
+        "check": 31,
+        "qubit": 29
+      },
+      {
+        "check": 32,
+        "qubit": 78
+      },
+      {
+        "check": 33,
+        "qubit": 83
+      },
+      {
+        "check": 34,
+        "qubit": 7
+      },
+      {
+        "check": 36,
+        "qubit": 62
+      },
+      {
+        "check": 37,
+        "qubit": 17
+      },
+      {
+        "check": 38,
+        "qubit": 93
+      },
+      {
+        "check": 39,
+        "qubit": 76
+      },
+      {
+        "check": 40,
+        "qubit": 2
+      },
+      {
+        "check": 41,
+        "qubit": 42
+      },
+      {
+        "check": 42,
+        "qubit": 82
+      },
+      {
+        "check": 43,
+        "qubit": 55
+      },
+      {
+        "check": 44,
+        "qubit": 51
+      },
+      {
+        "check": 45,
+        "qubit": 81
+      },
+      {
+        "check": 46,
+        "qubit": 106
+      },
+      {
+        "check": 47,
+        "qubit": 102
+      }
+    ],
+    [
+      {
+        "check": 1,
+        "qubit": 72
+      },
+      {
+        "check": 2,
+        "qubit": 101
+      },
+      {
+        "check": 4,
+        "qubit": 71
+      },
+      {
+        "check": 6,
+        "qubit": 103
+      },
+      {
+        "check": 9,
+        "qubit": 48
+      },
+      {
+        "check": 11,
+        "qubit": 88
+      },
+      {
+        "check": 12,
+        "qubit": 58
+      },
+      {
+        "check": 13,
+        "qubit": 11
+      },
+      {
+        "check": 14,
+        "qubit": 14
+      },
+      {
+        "check": 16,
+        "qubit": 109
+      },
+      {
+        "check": 18,
+        "qubit": 85
+      },
+      {
+        "check": 19,
+        "qubit": 92
+      },
+      {
+        "check": 20,
+        "qubit": 78
+      },
+      {
+        "check": 21,
+        "qubit": 77
+      },
+      {
+        "check": 23,
+        "qubit": 46
+      },
+      {
+        "check": 24,
+        "qubit": 70
+      },
+      {
+        "check": 27,
+        "qubit": 63
+      },
+      {
+        "check": 28,
+        "qubit": 65
+      },
+      {
+        "check": 31,
+        "qubit": 61
+      },
+      {
+        "check": 32,
+        "qubit": 44
+      },
+      {
+        "check": 33,
+        "qubit": 82
+      },
+      {
+        "check": 35,
+        "qubit": 64
+      },
+      {
+        "check": 36,
+        "qubit": 80
+      },
+      {
+        "check": 37,
+        "qubit": 100
+      },
+      {
+        "check": 38,
+        "qubit": 102
+      },
+      {
+        "check": 39,
+        "qubit": 94
+      },
+      {
+        "check": 40,
+        "qubit": 105
+      },
+      {
+        "check": 41,
+        "qubit": 13
+      },
+      {
+        "check": 42,
+        "qubit": 86
+      },
+      {
+        "check": 43,
+        "qubit": 41
+      },
+      {
+        "check": 44,
+        "qubit": 5
+      },
+      {
+        "check": 45,
+        "qubit": 53
+      },
+      {
+        "check": 46,
+        "qubit": 74
+      },
+      {
+        "check": 47,
+        "qubit": 62
+      }
+    ],
+    [
+      {
+        "check": 1,
+        "qubit": 75
+      },
+      {
+        "check": 2,
+        "qubit": 102
+      },
+      {
+        "check": 3,
+        "qubit": 33
+      },
+      {
+        "check": 4,
+        "qubit": 103
+      },
+      {
+        "check": 5,
+        "qubit": 27
+      },
+      {
+        "check": 6,
+        "qubit": 23
+      },
+      {
+        "check": 7,
+        "qubit": 90
+      },
+      {
+        "check": 9,
+        "qubit": 83
+      },
+      {
+        "check": 11,
+        "qubit": 41
+      },
+      {
+        "check": 12,
+        "qubit": 43
+      },
+      {
+        "check": 13,
+        "qubit": 105
+      },
+      {
+        "check": 14,
+        "qubit": 79
+      },
+      {
+        "check": 16,
+        "qubit": 77
+      },
+      {
+        "check": 17,
+        "qubit": 91
+      },
+      {
+        "check": 18,
+        "qubit": 101
+      },
+      {
+        "check": 19,
+        "qubit": 12
+      },
+      {
+        "check": 20,
+        "qubit": 46
+      },
+      {
+        "check": 21,
+        "qubit": 94
+      },
+      {
+        "check": 23,
+        "qubit": 14
+      },
+      {
+        "check": 24,
+        "qubit": 22
+      },
+      {
+        "check": 26,
+        "qubit": 85
+      },
+      {
+        "check": 27,
+        "qubit": 108
+      },
+      {
+        "check": 28,
+        "qubit": 64
+      },
+      {
+        "check": 29,
+        "qubit": 35
+      },
+      {
+        "check": 31,
+        "qubit": 47
+      },
+      {
+        "check": 35,
+        "qubit": 49
+      },
+      {
+        "check": 36,
+        "qubit": 61
+      },
+      {
+        "check": 37,
+        "qubit": 34
+      },
+      {
+        "check": 38,
+        "qubit": 111
+      },
+      {
+        "check": 39,
+        "qubit": 89
+      },
+      {
+        "check": 40,
+        "qubit": 11
+      },
+      {
+        "check": 41,
+        "qubit": 59
+      },
+      {
+        "check": 42,
+        "qubit": 81
+      },
+      {
+        "check": 43,
+        "qubit": 68
+      },
+      {
+        "check": 44,
+        "qubit": 69
+      },
+      {
+        "check": 45,
+        "qubit": 37
+      },
+      {
+        "check": 46,
+        "qubit": 110
+      },
+      {
+        "check": 47,
+        "qubit": 86
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 36
+      },
+      {
+        "check": 1,
+        "qubit": 24
+      },
+      {
+        "check": 2,
+        "qubit": 38
+      },
+      {
+        "check": 4,
+        "qubit": 102
+      },
+      {
+        "check": 6,
+        "qubit": 55
+      },
+      {
+        "check": 9,
+        "qubit": 19
+      },
+      {
+        "check": 11,
+        "qubit": 40
+      },
+      {
+        "check": 12,
+        "qubit": 42
+      },
+      {
+        "check": 13,
+        "qubit": 107
+      },
+      {
+        "check": 15,
+        "qubit": 89
+      },
+      {
+        "check": 16,
+        "qubit": 76
+      },
+      {
+        "check": 17,
+        "qubit": 10
+      },
+      {
+        "check": 18,
+        "qubit": 69
+      },
+      {
+        "check": 19,
+        "qubit": 95
+      },
+      {
+        "check": 20,
+        "qubit": 77
+      },
+      {
+        "check": 21,
+        "qubit": 62
+      },
+      {
+        "check": 23,
+        "qubit": 92
+      },
+      {
+        "check": 25,
+        "qubit": 9
+      },
+      {
+        "check": 26,
+        "qubit": 101
+      },
+      {
+        "check": 28,
+        "qubit": 96
+      },
+      {
+        "check": 29,
+        "qubit": 99
+      },
+      {
+        "check": 30,
+        "qubit": 35
+      },
+      {
+        "check": 31,
+        "qubit": 93
+      },
+      {
+        "check": 34,
+        "qubit": 86
+      },
+      {
+        "check": 35,
+        "qubit": 81
+      },
+      {
+        "check": 36,
+        "qubit": 79
+      },
+      {
+        "check": 37,
+        "qubit": 32
+      },
+      {
+        "check": 38,
+        "qubit": 110
+      },
+      {
+        "check": 39,
+        "qubit": 61
+      },
+      {
+        "check": 40,
+        "qubit": 104
+      },
+      {
+        "check": 41,
+        "qubit": 14
+      },
+      {
+        "check": 42,
+        "qubit": 53
+      },
+      {
+        "check": 43,
+        "qubit": 54
+      },
+      {
+        "check": 44,
+        "qubit": 23
+      },
+      {
+        "check": 45,
+        "qubit": 13
+      },
+      {
+        "check": 46,
+        "qubit": 46
+      },
+      {
+        "check": 47,
+        "qubit": 34
+      }
+    ],
+    [
+      {
+        "check": 1,
+        "qubit": 88
+      },
+      {
+        "check": 4,
+        "qubit": 70
+      },
+      {
+        "check": 6,
+        "qubit": 7
+      },
+      {
+        "check": 8,
+        "qubit": 36
+      },
+      {
+        "check": 10,
+        "qubit": 16
+      },
+      {
+        "check": 12,
+        "qubit": 59
+      },
+      {
+        "check": 13,
+        "qubit": 91
+      },
+      {
+        "check": 14,
+        "qubit": 78
+      },
+      {
+        "check": 15,
+        "qubit": 57
+      },
+      {
+        "check": 17,
+        "qubit": 74
+      },
+      {
+        "check": 18,
+        "qubit": 20
+      },
+      {
+        "check": 19,
+        "qubit": 108
+      },
+      {
+        "check": 20,
+        "qubit": 45
+      },
+      {
+        "check": 21,
+        "qubit": 61
+      },
+      {
+        "check": 23,
+        "qubit": 110
+      },
+      {
+        "check": 26,
+        "qubit": 37
+      },
+      {
+        "check": 29,
+        "qubit": 66
+      },
+      {
+        "check": 31,
+        "qubit": 63
+      },
+      {
+        "check": 34,
+        "qubit": 71
+      },
+      {
+        "check": 35,
+        "qubit": 80
+      },
+      {
+        "check": 36,
+        "qubit": 83
+      },
+      {
+        "check": 37,
+        "qubit": 5
+      },
+      {
+        "check": 38,
+        "qubit": 92
+      },
+      {
+        "check": 39,
+        "qubit": 60
+      },
+      {
+        "check": 40,
+        "qubit": 81
+      },
+      {
+        "check": 41,
+        "qubit": 76
+      },
+      {
+        "check": 42,
+        "qubit": 99
+      },
+      {
+        "check": 43,
+        "qubit": 72
+      },
+      {
+        "check": 44,
+        "qubit": 4
+      },
+      {
+        "check": 45,
+        "qubit": 101
+      },
+      {
+        "check": 46,
+        "qubit": 82
+      },
+      {
+        "check": 47,
+        "qubit": 10
+      }
+    ],
+    [
+      {
+        "check": 1,
+        "qubit": 91
+      },
+      {
+        "check": 6,
+        "qubit": 53
+      },
+      {
+        "check": 7,
+        "qubit": 26
+      },
+      {
+        "check": 8,
+        "qubit": 7
+      },
+      {
+        "check": 9,
+        "qubit": 51
+      },
+      {
+        "check": 11,
+        "qubit": 8
+      },
+      {
+        "check": 12,
+        "qubit": 27
+      },
+      {
+        "check": 13,
+        "qubit": 89
+      },
+      {
+        "check": 15,
+        "qubit": 43
+      },
+      {
+        "check": 16,
+        "qubit": 29
+      },
+      {
+        "check": 17,
+        "qubit": 59
+      },
+      {
+        "check": 18,
+        "qubit": 84
+      },
+      {
+        "check": 19,
+        "qubit": 47
+      },
+      {
+        "check": 20,
+        "qubit": 110
+      },
+      {
+        "check": 22,
+        "qubit": 32
+      },
+      {
+        "check": 24,
+        "qubit": 36
+      },
+      {
+        "check": 25,
+        "qubit": 88
+      },
+      {
+        "check": 31,
+        "qubit": 45
+      },
+      {
+        "check": 33,
+        "qubit": 35
+      },
+      {
+        "check": 34,
+        "qubit": 70
+      },
+      {
+        "check": 35,
+        "qubit": 48
+      },
+      {
+        "check": 36,
+        "qubit": 76
+      },
+      {
+        "check": 37,
+        "qubit": 16
+      },
+      {
+        "check": 38,
+        "qubit": 101
+      },
+      {
+        "check": 39,
+        "qubit": 107
+      },
+      {
+        "check": 40,
+        "qubit": 99
+      },
+      {
+        "check": 41,
+        "qubit": 41
+      },
+      {
+        "check": 42,
+        "qubit": 80
+      },
+      {
+        "check": 43,
+        "qubit": 11
+      },
+      {
+        "check": 44,
+        "qubit": 65
+      },
+      {
+        "check": 45,
+        "qubit": 9
+      },
+      {
+        "check": 46,
+        "qubit": 62
+      },
+      {
+        "check": 47,
+        "qubit": 90
+      }
+    ],
+    [
+      {
+        "check": 4,
+        "qubit": 23
+      },
+      {
+        "check": 5,
+        "qubit": 75
+      },
+      {
+        "check": 7,
+        "qubit": 104
+      },
+      {
+        "check": 9,
+        "qubit": 32
+      },
+      {
+        "check": 11,
+        "qubit": 105
+      },
+      {
+        "check": 12,
+        "qubit": 26
+      },
+      {
+        "check": 16,
+        "qubit": 28
+      },
+      {
+        "check": 17,
+        "qubit": 11
+      },
+      {
+        "check": 18,
+        "qubit": 68
+      },
+      {
+        "check": 21,
+        "qubit": 14
+      },
+      {
+        "check": 22,
+        "qubit": 0
+      },
+      {
+        "check": 24,
+        "qubit": 20
+      },
+      {
+        "check": 28,
+        "qubit": 33
+      },
+      {
+        "check": 30,
+        "qubit": 67
+      },
+      {
+        "check": 33,
+        "qubit": 99
+      },
+      {
+        "check": 36,
+        "qubit": 19
+      },
+      {
+        "check": 37,
+        "qubit": 35
+      },
+      {
+        "check": 38,
+        "qubit": 70
+      },
+      {
+        "check": 39,
+        "qubit": 88
+      },
+      {
+        "check": 40,
+        "qubit": 10
+      },
+      {
+        "check": 41,
+        "qubit": 40
+      },
+      {
+        "check": 42,
+        "qubit": 69
+      },
+      {
+        "check": 43,
+        "qubit": 53
+      },
+      {
+        "check": 44,
+        "qubit": 64
+      },
+      {
+        "check": 45,
+        "qubit": 93
+      },
+      {
+        "check": 46,
+        "qubit": 78
+      },
+      {
+        "check": 47,
+        "qubit": 38
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 21
+      },
+      {
+        "check": 1,
+        "qubit": 27
+      },
+      {
+        "check": 2,
+        "qubit": 6
+      },
+      {
+        "check": 3,
+        "qubit": 1
+      },
+      {
+        "check": 9,
+        "qubit": 35
+      },
+      {
+        "check": 10,
+        "qubit": 2
+      },
+      {
+        "check": 13,
+        "qubit": 43
+      },
+      {
+        "check": 16,
+        "qubit": 108
+      },
+      {
+        "check": 17,
+        "qubit": 90
+      },
+      {
+        "check": 20,
+        "qubit": 109
+      },
+      {
+        "check": 21,
+        "qubit": 93
+      },
+      {
+        "check": 22,
+        "qubit": 64
+      },
+      {
+        "check": 23,
+        "qubit": 44
+      },
+      {
+        "check": 26,
+        "qubit": 5
+      },
+      {
+        "check": 28,
+        "qubit": 32
+      },
+      {
+        "check": 30,
+        "qubit": 34
+      },
+      {
+        "check": 32,
+        "qubit": 12
+      },
+      {
+        "check": 34,
+        "qubit": 87
+      },
+      {
+        "check": 36,
+        "qubit": 33
+      },
+      {
+        "check": 37,
+        "qubit": 19
+      },
+      {
+        "check": 38,
+        "qubit": 69
+      },
+      {
+        "check": 39,
+        "qubit": 95
+      },
+      {
+        "check": 40,
+        "qubit": 107
+      },
+      {
+        "check": 41,
+        "qubit": 58
+      },
+      {
+        "check": 42,
+        "qubit": 98
+      },
+      {
+        "check": 43,
+        "qubit": 26
+      },
+      {
+        "check": 44,
+        "qubit": 68
+      },
+      {
+        "check": 45,
+        "qubit": 97
+      },
+      {
+        "check": 46,
+        "qubit": 18
+      },
+      {
+        "check": 47,
+        "qubit": 74
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 85
+      },
+      {
+        "check": 2,
+        "qubit": 37
+      },
+      {
+        "check": 8,
+        "qubit": 71
+      },
+      {
+        "check": 10,
+        "qubit": 48
+      },
+      {
+        "check": 13,
+        "qubit": 9
+      },
+      {
+        "check": 14,
+        "qubit": 46
+      },
+      {
+        "check": 21,
+        "qubit": 78
+      },
+      {
+        "check": 23,
+        "qubit": 12
+      },
+      {
+        "check": 25,
+        "qubit": 56
+      },
+      {
+        "check": 29,
+        "qubit": 98
+      },
+      {
+        "check": 30,
+        "qubit": 3
+      },
+      {
+        "check": 34,
+        "qubit": 55
+      },
+      {
+        "check": 36,
+        "qubit": 60
+      },
+      {
+        "check": 37,
+        "qubit": 33
+      },
+      {
+        "check": 38,
+        "qubit": 100
+      },
+      {
+        "check": 39,
+        "qubit": 14
+      },
+      {
+        "check": 40,
+        "qubit": 35
+      },
+      {
+        "check": 41,
+        "qubit": 44
+      },
+      {
+        "check": 42,
+        "qubit": 52
+      },
+      {
+        "check": 43,
+        "qubit": 75
+      },
+      {
+        "check": 44,
+        "qubit": 50
+      },
+      {
+        "check": 45,
+        "qubit": 65
+      },
+      {
+        "check": 46,
+        "qubit": 26
+      },
+      {
+        "check": 47,
+        "qubit": 6
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 53
+      },
+      {
+        "check": 3,
+        "qubit": 19
+      },
+      {
+        "check": 4,
+        "qubit": 22
+      },
+      {
+        "check": 5,
+        "qubit": 25
+      },
+      {
+        "check": 14,
+        "qubit": 31
+      },
+      {
+        "check": 15,
+        "qubit": 41
+      },
+      {
+        "check": 19,
+        "qubit": 15
+      },
+      {
+        "check": 24,
+        "qubit": 6
+      },
+      {
+        "check": 27,
+        "qubit": 12
+      },
+      {
+        "check": 29,
+        "qubit": 34
+      },
+      {
+        "check": 30,
+        "qubit": 2
+      },
+      {
+        "check": 32,
+        "qubit": 30
+      },
+      {
+        "check": 36,
+        "qubit": 78
+      },
+      {
+        "check": 37,
+        "qubit": 23
+      },
+      {
+        "check": 38,
+        "qubit": 109
+      },
+      {
+        "check": 39,
+        "qubit": 106
+      },
+      {
+        "check": 40,
+        "qubit": 32
+      },
+      {
+        "check": 41,
+        "qubit": 57
+      },
+      {
+        "check": 42,
+        "qubit": 97
+      },
+      {
+        "check": 43,
+        "qubit": 52
+      },
+      {
+        "check": 44,
+        "qubit": 48
+      },
+      {
+        "check": 45,
+        "qubit": 45
+      },
+      {
+        "check": 46,
+        "qubit": 90
+      },
+      {
+        "check": 47,
+        "qubit": 46
+      }
+    ],
+    [
+      {
+        "check": 5,
+        "qubit": 11
+      },
+      {
+        "check": 6,
+        "qubit": 21
+      },
+      {
+        "check": 7,
+        "qubit": 72
+      },
+      {
+        "check": 8,
+        "qubit": 39
+      },
+      {
+        "check": 9,
+        "qubit": 16
+      },
+      {
+        "check": 10,
+        "qubit": 0
+      },
+      {
+        "check": 11,
+        "qubit": 104
+      },
+      {
+        "check": 22,
+        "qubit": 65
+      },
+      {
+        "check": 25,
+        "qubit": 73
+      },
+      {
+        "check": 28,
+        "qubit": 49
+      },
+      {
+        "check": 32,
+        "qubit": 28
+      },
+      {
+        "check": 33,
+        "qubit": 3
+      },
+      {
+        "check": 34,
+        "qubit": 6
+      },
+      {
+        "check": 36,
+        "qubit": 77
+      },
+      {
+        "check": 37,
+        "qubit": 55
+      },
+      {
+        "check": 38,
+        "qubit": 68
+      },
+      {
+        "check": 39,
+        "qubit": 91
+      },
+      {
+        "check": 40,
+        "qubit": 9
+      },
+      {
+        "check": 41,
+        "qubit": 43
+      },
+      {
+        "check": 42,
+        "qubit": 83
+      },
+      {
+        "check": 43,
+        "qubit": 71
+      },
+      {
+        "check": 44,
+        "qubit": 22
+      },
+      {
+        "check": 45,
+        "qubit": 41
+      },
+      {
+        "check": 46,
+        "qubit": 34
+      },
+      {
+        "check": 47,
+        "qubit": 58
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 52
+      },
+      {
+        "check": 3,
+        "qubit": 65
+      },
+      {
+        "check": 7,
+        "qubit": 88
+      },
+      {
+        "check": 8,
+        "qubit": 20
+      },
+      {
+        "check": 10,
+        "qubit": 18
+      },
+      {
+        "check": 22,
+        "qubit": 17
+      },
+      {
+        "check": 25,
+        "qubit": 8
+      },
+      {
+        "check": 26,
+        "qubit": 4
+      },
+      {
+        "check": 27,
+        "qubit": 31
+      },
+      {
+        "check": 30,
+        "qubit": 66
+      },
+      {
+        "check": 32,
+        "qubit": 46
+      },
+      {
+        "check": 35,
+        "qubit": 1
+      },
+      {
+        "check": 36,
+        "qubit": 16
+      },
+      {
+        "check": 37,
+        "qubit": 22
+      },
+      {
+        "check": 38,
+        "qubit": 95
+      },
+      {
+        "check": 39,
+        "qubit": 77
+      },
+      {
+        "check": 40,
+        "qubit": 106
+      },
+      {
+        "check": 41,
+        "qubit": 29
+      },
+      {
+        "check": 42,
+        "qubit": 6
+      },
+      {
+        "check": 43,
+        "qubit": 42
+      },
+      {
+        "check": 44,
+        "qubit": 49
+      },
+      {
+        "check": 45,
+        "qubit": 73
+      },
+      {
+        "check": 46,
+        "qubit": 54
+      },
+      {
+        "check": 47,
+        "qubit": 30
+      }
+    ],
+    [
+      {
+        "check": 3,
+        "qubit": 17
+      },
+      {
+        "check": 5,
+        "qubit": 9
+      },
+      {
+        "check": 8,
+        "qubit": 23
+      },
+      {
+        "check": 10,
+        "qubit": 98
+      },
+      {
+        "check": 14,
+        "qubit": 30
+      },
+      {
+        "check": 15,
+        "qubit": 25
+      },
+      {
+        "check": 22,
+        "qubit": 16
+      },
+      {
+        "check": 24,
+        "qubit": 38
+      },
+      {
+        "check": 26,
+        "qubit": 36
+      },
+      {
+        "check": 29,
+        "qubit": 51
+      },
+      {
+        "check": 32,
+        "qubit": 14
+      },
+      {
+        "check": 33,
+        "qubit": 2
+      },
+      {
+        "check": 34,
+        "qubit": 54
+      },
+      {
+        "check": 35,
+        "qubit": 0
+      },
+      {
+        "check": 36,
+        "qubit": 50
+      },
+      {
+        "check": 37,
+        "qubit": 4
+      },
+      {
+        "check": 38,
+        "qubit": 108
+      },
+      {
+        "check": 39,
+        "qubit": 104
+      },
+      {
+        "check": 40,
+        "qubit": 96
+      },
+      {
+        "check": 41,
+        "qubit": 47
+      },
+      {
+        "check": 42,
+        "qubit": 87
+      },
+      {
+        "check": 43,
+        "qubit": 8
+      },
+      {
+        "check": 44,
+        "qubit": 67
+      },
+      {
+        "check": 45,
+        "qubit": 69
+      },
+      {
+        "check": 46,
+        "qubit": 22
+      },
+      {
+        "check": 47,
+        "qubit": 94
+      }
+    ],
+    [
+      {
+        "check": 2,
+        "qubit": 5
+      },
+      {
+        "check": 3,
+        "qubit": 35
+      },
+      {
+        "check": 7,
+        "qubit": 74
+      },
+      {
+        "check": 10,
+        "qubit": 50
+      },
+      {
+        "check": 14,
+        "qubit": 47
+      },
+      {
+        "check": 15,
+        "qubit": 59
+      },
+      {
+        "check": 22,
+        "qubit": 1
+      },
+      {
+        "check": 24,
+        "qubit": 4
+      },
+      {
+        "check": 25,
+        "qubit": 72
+      },
+      {
+        "check": 27,
+        "qubit": 15
+      },
+      {
+        "check": 30,
+        "qubit": 19
+      },
+      {
+        "check": 33,
+        "qubit": 34
+      },
+      {
+        "check": 36,
+        "qubit": 63
+      },
+      {
+        "check": 37,
+        "qubit": 54
+      },
+      {
+        "check": 38,
+        "qubit": 71
+      },
+      {
+        "check": 39,
+        "qubit": 105
+      },
+      {
+        "check": 40,
+        "qubit": 82
+      },
+      {
+        "check": 41,
+        "qubit": 56
+      },
+      {
+        "check": 42,
+        "qubit": 68
+      },
+      {
+        "check": 43,
+        "qubit": 25
+      },
+      {
+        "check": 44,
+        "qubit": 39
+      },
+      {
+        "check": 45,
+        "qubit": 17
+      },
+      {
+        "check": 46,
+        "qubit": 6
+      },
+      {
+        "check": 47,
+        "qubit": 18
+      }
+    ],
+    [
+      {
+        "check": 0,
+        "qubit": 20
+      },
+      {
+        "check": 3,
+        "qubit": 3
+      },
+      {
+        "check": 5,
+        "qubit": 43
+      },
+      {
+        "check": 7,
+        "qubit": 24
+      },
+      {
+        "check": 15,
+        "qubit": 27
+      },
+      {
+        "check": 22,
+        "qubit": 33
+      },
+      {
+        "check": 25,
+        "qubit": 57
+      },
+      {
+        "check": 27,
+        "qubit": 28
+      },
+      {
+        "check": 31,
+        "qubit": 31
+      },
+      {
+        "check": 36,
+        "qubit": 49
+      },
+      {
+        "check": 37,
+        "qubit": 18
+      },
+      {
+        "check": 38,
+        "qubit": 94
+      },
+      {
+        "check": 39,
+        "qubit": 15
+      },
+      {
+        "check": 40,
+        "qubit": 1
+      },
+      {
+        "check": 41,
+        "qubit": 30
+      },
+      {
+        "check": 42,
+        "qubit": 7
+      },
+      {
+        "check": 43,
+        "qubit": 70
+      },
+      {
+        "check": 44,
+        "qubit": 66
+      },
+      {
+        "check": 45,
+        "qubit": 25
+      },
+      {
+        "check": 46,
+        "qubit": 50
+      },
+      {
+        "check": 47,
+        "qubit": 2
+      }
+    ]
+  ],
+  "scope": "one CSS check type with one ancilla per listed check"
+}

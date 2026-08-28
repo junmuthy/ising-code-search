@@ -1,0 +1,25 @@
+{
+  "best_combined_collision_lower_bound": 12,
+  "combined_collision_lower_bound_histogram_for_connected_distance_ge_six": {
+    "12": 24
+  },
+  "counters": {
+    "affine_involutive_folds_tested": 2036992,
+    "distance_at_least_six": 24,
+    "folded_css": 24,
+    "logical_pairing_permutation": 622208,
+    "tanner_connected_distance_at_least_six": 24,
+    "thickness_involutions": 1528
+  },
+  "distance_at_least_six_connected_hits": 24,
+  "distance_histogram_among_folded_css": {
+    "6": 24
+  },
+  "input": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/results/folded-local-20x250-260828-v1/start-results/start-010.json",
+  "kernel_dimension": 18,
+  "low_kernel_vector_count_through_weight_seven": 305,
+  "presentation": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/schedule/all_weight8_translation_symmetric_v1/presentation.json",
+  "schema_version": 1,
+  "scope": "all involutive affine folds P(a,t)=(epsilon*a+s_t,pi(t)) normalizing the physical C4 translation, with arbitrary involutive pi on all eight thickness fibres",
+  "seconds": 35.42859
+}

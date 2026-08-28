@@ -1,0 +1,281 @@
+{
+  "aggregate": {
+    "bounded_tasks": 2,
+    "distance_2": 20,
+    "distance_3": 4,
+    "distance_4": 8,
+    "distance_cuts": 2462,
+    "exact_unsat_tasks": 14,
+    "models": 32
+  },
+  "arguments": {
+    "cuts_per_sector_per_model": 64,
+    "fold_index": [
+      2,
+      3
+    ],
+    "initial_cuts": null,
+    "maximum_check_weight": 12,
+    "maximum_models_per_task": 5,
+    "maximum_solver_timeout_seconds": 30.0,
+    "module_type": [
+      [
+        4,
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        3,
+        3,
+        1,
+        1
+      ],
+      [
+        4,
+        3,
+        2,
+        2,
+        1
+      ],
+      [
+        4,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        3,
+        3,
+        3,
+        1,
+        1,
+        1
+      ],
+      [
+        3,
+        3,
+        2,
+        2,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "output_root": "results",
+    "run_name": "viable-nonfree-f2-f3-260828-v1",
+    "solver_timeout_seconds": 5.0,
+    "stop_on_hit": true
+  },
+  "completed_tasks": 16,
+  "folds": [
+    {
+      "epsilon": 1,
+      "fibre_images": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        6,
+        5
+      ],
+      "index": 2,
+      "involution": true,
+      "logical_weight": 6,
+      "name": "swap-slack-internal-1",
+      "normalizes_translation": true,
+      "pairing": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "pairing_is_permutation": true,
+      "pairing_rank": 4,
+      "shifts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "epsilon": -1,
+      "fibre_images": [
+        1,
+        0,
+        2,
+        3,
+        4,
+        6,
+        5
+      ],
+      "index": 3,
+      "involution": true,
+      "logical_weight": 6,
+      "name": "reflect-swap-slack-internal-1",
+      "normalizes_translation": true,
+      "pairing": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "pairing_is_permutation": true,
+      "pairing_rank": 4,
+      "shifts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "hits": 0,
+  "module_types": [
+    [
+      4,
+      4,
+      2,
+      2
+    ],
+    [
+      4,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      4,
+      3,
+      2,
+      2,
+      1
+    ],
+    [
+      4,
+      3,
+      3,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    [
+      3,
+      3,
+      2,
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      3,
+      3,
+      1,
+      1,
+      1
+    ]
+  ],
+  "n24_no_go": {
+    "conclusion": "every physical permutation P gives singular logical ZX pairing",
+    "disjoint_support_bound": "four supports of weight >=6 fill all 24 qubits",
+    "distance_lower_bound": 6,
+    "k": 4,
+    "kernel_vector": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "n": 24,
+    "pairing_equation": "M_ij = z_i dot P(z_j)",
+    "row_sum_equation": "sum_j M_ij = z_i dot P(1) = wt(z_i) = 0 mod 2",
+    "scope": "four disjoint logicals exchanged with X logicals by transversal H plus a physical permutation"
+  },
+  "planned_tasks": 16,
+  "schema_version": 1,
+  "scope": "zero-shift involutive normalizer-fold catalog; every task is exact only when its status is exact_unsat_after_cegis or hit",
+  "seconds": 179.805101,
+  "target": "[[28,4,>=6]] generic C4-invariant permutation-ZX-folded CSS code"
+}

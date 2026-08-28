@@ -1,0 +1,32 @@
+{
+  "accepted": 1,
+  "arguments": {
+    "attempts_per_orbit": 300,
+    "input": "results/shifted-identity-thickness-all100-260828-v1/folded-seeds.jsonl",
+    "iterations": 250,
+    "maximum_check_weight": 12,
+    "output": "results/folded-local-20x250-260828-v1",
+    "seed": 324242,
+    "starts": 20,
+    "workers": 8
+  },
+  "best_distance": 6,
+  "counters": {
+    "accepted": 1,
+    "best_improvement": 1,
+    "disconnected": 240,
+    "iterations": 4849,
+    "move_accepted": 134,
+    "neighbor_distance_2": 51,
+    "neighbor_distance_3": 502,
+    "neighbor_distance_4": 708,
+    "neighbor_distance_5": 3339,
+    "neighbor_distance_6": 1,
+    "replacement_failed": 8
+  },
+  "input": "results/shifted-identity-thickness-all100-260828-v1/folded-seeds.jsonl",
+  "seconds": 43.799961,
+  "starts": 20,
+  "target": "folded (4,4,4,2) local refinement for [[32,4,>=6]]",
+  "worker_errors": 0
+}

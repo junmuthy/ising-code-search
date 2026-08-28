@@ -1,0 +1,149 @@
+{
+  "best_grid_pairing_rank": 0,
+  "candidate_id": "s3-l4-j1-w16-e1bb058d91825488",
+  "folds": [
+    {
+      "block_permutation": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "bottom_automorphism": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "grid_pairing_rank": 0,
+      "grid_pairing_weight": 0,
+      "is_original_fold": true,
+      "logical_action": {
+        "action_order_two": true,
+        "action_quadratic_form_zero": true,
+        "action_rank": 388,
+        "canonical_hadamard_swap_verified": true,
+        "fixed_space_dimension": 194,
+        "global_z_fold_form_alternating": true,
+        "global_z_fold_form_diagonal_weight": 0,
+        "global_z_fold_form_rank": 194,
+        "global_z_fold_form_symmetric": true,
+        "grid_fold_pairing_rank": 0,
+        "grid_image_intersection_dimension": 0,
+        "grid_image_logical_rank": 32,
+        "grid_logical_rank": 32,
+        "grid_orbit_closure_dimension": 64,
+        "grid_orbit_closure_radical_dimension": 64,
+        "grid_orbit_closure_symplectic_rank": 0,
+        "grid_partner_count": 32,
+        "grid_partner_z_pairwise_disjoint": false,
+        "grid_partner_z_weight_max": 172,
+        "grid_partner_z_weight_mean": 137.4375,
+        "grid_partner_z_weight_min": 50,
+        "hadamard_swap_pairs": 97,
+        "is_symplectic": true,
+        "nilpotent_part_rank": 194,
+        "nondegenerate_extension_dimension_lower_bound": 128
+      },
+      "permutation_order": 2,
+      "top_permutation": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "block_permutation": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "bottom_automorphism": [
+        7,
+        0,
+        0,
+        3
+      ],
+      "grid_pairing_rank": 0,
+      "grid_pairing_weight": 0,
+      "is_original_fold": false,
+      "logical_action": {
+        "action_order_two": true,
+        "action_quadratic_form_zero": true,
+        "action_rank": 388,
+        "canonical_hadamard_swap_verified": true,
+        "fixed_space_dimension": 194,
+        "global_z_fold_form_alternating": true,
+        "global_z_fold_form_diagonal_weight": 0,
+        "global_z_fold_form_rank": 194,
+        "global_z_fold_form_symmetric": true,
+        "grid_fold_pairing_rank": 0,
+        "grid_image_intersection_dimension": 0,
+        "grid_image_logical_rank": 32,
+        "grid_logical_rank": 32,
+        "grid_orbit_closure_dimension": 64,
+        "grid_orbit_closure_radical_dimension": 64,
+        "grid_orbit_closure_symplectic_rank": 0,
+        "grid_partner_count": 32,
+        "grid_partner_z_pairwise_disjoint": false,
+        "grid_partner_z_weight_max": 160,
+        "grid_partner_z_weight_mean": 134.1875,
+        "grid_partner_z_weight_min": 46,
+        "hadamard_swap_pairs": 97,
+        "is_symplectic": true,
+        "nilpotent_part_rank": 194,
+        "nondegenerate_extension_dimension_lower_bound": 128
+      },
+      "permutation_order": 2,
+      "top_permutation": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "grid_pairing_rank_histogram": {
+    "0": 2
+  },
+  "original_fold_logical_action": {
+    "action_order_two": true,
+    "action_quadratic_form_zero": true,
+    "action_rank": 388,
+    "canonical_hadamard_swap_verified": true,
+    "fixed_space_dimension": 194,
+    "global_z_fold_form_alternating": true,
+    "global_z_fold_form_diagonal_weight": 0,
+    "global_z_fold_form_rank": 194,
+    "global_z_fold_form_symmetric": true,
+    "grid_fold_pairing_rank": 0,
+    "grid_image_intersection_dimension": 0,
+    "grid_image_logical_rank": 32,
+    "grid_logical_rank": 32,
+    "grid_orbit_closure_dimension": 64,
+    "grid_orbit_closure_radical_dimension": 64,
+    "grid_orbit_closure_symplectic_rank": 0,
+    "grid_partner_count": 32,
+    "grid_partner_z_pairwise_disjoint": false,
+    "grid_partner_z_weight_max": 172,
+    "grid_partner_z_weight_mean": 137.4375,
+    "grid_partner_z_weight_min": 50,
+    "hadamard_swap_pairs": 97,
+    "is_symplectic": true,
+    "nilpotent_part_rank": 194,
+    "nondegenerate_extension_dimension_lower_bound": 128
+  },
+  "parameters": {
+    "d": 6,
+    "k": 194,
+    "n": 384
+  },
+  "seconds": 8.721742,
+  "structured_fold_search": {
+    "bottom_automorphisms": 128,
+    "first_direction_survivors": 2,
+    "tested": 18432,
+    "translations_quotiented": 32,
+    "zx_folds": 2
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "grid_rank_counts": {},
+  "inputs": [
+    "results/s3-linear-fast-falsification/legacy-l12-self-dual.jsonl"
+  ],
+  "max_nodes": 2000000,
+  "source_records": 1225,
+  "status_counts": {
+    "logical_weight_five": 2
+  },
+  "survivors_screened": 2
+}

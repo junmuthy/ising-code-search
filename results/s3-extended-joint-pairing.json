@@ -1,0 +1,157 @@
+{
+  "candidate_id": "s3-l8-j2-w16-b77391bd2f2fd82b",
+  "capacity": {
+    "1": {
+      "fits": true,
+      "saturated_even_weight_obstruction": false,
+      "support_weight": 192
+    },
+    "2": {
+      "fits": true,
+      "saturated_even_weight_obstruction": false,
+      "support_weight": 384
+    },
+    "3": {
+      "fits": true,
+      "saturated_even_weight_obstruction": false,
+      "support_weight": 576
+    },
+    "4": {
+      "fits": true,
+      "saturated_even_weight_obstruction": true,
+      "support_weight": 768
+    }
+  },
+  "enumeration": {
+    "enumeration_exhaustive": true,
+    "grids": [
+      {
+        "graph_supported": true,
+        "internal_orbits": [
+          0,
+          1,
+          2,
+          18,
+          19,
+          20
+        ],
+        "is_nontrivial_logical": true,
+        "orbit_rank_mod_stabilizers": 31,
+        "pairwise_disjoint": true,
+        "seed_support": [
+          0,
+          32,
+          64,
+          595,
+          627,
+          659
+        ],
+        "self_zx_pairing_rank": 0
+      },
+      {
+        "graph_supported": true,
+        "internal_orbits": [
+          9,
+          10,
+          11,
+          15,
+          16,
+          17
+        ],
+        "is_nontrivial_logical": true,
+        "orbit_rank_mod_stabilizers": 31,
+        "pairwise_disjoint": true,
+        "seed_support": [
+          288,
+          320,
+          352,
+          487,
+          519,
+          551
+        ],
+        "self_zx_pairing_rank": 0
+      }
+    ],
+    "last_search": {
+      "nodes": 400474,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 1.675441,
+      "support": null,
+      "weight": 6
+    },
+    "num_orbits": 2,
+    "orbit_rank_counts": {
+      "31": 2
+    },
+    "self_pairing_rank_counts": {
+      "0": 2
+    },
+    "truncated": false,
+    "weight": 6
+  },
+  "family": "l8-w16",
+  "folds": {
+    "natural": {
+      "by_num_grids": {
+        "1": {
+          "best_independent_combination": null,
+          "best_logical_combination": [
+            0
+          ],
+          "best_logical_rank": 31,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 2,
+          "disjoint_combinations": 2,
+          "full_rank_combinations": 0,
+          "independent_combinations": 0
+        },
+        "2": {
+          "best_independent_combination": null,
+          "best_logical_combination": [
+            0,
+            1
+          ],
+          "best_logical_rank": 60,
+          "best_pairing_combination_any": [
+            0,
+            1
+          ],
+          "best_pairing_rank_any": 56,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 1,
+          "disjoint_combinations": 1,
+          "full_rank_combinations": 0,
+          "independent_combinations": 0
+        },
+        "3": {
+          "best_independent_combination": null,
+          "best_logical_combination": null,
+          "best_logical_rank": 0,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 0,
+          "disjoint_combinations": 0,
+          "full_rank_combinations": 0,
+          "independent_combinations": 0
+        }
+      },
+      "full_rank_hits": []
+    }
+  },
+  "parameters": {
+    "d": 6,
+    "k": 388,
+    "n": 768
+  },
+  "polynomials": [
+    "1 + tau_1 x^4 y^3",
+    "x^7 y^3 + sigma^-1 x^6",
+    "tau_1 x + sigma^-1 y^3",
+    "x^7 y^3 + sigma^-1 x^7 y^3"
+  ],
+  "seconds": 4.715595
+}

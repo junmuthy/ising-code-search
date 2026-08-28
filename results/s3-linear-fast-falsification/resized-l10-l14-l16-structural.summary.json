@@ -1,0 +1,54 @@
+{
+  "algebraic_counts": {
+    "l10-j2-delete-one": {
+      "active_orthogonality": 8879,
+      "active_orthogonality_rejected": 6011,
+      "algebraic_survivors": 3514,
+      "bottom_disconnected_rejected": 435,
+      "duplicate": 110,
+      "latent_zero_rejected": 4930,
+      "raw": 14890
+    },
+    "l14-j3-insert-one-zero": {
+      "active_orthogonality": 6955,
+      "active_orthogonality_rejected": 17545,
+      "algebraic_survivors": 6955,
+      "raw": 24500
+    },
+    "l16-j3-insert-two-zero": {
+      "active_orthogonality": 41701,
+      "active_orthogonality_rejected": 70299,
+      "algebraic_survivors": 41701,
+      "raw": 112000
+    },
+    "l16-j4-insert-two-zero": {
+      "active_orthogonality": 13877,
+      "active_orthogonality_rejected": 98123,
+      "algebraic_survivors": 13877,
+      "raw": 112000
+    }
+  },
+  "input": "results/s3-linear-fast-falsification/legacy-l12-folded.jsonl",
+  "lifted_status_counts": {
+    "l10-j2-delete-one": {
+      "expected_ZX_fold": 76,
+      "logical_up_to_weight_four": 10,
+      "maximum_check_weight_at_most_12": 14
+    },
+    "l14-j3-insert-one-zero": {
+      "expected_ZX_fold": 78,
+      "maximum_check_weight_at_most_12": 22
+    },
+    "l16-j3-insert-two-zero": {
+      "expected_ZX_fold": 70,
+      "maximum_check_weight_at_most_12": 30
+    },
+    "l16-j4-insert-two-zero": {
+      "expected_ZX_fold": 74,
+      "maximum_check_weight_at_most_12": 26
+    }
+  },
+  "num_unique_sources": 500,
+  "seed": 220222,
+  "target_per_pilot": 100
+}

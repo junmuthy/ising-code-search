@@ -1,0 +1,36 @@
+{
+  "available_weight_16_translated_checks": 168,
+  "check_rank": 48,
+  "check_seed_types": 3,
+  "distance": 7,
+  "distance_method": "exact_exclusion_through_six_with_weight_seven_fibre",
+  "distance_seconds": 0.6924585599917918,
+  "distance_support": [
+    0,
+    16,
+    32,
+    48,
+    64,
+    80,
+    96
+  ],
+  "doubly_even_check_space": true,
+  "exact_zx_self_dual": true,
+  "k": 16,
+  "logical_count": 16,
+  "logical_gram_identity": true,
+  "logical_weights": [
+    7
+  ],
+  "logicals_commute_with_checks": true,
+  "logicals_independent_mod_checks": 16,
+  "minimum_check_weight": 16,
+  "minimum_check_weight_certificate": "weight<=12 MILP infeasible; check space doubly even; weight-16 seeds exist",
+  "n": 112,
+  "qldpc_dimension": 16,
+  "qldpc_length": 112,
+  "selected_check_basis_maximum_qubit_degree": 9,
+  "self_orthogonal": true,
+  "single_css_type_cnot_depth": 16,
+  "single_css_type_cnot_depth_optimal": true
+}

@@ -1,0 +1,38 @@
+{
+  "accepted_candidates": 0,
+  "ansatz": "sparse F, affine CSS/kernel solve for G",
+  "arguments": {
+    "f_trials": 2000,
+    "f_weight_max": 10,
+    "f_weight_min": 4,
+    "g_samples": 16,
+    "maximum_check_weight": 12,
+    "maximum_hits": 3,
+    "resume": false,
+    "run_name": "gl2-c4-l4-j2-solved-g-remaining90",
+    "seed": 260827,
+    "target_witnesses": 100,
+    "trials_per_fold": 20,
+    "witness_end": 100,
+    "witness_index": null,
+    "witness_start": 10,
+    "workers": 4
+  },
+  "output": "/home/judah_unmuth/gala-code-search/results/single-row/n32-k4/gl2-c4-l4-j2-solved-g-remaining90",
+  "records": 90,
+  "schema_version": 1,
+  "seed_stage": {
+    "complete_fold_sweep": false,
+    "rank_counts": {
+      "0": 75,
+      "1": 24,
+      "2": 135,
+      "3": 161,
+      "4": 100
+    },
+    "seconds": 0.284973,
+    "seed": 260827,
+    "tested": 495
+  },
+  "target": "[[32,4,6]]"
+}

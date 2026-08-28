@@ -1,0 +1,16 @@
+{
+  "best_distance": 5,
+  "candidates": 126,
+  "counters": {
+    "candidates": 126,
+    "distance_2": 48,
+    "distance_4": 48,
+    "distance_5": 24,
+    "structurally_accepted": 120
+  },
+  "family": "all normalized paired four-term polynomials over C2 x C7",
+  "output": "/home/judah_unmuth/gala-code-search/results/c2xc7-bb/paired-weight8-exhaustive-v1",
+  "seconds": 1.903051,
+  "survivors": 0,
+  "target": "[[28,4,>=6]] BB code with two independent C2 logical cycles"
+}

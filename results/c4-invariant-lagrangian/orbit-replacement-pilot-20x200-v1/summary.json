@@ -1,0 +1,30 @@
+{
+  "accepted": 0,
+  "aggregate_counters": {
+    "best_improvement": 3,
+    "disconnected": 217,
+    "iterations": 4000,
+    "move_accepted": 44,
+    "neighbor_distance_2": 285,
+    "neighbor_distance_3": 1133,
+    "neighbor_distance_4": 1260,
+    "neighbor_distance_5": 1105
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "input": "results/c4-invariant-lagrangian/random-free-module-100k-v1/near-misses.jsonl",
+    "iterations": 200,
+    "maximum_check_weight": 12,
+    "run_name": "orbit-replacement-pilot-20x200-v1",
+    "seed": 470402,
+    "starts": 20,
+    "workers": 8
+  },
+  "best_distance": 5,
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-lagrangian/orbit-replacement-pilot-20x200-v1",
+  "schema_version": 1,
+  "seconds": 18.972935,
+  "starts": 20,
+  "target": "[[28,4,>=6]] local C4-orbit refinement",
+  "worker_errors": 0
+}

@@ -1,0 +1,23 @@
+{
+  "grid_rank_counts": {
+    "logical=30,zx=0": 1,
+    "logical=32,zx=0": 158,
+    "logical=32,zx=16": 1,
+    "logical=32,zx=18": 1,
+    "logical=32,zx=24": 8,
+    "logical=32,zx=8": 1
+  },
+  "inputs": [
+    "results/s3-linear-fast-falsification/legacy-l12-folded.jsonl"
+  ],
+  "max_nodes": 2000000,
+  "source_records": 500,
+  "status_counts": {
+    "distance_at_least_seven_graph_incomplete": 31,
+    "distance_at_least_seven_graph_seven": 31,
+    "distance_six_graph": 139,
+    "distance_six_no_graph": 3,
+    "logical_weight_five": 11
+  },
+  "survivors_screened": 215
+}

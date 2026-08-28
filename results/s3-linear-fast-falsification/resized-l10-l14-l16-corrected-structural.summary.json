@@ -1,0 +1,55 @@
+{
+  "algebraic_counts": {
+    "l10-j2-delete-one": {
+      "active_orthogonality": 2013,
+      "active_orthogonality_rejected": 965,
+      "algebraic_survivors": 931,
+      "bottom_disconnected_rejected": 96,
+      "duplicate": 22,
+      "latent_zero_rejected": 986,
+      "raw": 2978
+    },
+    "l14-j3-insert-one-zero": {
+      "active_orthogonality": 1634,
+      "active_orthogonality_rejected": 1866,
+      "algebraic_survivors": 1634,
+      "raw": 3500
+    },
+    "l16-j3-insert-two-zero": {
+      "active_orthogonality": 12226,
+      "active_orthogonality_rejected": 15774,
+      "algebraic_survivors": 12226,
+      "raw": 28000
+    },
+    "l16-j4-insert-two-zero": {
+      "active_orthogonality": 3451,
+      "active_orthogonality_rejected": 24549,
+      "algebraic_survivors": 3451,
+      "raw": 28000
+    }
+  },
+  "input": "results/s3-linear-fast-falsification/legacy-l12-folded.jsonl",
+  "lifted_status_counts": {
+    "l10-j2-delete-one": {
+      "logical_up_to_weight_four": 100
+    },
+    "l14-j3-insert-one-zero": {
+      "logical_up_to_weight_four": 73,
+      "maximum_check_weight_at_most_16": 19,
+      "survivor": 8
+    },
+    "l16-j3-insert-two-zero": {
+      "logical_up_to_weight_four": 87,
+      "maximum_check_weight_at_most_16": 13
+    },
+    "l16-j4-insert-two-zero": {
+      "logical_up_to_weight_four": 57,
+      "maximum_check_weight_at_most_16": 10,
+      "survivor": 33
+    }
+  },
+  "max_check_weight": 16,
+  "num_unique_sources": 500,
+  "seed": 220222,
+  "target_per_pilot": 100
+}

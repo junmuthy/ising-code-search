@@ -1,0 +1,30 @@
+{
+  "aggregate_counters": {
+    "connected": 973,
+    "constructed": 1000,
+    "disconnected": 27,
+    "distance_2": 211,
+    "distance_3": 171,
+    "distance_4": 525,
+    "distance_5": 66,
+    "trials": 1000
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "batches": 10,
+    "maximum_check_weight": 12,
+    "maximum_saved_near_misses": 10,
+    "run_name": "random-free-module-pilot-1k-v1",
+    "seed": 470401,
+    "trials_per_batch": 100,
+    "workers": 8
+  },
+  "best_distance": 5,
+  "method": "random C4-invariant Lagrangians in logical-complement",
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-lagrangian/random-free-module-pilot-1k-v1",
+  "schema_version": 1,
+  "seconds": 1.312026,
+  "target": "[[28,4,>=6]] with one protected C4 row",
+  "unique_survivors": 0,
+  "worker_errors": 0
+}

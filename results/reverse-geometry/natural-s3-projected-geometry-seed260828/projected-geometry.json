@@ -1,0 +1,11597 @@
+{
+  "random_seed": 260828,
+  "trials_requested": 1000000,
+  "trials_completed": 22486,
+  "weights": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "projection_survivors": 22423,
+  "kernel_weight_counts": {
+    "0": 93,
+    "1": 100,
+    "2": 486,
+    "3": 556,
+    "4": 1649,
+    "5": 1258,
+    "6": 2509,
+    "7": 2331,
+    "8": 3235,
+    "9": 1959,
+    "10": 2334,
+    "11": 1516,
+    "12": 1941,
+    "13": 678,
+    "14": 824,
+    "15": 365,
+    "16": 388,
+    "17": 72,
+    "18": 86,
+    "19": 19,
+    "20": 24
+  },
+  "target_witnesses": 100,
+  "witnesses_found": 100,
+  "witnesses": [
+    {
+      "weight": 7,
+      "support": [
+        14,
+        33,
+        42,
+        65,
+        98,
+        107,
+        165
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        0,
+        9,
+        34,
+        41,
+        75,
+        121,
+        138,
+        148
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        10,
+        47,
+        106,
+        118,
+        145,
+        157,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 9,
+      "support": [
+        23,
+        46,
+        56,
+        67,
+        71,
+        148,
+        159,
+        182,
+        189
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 144,
+          "1": 144
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        4,
+        33,
+        67,
+        82,
+        104,
+        123,
+        138,
+        148,
+        168,
+        182
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        25,
+        36,
+        56,
+        72,
+        104,
+        108,
+        186
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        5,
+        19,
+        40,
+        62,
+        67,
+        72,
+        112,
+        136,
+        167,
+        177
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        30,
+        40,
+        101,
+        107,
+        145,
+        175,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        0,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        10,
+        74,
+        89,
+        97,
+        112,
+        148,
+        165,
+        166
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        1,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        4,
+        70,
+        80,
+        107,
+        114,
+        154,
+        179
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        46,
+        58,
+        81,
+        87,
+        97,
+        137,
+        171
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        5,
+        22,
+        51,
+        101,
+        138,
+        153,
+        170
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        31,
+        41,
+        47,
+        71,
+        81,
+        174,
+        176
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        17,
+        39,
+        69,
+        81,
+        97,
+        111,
+        160
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        2,
+        2,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        16,
+        34,
+        85,
+        112,
+        118,
+        132,
+        143,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 9,
+      "support": [
+        8,
+        39,
+        54,
+        86,
+        90,
+        132,
+        149,
+        166,
+        168
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 144,
+          "1": 144
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        22,
+        49,
+        80,
+        126,
+        127,
+        142,
+        188
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        15,
+        54,
+        100,
+        104,
+        140,
+        154,
+        168
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        0,
+        25,
+        47,
+        113,
+        140,
+        165,
+        188
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        1,
+        38,
+        90,
+        102,
+        114,
+        128,
+        132
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        2,
+        28,
+        63,
+        65,
+        107,
+        138,
+        153
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 9,
+      "support": [
+        0,
+        17,
+        34,
+        83,
+        127,
+        135,
+        155,
+        162,
+        188
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 144,
+          "1": 144
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        24,
+        28,
+        40,
+        60,
+        64,
+        122,
+        154,
+        178
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        1
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        23,
+        63,
+        94,
+        101,
+        102,
+        162,
+        180
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        41,
+        63,
+        91,
+        116,
+        131,
+        141,
+        177
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        30,
+        39,
+        46,
+        94,
+        111,
+        116,
+        155
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        28,
+        31,
+        36,
+        69,
+        70,
+        121,
+        146,
+        150
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        6,
+        91,
+        95,
+        122,
+        126,
+        128,
+        158,
+        162
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        3,
+        23,
+        49,
+        53,
+        107,
+        141,
+        185
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        11,
+        61,
+        112,
+        121,
+        146,
+        162,
+        187
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        0,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        45,
+        68,
+        80,
+        118,
+        150,
+        185,
+        191
+      ],
+      "sheet_occupancies": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        15,
+        57,
+        91,
+        98,
+        118,
+        153,
+        165
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        1,
+        26,
+        43,
+        68,
+        82,
+        120,
+        144,
+        183
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        3,
+        23,
+        58,
+        62,
+        78,
+        126,
+        137,
+        157,
+        176,
+        182
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        28,
+        31,
+        44,
+        79,
+        94,
+        98,
+        174
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        15,
+        39,
+        51,
+        82,
+        135,
+        145,
+        178
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        0,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        21,
+        39,
+        43,
+        64,
+        78,
+        139,
+        157
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        26,
+        27,
+        35,
+        48,
+        66,
+        124,
+        176
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        1,
+        8,
+        59,
+        61,
+        109,
+        131,
+        184
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        51,
+        81,
+        95,
+        122,
+        140,
+        172,
+        184
+      ],
+      "sheet_occupancies": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        44,
+        56,
+        124,
+        128,
+        156,
+        160,
+        188
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        0,
+        1,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        1
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        6,
+        41,
+        50,
+        118,
+        122,
+        141,
+        169
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        13,
+        51,
+        55,
+        66,
+        98,
+        126,
+        128,
+        147,
+        175,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        6
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        10,
+        19,
+        80,
+        120,
+        145,
+        161,
+        186
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        4,
+        24,
+        53,
+        108,
+        131,
+        159,
+        179
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        29,
+        66,
+        89,
+        103,
+        123,
+        137,
+        143,
+        189
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        27,
+        53,
+        57,
+        75,
+        103,
+        113,
+        178
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        0,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        27,
+        29,
+        57,
+        87,
+        91,
+        121,
+        150
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        55,
+        76,
+        77,
+        103,
+        130,
+        168,
+        187
+      ],
+      "sheet_occupancies": [
+        0,
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        37,
+        44,
+        65,
+        80,
+        112,
+        131,
+        154
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        2,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        15,
+        19,
+        83,
+        87,
+        103,
+        156,
+        184
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        1,
+        50,
+        82,
+        96,
+        123,
+        154,
+        163,
+        186
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        1,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        13,
+        17,
+        42,
+        57,
+        78,
+        105,
+        128,
+        181
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        30,
+        40,
+        81,
+        100,
+        109,
+        137,
+        169
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        18,
+        38,
+        50,
+        106,
+        108,
+        134,
+        144,
+        160
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        1,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        2,
+        50,
+        57,
+        74,
+        135,
+        175,
+        180
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        4,
+        15,
+        42,
+        49,
+        104,
+        134,
+        164,
+        191
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 9,
+      "support": [
+        26,
+        34,
+        62,
+        67,
+        72,
+        151,
+        156,
+        178,
+        182
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 144,
+          "1": 144
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        19,
+        45,
+        79,
+        83,
+        132,
+        170,
+        182
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        68,
+        71,
+        107,
+        150,
+        151,
+        177,
+        184
+      ],
+      "sheet_occupancies": [
+        0,
+        0,
+        2,
+        1,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        45,
+        69,
+        89,
+        108,
+        153,
+        157,
+        165
+      ],
+      "sheet_occupancies": [
+        0,
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        3,
+        72,
+        113,
+        125,
+        129,
+        161,
+        173
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        10,
+        22,
+        37,
+        49,
+        69,
+        124,
+        149,
+        181
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        1
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        20,
+        53,
+        99,
+        103,
+        142,
+        152,
+        188
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        0,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        11,
+        13,
+        34,
+        74,
+        100,
+        143,
+        177,
+        183
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        6,
+        26,
+        35,
+        47,
+        120,
+        130,
+        182
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        31,
+        64,
+        73,
+        103,
+        107,
+        141,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        8,
+        44,
+        71,
+        100,
+        127,
+        138,
+        147
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        12,
+        46,
+        76,
+        102,
+        103,
+        135,
+        150,
+        183
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        1,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        10,
+        43,
+        80,
+        102,
+        125,
+        164,
+        191
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        46,
+        50,
+        80,
+        108,
+        154,
+        156,
+        186
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        12,
+        24,
+        57,
+        69,
+        111,
+        138,
+        170
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        1
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        20,
+        48,
+        57,
+        76,
+        93,
+        138,
+        140
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        16,
+        53,
+        60,
+        87,
+        111,
+        116,
+        142,
+        151
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        28,
+        51,
+        53,
+        80,
+        84,
+        165,
+        172
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        0,
+        1,
+        38,
+        55,
+        69,
+        126,
+        167,
+        171
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        26,
+        27,
+        37,
+        59,
+        98,
+        128,
+        145,
+        163
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        3,
+        47,
+        60,
+        77,
+        135,
+        181,
+        182
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        0,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        21,
+        36,
+        42,
+        101,
+        115,
+        145,
+        167
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        0,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        21,
+        36,
+        70,
+        106,
+        116,
+        146,
+        160,
+        164
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        11,
+        79,
+        86,
+        99,
+        109,
+        145,
+        167,
+        177
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        18,
+        33,
+        53,
+        90,
+        108,
+        119,
+        144,
+        181
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        1,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        17,
+        61,
+        64,
+        104,
+        124,
+        141,
+        156,
+        185
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        8,
+        22,
+        67,
+        82,
+        125,
+        153,
+        167,
+        171
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        18,
+        25,
+        43,
+        63,
+        121,
+        139,
+        178
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        18,
+        25,
+        50,
+        82,
+        89,
+        114,
+        135
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        1,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        1,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        44,
+        58,
+        83,
+        87,
+        126,
+        180,
+        191
+      ],
+      "sheet_occupancies": [
+        0,
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        6,
+        21,
+        43,
+        56,
+        90,
+        110,
+        129,
+        149
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        1,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        1,
+        5,
+        75,
+        88,
+        102,
+        154,
+        184,
+        190
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        29,
+        49,
+        72,
+        119,
+        124,
+        172,
+        175
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        12,
+        21,
+        61,
+        70,
+        77,
+        108,
+        131,
+        146,
+        167,
+        174
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        5,
+        5
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        3,
+        65,
+        66,
+        110,
+        120,
+        136,
+        190
+      ],
+      "sheet_occupancies": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        9,
+        16,
+        74,
+        76,
+        124,
+        131,
+        152,
+        177
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        4
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        0,
+        14,
+        42,
+        59,
+        121,
+        145,
+        167
+      ],
+      "sheet_occupancies": [
+        2,
+        2,
+        0,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 9,
+      "support": [
+        8,
+        55,
+        94,
+        115,
+        122,
+        140,
+        152,
+        160,
+        164
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 144,
+          "1": 144
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        6
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        0,
+        34,
+        51,
+        66,
+        81,
+        168,
+        174
+      ],
+      "sheet_occupancies": [
+        1,
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        3,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        12,
+        23,
+        42,
+        67,
+        111,
+        140,
+        144
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        0
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 8,
+      "support": [
+        9,
+        21,
+        81,
+        87,
+        114,
+        138,
+        150,
+        170
+      ],
+      "sheet_occupancies": [
+        2,
+        0,
+        2,
+        1,
+        2,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 128,
+          "1": 128
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        2
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 7,
+      "support": [
+        0,
+        6,
+        40,
+        90,
+        126,
+        137,
+        167
+      ],
+      "sheet_occupancies": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 112,
+          "1": 112
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        4,
+        3
+      ],
+      "pairing_translation": 0
+    },
+    {
+      "weight": 10,
+      "support": [
+        25,
+        59,
+        74,
+        91,
+        108,
+        125,
+        136,
+        150,
+        162,
+        188
+      ],
+      "sheet_occupancies": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "fold_invariant_seed": false,
+      "translation_orbit_rank": 32,
+      "batching": {
+        "batch_sizes": {
+          "0": 16,
+          "1": 16
+        },
+        "maximum_multiplicity": {
+          "0": 1,
+          "1": 1
+        },
+        "disjoint_within_each_batch": true,
+        "all_at_once_disjoint": false,
+        "used_physical_qubits_by_batch": {
+          "0": 160,
+          "1": 160
+        }
+      },
+      "zx_pairing_rank": 32,
+      "zx_pairing_weight": 32,
+      "pairing_is_permutation": true,
+      "pairing_is_identity": true,
+      "pairing_kernel": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "fold": {
+        "top_images": [
+          0,
+          2,
+          1
+        ],
+        "block_images": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "sheet_images": [
+          0,
+          2,
+          1,
+          3,
+          5,
+          4
+        ],
+        "fixed_sheets": [
+          0,
+          3
+        ],
+        "order": 2
+      },
+      "top_projection_weights": [
+        2,
+        6
+      ],
+      "pairing_translation": 0
+    }
+  ],
+  "seconds": 2.772953
+}

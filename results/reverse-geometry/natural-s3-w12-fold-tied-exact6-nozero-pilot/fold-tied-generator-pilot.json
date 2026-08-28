@@ -1,0 +1,1836 @@
+{
+  "source": "results/reverse-geometry/natural-s3-w7-seed260826/geometry-and-annihilator.json",
+  "witnesses_tested": 2,
+  "solutions_found": 20,
+  "css_hits": 3,
+  "structural_pilot_hits": 3,
+  "runs": [
+    {
+      "witness_index": 0,
+      "support": [
+        40,
+        43,
+        72,
+        75,
+        121,
+        145,
+        177
+      ],
+      "search": {
+        "method": "repeated-sparse-annihilator-milp",
+        "minimum_f_terms": 6,
+        "maximum_f_terms": 6,
+        "maximum_check_weight_bound": 12,
+        "solutions_requested": 10,
+        "solutions_found": 10,
+        "solver_status_counts": {
+          "1": 10
+        },
+        "coefficient_weight_counts": {
+          "6": 10
+        },
+        "css_hits": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          }
+        ],
+        "num_css_hits": 2,
+        "structural_pilot_hits": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          }
+        ],
+        "num_structural_pilot_hits": 2,
+        "records": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 2,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 2,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 2,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": 72,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 2,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 7,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "top": 2,
+                "x": 2,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 2,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 2,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "top": 4,
+                "x": 2,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 7,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 2,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 2,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 3,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 7,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 1
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 60,
+            "rank_z": 60,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          }
+        ],
+        "bounded_pilot": true,
+        "required_no_zero_columns_in_milp": true,
+        "seconds": 50.50807
+      }
+    },
+    {
+      "witness_index": 1,
+      "support": [
+        13,
+        52,
+        55,
+        84,
+        87,
+        157,
+        189
+      ],
+      "search": {
+        "method": "repeated-sparse-annihilator-milp",
+        "minimum_f_terms": 6,
+        "maximum_f_terms": 6,
+        "maximum_check_weight_bound": 12,
+        "solutions_requested": 10,
+        "solutions_found": 10,
+        "solver_status_counts": {
+          "0": 1,
+          "1": 9
+        },
+        "coefficient_weight_counts": {
+          "6": 10
+        },
+        "css_hits": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": 64,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              2,
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          }
+        ],
+        "num_css_hits": 1,
+        "structural_pilot_hits": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": 64,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              2,
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          }
+        ],
+        "num_structural_pilot_hits": 1,
+        "records": [
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 2,
+                "x": 1,
+                "y": 3
+              },
+              {
+                "top": 2,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 3,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 2,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              2,
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 0,
+                "y": 2
+              },
+              {
+                "top": 5,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 0,
+                "y": 2
+              },
+              {
+                "top": 5,
+                "x": 2,
+                "y": 0
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 2,
+                "x": 7,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 3
+              },
+              {
+                "top": 3,
+                "x": 7,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "top": 2,
+                "x": 6,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 4,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 4,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 4,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 6,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              2,
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 4,
+                "y": 1
+              },
+              {
+                "top": 2,
+                "x": 4,
+                "y": 2
+              },
+              {
+                "top": 2,
+                "x": 6,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 4,
+                "y": 1
+              },
+              {
+                "top": 3,
+                "x": 4,
+                "y": 2
+              },
+              {
+                "top": 5,
+                "x": 6,
+                "y": 0
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 5,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 7,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 7,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              4,
+              6
+            ],
+            "css_orthogonal": true,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": 64,
+            "target_grid_rank_mod_z_stabilizers": 32,
+            "row_weights_x": [
+              8,
+              10
+            ],
+            "row_weights_z": [
+              8,
+              10
+            ],
+            "maximum_check_weight": 10,
+            "column_degrees_x": [
+              2,
+              4,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              4,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": true
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 2,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "top": 2,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "top": 2,
+                "x": 2,
+                "y": 2
+              },
+              {
+                "top": 3,
+                "x": 0,
+                "y": 0
+              },
+              {
+                "top": 3,
+                "x": 0,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 2,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 3,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 0,
+                "y": 2
+              },
+              {
+                "top": 4,
+                "x": 2,
+                "y": 0
+              },
+              {
+                "top": 5,
+                "x": 0,
+                "y": 1
+              },
+              {
+                "top": 5,
+                "x": 0,
+                "y": 2
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          },
+          {
+            "coefficient_weight": 6,
+            "terms": [
+              {
+                "top": 3,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 4,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "top": 4,
+                "x": 3,
+                "y": 3
+              },
+              {
+                "top": 5,
+                "x": 1,
+                "y": 0
+              },
+              {
+                "top": 5,
+                "x": 3,
+                "y": 3
+              }
+            ],
+            "binary_f_row_weights": [
+              2,
+              6
+            ],
+            "css_orthogonal": false,
+            "rank_x": 64,
+            "rank_z": 64,
+            "k_if_css": null,
+            "target_grid_rank_mod_z_stabilizers": null,
+            "row_weights_x": [
+              8,
+              12
+            ],
+            "row_weights_z": [
+              8,
+              12
+            ],
+            "maximum_check_weight": 12,
+            "column_degrees_x": [
+              2,
+              6
+            ],
+            "column_degrees_z": [
+              2,
+              6
+            ],
+            "even_syndrome_parity": true,
+            "zero_columns_x": 0,
+            "zero_columns_z": 0,
+            "no_zero_columns": true,
+            "logical_orbit_in_x_kernel": true,
+            "structural_pilot_hit": false
+          }
+        ],
+        "bounded_pilot": true,
+        "required_no_zero_columns_in_milp": true,
+        "seconds": 45.962353
+      }
+    }
+  ]
+}

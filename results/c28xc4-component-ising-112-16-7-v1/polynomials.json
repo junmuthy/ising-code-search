@@ -1,0 +1,27 @@
+{
+  "check_seeds": [
+    "h1=s(u)(1+v+v^2+v^3)",
+    "h2=s(u)(1+u^7+u^14+u^21)",
+    "h3=s_dagger(u)(1+u^21)(1+v)"
+  ],
+  "combined_orbit_rank": 48,
+  "individual_orbit_ranks": [
+    12,
+    12,
+    27
+  ],
+  "logical_fibres": "ell_(a,b)=u^a v^b sum_(r=0)^6 u^(4r), a,b in C4",
+  "ring": "F2[u^+-1,v^+-1]/(u^28-1,v^4-1)",
+  "seed_weights": [
+    16,
+    16,
+    16
+  ],
+  "simplex": "s(u)=1+u^4+u^8+u^16",
+  "simplex_dagger": "s_dagger(u)=1+u^12+u^20+u^24",
+  "unique_translation_orbit_sizes": [
+    28,
+    28,
+    112
+  ]
+}

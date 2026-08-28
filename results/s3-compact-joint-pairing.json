@@ -1,0 +1,135 @@
+{
+  "candidate_id": "s3-l4-j1-w16-e1bb058d91825488",
+  "capacity": {
+    "1": {
+      "fits": true,
+      "saturated_even_weight_obstruction": false,
+      "support_weight": 192
+    },
+    "2": {
+      "fits": true,
+      "saturated_even_weight_obstruction": true,
+      "support_weight": 384
+    }
+  },
+  "enumeration": {
+    "enumeration_exhaustive": true,
+    "grids": [
+      {
+        "graph_supported": true,
+        "internal_orbits": [
+          1,
+          2,
+          5,
+          8,
+          10,
+          11
+        ],
+        "is_nontrivial_logical": true,
+        "orbit_rank_mod_stabilizers": 32,
+        "pairwise_disjoint": true,
+        "seed_support": [
+          32,
+          75,
+          187,
+          261,
+          348,
+          373
+        ],
+        "self_zx_pairing_rank": 0
+      }
+    ],
+    "last_search": {
+      "nodes": 149218,
+      "pauli": "Z",
+      "search_exhaustive": true,
+      "seconds": 0.49112,
+      "support": null,
+      "weight": 6
+    },
+    "num_orbits": 1,
+    "orbit_rank_counts": {
+      "32": 1
+    },
+    "self_pairing_rank_counts": {
+      "0": 1
+    },
+    "truncated": false,
+    "weight": 6
+  },
+  "family": "l4-w16",
+  "folds": {
+    "alternative": {
+      "by_num_grids": {
+        "1": {
+          "best_independent_combination": null,
+          "best_logical_combination": [
+            0
+          ],
+          "best_logical_rank": 32,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 1,
+          "disjoint_combinations": 1,
+          "full_rank_combinations": 0,
+          "independent_combinations": 1
+        },
+        "2": {
+          "best_independent_combination": null,
+          "best_logical_combination": null,
+          "best_logical_rank": 0,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 0,
+          "disjoint_combinations": 0,
+          "full_rank_combinations": 0,
+          "independent_combinations": 0
+        }
+      },
+      "full_rank_hits": []
+    },
+    "natural": {
+      "by_num_grids": {
+        "1": {
+          "best_independent_combination": null,
+          "best_logical_combination": [
+            0
+          ],
+          "best_logical_rank": 32,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 1,
+          "disjoint_combinations": 1,
+          "full_rank_combinations": 0,
+          "independent_combinations": 1
+        },
+        "2": {
+          "best_independent_combination": null,
+          "best_logical_combination": null,
+          "best_logical_rank": 0,
+          "best_pairing_combination_any": null,
+          "best_pairing_rank_any": 0,
+          "best_pairing_rank_independent": 0,
+          "combinations_tested": 0,
+          "disjoint_combinations": 0,
+          "full_rank_combinations": 0,
+          "independent_combinations": 0
+        }
+      },
+      "full_rank_hits": []
+    }
+  },
+  "parameters": {
+    "d": 6,
+    "k": 194,
+    "n": 384
+  },
+  "polynomials": [
+    "1 + y^2 + tau_0 x^5 y^3 + tau_2 x^7",
+    "x^4 y^3 + x^7 y^3 + tau_1 x^7 y^2 + tau_2 x^3"
+  ],
+  "seconds": 0.852892
+}

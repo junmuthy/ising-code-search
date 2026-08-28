@@ -1,0 +1,32 @@
+{
+  "all_required_checks_pass": true,
+  "checks": {
+    "all_check_weights_eight": true,
+    "css_orthogonal": true,
+    "even_data_degree_each_type": true,
+    "rank_x_fourteen": true,
+    "rank_z_fourteen": true,
+    "same_x_rowspace_as_saved_code": true,
+    "same_z_rowspace_as_saved_code": true,
+    "translation_preserves_check_sets": true,
+    "two_redundant_relations_verified": true,
+    "xor_of_all_checks_zero": true
+  },
+  "qldpc": {
+    "distance_x": 6,
+    "distance_z": 6,
+    "k": 4,
+    "n": 32
+  },
+  "schedule": {
+    "all_edges_once": true,
+    "clean_cross_ancilla_backaction": true,
+    "collision_free": true,
+    "eight_layers_per_css_type": true,
+    "fold_P_plus_time_reversal": true,
+    "sixteen_edges_per_one_type_layer": true,
+    "translation_invariant_one_type_layers": true
+  },
+  "schema_version": 1,
+  "source": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/results/folded-local-20x250-260828-v1/start-results/start-010.json"
+}

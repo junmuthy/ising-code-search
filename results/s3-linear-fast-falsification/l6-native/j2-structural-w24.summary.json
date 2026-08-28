@@ -1,0 +1,44 @@
+{
+  "active_rows": 2,
+  "algebraic_counts": {
+    "l6-j2-w10": {
+      "active_orthogonality": 258,
+      "active_orthogonality_rejected": 1933,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 58,
+      "raw": 2191
+    },
+    "l6-j2-w12": {
+      "active_orthogonality": 229,
+      "active_orthogonality_rejected": 4232,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 29,
+      "raw": 4461
+    },
+    "l6-j2-w8": {
+      "active_orthogonality": 338,
+      "active_orthogonality_rejected": 867,
+      "algebraic_survivors": 200,
+      "bottom_disconnected_rejected": 138,
+      "raw": 1205
+    }
+  },
+  "max_check_weight": 24,
+  "raw_per_pattern": 100000,
+  "seed": 606060,
+  "status_counts": {
+    "l6-j2-w10": {
+      "logical_up_to_weight_four": 68,
+      "survivor": 132
+    },
+    "l6-j2-w12": {
+      "logical_up_to_weight_four": 68,
+      "survivor": 132
+    },
+    "l6-j2-w8": {
+      "logical_up_to_weight_four": 99,
+      "survivor": 101
+    }
+  },
+  "target_per_pattern": 200
+}

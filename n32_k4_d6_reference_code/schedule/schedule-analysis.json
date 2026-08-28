@@ -1,0 +1,57 @@
+{
+  "code": "[[32,4,6]]",
+  "not_yet_certified": [
+    "circuit-level fault distance under hook faults",
+    "circuit-level logical error rate",
+    "hardware routing and atom-movement time",
+    "a clean simultaneous-X/Z schedule shorter than the safe sequential schedules"
+  ],
+  "schedules": {
+    "minimum_basis": {
+      "ancillas": 28,
+      "cnot_count": 216,
+      "cnot_depth": 16,
+      "even_syndrome_parity": false,
+      "file": "minimum-basis-fold-symmetric-16-layer.json",
+      "translation_symmetric": false
+    },
+    "star_compatible_translation_symmetric": {
+      "ancillas": 30,
+      "cnot_count": 240,
+      "cnot_depth": 20,
+      "even_syndrome_parity": true,
+      "file": "safe-fold-symmetric-20-layer.json",
+      "translation_symmetric": true
+    },
+    "strong_temporal_symmetry": {
+      "ancillas": 30,
+      "cnot_count": 240,
+      "cnot_depth": 24,
+      "even_syndrome_parity": true,
+      "file": "strong-c4-fold-symmetric-24-layer.json",
+      "translation_symmetric_in_checks_and_time": true
+    }
+  },
+  "source": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/results/folded-local-20x250-260828-v1/start-results/start-010.json",
+  "translation_symmetric_parity_completed_presentation": {
+    "check_weight_histogram": {
+      "4": 1,
+      "8": 12,
+      "10": 2
+    },
+    "checks_per_css_type": 15,
+    "data_degree_histogram_per_type": {
+      "2": 8,
+      "4": 20,
+      "6": 4
+    },
+    "even_syndrome_parity": true,
+    "parity_completion_support": [
+      7,
+      15,
+      23,
+      31
+    ],
+    "rank_per_css_type": 14
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "all_required_checks_pass": true,
+  "checks": {
+    "css_orthogonal": true,
+    "fold_maps_hx_rowspace_to_hz": true,
+    "fold_maps_hz_rowspace_to_hx": true,
+    "matrices_equal": false,
+    "maximum_check_weight": 8,
+    "minimum_basis_row_weights_x": [
+      4,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rank_x": 14,
+    "rank_z": 14,
+    "rowspaces_equal": false,
+    "tanner_connected": true,
+    "translation_preserves_hx": true,
+    "translation_preserves_hz": true
+  },
+  "fold": {
+    "conjugates_translation_to_inverse": true,
+    "involution": true,
+    "pairing": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "pairing_is_permutation": true,
+    "permutation": [
+      0,
+      1,
+      2,
+      19,
+      4,
+      21,
+      22,
+      7,
+      24,
+      25,
+      26,
+      11,
+      28,
+      13,
+      14,
+      31,
+      16,
+      17,
+      18,
+      3,
+      20,
+      5,
+      6,
+      23,
+      8,
+      9,
+      10,
+      27,
+      12,
+      29,
+      30,
+      15
+    ]
+  },
+  "logicals": {
+    "fold_maps_z_to_x": true,
+    "translation_cycles_x": true,
+    "translation_cycles_z": true,
+    "x_commutes_with_hz": true,
+    "x_disjoint": true,
+    "x_independent_mod_stabilizers": 4,
+    "x_weights": [
+      7,
+      7,
+      7,
+      7
+    ],
+    "z_commutes_with_hx": true,
+    "z_disjoint": true,
+    "z_independent_mod_stabilizers": 4,
+    "z_weights": [
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  "qldpc": {
+    "distance": 6,
+    "distance_x": 6,
+    "distance_z": 6,
+    "k": 4,
+    "n": 32,
+    "rank_x": 14,
+    "rank_z": 14
+  },
+  "source": "/home/judah_unmuth/gala-code-search/inverse_c4_n32_targeted/results/folded-local-20x250-260828-v1/start-results/start-010.json"
+}

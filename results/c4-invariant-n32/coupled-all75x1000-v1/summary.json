@@ -1,0 +1,32 @@
+{
+  "accepted": 0,
+  "aggregate_counters": {
+    "connected": 2357,
+    "constructed": 25553,
+    "construction_failed": 49447,
+    "disconnected": 2507,
+    "distance_3": 498,
+    "distance_4": 675,
+    "distance_5": 1184,
+    "duplicate": 20689,
+    "trials": 75000
+  },
+  "arguments": {
+    "attempts_per_orbit": 200,
+    "input": "results/c4-invariant-lagrangian/orbit-replacement-all75x500-v1/best-candidates.jsonl",
+    "maximum_check_weight": 12,
+    "run_name": "coupled-all75x1000-v1",
+    "saved_per_start": 10,
+    "seed": 320401,
+    "starts": 75,
+    "trials_per_start": 1000,
+    "workers": 8
+  },
+  "best_distance": 5,
+  "output": "/home/judah_unmuth/gala-code-search/results/c4-invariant-n32/coupled-all75x1000-v1",
+  "schema_version": 1,
+  "seconds": 63.993151,
+  "starts": 75,
+  "target": "coupled [[28,4,5]] to [[32,4,>=6]] extensions",
+  "worker_errors": 0
+}
