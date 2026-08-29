@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "schedule_id": "a381a067d3e82750",
+  "code": "[[32,4,6]]",
+  "fold_index": 1,
+  "fold": {
+    "combined_collision_lower_bound": 12,
+    "combined_data_degree_histogram": {
+      "4": 4,
+      "8": 24,
+      "12": 4
+    },
+    "combined_data_degrees": [
+      8, 4, 8, 8, 8, 12, 8, 8,
+      8, 4, 8, 8, 8, 12, 8, 8,
+      8, 4, 8, 8, 8, 12, 8, 8,
+      8, 4, 8, 8, 8, 12, 8, 8
+    ],
+    "distance": 6,
+    "distinct_check_spaces": true,
+    "epsilon": -1,
+    "permutation": [
+      0, 1, 2, 19, 4, 21, 22, 23,
+      24, 25, 26, 11, 28, 13, 14, 15,
+      16, 17, 18, 3, 20, 5, 6, 7,
+      8, 9, 10, 27, 12, 29, 30, 31
+    ],
+    "logical_pairing": [
+      [0, 0, 1, 0],
+      [0, 1, 0, 0],
+      [1, 0, 0, 0],
+      [0, 0, 0, 1]
+    ],
+    "shifts": [0, 0, 0, 2, 0, 2, 2, 2],
+    "tanner_connected": true,
+    "thickness_permutation": [0, 1, 2, 3, 4, 5, 6, 7]
+  },
+  "edge_orbit_colors_zero_based": [
+    0, 5, 1, 9, 8, 6, 11, 2,
+    3, 6, 7, 10, 8, 0, 4, 1,
+    7, 9, 6, 11, 5, 4, 2, 3,
+    3, 2, 7, 6, 1, 10, 8, 0
+  ],
+  "cnot_depth": 12,
+  "cnot_count": 256,
+  "dedicated_syndrome_ancillas": 32,
+  "check_weight": 8,
+  "translation_invariant_layers": true,
+  "fold_plus_time_reversal": true,
+  "clean_cross_ancilla_backaction": true,
+  "static_distance": 6,
+  "full_noise_fault_distance_r3": {
+    "X": 5,
+    "Z": 5
+  },
+  "full_noise_fault_distance_r18": {
+    "X": 5,
+    "Z": 5
+  },
+  "note": "The complete 12-layer gate list is regenerated deterministically from the saved presentation, fold permutation, and 32 orbit colors."
+}

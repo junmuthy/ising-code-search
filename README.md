@@ -225,6 +225,34 @@ The 32 fibre logicals in either physical half are related by exact physical
 translations.  Distance certification therefore requires one ILP from each
 half rather than 64 redundant translated problems.
 
+## `[[32,4,6]]` Clifford circuit faults
+
+The saved all-weight-eight presentation and simultaneous 12-layer syndrome
+schedule now have executable Stim memory circuits and exact low-cardinality
+fault searches in `n32_k4_d6_reference_code/stim_fault_distance/`.
+
+Validate the noiseless detectors and noisy detector error models with:
+
+```bash
+.venv/bin/python -m n32_k4_d6_reference_code.stim_fault_distance.run_validation
+```
+
+Run the exact central-cycle search with periodic checkpoints using:
+
+```bash
+.venv/bin/python -m n32_k4_d6_reference_code.stim_fault_distance.run_fault_distance \
+  --experiment bulk --basis both --fault-model full --max-faults 6 \
+  --heartbeat-seconds 30 --output results/n32-k4-d6-stim-clifford-v1/bulk.json
+```
+
+The original depth-12 ordering has exact circuit fault distance four in both
+bases.  Searching the other valid ZX folds found schedule `a381a067d3e82750`,
+which has exact full-noise circuit fault distance five in both bases for both
+three- and eighteen-round memories.  The successful schedule remains
+weight-eight, depth twelve, and layerwise `C_4` invariant.  See the local
+`stim_fault_distance/RESULTS.md` for the original diagnosis and
+`schedule_fault_search/RESULTS.md` for the successful search and certificates.
+
 ## Tests
 
 ```bash
