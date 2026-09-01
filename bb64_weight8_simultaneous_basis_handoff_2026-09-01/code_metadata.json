@@ -1,0 +1,447 @@
+{
+  "all_logical_representatives_weight_8": true,
+  "certificate": {
+    "batch_sizes": [
+      3,
+      2,
+      3
+    ],
+    "check_rank_each_css_type": 28,
+    "check_weight_set": [
+      8
+    ],
+    "code": "Liang-Chen self-dual [[64,8,8]] BB code",
+    "d": 8,
+    "disjoint_x_batches": [
+      [
+        2,
+        4,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        6,
+        7
+      ]
+    ],
+    "disjoint_z_batches": [
+      [
+        0,
+        1,
+        7
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        2,
+        3,
+        5
+      ]
+    ],
+    "exact_cover_each_basis": true,
+    "grid_action_is_regular_and_transitive": true,
+    "grid_actions_commute": true,
+    "grid_x_order": 4,
+    "grid_x_x_mapping": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      0,
+      1
+    ],
+    "grid_x_z_mapping": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      0,
+      1
+    ],
+    "grid_y_order": 2,
+    "grid_y_x_mapping": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "grid_y_z_mapping": [
+      1,
+      0,
+      3,
+      2,
+      5,
+      4,
+      7,
+      6
+    ],
+    "hadamard_cycles": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "hadamard_logical_permutation": [
+      5,
+      4,
+      7,
+      6,
+      1,
+      0,
+      3,
+      2
+    ],
+    "k": 8,
+    "logical_x_weights": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "logical_z_weights": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "n": 64,
+    "optimality_reason": "Every nontrivial logical has weight at least d=8.",
+    "representative_weight_is_individually_optimal": true,
+    "same_basis_claim": true,
+    "source_files": {
+      "improved_batch_npz": "bb64_simultaneous_basis_search/results/run_003_low_weight/improved_batch.npz",
+      "source_npz": "bb64_simultaneous_basis_search/results/run_002/simultaneous_basis_weight72.npz"
+    },
+    "total_logical_z_weight": 64,
+    "verification": {
+      "batch_disjointness_and_exact_cover": true,
+      "canonical_zx_pairing": true,
+      "css_commutator_zero": true,
+      "eight_independent_logicals_mod_stabilizers": true,
+      "logical_kernel_checks": true,
+      "physical_permutations_preserve_check_space": true,
+      "self_dual_hx_equals_hz": true,
+      "z_and_x_grid_actions_are_permutations": true
+    }
+  },
+  "check_rank_each_type": 28,
+  "check_shape_each_type": [
+    32,
+    64
+  ],
+  "check_weight": 8,
+  "code": "[[64,8,8]] self-dual bivariate-bicycle code",
+  "distance_evidence": "published exact d=8; saved weight-8 logicals are upper witnesses",
+  "exact_cover_each_basis": true,
+  "grid_x_mapping": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    0,
+    1
+  ],
+  "grid_y_mapping": [
+    1,
+    0,
+    3,
+    2,
+    5,
+    4,
+    7,
+    6
+  ],
+  "group_relations": [
+    "x^4 y^4 = 1",
+    "y^8 = 1",
+    "xy = yx"
+  ],
+  "hadamard_cycles": [
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "hadamard_grid_element": "T_x^2 T_y",
+  "hadamard_permutation": [
+    5,
+    4,
+    7,
+    6,
+    1,
+    0,
+    3,
+    2
+  ],
+  "logical_index_convention": "i=2a+b for (a,b) in C4 x C2",
+  "logical_x_supports": [
+    [
+      4,
+      17,
+      25,
+      36,
+      42,
+      43,
+      49,
+      50
+    ],
+    [
+      0,
+      6,
+      16,
+      32,
+      48,
+      57,
+      58,
+      59
+    ],
+    [
+      1,
+      3,
+      17,
+      33,
+      49,
+      56,
+      62,
+      63
+    ],
+    [
+      4,
+      12,
+      21,
+      35,
+      36,
+      53,
+      62,
+      63
+    ],
+    [
+      6,
+      18,
+      20,
+      38,
+      43,
+      44,
+      45,
+      50
+    ],
+    [
+      2,
+      11,
+      12,
+      13,
+      22,
+      34,
+      36,
+      54
+    ],
+    [
+      7,
+      19,
+      21,
+      39,
+      44,
+      45,
+      46,
+      51
+    ],
+    [
+      6,
+      14,
+      23,
+      37,
+      38,
+      55,
+      56,
+      57
+    ]
+  ],
+  "logical_x_weights": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "logical_z_supports": [
+    [
+      2,
+      11,
+      12,
+      13,
+      22,
+      34,
+      36,
+      54
+    ],
+    [
+      6,
+      18,
+      20,
+      38,
+      43,
+      44,
+      45,
+      50
+    ],
+    [
+      6,
+      14,
+      23,
+      37,
+      38,
+      55,
+      56,
+      57
+    ],
+    [
+      7,
+      19,
+      21,
+      39,
+      44,
+      45,
+      46,
+      51
+    ],
+    [
+      0,
+      6,
+      16,
+      32,
+      48,
+      57,
+      58,
+      59
+    ],
+    [
+      4,
+      17,
+      25,
+      36,
+      42,
+      43,
+      49,
+      50
+    ],
+    [
+      4,
+      12,
+      21,
+      35,
+      36,
+      53,
+      62,
+      63
+    ],
+    [
+      1,
+      3,
+      17,
+      33,
+      49,
+      56,
+      62,
+      63
+    ]
+  ],
+  "logical_z_weights": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "polynomial": {
+    "f": "1+x+y+y^-1",
+    "g": "f^dagger"
+  },
+  "same_basis_claim": true,
+  "source": "Liang and Chen, arXiv:2510.05211v2",
+  "x_batches": [
+    [
+      2,
+      4,
+      5
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      6,
+      7
+    ]
+  ],
+  "z_batches": [
+    [
+      0,
+      1,
+      7
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      2,
+      3,
+      5
+    ]
+  ]
+}

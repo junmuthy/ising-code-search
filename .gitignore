@@ -15,6 +15,7 @@ texfrag/
 
 *.npz
 *.db
+*.zip
 results/cache/
 **/results/**/cache/
 

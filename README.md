@@ -117,6 +117,22 @@ The certified `[[224,32,7]]` code over `C28 x C4` and `[[56,8,7]]` code over
 Hadamard, are reported in
 [`ORDER_SEVEN_FIBRE_RESULTS.md`](ORDER_SEVEN_FIBRE_RESULTS.md).
 
+The relaxed-batching `C4 x C2` half-grid search—including strict identity and
+permutation GALA folds, the `L=6` binomial obstruction, compact natural-`S3`
+distance-six codes, the saved `[[48,16,3]]` four-batch grid seed, and its exact
+radius-two neighborhood, plus the independent-`F/G` half-swap pilots and
+their exact logical-action obstruction, and the x-reflected fold that restores
+the full translation algebra but exposes a distance-two/three bottleneck, plus
+the 6,269-candidate witness-guided beam search that reaches a common
+`[[48,16,3]]` plateau, and the 34,957-candidate coordinated beam that identifies
+the invariant natural-`S3` three-point logical-fiber obstruction, together
+with the faithful `GL(2,2)`, `n=32` follow-up and its exact-commuting
+centralizer diagnosis, the `n=64/96` faithful protograph probes, and the
+reconstruction of a published self-dual `[[64,8,8]]` BB code satisfying the
+regular `C4 x C2` grid, ZX pairing, and four raw disjoint STAR batches—is
+documented in
+[`batched_c4xc2_search/RESULTS.md`](batched_c4xc2_search/RESULTS.md).
+
 An executable walkthrough of the recommended packed code and its Ising/STAR
 acceptance tests is in [`ising_conditions.ipynb`](ising_conditions.ipynb).
 
@@ -252,6 +268,26 @@ three- and eighteen-round memories.  The successful schedule remains
 weight-eight, depth twelve, and layerwise `C_4` invariant.  See the local
 `stim_fault_distance/RESULTS.md` for the original diagnosis and
 `schedule_fault_search/RESULTS.md` for the successful search and certificates.
+
+## Minimum two-spin `C_2` search
+
+The direct search in `inverse_c2_minimum/` targets a `[[n,2,6]]` code with
+`n <= 16`, two disjoint logical supports, physical `C_2` exchange symmetry,
+and permutation ZX duality. It proves an exact `n = 12` pairing obstruction
+and searches the complete symmetry-reduced fold catalogs at `n = 14` and
+`n = 16` with checkpointed low-weight logical cuts. The current `n = 16`
+frontier is a qLDPC-validated `[[16,2,4]]` code. One- and two-orbit local
+refinement evaluated 46,097 exact connected neighbors without finding
+distance five or six; this is strong negative evidence, not a no-go proof.
+
+Run the first weight-eight `n = 14` tranche with:
+
+```bash
+.venv/bin/python -m inverse_c2_minimum.run_search \
+  --output-root results/inverse-c2-minimum --run-name n14-w8-pilot \
+  --length 14 --maximum-check-weight 8 --maximum-tasks 20 \
+  --checkpoint-every-models 5 --stop-on-hit
+```
 
 ## Tests
 

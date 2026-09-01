@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/qiskit-community/qcode-discovery",
+  "commit": "b5b44b05b95d1e645814ff6446235b3ae6b736d6",
+  "path": "results/campaign4_milp_verified.jsonl",
+  "line": 515,
+  "ell": 16,
+  "m": 9,
+  "A_terms": [[0, 0], [2, 0], [0, 4], [2, 4]],
+  "B_terms": [[0, 0], [4, 0], [0, 8], [4, 2]],
+  "n": 288,
+  "k": 40,
+  "d": 8,
+  "d_is_exact": true,
+  "stage": "milp_exact",
+  "milp_details": {
+    "d_x": 8,
+    "d_z": 8,
+    "k": 40,
+    "exact": true,
+    "num_logicals_checked": 80,
+    "logicals_optimal": 80,
+    "total_logicals": 80,
+    "time_s": 1699.4335129870014,
+    "timeout_per_logical": 300
+  }
+}

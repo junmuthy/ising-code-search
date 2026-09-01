@@ -1,0 +1,157 @@
+{
+  "elapsed_seconds": 0.146918,
+  "improvement_found": true,
+  "individual_results": [
+    {
+      "logical": 2,
+      "seconds": 0.022127,
+      "status": "sat",
+      "support": [
+        6,
+        14,
+        23,
+        37,
+        38,
+        55,
+        56,
+        57
+      ],
+      "weight": 8
+    },
+    {
+      "logical": 3,
+      "seconds": 0.014678,
+      "status": "sat",
+      "support": [
+        4,
+        12,
+        19,
+        36,
+        37,
+        51,
+        57,
+        58
+      ],
+      "weight": 8
+    },
+    {
+      "logical": 5,
+      "seconds": 0.002538,
+      "status": "sat",
+      "support": [
+        4,
+        18,
+        19,
+        25,
+        26,
+        36,
+        43,
+        51
+      ],
+      "weight": 8
+    }
+  ],
+  "pattern_results": [
+    {
+      "pattern": [
+        8,
+        8,
+        8
+      ],
+      "random_seed": 17,
+      "seconds": 0.02269,
+      "status": "sat",
+      "supports": {
+        "2": [
+          6,
+          14,
+          23,
+          37,
+          38,
+          55,
+          56,
+          57
+        ],
+        "3": [
+          7,
+          19,
+          21,
+          39,
+          44,
+          45,
+          46,
+          51
+        ],
+        "5": [
+          4,
+          17,
+          25,
+          36,
+          42,
+          43,
+          49,
+          50
+        ]
+      },
+      "timeout_seconds": 60.0,
+      "weights": {
+        "2": 8,
+        "3": 8,
+        "5": 8
+      }
+    }
+  ],
+  "success": {
+    "pattern": [
+      8,
+      8,
+      8
+    ],
+    "random_seed": 17,
+    "seconds": 0.02269,
+    "status": "sat",
+    "supports": {
+      "2": [
+        6,
+        14,
+        23,
+        37,
+        38,
+        55,
+        56,
+        57
+      ],
+      "3": [
+        7,
+        19,
+        21,
+        39,
+        44,
+        45,
+        46,
+        51
+      ],
+      "5": [
+        4,
+        17,
+        25,
+        36,
+        42,
+        43,
+        49,
+        50
+      ]
+    },
+    "timeout_seconds": 60.0,
+    "weights": {
+      "2": 8,
+      "3": 8,
+      "5": 8
+    }
+  },
+  "target_batch": [
+    2,
+    3,
+    5
+  ]
+}
