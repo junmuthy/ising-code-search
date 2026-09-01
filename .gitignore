@@ -23,5 +23,7 @@ results/cache/
 # records, winners, and schedules explicitly with `git add -f`.
 results/**/*.json
 results/**/*.jsonl
+results/**/*.stim
 **/results/**/*.json
 **/results/**/*.jsonl
+**/results/**/*.stim

@@ -1,0 +1,64 @@
+{
+  "active": null,
+  "all_bases_exclude_4_fault_logicals": true,
+  "completed": "2026-09-01T20:11:30+00:00",
+  "configuration": {
+    "bases": [
+      "X"
+    ],
+    "experiment": "memory",
+    "fault_model": "full",
+    "maximum_fault_cardinality": 4,
+    "probability": 0.001,
+    "rounds": 3,
+    "schedule": "/home/judah_unmuth/gala-code-search/bb64_simultaneous_basis_search/schedule_fault_search/baseline_schedule.json",
+    "schema_version": 1
+  },
+  "elapsed_seconds_this_invocation": 160.112,
+  "results": {
+    "X": {
+      "attempts": [
+        {
+          "elapsed_seconds": 0.0,
+          "fault_count": 1,
+          "method": "exact-direct-enumeration",
+          "status": "unsat"
+        },
+        {
+          "elapsed_seconds": 0.002,
+          "fault_count": 2,
+          "method": "exact-direct-enumeration",
+          "status": "unsat"
+        },
+        {
+          "elapsed_seconds": 8.934,
+          "fault_count": 3,
+          "method": "exact-direct-enumeration",
+          "status": "unsat"
+        },
+        {
+          "elapsed_seconds": 150.955,
+          "fault_count": 4,
+          "method": "exact-pair-meet-in-the-middle",
+          "status": "unsat"
+        }
+      ],
+      "distance": null,
+      "distinct_fault_effect_count": 10176,
+      "elapsed_seconds": 159.983,
+      "lower_bound": 5,
+      "table_estimate": {
+        "bytes_per_pair": 44,
+        "detector_chunks": 4,
+        "distinct_fault_effects": 10176,
+        "pair_count": 51770400,
+        "table_bytes": 2277897600
+      },
+      "witness": null
+    }
+  },
+  "schema_version": 1,
+  "started": "2026-09-01T20:08:50+00:00",
+  "status": "complete",
+  "updated": "2026-09-01T20:11:30+00:00"
+}
