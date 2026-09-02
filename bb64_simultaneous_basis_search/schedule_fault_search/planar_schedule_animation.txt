@@ -1,0 +1,285 @@
+BB64 STRICT-2D OPTICAL-TWEEZER SCHEDULE
+
+The code coordinates are relabeled as an ordinary finite C8 x C4 rectangle:
+u=0..7 horizontally and v=0..3 vertically. There is no edge identification
+in the drawing. XZuv are 64 stationary syndrome atoms in 32 fixed pairs;
+Luv and Ruv are the two mobile 32-atom data grids.
+
+A finite plane cannot realize a cyclic wrap as one Euclidean rigid motion.
+Non-wrapping atoms share the listed displacement; boundary atoms marked *
+must use exterior bypass lanes. L side exchanges use the upper corridor and
+R side exchanges use the lower corridor to keep the two mobile grids apart.
+These frames specify exact endpoints and routing classes, not calibrated or
+formally collision-certified continuous tweezer trajectories.
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | PREPARE
+schedule 67e327dc7cb35335
+
+Fixed 8 x 4 syndrome supergrid: XZuv contains one X and one Z ancilla.
+Reset X ancillas to |+> and Z ancillas to |0>.
+Declared initial parking: L at left/X shift (+0,+0), R at right/Z shift (+0,+0).
+No CNOT bonds are active.
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 1/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: left/X -> left/X; planar step (+0,+0); same contact side; wrap atoms=0
+    perimeter-bypass set: none
+R: right/Z -> right/Z; planar step (-1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R00 R01 R02 R03
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L00  XZ00   R10  L10  XZ10   R20  L20  XZ20   R30  L30  XZ30   R40  L40  XZ40   R50  L50  XZ50   R60  L60  XZ60   R70  L70  XZ70  *R00
+v=1 |  L01  XZ01   R11  L11  XZ11   R21  L21  XZ21   R31  L31  XZ31   R41  L41  XZ41   R51  L51  XZ51   R61  L61  XZ61   R71  L71  XZ71  *R01
+v=2 |  L02  XZ02   R12  L12  XZ12   R22  L22  XZ22   R32  L32  XZ32   R42  L42  XZ42   R52  L52  XZ52   R62  L62  XZ62   R72  L72  XZ72  *R02
+v=3 |  L03  XZ03   R13  L13  XZ13   R23  L23  XZ23   R33  L33  XZ33   R43  L43  XZ43   R53  L53  XZ53   R63  L63  XZ63   R73  L73  XZ73  *R03
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 1/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: left/X -> left/X; planar step (+0,+0); same contact side; wrap atoms=0
+    perimeter-bypass set: none
+R: right/Z -> right/Z; planar step (-1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R00 R01 R02 R03
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L00--XZ00-- R10  L10--XZ10-- R20  L20--XZ20-- R30  L30--XZ30-- R40  L40--XZ40-- R50  L50--XZ50-- R60  L60--XZ60-- R70  L70--XZ70--*R00
+v=1 |  L01--XZ01-- R11  L11--XZ11-- R21  L21--XZ21-- R31  L31--XZ31-- R41  L41--XZ41-- R51  L51--XZ51-- R61  L61--XZ61-- R71  L71--XZ71--*R01
+v=2 |  L02--XZ02-- R12  L12--XZ12-- R22  L22--XZ22-- R32  L32--XZ32-- R42  L42--XZ42-- R52  L52--XZ52-- R62  L62--XZ62-- R72  L72--XZ72--*R02
+v=3 |  L03--XZ03-- R13  L13--XZ13-- R23  L23--XZ23-- R33  L33--XZ33-- R43  L43--XZ43-- R53  L53--XZ53-- R63  L63--XZ63-- R73  L73--XZ73--*R03
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 2/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (+1,+0); upper exterior corridor; wrap atoms=4
+    perimeter-bypass set: L70 L71 L72 L73
+R: right/Z -> left/X; planar step (+2,+1); lower exterior corridor; wrap atoms=14
+    perimeter-bypass set: R00 R01 R02 R03 R13 R23 R33 R43 R53 R63 R70 R71 R72 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *R73  XZ00  *L70 *R03  XZ10   L00 *R13  XZ20   L10 *R23  XZ30   L20 *R33  XZ40   L30 *R43  XZ50   L40 *R53  XZ60   L50 *R63  XZ70   L60
+v=1 | *R70  XZ01  *L71 *R00  XZ11   L01  R10  XZ21   L11  R20  XZ31   L21  R30  XZ41   L31  R40  XZ51   L41  R50  XZ61   L51  R60  XZ71   L61
+v=2 | *R71  XZ02  *L72 *R01  XZ12   L02  R11  XZ22   L12  R21  XZ32   L22  R31  XZ42   L32  R41  XZ52   L42  R51  XZ62   L52  R61  XZ72   L62
+v=3 | *R72  XZ03  *L73 *R02  XZ13   L03  R12  XZ23   L13  R22  XZ33   L23  R32  XZ43   L33  R42  XZ53   L43  R52  XZ63   L53  R62  XZ73   L63
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 2/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (+1,+0); upper exterior corridor; wrap atoms=4
+    perimeter-bypass set: L70 L71 L72 L73
+R: right/Z -> left/X; planar step (+2,+1); lower exterior corridor; wrap atoms=14
+    perimeter-bypass set: R00 R01 R02 R03 R13 R23 R33 R43 R53 R63 R70 R71 R72 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *R73--XZ00--*L70 *R03--XZ10-- L00 *R13--XZ20-- L10 *R23--XZ30-- L20 *R33--XZ40-- L30 *R43--XZ50-- L40 *R53--XZ60-- L50 *R63--XZ70-- L60
+v=1 | *R70--XZ01--*L71 *R00--XZ11-- L01  R10--XZ21-- L11  R20--XZ31-- L21  R30--XZ41-- L31  R40--XZ51-- L41  R50--XZ61-- L51  R60--XZ71-- L61
+v=2 | *R71--XZ02--*L72 *R01--XZ12-- L02  R11--XZ22-- L12  R21--XZ32-- L22  R31--XZ42-- L32  R41--XZ52-- L42  R51--XZ62-- L52  R61--XZ72-- L62
+v=3 | *R72--XZ03--*L73 *R02--XZ13-- L03  R12--XZ23-- L13  R22--XZ33-- L23  R32--XZ43-- L33  R42--XZ53-- L43  R52--XZ63-- L53  R62--XZ73-- L63
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 3/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: right/Z -> left/X; planar step (-2,+0); upper exterior corridor; wrap atoms=8
+    perimeter-bypass set: L00 L01 L02 L03 L70 L71 L72 L73
+R: left/X -> right/Z; planar step (+0,-1); lower exterior corridor; wrap atoms=8
+    perimeter-bypass set: R03 R13 R23 R33 R43 R53 R63 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L10  XZ00   R70  L20  XZ10   R00  L30  XZ20   R10  L40  XZ30   R20  L50  XZ40   R30  L60  XZ50   R40 *L70  XZ60   R50 *L00  XZ70   R60
+v=1 |  L11  XZ01   R71  L21  XZ11   R01  L31  XZ21   R11  L41  XZ31   R21  L51  XZ41   R31  L61  XZ51   R41 *L71  XZ61   R51 *L01  XZ71   R61
+v=2 |  L12  XZ02   R72  L22  XZ12   R02  L32  XZ22   R12  L42  XZ32   R22  L52  XZ42   R32  L62  XZ52   R42 *L72  XZ62   R52 *L02  XZ72   R62
+v=3 |  L13  XZ03  *R73  L23  XZ13  *R03  L33  XZ23  *R13  L43  XZ33  *R23  L53  XZ43  *R33  L63  XZ53  *R43 *L73  XZ63  *R53 *L03  XZ73  *R63
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 3/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: right/Z -> left/X; planar step (-2,+0); upper exterior corridor; wrap atoms=8
+    perimeter-bypass set: L00 L01 L02 L03 L70 L71 L72 L73
+R: left/X -> right/Z; planar step (+0,-1); lower exterior corridor; wrap atoms=8
+    perimeter-bypass set: R03 R13 R23 R33 R43 R53 R63 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L10--XZ00-- R70  L20--XZ10-- R00  L30--XZ20-- R10  L40--XZ30-- R20  L50--XZ40-- R30  L60--XZ50-- R40 *L70--XZ60-- R50 *L00--XZ70-- R60
+v=1 |  L11--XZ01-- R71  L21--XZ11-- R01  L31--XZ21-- R11  L41--XZ31-- R21  L51--XZ41-- R31  L61--XZ51-- R41 *L71--XZ61-- R51 *L01--XZ71-- R61
+v=2 |  L12--XZ02-- R72  L22--XZ12-- R02  L32--XZ22-- R12  L42--XZ32-- R22  L52--XZ42-- R32  L62--XZ52-- R42 *L72--XZ62-- R52 *L02--XZ72-- R62
+v=3 |  L13--XZ03--*R73  L23--XZ13--*R03  L33--XZ23--*R13  L43--XZ33--*R23  L53--XZ43--*R33  L63--XZ53--*R43 *L73--XZ63--*R53 *L03--XZ73--*R63
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 4/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: left/X -> left/X; planar step (+0,-1); same contact side; wrap atoms=8
+    perimeter-bypass set: L00 L10 L20 L30 L40 L50 L60 L70
+R: right/Z -> right/Z; planar step (-1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R70 R71 R72 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L11  XZ00   R00  L21  XZ10   R10  L31  XZ20   R20  L41  XZ30   R30  L51  XZ40   R40  L61  XZ50   R50  L71  XZ60   R60  L01  XZ70  *R70
+v=1 |  L12  XZ01   R01  L22  XZ11   R11  L32  XZ21   R21  L42  XZ31   R31  L52  XZ41   R41  L62  XZ51   R51  L72  XZ61   R61  L02  XZ71  *R71
+v=2 |  L13  XZ02   R02  L23  XZ12   R12  L33  XZ22   R22  L43  XZ32   R32  L53  XZ42   R42  L63  XZ52   R52  L73  XZ62   R62  L03  XZ72  *R72
+v=3 | *L10  XZ03   R03 *L20  XZ13   R13 *L30  XZ23   R23 *L40  XZ33   R33 *L50  XZ43   R43 *L60  XZ53   R53 *L70  XZ63   R63 *L00  XZ73  *R73
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 4/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: left/X -> left/X; planar step (+0,-1); same contact side; wrap atoms=8
+    perimeter-bypass set: L00 L10 L20 L30 L40 L50 L60 L70
+R: right/Z -> right/Z; planar step (-1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R70 R71 R72 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  L11--XZ00-- R00  L21--XZ10-- R10  L31--XZ20-- R20  L41--XZ30-- R30  L51--XZ40-- R40  L61--XZ50-- R50  L71--XZ60-- R60  L01--XZ70--*R70
+v=1 |  L12--XZ01-- R01  L22--XZ11-- R11  L32--XZ21-- R21  L42--XZ31-- R31  L52--XZ41-- R41  L62--XZ51-- R51  L72--XZ61-- R61  L02--XZ71--*R71
+v=2 |  L13--XZ02-- R02  L23--XZ12-- R12  L33--XZ22-- R22  L43--XZ32-- R32  L53--XZ42-- R42  L63--XZ52-- R52  L73--XZ62-- R62  L03--XZ72--*R72
+v=3 | *L10--XZ03-- R03 *L20--XZ13-- R13 *L30--XZ23-- R23 *L40--XZ33-- R33 *L50--XZ43-- R43 *L60--XZ53-- R53 *L70--XZ63-- R63 *L00--XZ73--*R73
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 5/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (+0,+0); upper exterior corridor; wrap atoms=0
+    perimeter-bypass set: none
+R: right/Z -> left/X; planar step (+0,+0); lower exterior corridor; wrap atoms=0
+    perimeter-bypass set: none
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  R00  XZ00   L11  R10  XZ10   L21  R20  XZ20   L31  R30  XZ30   L41  R40  XZ40   L51  R50  XZ50   L61  R60  XZ60   L71  R70  XZ70   L01
+v=1 |  R01  XZ01   L12  R11  XZ11   L22  R21  XZ21   L32  R31  XZ31   L42  R41  XZ41   L52  R51  XZ51   L62  R61  XZ61   L72  R71  XZ71   L02
+v=2 |  R02  XZ02   L13  R12  XZ12   L23  R22  XZ22   L33  R32  XZ32   L43  R42  XZ42   L53  R52  XZ52   L63  R62  XZ62   L73  R72  XZ72   L03
+v=3 |  R03  XZ03   L10  R13  XZ13   L20  R23  XZ23   L30  R33  XZ33   L40  R43  XZ43   L50  R53  XZ53   L60  R63  XZ63   L70  R73  XZ73   L00
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 5/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (+0,+0); upper exterior corridor; wrap atoms=0
+    perimeter-bypass set: none
+R: right/Z -> left/X; planar step (+0,+0); lower exterior corridor; wrap atoms=0
+    perimeter-bypass set: none
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  R00--XZ00-- L11  R10--XZ10-- L21  R20--XZ20-- L31  R30--XZ30-- L41  R40--XZ40-- L51  R50--XZ50-- L61  R60--XZ60-- L71  R70--XZ70-- L01
+v=1 |  R01--XZ01-- L12  R11--XZ11-- L22  R21--XZ21-- L32  R31--XZ31-- L42  R41--XZ41-- L52  R51--XZ51-- L62  R61--XZ61-- L72  R71--XZ71-- L02
+v=2 |  R02--XZ02-- L13  R12--XZ12-- L23  R22--XZ22-- L33  R32--XZ32-- L43  R42--XZ42-- L53  R52--XZ52-- L63  R62--XZ62-- L73  R72--XZ72-- L03
+v=3 |  R03--XZ03-- L10  R13--XZ13-- L20  R23--XZ23-- L30  R33--XZ33-- L40  R43--XZ43-- L50  R53--XZ53-- L60  R63--XZ63-- L70  R73--XZ73-- L00
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 6/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: right/Z -> right/Z; planar step (+0,+1); same contact side; wrap atoms=8
+    perimeter-bypass set: L00 L10 L20 L30 L40 L50 L60 L70
+R: left/X -> left/X; planar step (+1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R70 R71 R72 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *R70  XZ00  *L10  R00  XZ10  *L20  R10  XZ20  *L30  R20  XZ30  *L40  R30  XZ40  *L50  R40  XZ50  *L60  R50  XZ60  *L70  R60  XZ70  *L00
+v=1 | *R71  XZ01   L11  R01  XZ11   L21  R11  XZ21   L31  R21  XZ31   L41  R31  XZ41   L51  R41  XZ51   L61  R51  XZ61   L71  R61  XZ71   L01
+v=2 | *R72  XZ02   L12  R02  XZ12   L22  R12  XZ22   L32  R22  XZ32   L42  R32  XZ42   L52  R42  XZ52   L62  R52  XZ62   L72  R62  XZ72   L02
+v=3 | *R73  XZ03   L13  R03  XZ13   L23  R13  XZ23   L33  R23  XZ33   L43  R33  XZ43   L53  R43  XZ53   L63  R53  XZ63   L73  R63  XZ73   L03
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 6/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: right/Z -> right/Z; planar step (+0,+1); same contact side; wrap atoms=8
+    perimeter-bypass set: L00 L10 L20 L30 L40 L50 L60 L70
+R: left/X -> left/X; planar step (+1,+0); same contact side; wrap atoms=4
+    perimeter-bypass set: R70 R71 R72 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *R70--XZ00--*L10  R00--XZ10--*L20  R10--XZ20--*L30  R20--XZ30--*L40  R30--XZ40--*L50  R40--XZ50--*L60  R50--XZ60--*L70  R60--XZ70--*L00
+v=1 | *R71--XZ01-- L11  R01--XZ11-- L21  R11--XZ21-- L31  R21--XZ31-- L41  R31--XZ41-- L51  R41--XZ51-- L61  R51--XZ61-- L71  R61--XZ71-- L01
+v=2 | *R72--XZ02-- L12  R02--XZ12-- L22  R12--XZ22-- L32  R22--XZ32-- L42  R32--XZ42-- L52  R42--XZ52-- L62  R52--XZ62-- L72  R62--XZ72-- L02
+v=3 | *R73--XZ03-- L13  R03--XZ13-- L23  R13--XZ23-- L33  R23--XZ33-- L43  R33--XZ43-- L53  R43--XZ53-- L63  R53--XZ63-- L73  R63--XZ73-- L03
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 7/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: right/Z -> left/X; planar step (+2,+0); upper exterior corridor; wrap atoms=8
+    perimeter-bypass set: L00 L01 L02 L03 L70 L71 L72 L73
+R: left/X -> right/Z; planar step (+0,+1); lower exterior corridor; wrap atoms=8
+    perimeter-bypass set: R03 R13 R23 R33 R43 R53 R63 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *L70  XZ00  *R73 *L00  XZ10  *R03  L10  XZ20  *R13  L20  XZ30  *R23  L30  XZ40  *R33  L40  XZ50  *R43  L50  XZ60  *R53  L60  XZ70  *R63
+v=1 | *L71  XZ01   R70 *L01  XZ11   R00  L11  XZ21   R10  L21  XZ31   R20  L31  XZ41   R30  L41  XZ51   R40  L51  XZ61   R50  L61  XZ71   R60
+v=2 | *L72  XZ02   R71 *L02  XZ12   R01  L12  XZ22   R11  L22  XZ32   R21  L32  XZ42   R31  L42  XZ52   R41  L52  XZ62   R51  L62  XZ72   R61
+v=3 | *L73  XZ03   R72 *L03  XZ13   R02  L13  XZ23   R12  L23  XZ33   R22  L33  XZ43   R32  L43  XZ53   R42  L53  XZ63   R52  L63  XZ73   R62
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 7/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: right/Z -> left/X; planar step (+2,+0); upper exterior corridor; wrap atoms=8
+    perimeter-bypass set: L00 L01 L02 L03 L70 L71 L72 L73
+R: left/X -> right/Z; planar step (+0,+1); lower exterior corridor; wrap atoms=8
+    perimeter-bypass set: R03 R13 R23 R33 R43 R53 R63 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 | *L70--XZ00--*R73 *L00--XZ10--*R03  L10--XZ20--*R13  L20--XZ30--*R23  L30--XZ40--*R33  L40--XZ50--*R43  L50--XZ60--*R53  L60--XZ70--*R63
+v=1 | *L71--XZ01-- R70 *L01--XZ11-- R00  L11--XZ21-- R10  L21--XZ31-- R20  L31--XZ41-- R30  L41--XZ51-- R40  L51--XZ61-- R50  L61--XZ71-- R60
+v=2 | *L72--XZ02-- R71 *L02--XZ12-- R01  L12--XZ22-- R11  L22--XZ32-- R21  L32--XZ42-- R31  L42--XZ52-- R41  L52--XZ62-- R51  L62--XZ72-- R61
+v=3 | *L73--XZ03-- R72 *L03--XZ13-- R02  L13--XZ23-- R12  L23--XZ33-- R22  L33--XZ43-- R32  L43--XZ53-- R42  L53--XZ63-- R52  L63--XZ73-- R62
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MOVE TO LAYER 8/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (-1,+0); upper exterior corridor; wrap atoms=4
+    perimeter-bypass set: L70 L71 L72 L73
+R: right/Z -> left/X; planar step (-2,-1); lower exterior corridor; wrap atoms=14
+    perimeter-bypass set: R00 R01 R02 R03 R13 R23 R33 R43 R53 R63 R70 R71 R72 R73
+
+* marks a data atom routed through an exterior lane at a finite-array boundary.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  R10  XZ00   L00  R20  XZ10   L10  R30  XZ20   L20  R40  XZ30   L30  R50  XZ40   L40  R60  XZ50   L50 *R70  XZ60   L60 *R00  XZ70  *L70
+v=1 |  R11  XZ01   L01  R21  XZ11   L11  R31  XZ21   L21  R41  XZ31   L31  R51  XZ41   L41  R61  XZ51   L51 *R71  XZ61   L61 *R01  XZ71  *L71
+v=2 |  R12  XZ02   L02  R22  XZ12   L12  R32  XZ22   L22  R42  XZ32   L32  R52  XZ42   L42  R62  XZ52   L52 *R72  XZ62   L62 *R02  XZ72  *L72
+v=3 | *R13  XZ03   L03 *R23  XZ13   L13 *R33  XZ23   L23 *R43  XZ33   L33 *R53  XZ43   L43 *R63  XZ53   L53 *R73  XZ63   L63 *R03  XZ73  *L73
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | CNOT LAYER 8/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L: left/X -> right/Z; planar step (-1,+0); upper exterior corridor; wrap atoms=4
+    perimeter-bypass set: L70 L71 L72 L73
+R: right/Z -> left/X; planar step (-2,-1); lower exterior corridor; wrap atoms=14
+    perimeter-bypass set: R00 R01 R02 R03 R13 R23 R33 R43 R53 R63 R70 R71 R72 R73
+
+In A--XZuv--B, X controls A and B controls Z. XZuv remains fixed.
+             u=0              u=1              u=2              u=3              u=4              u=5              u=6              u=7
+v=0 |  R10--XZ00-- L00  R20--XZ10-- L10  R30--XZ20-- L20  R40--XZ30-- L30  R50--XZ40-- L40  R60--XZ50-- L50 *R70--XZ60-- L60 *R00--XZ70--*L70
+v=1 |  R11--XZ01-- L01  R21--XZ11-- L11  R31--XZ21-- L21  R41--XZ31-- L31  R51--XZ41-- L41  R61--XZ51-- L51 *R71--XZ61-- L61 *R01--XZ71--*L71
+v=2 |  R12--XZ02-- L02  R22--XZ12-- L12  R32--XZ22-- L22  R42--XZ32-- L32  R52--XZ42-- L42  R62--XZ52-- L52 *R72--XZ62-- L62 *R02--XZ72--*L72
+v=3 | *R13--XZ03-- L03 *R23--XZ13-- L13 *R33--XZ23-- L23 *R43--XZ33-- L33 *R53--XZ43-- L43 *R63--XZ53-- L53 *R73--XZ63-- L63 *R03--XZ73--*L73
+
+=============================================================================================================================================
+BB64 STRICT 2D PLANE | MEASURE
+schedule 67e327dc7cb35335
+
+Measure all fixed X ancillas in X and all fixed Z ancillas in Z.
+The final return-to-parking move is not part of this syndrome round.
+No CNOT bonds are active.

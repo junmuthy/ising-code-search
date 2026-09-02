@@ -95,6 +95,42 @@ view proves that each contact configuration consists of two rigid 32-atom group
 translations. It still does not specify the continuous paths used to exchange
 sides or implement the twisted periodic wrap.
 
+### Strict planar optical-tweezer view
+
+`animate_planar_schedule.py` removes the twisted chart from the drawing. It
+uses the direct-product coordinates
+
+\[
+(u,v)=(x+y\bmod 8,x\bmod 4)
+\in C_8\times C_4
+\]
+
+and draws an ordinary 8-by-4 rectangle. Each fixed `XZuv` token represents the
+two syndrome atoms at one planar site; `Luv` and `Ruv` are mobile data atoms.
+For example,
+
+```text
+ L00--XZ00-- R10
+```
+
+is one four-atom contact cell with two active CNOT bonds. Boundary data atoms
+that cannot follow the bulk Euclidean displacement are marked with `*` and
+assigned to exterior bypass lanes. Side exchanges send `L` through an upper
+corridor and `R` through a lower corridor. Run this view with
+
+```bash
+.venv/bin/python -B -m \
+  bb64_simultaneous_basis_search.schedule_fault_search.animate_planar_schedule \
+  --animate --fps 2 --cycles 2
+```
+
+The complete static sequence is `planar_schedule_animation.txt`. The planar
+view specifies every contact endpoint, bulk displacement, boundary-bypass set,
+and side-exchange corridor. It is a concrete routing topology, but it is not a
+calibrated or formally collision-certified continuous trajectory; that final
+step requires the physical tweezer pitch, clearance, speed, and blockade
+radius.
+
 ## Reproduction
 
 ```bash
