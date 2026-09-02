@@ -40,6 +40,35 @@ The exhaustive identity-fold run found:
 The stable baseline is `baseline_schedule.json`, schedule ID
 `67e327dc7cb35335`.
 
+## ASCII atom animation
+
+`animate_schedule.py` turns the canonical schedule into eight labeled ASCII
+interaction frames, bracketed by preparation and measurement frames. It fixes
+the 32 `X` and 32 `Z` syndrome atoms in two displayed planes, routes the two
+32-atom data grids with the exact rigid group translation derived from each
+layer, and marks all 64 simultaneous CNOT bonds. Run it interactively with
+
+```bash
+.venv/bin/python -B -m \
+  bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule \
+  --animate --fps 1 --cycles 2
+```
+
+To inspect every frame in Emacs, open `schedule_animation.txt`. It can be
+regenerated without animation using
+
+```bash
+.venv/bin/python -B -m \
+  bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule \
+  --output \
+  bb64_simultaneous_basis_search/schedule_fault_search/schedule_animation.txt
+```
+
+This is a combinatorial rigid-translation view of the CNOT matchings. It does
+not claim a continuous collision-free tweezer trajectory; such a trajectory
+would require hardware geometry, separation, speed, and blockade constraints
+that are not contained in the stabilizer schedule.
+
 ## Reproduction
 
 ```bash

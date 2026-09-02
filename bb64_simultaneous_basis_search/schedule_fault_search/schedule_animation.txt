@@ -1,0 +1,201 @@
+BB64 IDEALIZED RIGID-TRANSLATION SYNDROME ANIMATION
+
+The 32 X and 32 Z syndrome atoms stay fixed in two displayed planes.
+At each layer, the L and R 32-atom data grids are routed onto those planes
+with the stated rigid translation; every displayed -> is an active CNOT.
+Coordinates use x=0..3, y=0..7 and the twisted boundary
+(x+4,y) = (x,y+4). This is a combinatorial routing view, not a
+continuous collision-free tweezer trajectory.
+==============================================================================
+BB64 syndrome extraction | PREPARE
+schedule 67e327dc7cb35335
+
+Fixed syndrome atoms X00..X31: reset to |+> (future CNOT controls).
+Fixed syndrome atoms Z00..Z31: reset to |0> (future CNOT targets).
+Data atoms L00..L31 and R00..R31 retain the encoded state.
+No CNOT bonds are active in this frame.
+
+==============================================================================
+BB64 syndrome extraction | layer 1/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): L data grid; check->data delta=0; move data by 0; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->L00 X01->L01 X02->L02 X03->L03 X04->L04 X05->L05 X06->L06 X07->L07
+x=1 | X08->L08 X09->L09 X10->L10 X11->L11 X12->L12 X13->L13 X14->L14 X15->L15
+x=2 | X16->L16 X17->L17 X18->L18 X19->L19 X20->L20 X21->L21 X22->L22 X23->L23
+x=3 | X24->L24 X25->L25 X26->L26 X27->L27 X28->L28 X29->L29 X30->L30 X31->L31
+
+Z syndrome plane (fixed): R data grid; check->data delta=+y; move data by -y; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | R01->Z00 R02->Z01 R03->Z02 R04->Z03 R05->Z04 R06->Z05 R07->Z06 R00->Z07
+x=1 | R09->Z08 R10->Z09 R11->Z10 R12->Z11 R13->Z12 R14->Z13 R15->Z14 R08->Z15
+x=2 | R17->Z16 R18->Z17 R19->Z18 R20->Z19 R21->Z20 R22->Z21 R23->Z22 R16->Z23
+x=3 | R25->Z24 R26->Z25 R27->Z26 R28->Z27 R29->Z28 R30->Z29 R31->Z30 R24->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 2/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): R data grid; check->data delta=-x; move data by +x; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->R28 X01->R29 X02->R30 X03->R31 X04->R24 X05->R25 X06->R26 X07->R27
+x=1 | X08->R00 X09->R01 X10->R02 X11->R03 X12->R04 X13->R05 X14->R06 X15->R07
+x=2 | X16->R08 X17->R09 X18->R10 X19->R11 X20->R12 X21->R13 X22->R14 X23->R15
+x=3 | X24->R16 X25->R17 X26->R18 X27->R19 X28->R20 X29->R21 X30->R22 X31->R23
+
+Z syndrome plane (fixed): L data grid; check->data delta=-y; move data by +y; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | L07->Z00 L00->Z01 L01->Z02 L02->Z03 L03->Z04 L04->Z05 L05->Z06 L06->Z07
+x=1 | L15->Z08 L08->Z09 L09->Z10 L10->Z11 L11->Z12 L12->Z13 L13->Z14 L14->Z15
+x=2 | L23->Z16 L16->Z17 L17->Z18 L18->Z19 L19->Z20 L20->Z21 L21->Z22 L22->Z23
+x=3 | L31->Z24 L24->Z25 L25->Z26 L26->Z27 L27->Z28 L28->Z29 L29->Z30 L30->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 3/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): L data grid; check->data delta=+y; move data by -y; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->L01 X01->L02 X02->L03 X03->L04 X04->L05 X05->L06 X06->L07 X07->L00
+x=1 | X08->L09 X09->L10 X10->L11 X11->L12 X12->L13 X13->L14 X14->L15 X15->L08
+x=2 | X16->L17 X17->L18 X18->L19 X19->L20 X20->L21 X21->L22 X22->L23 X23->L16
+x=3 | X24->L25 X25->L26 X26->L27 X27->L28 X28->L29 X29->L30 X30->L31 X31->L24
+
+Z syndrome plane (fixed): R data grid; check->data delta=-y; move data by +y; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | R07->Z00 R00->Z01 R01->Z02 R02->Z03 R03->Z04 R04->Z05 R05->Z06 R06->Z07
+x=1 | R15->Z08 R08->Z09 R09->Z10 R10->Z11 R11->Z12 R12->Z13 R13->Z14 R14->Z15
+x=2 | R23->Z16 R16->Z17 R17->Z18 R18->Z19 R19->Z20 R20->Z21 R21->Z22 R22->Z23
+x=3 | R31->Z24 R24->Z25 R25->Z26 R26->Z27 R27->Z28 R28->Z29 R29->Z30 R30->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 4/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): L data grid; check->data delta=+x; move data by -x; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->L08 X01->L09 X02->L10 X03->L11 X04->L12 X05->L13 X06->L14 X07->L15
+x=1 | X08->L16 X09->L17 X10->L18 X11->L19 X12->L20 X13->L21 X14->L22 X15->L23
+x=2 | X16->L24 X17->L25 X18->L26 X19->L27 X20->L28 X21->L29 X22->L30 X23->L31
+x=3 | X24->L04 X25->L05 X26->L06 X27->L07 X28->L00 X29->L01 X30->L02 X31->L03
+
+Z syndrome plane (fixed): R data grid; check->data delta=0; move data by 0; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | R00->Z00 R01->Z01 R02->Z02 R03->Z03 R04->Z04 R05->Z05 R06->Z06 R07->Z07
+x=1 | R08->Z08 R09->Z09 R10->Z10 R11->Z11 R12->Z12 R13->Z13 R14->Z14 R15->Z15
+x=2 | R16->Z16 R17->Z17 R18->Z18 R19->Z19 R20->Z20 R21->Z21 R22->Z22 R23->Z23
+x=3 | R24->Z24 R25->Z25 R26->Z26 R27->Z27 R28->Z28 R29->Z29 R30->Z30 R31->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 5/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): R data grid; check->data delta=0; move data by 0; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->R00 X01->R01 X02->R02 X03->R03 X04->R04 X05->R05 X06->R06 X07->R07
+x=1 | X08->R08 X09->R09 X10->R10 X11->R11 X12->R12 X13->R13 X14->R14 X15->R15
+x=2 | X16->R16 X17->R17 X18->R18 X19->R19 X20->R20 X21->R21 X22->R22 X23->R23
+x=3 | X24->R24 X25->R25 X26->R26 X27->R27 X28->R28 X29->R29 X30->R30 X31->R31
+
+Z syndrome plane (fixed): L data grid; check->data delta=+x; move data by -x; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | L08->Z00 L09->Z01 L10->Z02 L11->Z03 L12->Z04 L13->Z05 L14->Z06 L15->Z07
+x=1 | L16->Z08 L17->Z09 L18->Z10 L19->Z11 L20->Z12 L21->Z13 L22->Z14 L23->Z15
+x=2 | L24->Z16 L25->Z17 L26->Z18 L27->Z19 L28->Z20 L29->Z21 L30->Z22 L31->Z23
+x=3 | L04->Z24 L05->Z25 L06->Z26 L07->Z27 L00->Z28 L01->Z29 L02->Z30 L03->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 6/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): R data grid; check->data delta=-y; move data by +y; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->R07 X01->R00 X02->R01 X03->R02 X04->R03 X05->R04 X06->R05 X07->R06
+x=1 | X08->R15 X09->R08 X10->R09 X11->R10 X12->R11 X13->R12 X14->R13 X15->R14
+x=2 | X16->R23 X17->R16 X18->R17 X19->R18 X20->R19 X21->R20 X22->R21 X23->R22
+x=3 | X24->R31 X25->R24 X26->R25 X27->R26 X28->R27 X29->R28 X30->R29 X31->R30
+
+Z syndrome plane (fixed): L data grid; check->data delta=+y; move data by -y; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | L01->Z00 L02->Z01 L03->Z02 L04->Z03 L05->Z04 L06->Z05 L07->Z06 L00->Z07
+x=1 | L09->Z08 L10->Z09 L11->Z10 L12->Z11 L13->Z12 L14->Z13 L15->Z14 L08->Z15
+x=2 | L17->Z16 L18->Z17 L19->Z18 L20->Z19 L21->Z20 L22->Z21 L23->Z22 L16->Z23
+x=3 | L25->Z24 L26->Z25 L27->Z26 L28->Z27 L29->Z28 L30->Z29 L31->Z30 L24->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 7/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): L data grid; check->data delta=-y; move data by +y; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->L07 X01->L00 X02->L01 X03->L02 X04->L03 X05->L04 X06->L05 X07->L06
+x=1 | X08->L15 X09->L08 X10->L09 X11->L10 X12->L11 X13->L12 X14->L13 X15->L14
+x=2 | X16->L23 X17->L16 X18->L17 X19->L18 X20->L19 X21->L20 X22->L21 X23->L22
+x=3 | X24->L31 X25->L24 X26->L25 X27->L26 X28->L27 X29->L28 X30->L29 X31->L30
+
+Z syndrome plane (fixed): R data grid; check->data delta=-x; move data by +x; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | R28->Z00 R29->Z01 R30->Z02 R31->Z03 R24->Z04 R25->Z05 R26->Z06 R27->Z07
+x=1 | R00->Z08 R01->Z09 R02->Z10 R03->Z11 R04->Z12 R05->Z13 R06->Z14 R07->Z15
+x=2 | R08->Z16 R09->Z17 R10->Z18 R11->Z19 R12->Z20 R13->Z21 R14->Z22 R15->Z23
+x=3 | R16->Z24 R17->Z25 R18->Z26 R19->Z27 R20->Z28 R21->Z29 R22->Z30 R23->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | layer 8/8 | 64 parallel CNOTs
+schedule 67e327dc7cb35335
+
+X syndrome plane (fixed): R data grid; check->data delta=+y; move data by -y; ancilla -> data
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | X00->R01 X01->R02 X02->R03 X03->R04 X04->R05 X05->R06 X06->R07 X07->R00
+x=1 | X08->R09 X09->R10 X10->R11 X11->R12 X12->R13 X13->R14 X14->R15 X15->R08
+x=2 | X16->R17 X17->R18 X18->R19 X19->R20 X20->R21 X21->R22 X22->R23 X23->R16
+x=3 | X24->R25 X25->R26 X26->R27 X27->R28 X28->R29 X29->R30 X30->R31 X31->R24
+
+Z syndrome plane (fixed): L data grid; check->data delta=0; move data by 0; data -> ancilla
+       y=0     y=1     y=2     y=3     y=4     y=5     y=6     y=7
+x=0 | L00->Z00 L01->Z01 L02->Z02 L03->Z03 L04->Z04 L05->Z05 L06->Z06 L07->Z07
+x=1 | L08->Z08 L09->Z09 L10->Z10 L11->Z11 L12->Z12 L13->Z13 L14->Z14 L15->Z15
+x=2 | L16->Z16 L17->Z17 L18->Z18 L19->Z19 L20->Z20 L21->Z21 L22->Z22 L23->Z23
+x=3 | L24->Z24 L25->Z25 L26->Z26 L27->Z27 L28->Z28 L29->Z29 L30->Z30 L31->Z31
+
+Legend: Xcc->Ddd is X-ancilla cc controlling data atom Ddd.
+        Ddd->Zcc is data atom Ddd controlling Z-ancilla cc.
+        Lnn has global data ID nn; Rnn has global data ID 32+nn.
+
+==============================================================================
+BB64 syndrome extraction | MEASURE
+schedule 67e327dc7cb35335
+
+Measure fixed syndrome atoms X00..X31 in the X basis.
+Measure fixed syndrome atoms Z00..Z31 in the Z basis.
+Data atoms L00..L31 and R00..R31 remain encoded.
+No CNOT bonds are active in this frame.
