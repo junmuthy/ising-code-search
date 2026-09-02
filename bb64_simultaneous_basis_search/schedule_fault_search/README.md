@@ -69,6 +69,32 @@ not claim a continuous collision-free tweezer trajectory; such a trajectory
 would require hardware geometry, separation, speed, and blockade constraints
 that are not contained in the stabilizer schedule.
 
+### Spatial supercell view
+
+`animate_spatial_schedule.py` provides the more geometric neutral-atom view.
+It places the two fixed syndrome atoms at the center of every site and the two
+mobile data atoms on their contact sides:
+
+```text
+L00--X00 Z00--R01
+```
+
+Here both `--` links are active CNOT bonds. In a position frame the same atoms
+are separated by spaces, indicating that transport occurs with the bonds off.
+Data identities scroll around the 4-by-8 array and the `L` and `R` grids change
+sides as the rigid translations change. Run it with
+
+```bash
+.venv/bin/python -B -m \
+  bb64_simultaneous_basis_search.schedule_fault_search.animate_spatial_schedule \
+  --animate --fps 2 --cycles 2
+```
+
+The complete sequence is also saved as `spatial_schedule_animation.txt`. This
+view proves that each contact configuration consists of two rigid 32-atom group
+translations. It still does not specify the continuous paths used to exchange
+sides or implement the twisted periodic wrap.
+
 ## Reproduction
 
 ```bash

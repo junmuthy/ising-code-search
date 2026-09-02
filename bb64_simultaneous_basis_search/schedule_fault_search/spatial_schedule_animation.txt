@@ -1,0 +1,314 @@
+BB64 NEUTRAL-ATOM SPATIAL CONTACT ANIMATION
+
+At each of 32 fixed sites, Xcc Zcc are stationary syndrome atoms.
+The L and R 32-atom data grids move as rigid group translates to the
+left/X or right/Z side. A -- link appears only during an active CNOT.
+Data identities visibly move between frames; each contact frame contains
+all 64 data atoms, all 64 syndrome atoms, and all 64 scheduled CNOTs.
+
+Coordinates use x=0..3, y=0..7 with (x+4,y)=(x,y+4). The frames
+show exact contact configurations, not continuous collision-free paths.
+==================================================================================
+BB64 SPATIAL VIEW | PREPARE
+schedule 67e327dc7cb35335
+
+The fixed 4 x 8 supergrid contains X00..X31 and Z00..Z31.
+Reset every X ancilla to |+> and every Z ancilla to |0>.
+The parking geometry of mobile grids L00..L31 and R00..R31 is unspecified.
+No CNOT bonds are active.
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 1/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move 0 (check->data delta 0)
+R grid -> right/Z contact side; rigid move -y (check->data delta +y)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L00  X00 Z00  R01  L08  X08 Z08  R09  L16  X16 Z16  R17  L24  X24 Z24  R25
+y=1 | L01  X01 Z01  R02  L09  X09 Z09  R10  L17  X17 Z17  R18  L25  X25 Z25  R26
+y=2 | L02  X02 Z02  R03  L10  X10 Z10  R11  L18  X18 Z18  R19  L26  X26 Z26  R27
+y=3 | L03  X03 Z03  R04  L11  X11 Z11  R12  L19  X19 Z19  R20  L27  X27 Z27  R28
+y=4 | L04  X04 Z04  R05  L12  X12 Z12  R13  L20  X20 Z20  R21  L28  X28 Z28  R29
+y=5 | L05  X05 Z05  R06  L13  X13 Z13  R14  L21  X21 Z21  R22  L29  X29 Z29  R30
+y=6 | L06  X06 Z06  R07  L14  X14 Z14  R15  L22  X22 Z22  R23  L30  X30 Z30  R31
+y=7 | L07  X07 Z07  R00  L15  X15 Z15  R08  L23  X23 Z23  R16  L31  X31 Z31  R24
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 1/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move 0 (check->data delta 0)
+R grid -> right/Z contact side; rigid move -y (check->data delta +y)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L00--X00 Z00--R01  L08--X08 Z08--R09  L16--X16 Z16--R17  L24--X24 Z24--R25
+y=1 | L01--X01 Z01--R02  L09--X09 Z09--R10  L17--X17 Z17--R18  L25--X25 Z25--R26
+y=2 | L02--X02 Z02--R03  L10--X10 Z10--R11  L18--X18 Z18--R19  L26--X26 Z26--R27
+y=3 | L03--X03 Z03--R04  L11--X11 Z11--R12  L19--X19 Z19--R20  L27--X27 Z27--R28
+y=4 | L04--X04 Z04--R05  L12--X12 Z12--R13  L20--X20 Z20--R21  L28--X28 Z28--R29
+y=5 | L05--X05 Z05--R06  L13--X13 Z13--R14  L21--X21 Z21--R22  L29--X29 Z29--R30
+y=6 | L06--X06 Z06--R07  L14--X14 Z14--R15  L22--X22 Z22--R23  L30--X30 Z30--R31
+y=7 | L07--X07 Z07--R00  L15--X15 Z15--R08  L23--X23 Z23--R16  L31--X31 Z31--R24
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 2/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move +y (check->data delta -y)
+R grid -> left/X contact side; rigid move +x (check->data delta -x)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R28  X00 Z00  L07  R00  X08 Z08  L15  R08  X16 Z16  L23  R16  X24 Z24  L31
+y=1 | R29  X01 Z01  L00  R01  X09 Z09  L08  R09  X17 Z17  L16  R17  X25 Z25  L24
+y=2 | R30  X02 Z02  L01  R02  X10 Z10  L09  R10  X18 Z18  L17  R18  X26 Z26  L25
+y=3 | R31  X03 Z03  L02  R03  X11 Z11  L10  R11  X19 Z19  L18  R19  X27 Z27  L26
+y=4 | R24  X04 Z04  L03  R04  X12 Z12  L11  R12  X20 Z20  L19  R20  X28 Z28  L27
+y=5 | R25  X05 Z05  L04  R05  X13 Z13  L12  R13  X21 Z21  L20  R21  X29 Z29  L28
+y=6 | R26  X06 Z06  L05  R06  X14 Z14  L13  R14  X22 Z22  L21  R22  X30 Z30  L29
+y=7 | R27  X07 Z07  L06  R07  X15 Z15  L14  R15  X23 Z23  L22  R23  X31 Z31  L30
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 2/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move +y (check->data delta -y)
+R grid -> left/X contact side; rigid move +x (check->data delta -x)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R28--X00 Z00--L07  R00--X08 Z08--L15  R08--X16 Z16--L23  R16--X24 Z24--L31
+y=1 | R29--X01 Z01--L00  R01--X09 Z09--L08  R09--X17 Z17--L16  R17--X25 Z25--L24
+y=2 | R30--X02 Z02--L01  R02--X10 Z10--L09  R10--X18 Z18--L17  R18--X26 Z26--L25
+y=3 | R31--X03 Z03--L02  R03--X11 Z11--L10  R11--X19 Z19--L18  R19--X27 Z27--L26
+y=4 | R24--X04 Z04--L03  R04--X12 Z12--L11  R12--X20 Z20--L19  R20--X28 Z28--L27
+y=5 | R25--X05 Z05--L04  R05--X13 Z13--L12  R13--X21 Z21--L20  R21--X29 Z29--L28
+y=6 | R26--X06 Z06--L05  R06--X14 Z14--L13  R14--X22 Z22--L21  R22--X30 Z30--L29
+y=7 | R27--X07 Z07--L06  R07--X15 Z15--L14  R15--X23 Z23--L22  R23--X31 Z31--L30
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 3/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move -y (check->data delta +y)
+R grid -> right/Z contact side; rigid move +y (check->data delta -y)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L01  X00 Z00  R07  L09  X08 Z08  R15  L17  X16 Z16  R23  L25  X24 Z24  R31
+y=1 | L02  X01 Z01  R00  L10  X09 Z09  R08  L18  X17 Z17  R16  L26  X25 Z25  R24
+y=2 | L03  X02 Z02  R01  L11  X10 Z10  R09  L19  X18 Z18  R17  L27  X26 Z26  R25
+y=3 | L04  X03 Z03  R02  L12  X11 Z11  R10  L20  X19 Z19  R18  L28  X27 Z27  R26
+y=4 | L05  X04 Z04  R03  L13  X12 Z12  R11  L21  X20 Z20  R19  L29  X28 Z28  R27
+y=5 | L06  X05 Z05  R04  L14  X13 Z13  R12  L22  X21 Z21  R20  L30  X29 Z29  R28
+y=6 | L07  X06 Z06  R05  L15  X14 Z14  R13  L23  X22 Z22  R21  L31  X30 Z30  R29
+y=7 | L00  X07 Z07  R06  L08  X15 Z15  R14  L16  X23 Z23  R22  L24  X31 Z31  R30
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 3/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move -y (check->data delta +y)
+R grid -> right/Z contact side; rigid move +y (check->data delta -y)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L01--X00 Z00--R07  L09--X08 Z08--R15  L17--X16 Z16--R23  L25--X24 Z24--R31
+y=1 | L02--X01 Z01--R00  L10--X09 Z09--R08  L18--X17 Z17--R16  L26--X25 Z25--R24
+y=2 | L03--X02 Z02--R01  L11--X10 Z10--R09  L19--X18 Z18--R17  L27--X26 Z26--R25
+y=3 | L04--X03 Z03--R02  L12--X11 Z11--R10  L20--X19 Z19--R18  L28--X27 Z27--R26
+y=4 | L05--X04 Z04--R03  L13--X12 Z12--R11  L21--X20 Z20--R19  L29--X28 Z28--R27
+y=5 | L06--X05 Z05--R04  L14--X13 Z13--R12  L22--X21 Z21--R20  L30--X29 Z29--R28
+y=6 | L07--X06 Z06--R05  L15--X14 Z14--R13  L23--X22 Z22--R21  L31--X30 Z30--R29
+y=7 | L00--X07 Z07--R06  L08--X15 Z15--R14  L16--X23 Z23--R22  L24--X31 Z31--R30
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 4/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move -x (check->data delta +x)
+R grid -> right/Z contact side; rigid move 0 (check->data delta 0)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L08  X00 Z00  R00  L16  X08 Z08  R08  L24  X16 Z16  R16  L04  X24 Z24  R24
+y=1 | L09  X01 Z01  R01  L17  X09 Z09  R09  L25  X17 Z17  R17  L05  X25 Z25  R25
+y=2 | L10  X02 Z02  R02  L18  X10 Z10  R10  L26  X18 Z18  R18  L06  X26 Z26  R26
+y=3 | L11  X03 Z03  R03  L19  X11 Z11  R11  L27  X19 Z19  R19  L07  X27 Z27  R27
+y=4 | L12  X04 Z04  R04  L20  X12 Z12  R12  L28  X20 Z20  R20  L00  X28 Z28  R28
+y=5 | L13  X05 Z05  R05  L21  X13 Z13  R13  L29  X21 Z21  R21  L01  X29 Z29  R29
+y=6 | L14  X06 Z06  R06  L22  X14 Z14  R14  L30  X22 Z22  R22  L02  X30 Z30  R30
+y=7 | L15  X07 Z07  R07  L23  X15 Z15  R15  L31  X23 Z23  R23  L03  X31 Z31  R31
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 4/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move -x (check->data delta +x)
+R grid -> right/Z contact side; rigid move 0 (check->data delta 0)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L08--X00 Z00--R00  L16--X08 Z08--R08  L24--X16 Z16--R16  L04--X24 Z24--R24
+y=1 | L09--X01 Z01--R01  L17--X09 Z09--R09  L25--X17 Z17--R17  L05--X25 Z25--R25
+y=2 | L10--X02 Z02--R02  L18--X10 Z10--R10  L26--X18 Z18--R18  L06--X26 Z26--R26
+y=3 | L11--X03 Z03--R03  L19--X11 Z11--R11  L27--X19 Z19--R19  L07--X27 Z27--R27
+y=4 | L12--X04 Z04--R04  L20--X12 Z12--R12  L28--X20 Z20--R20  L00--X28 Z28--R28
+y=5 | L13--X05 Z05--R05  L21--X13 Z13--R13  L29--X21 Z21--R21  L01--X29 Z29--R29
+y=6 | L14--X06 Z06--R06  L22--X14 Z14--R14  L30--X22 Z22--R22  L02--X30 Z30--R30
+y=7 | L15--X07 Z07--R07  L23--X15 Z15--R15  L31--X23 Z23--R23  L03--X31 Z31--R31
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 5/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move -x (check->data delta +x)
+R grid -> left/X contact side; rigid move 0 (check->data delta 0)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R00  X00 Z00  L08  R08  X08 Z08  L16  R16  X16 Z16  L24  R24  X24 Z24  L04
+y=1 | R01  X01 Z01  L09  R09  X09 Z09  L17  R17  X17 Z17  L25  R25  X25 Z25  L05
+y=2 | R02  X02 Z02  L10  R10  X10 Z10  L18  R18  X18 Z18  L26  R26  X26 Z26  L06
+y=3 | R03  X03 Z03  L11  R11  X11 Z11  L19  R19  X19 Z19  L27  R27  X27 Z27  L07
+y=4 | R04  X04 Z04  L12  R12  X12 Z12  L20  R20  X20 Z20  L28  R28  X28 Z28  L00
+y=5 | R05  X05 Z05  L13  R13  X13 Z13  L21  R21  X21 Z21  L29  R29  X29 Z29  L01
+y=6 | R06  X06 Z06  L14  R14  X14 Z14  L22  R22  X22 Z22  L30  R30  X30 Z30  L02
+y=7 | R07  X07 Z07  L15  R15  X15 Z15  L23  R23  X23 Z23  L31  R31  X31 Z31  L03
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 5/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move -x (check->data delta +x)
+R grid -> left/X contact side; rigid move 0 (check->data delta 0)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R00--X00 Z00--L08  R08--X08 Z08--L16  R16--X16 Z16--L24  R24--X24 Z24--L04
+y=1 | R01--X01 Z01--L09  R09--X09 Z09--L17  R17--X17 Z17--L25  R25--X25 Z25--L05
+y=2 | R02--X02 Z02--L10  R10--X10 Z10--L18  R18--X18 Z18--L26  R26--X26 Z26--L06
+y=3 | R03--X03 Z03--L11  R11--X11 Z11--L19  R19--X19 Z19--L27  R27--X27 Z27--L07
+y=4 | R04--X04 Z04--L12  R12--X12 Z12--L20  R20--X20 Z20--L28  R28--X28 Z28--L00
+y=5 | R05--X05 Z05--L13  R13--X13 Z13--L21  R21--X21 Z21--L29  R29--X29 Z29--L01
+y=6 | R06--X06 Z06--L14  R14--X14 Z14--L22  R22--X22 Z22--L30  R30--X30 Z30--L02
+y=7 | R07--X07 Z07--L15  R15--X15 Z15--L23  R23--X23 Z23--L31  R31--X31 Z31--L03
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 6/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move -y (check->data delta +y)
+R grid -> left/X contact side; rigid move +y (check->data delta -y)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R07  X00 Z00  L01  R15  X08 Z08  L09  R23  X16 Z16  L17  R31  X24 Z24  L25
+y=1 | R00  X01 Z01  L02  R08  X09 Z09  L10  R16  X17 Z17  L18  R24  X25 Z25  L26
+y=2 | R01  X02 Z02  L03  R09  X10 Z10  L11  R17  X18 Z18  L19  R25  X26 Z26  L27
+y=3 | R02  X03 Z03  L04  R10  X11 Z11  L12  R18  X19 Z19  L20  R26  X27 Z27  L28
+y=4 | R03  X04 Z04  L05  R11  X12 Z12  L13  R19  X20 Z20  L21  R27  X28 Z28  L29
+y=5 | R04  X05 Z05  L06  R12  X13 Z13  L14  R20  X21 Z21  L22  R28  X29 Z29  L30
+y=6 | R05  X06 Z06  L07  R13  X14 Z14  L15  R21  X22 Z22  L23  R29  X30 Z30  L31
+y=7 | R06  X07 Z07  L00  R14  X15 Z15  L08  R22  X23 Z23  L16  R30  X31 Z31  L24
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 6/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move -y (check->data delta +y)
+R grid -> left/X contact side; rigid move +y (check->data delta -y)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R07--X00 Z00--L01  R15--X08 Z08--L09  R23--X16 Z16--L17  R31--X24 Z24--L25
+y=1 | R00--X01 Z01--L02  R08--X09 Z09--L10  R16--X17 Z17--L18  R24--X25 Z25--L26
+y=2 | R01--X02 Z02--L03  R09--X10 Z10--L11  R17--X18 Z18--L19  R25--X26 Z26--L27
+y=3 | R02--X03 Z03--L04  R10--X11 Z11--L12  R18--X19 Z19--L20  R26--X27 Z27--L28
+y=4 | R03--X04 Z04--L05  R11--X12 Z12--L13  R19--X20 Z20--L21  R27--X28 Z28--L29
+y=5 | R04--X05 Z05--L06  R12--X13 Z13--L14  R20--X21 Z21--L22  R28--X29 Z29--L30
+y=6 | R05--X06 Z06--L07  R13--X14 Z14--L15  R21--X22 Z22--L23  R29--X30 Z30--L31
+y=7 | R06--X07 Z07--L00  R14--X15 Z15--L08  R22--X23 Z23--L16  R30--X31 Z31--L24
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 7/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move +y (check->data delta -y)
+R grid -> right/Z contact side; rigid move +x (check->data delta -x)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L07  X00 Z00  R28  L15  X08 Z08  R00  L23  X16 Z16  R08  L31  X24 Z24  R16
+y=1 | L00  X01 Z01  R29  L08  X09 Z09  R01  L16  X17 Z17  R09  L24  X25 Z25  R17
+y=2 | L01  X02 Z02  R30  L09  X10 Z10  R02  L17  X18 Z18  R10  L25  X26 Z26  R18
+y=3 | L02  X03 Z03  R31  L10  X11 Z11  R03  L18  X19 Z19  R11  L26  X27 Z27  R19
+y=4 | L03  X04 Z04  R24  L11  X12 Z12  R04  L19  X20 Z20  R12  L27  X28 Z28  R20
+y=5 | L04  X05 Z05  R25  L12  X13 Z13  R05  L20  X21 Z21  R13  L28  X29 Z29  R21
+y=6 | L05  X06 Z06  R26  L13  X14 Z14  R06  L21  X22 Z22  R14  L29  X30 Z30  R22
+y=7 | L06  X07 Z07  R27  L14  X15 Z15  R07  L22  X23 Z23  R15  L30  X31 Z31  R23
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 7/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> left/X contact side; rigid move +y (check->data delta -y)
+R grid -> right/Z contact side; rigid move +x (check->data delta -x)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | L07--X00 Z00--R28  L15--X08 Z08--R00  L23--X16 Z16--R08  L31--X24 Z24--R16
+y=1 | L00--X01 Z01--R29  L08--X09 Z09--R01  L16--X17 Z17--R09  L24--X25 Z25--R17
+y=2 | L01--X02 Z02--R30  L09--X10 Z10--R02  L17--X18 Z18--R10  L25--X26 Z26--R18
+y=3 | L02--X03 Z03--R31  L10--X11 Z11--R03  L18--X19 Z19--R11  L26--X27 Z27--R19
+y=4 | L03--X04 Z04--R24  L11--X12 Z12--R04  L19--X20 Z20--R12  L27--X28 Z28--R20
+y=5 | L04--X05 Z05--R25  L12--X13 Z13--R05  L20--X21 Z21--R13  L28--X29 Z29--R21
+y=6 | L05--X06 Z06--R26  L13--X14 Z14--R06  L21--X22 Z22--R14  L29--X30 Z30--R22
+y=7 | L06--X07 Z07--R27  L14--X15 Z15--R07  L22--X23 Z23--R15  L30--X31 Z31--R23
+
+==================================================================================
+BB64 SPATIAL VIEW | POSITION FOR LAYER 8/8 | bonds OFF
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move 0 (check->data delta 0)
+R grid -> left/X contact side; rigid move -y (check->data delta +y)
+
+Each fixed supercell is Xcc Zcc; mobile data are shown on its two sides.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R01  X00 Z00  L00  R09  X08 Z08  L08  R17  X16 Z16  L16  R25  X24 Z24  L24
+y=1 | R02  X01 Z01  L01  R10  X09 Z09  L09  R18  X17 Z17  L17  R26  X25 Z25  L25
+y=2 | R03  X02 Z02  L02  R11  X10 Z10  L10  R19  X18 Z18  L18  R27  X26 Z26  L26
+y=3 | R04  X03 Z03  L03  R12  X11 Z11  L11  R20  X19 Z19  L19  R28  X27 Z27  L27
+y=4 | R05  X04 Z04  L04  R13  X12 Z12  L12  R21  X20 Z20  L20  R29  X28 Z28  L28
+y=5 | R06  X05 Z05  L05  R14  X13 Z13  L13  R22  X21 Z21  L21  R30  X29 Z29  L29
+y=6 | R07  X06 Z06  L06  R15  X14 Z14  L14  R23  X22 Z22  L22  R31  X30 Z30  L30
+y=7 | R00  X07 Z07  L07  R08  X15 Z15  L15  R16  X23 Z23  L23  R24  X31 Z31  L31
+
+==================================================================================
+BB64 SPATIAL VIEW | CNOT LAYER 8/8 | 64 bonds ON
+schedule 67e327dc7cb35335
+
+L grid -> right/Z contact side; rigid move 0 (check->data delta 0)
+R grid -> left/X contact side; rigid move -y (check->data delta +y)
+
+Bond directions: data--X means X ancilla -> data; Z--data means data -> Z ancilla.
+             x=0                 x=1                 x=2                 x=3
+y=0 | R01--X00 Z00--L00  R09--X08 Z08--L08  R17--X16 Z16--L16  R25--X24 Z24--L24
+y=1 | R02--X01 Z01--L01  R10--X09 Z09--L09  R18--X17 Z17--L17  R26--X25 Z25--L25
+y=2 | R03--X02 Z02--L02  R11--X10 Z10--L10  R19--X18 Z18--L18  R27--X26 Z26--L26
+y=3 | R04--X03 Z03--L03  R12--X11 Z11--L11  R20--X19 Z19--L19  R28--X27 Z27--L27
+y=4 | R05--X04 Z04--L04  R13--X12 Z12--L12  R21--X20 Z20--L20  R29--X28 Z28--L28
+y=5 | R06--X05 Z05--L05  R14--X13 Z13--L13  R22--X21 Z21--L21  R30--X29 Z29--L29
+y=6 | R07--X06 Z06--L06  R15--X14 Z14--L14  R23--X22 Z22--L22  R31--X30 Z30--L30
+y=7 | R00--X07 Z07--L07  R08--X15 Z15--L15  R16--X23 Z23--L23  R24--X31 Z31--L31
+
+==================================================================================
+BB64 SPATIAL VIEW | MEASURE
+schedule 67e327dc7cb35335
+
+Measure fixed X00..X31 in the X basis and fixed Z00..Z31 in the Z basis.
+The mobile data grids remain encoded; their post-round parking move is unspecified.
+No CNOT bonds are active.
