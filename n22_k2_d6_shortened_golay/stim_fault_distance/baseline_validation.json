@@ -1,0 +1,208 @@
+{
+  "code": "[[22,2,6]]",
+  "experiments": {
+    "bulk-cnot-X": {
+      "certified_fault_distance": 5,
+      "exact_through_four": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.0,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.2,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 1.59,
+            "fault_count": 4,
+            "method": "exact-pair-meet-in-the-middle",
+            "status": "unsat"
+          }
+        ],
+        "distance": null,
+        "distinct_fault_effect_count": 1364,
+        "elapsed_seconds": 1.83,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "heuristic": {
+        "elapsed_seconds": 12.228,
+        "explained_errors": [
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D14[coords 1,0,1] D15[coords 1,0,2] D18[coords 1,0,5] D21[coords 1,0,8] D35[coords 1,0,11] D42[coords 2,0,5] L0 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z37\n        Circuit location stack trace:\n            (after 13 TICKs)\n            at instruction #67 (DEPOLARIZE2) in the circuit\n            at targets #31 to #32 of the instruction\n            resolving to DEPOLARIZE2(0.001) 5[coords 0,5] 37\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D14[coords 1,0,1] D17[coords 1,0,4] D20[coords 1,0,7] D21[coords 1,0,8] D22[coords 1,0,9]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z21[coords 2,5]\n        Circuit location stack trace:\n            (after 12 TICKs)\n            at instruction #64 (DEPOLARIZE2) in the circuit\n            at targets #23 to #24 of the instruction\n            resolving to DEPOLARIZE2(0.001) 21[coords 2,5] 33\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D16[coords 1,0,3] D17[coords 1,0,4] D20[coords 1,0,7] D21[coords 1,0,8] D35[coords 1,0,11] D42[coords 2,0,5]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z17[coords 2,1]\n        Circuit location stack trace:\n            (after 13 TICKs)\n            at instruction #67 (DEPOLARIZE2) in the circuit\n            at targets #11 to #12 of the instruction\n            resolving to DEPOLARIZE2(0.001) 27 17[coords 2,1]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D16[coords 1,0,3] D19[coords 1,0,6] D20[coords 1,0,7] D21[coords 1,0,8] D23[coords 1,0,10]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z20[coords 2,4]\n        Circuit location stack trace:\n            (after 12 TICKs)\n            at instruction #64 (DEPOLARIZE2) in the circuit\n            at targets #43 to #44 of the instruction\n            resolving to DEPOLARIZE2(0.001) 20[coords 2,4] 43\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D15[coords 1,0,2] D18[coords 1,0,5] D19[coords 1,0,6] D20[coords 1,0,7] D22[coords 1,0,9] D23[coords 1,0,10]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z19[coords 2,3]\n        Circuit location stack trace:\n            (after 12 TICKs)\n            at instruction #64 (DEPOLARIZE2) in the circuit\n            at targets #41 to #42 of the instruction\n            resolving to DEPOLARIZE2(0.001) 19[coords 2,3] 42\n    }\n}"
+        ],
+        "upper_bound": 5
+      },
+      "num_detectors": 72,
+      "num_observables": 2,
+      "num_qubits": 44
+    },
+    "bulk-cnot-Z": {
+      "certified_fault_distance": 5,
+      "exact_through_four": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.0,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.212,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 2.014,
+            "fault_count": 4,
+            "method": "exact-pair-meet-in-the-middle",
+            "status": "unsat"
+          }
+        ],
+        "distance": null,
+        "distinct_fault_effect_count": 1364,
+        "elapsed_seconds": 2.275,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "heuristic": {
+        "elapsed_seconds": 17.611,
+        "explained_errors": [
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D30[coords 1,1,6] D35[coords 1,0,11] D36[coords 1,1,11] D37[coords 2,0,0] D55[coords 2,1,7] L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z22*X17[coords 2,1]\n        Circuit location stack trace:\n            (after 16 TICKs)\n            at instruction #76 (DEPOLARIZE2) in the circuit\n            at targets #1 to #2 of the instruction\n            resolving to DEPOLARIZE2(0.001) 22 17[coords 2,1]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D13[coords 1,0,0] D34[coords 1,1,10] D35[coords 1,0,11] D36[coords 1,1,11] D37[coords 2,0,0] D50[coords 2,1,2] D51[coords 2,1,3] D52[coords 2,1,4] D55[coords 2,1,7] D58[coords 2,1,10] L0\n    CircuitErrorLocation {\n        flipped_pauli_product: Y22\n        Circuit location stack trace:\n            (after 17 TICKs)\n            at instruction #79 (DEPOLARIZE2) in the circuit\n            at targets #1 to #2 of the instruction\n            resolving to DEPOLARIZE2(0.001) 22 20[coords 2,4]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D24[coords 1,1,0] D25[coords 1,1,1] D28[coords 1,1,4] D29[coords 1,1,5] D32[coords 1,1,8] D36[coords 1,1,11] D52[coords 2,1,4] L1\n    CircuitErrorLocation {\n        flipped_pauli_product: X24\n        Circuit location stack trace:\n            (after 13 TICKs)\n            at instruction #67 (DEPOLARIZE2) in the circuit\n            at targets #5 to #6 of the instruction\n            resolving to DEPOLARIZE2(0.001) 24 14[coords 1,6]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D24[coords 1,1,0] D25[coords 1,1,1] D28[coords 1,1,4] D31[coords 1,1,7] D32[coords 1,1,8] D34[coords 1,1,10] L0\n    CircuitErrorLocation {\n        flipped_pauli_product: X9[coords 1,1]\n        Circuit location stack trace:\n            (after 12 TICKs)\n            at instruction #64 (DEPOLARIZE2) in the circuit\n            at targets #19 to #20 of the instruction\n            resolving to DEPOLARIZE2(0.001) 31 9[coords 1,1]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D29[coords 1,1,5] D30[coords 1,1,6] D31[coords 1,1,7] D36[coords 1,1,11] D50[coords 2,1,2] D51[coords 2,1,3] D58[coords 2,1,10] L0\n    CircuitErrorLocation {\n        flipped_pauli_product: X4[coords 0,4]\n        Circuit location stack trace:\n            (after 15 TICKs)\n            at instruction #73 (DEPOLARIZE2) in the circuit\n            at targets #43 to #44 of the instruction\n            resolving to DEPOLARIZE2(0.001) 4[coords 0,4] 43\n    }\n}"
+        ],
+        "upper_bound": 5
+      },
+      "num_detectors": 72,
+      "num_observables": 2,
+      "num_qubits": 44
+    },
+    "memory-r3-full-X": {
+      "certified_fault_distance": 5,
+      "exact_through_four": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.0,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.003,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.971,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 11.994,
+            "fault_count": 4,
+            "method": "exact-pair-meet-in-the-middle",
+            "status": "unsat"
+          }
+        ],
+        "distance": null,
+        "distinct_fault_effect_count": 3432,
+        "elapsed_seconds": 13.07,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "heuristic": {
+        "elapsed_seconds": 156.72,
+        "explained_errors": [
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,0,0] D1[coords 0,0,1] D2[coords 0,0,2] D5[coords 0,0,5] D8[coords 0,0,8] D11[coords 0,0,11] D18[coords 1,0,5] L0 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z37\n        Circuit location stack trace:\n            (after 3 TICKs)\n            at instruction #34 (DEPOLARIZE2) in the circuit\n            at targets #31 to #32 of the instruction\n            resolving to DEPOLARIZE2(0.001) 5[coords 0,5] 37\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,0,0] D1[coords 0,0,1] D4[coords 0,0,4] D7[coords 0,0,7] D8[coords 0,0,8] D9[coords 0,0,9]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z21[coords 2,5]\n        Circuit location stack trace:\n            (after 0 TICKs)\n            at instruction #24 (DEPOLARIZE1) in the circuit\n            at target #22 of the instruction\n            resolving to DEPOLARIZE1(0.001) 21[coords 2,5]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,0,0] D3[coords 0,0,3] D4[coords 0,0,4] D7[coords 0,0,7] D8[coords 0,0,8] D11[coords 0,0,11] D18[coords 1,0,5]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z17[coords 2,1]\n        Circuit location stack trace:\n            (after 3 TICKs)\n            at instruction #34 (DEPOLARIZE2) in the circuit\n            at targets #11 to #12 of the instruction\n            resolving to DEPOLARIZE2(0.001) 27 17[coords 2,1]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,0,0] D3[coords 0,0,3] D6[coords 0,0,6] D7[coords 0,0,7] D8[coords 0,0,8] D10[coords 0,0,10]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z20[coords 2,4]\n        Circuit location stack trace:\n            (after 0 TICKs)\n            at instruction #24 (DEPOLARIZE1) in the circuit\n            at target #21 of the instruction\n            resolving to DEPOLARIZE1(0.001) 20[coords 2,4]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D2[coords 0,0,2] D5[coords 0,0,5] D6[coords 0,0,6] D7[coords 0,0,7] D9[coords 0,0,9] D10[coords 0,0,10]\n    CircuitErrorLocation {\n        flipped_pauli_product: Z19[coords 2,3]\n        Circuit location stack trace:\n            (after 0 TICKs)\n            at instruction #24 (DEPOLARIZE1) in the circuit\n            at target #20 of the instruction\n            resolving to DEPOLARIZE1(0.001) 19[coords 2,3]\n    }\n}"
+        ],
+        "upper_bound": 5
+      },
+      "num_detectors": 72,
+      "num_observables": 2,
+      "num_qubits": 44
+    },
+    "memory-r3-full-Z": {
+      "certified_fault_distance": 5,
+      "exact_through_four": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.0,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.732,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 9.647,
+            "fault_count": 4,
+            "method": "exact-pair-meet-in-the-middle",
+            "status": "unsat"
+          }
+        ],
+        "distance": null,
+        "distinct_fault_effect_count": 3432,
+        "elapsed_seconds": 10.443,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "heuristic": {
+        "elapsed_seconds": 187.56,
+        "explained_errors": [
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,1,0] D1[coords 0,1,1] D3[coords 0,1,3] D4[coords 0,1,4] D5[coords 0,1,5] D8[coords 0,1,8] D11[coords 0,0,11] D15[coords 1,0,2] L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Y2[coords 0,2]\n        Circuit location stack trace:\n            (after 2 TICKs)\n            at instruction #31 (DEPOLARIZE2) in the circuit\n            at targets #5 to #6 of the instruction\n            resolving to DEPOLARIZE2(0.001) 24 2[coords 0,2]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D0[coords 0,1,0] D1[coords 0,1,1] D4[coords 0,1,4] D7[coords 0,1,7] D8[coords 0,1,8] D10[coords 0,1,10] D11[coords 0,0,11] D22[coords 1,0,9] L0\n    CircuitErrorLocation {\n        flipped_pauli_product: Y9[coords 1,1]\n        Circuit location stack trace:\n            (after 2 TICKs)\n            at instruction #31 (DEPOLARIZE2) in the circuit\n            at targets #19 to #20 of the instruction\n            resolving to DEPOLARIZE2(0.001) 31 9[coords 1,1]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D3[coords 0,1,3] D6[coords 0,1,6] D9[coords 0,1,9] D10[coords 0,1,10] D14[coords 1,0,1] D15[coords 1,0,2] D26[coords 1,1,2] D27[coords 1,1,3] L0 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Y22*Y14[coords 1,6]\n        Circuit location stack trace:\n            (after 5 TICKs)\n            at instruction #40 (DEPOLARIZE2) in the circuit\n            at targets #1 to #2 of the instruction\n            resolving to DEPOLARIZE2(0.001) 22 14[coords 1,6]\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D5[coords 0,1,5] D6[coords 0,1,6] D7[coords 0,1,7] D11[coords 0,0,11] D12[coords 0,1,11] D14[coords 1,0,1] D21[coords 1,0,8] D22[coords 1,0,9] D26[coords 1,1,2] D27[coords 1,1,3] D34[coords 1,1,10] L0\n    CircuitErrorLocation {\n        flipped_pauli_product: Y4[coords 0,4]*Y40\n        Circuit location stack trace:\n            (after 6 TICKs)\n            at instruction #43 (DEPOLARIZE2) in the circuit\n            at targets #37 to #38 of the instruction\n            resolving to DEPOLARIZE2(0.001) 4[coords 0,4] 40\n    }\n}",
+          "ExplainedError {\n    dem_error_terms: D9[coords 0,1,9] D11[coords 0,0,11] D12[coords 0,1,11] D21[coords 1,0,8] D34[coords 1,1,10]\n    CircuitErrorLocation {\n        flipped_pauli_product: Y20[coords 2,4]\n        Circuit location stack trace:\n            (after 3 TICKs)\n            at instruction #34 (DEPOLARIZE2) in the circuit\n            at targets #17 to #18 of the instruction\n            resolving to DEPOLARIZE2(0.001) 30 20[coords 2,4]\n    }\n}"
+        ],
+        "upper_bound": 5
+      },
+      "num_detectors": 72,
+      "num_observables": 2,
+      "num_qubits": 44
+    }
+  },
+  "schedule": "/tmp/n22_k2_d6_shortened_golay/schedule/baseline_schedule.json",
+  "schema_version": 1,
+  "timestamp": "2026-09-03T19:10:12+00:00"
+}

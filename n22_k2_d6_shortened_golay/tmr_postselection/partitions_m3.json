@@ -1,0 +1,43 @@
+{
+  "partitions": {
+    "0": [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        9,
+        11
+      ]
+    ],
+    "1": [
+      [
+        2,
+        7
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        15,
+        16,
+        17
+      ]
+    ]
+  },
+  "batch_ranks": [
+    4
+  ],
+  "combined_rank": 4,
+  "batch_kernel_dimensions": [
+    2
+  ],
+  "combined_kernel_dimension": 2,
+  "single_final_check_certified": true
+}

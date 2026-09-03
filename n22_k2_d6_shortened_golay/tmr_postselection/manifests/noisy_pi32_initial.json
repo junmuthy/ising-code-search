@@ -1,0 +1,22 @@
+{
+  "description": "Initial [[22,2,6]] postselection run at theta=pi/32 and p=1e-3",
+  "tasks": [
+    {
+      "slug": "full-single-n2-pi32-p1e-3-1m",
+      "arguments": {
+        "mode": "full",
+        "protocol": "single-final-check",
+        "theta": 0.09817477042468103,
+        "partition_count": 3,
+        "logical_count": 2,
+        "probability": 0.001,
+        "max_shots": 1000000,
+        "checkpoint_shots": 100000,
+        "threads": 16,
+        "clifft_batch_size": 1,
+        "seed": 221033,
+        "save_circuit": true
+      }
+    }
+  ]
+}
