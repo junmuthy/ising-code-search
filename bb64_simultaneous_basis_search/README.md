@@ -26,13 +26,22 @@ permutation outside that family.
 
 ## Result
 
-`results/run_003_low_weight` contains the preferred certified result with three
-exact-cover batches of sizes `3+2+3`.  All eight Z representatives and all
-eight canonical X representatives have weight eight.  The same basis has a
-regular `C_4 x C_2` logical action and transversal Hadamard plus the logical
-permutation `(0 5)(1 4)(2 7)(3 6)`.
+`fewer_batch_search/results/run_001_weight8_60s` contains the preferred result:
+two exact-cover batches of sizes `4+4`, with all eight Z representatives and
+all eight canonical X representatives at weight eight.  It retains the regular
+`C_4 x C_2` logical action and transversal Hadamard plus the logical permutation
+`(0 5)(1 4)(2 7)(3 6)`.
 
 See `RESULTS.md` for the complete interpretation and
-`results/run_003_low_weight/simultaneous_basis_weight64.npz` for the preferred
-matrix artifact.  The earlier `run_001` and `run_002` results are retained
-unchanged for provenance.
+`fewer_batch_search/results/run_001_weight8_60s/basis_batches2_candidate0.npz`
+for the preferred matrix artifact.  The earlier three-batch artifact and the
+original `run_001` and `run_002` results are retained unchanged for provenance.
+
+## Complete physical specification
+
+`BB64_TWO_BATCH_REPRESENTATION.md` is the single-document specification of the
+preferred presentation.  It lists all 64 data-qubit labels, all logical X and
+Z supports, both disjoint logical batches, the transversal-H permutation, and
+all 512 directed CNOTs in the eight-layer simultaneous syndrome schedule.
+`generate_representation_document.py` regenerates it directly from the saved
+basis NPZ and canonical schedule JSON.

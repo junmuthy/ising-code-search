@@ -1,6 +1,32 @@
 # Simultaneous Ising basis for the `[[64,8,8]]` BB code
 
-## Weight-eight refinement
+## Two-batch refinement
+
+The focused follow-up in `fewer_batch_search` improves the operational cover
+from `3+2+3` to `4+4` while preserving the exact X/Z representative map.  The
+preferred artifact is
+`fewer_batch_search/results/run_001_weight8_60s/basis_batches2_candidate0.npz`.
+
+Its exact Z cover is
+
+\[
+\{0,3,4,7\}\;\sqcup\;\{1,2,5,6\},
+\]
+
+and its exact X cover is
+
+\[
+\{1,2,5,6\}\;\sqcup\;\{0,3,4,7\}.
+\]
+
+Every X and Z representative has weight eight.  The check matrices, distance,
+regular `C_4 x C_2` action, and Hadamard permutation
+`(0 5)(1 4)(2 7)(3 6)` are unchanged.  All eight one-batch tests were exactly
+`unsat` at logical weight eight; two of the eight candidates gave two-batch
+witnesses, with no timeouts.  See the new run's `RESULTS.md` for the exact
+search boundary and files.
+
+## Weight-eight refinement (three-batch predecessor)
 
 `run_003_low_weight` improves the original positive result below.  The same
 basis properties and the same `3+2+3` exact cover are retained, but the one
