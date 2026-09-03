@@ -32,4 +32,6 @@ schedules.  Circuit-level fault-distance work belongs under
 reference, including the exact schedule, TMR decomposition, measured
 post-selection probability, and parallel-factory completion times.  The
 reproducible ClifT implementation and its focused result report are under
-`tmr_postselection`.
+`tmr_postselection`.  The Appendix-C-style teleportation fidelity estimator,
+joint terminal decoder, and full stochastic RUS analysis are under
+`teleportation`.

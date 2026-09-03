@@ -1,0 +1,15 @@
+{
+  "description": "Operational RUS calibration at p=1e-3: noisy preparation, transversal teleportation CNOT, and terminal readout",
+  "tasks": [
+    {"slug": "pi32-n1-m3", "arguments": {"theta": 0.09817477042468103, "partition_count": 3, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 10000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224000}},
+    {"slug": "pi32-n2-m3", "arguments": {"theta": 0.09817477042468103, "partition_count": 3, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 20000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224001}},
+    {"slug": "pi16-n1-m3", "arguments": {"theta": 0.19634954084936207, "partition_count": 3, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 8000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224002}},
+    {"slug": "pi16-n2-m3", "arguments": {"theta": 0.19634954084936207, "partition_count": 3, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 12000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224003}},
+    {"slug": "pi8-n1-m3", "arguments": {"theta": 0.39269908169872414, "partition_count": 3, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 5000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224004}},
+    {"slug": "pi8-n2-m3", "arguments": {"theta": 0.39269908169872414, "partition_count": 3, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 8000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224005}},
+    {"slug": "pi4-n1-m1", "arguments": {"theta": 0.7853981633974483, "partition_count": 1, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 2000000, "checkpoint_shots": 500000, "threads": 1, "seed": 224006}},
+    {"slug": "pi4-n2-m1", "arguments": {"theta": 0.7853981633974483, "partition_count": 1, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 3000000, "checkpoint_shots": 500000, "threads": 1, "seed": 224007}},
+    {"slug": "pi2-n1-m1", "arguments": {"theta": 1.5707963267948966, "partition_count": 1, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 2000000, "checkpoint_shots": 500000, "threads": 1, "seed": 224008}},
+    {"slug": "pi2-n2-m1", "arguments": {"theta": 1.5707963267948966, "partition_count": 1, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 3000000, "checkpoint_shots": 500000, "threads": 1, "seed": 224009}}
+  ]
+}

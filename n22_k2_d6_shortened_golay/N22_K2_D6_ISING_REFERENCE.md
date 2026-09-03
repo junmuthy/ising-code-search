@@ -511,19 +511,30 @@ experiment.
 
 ## Reproducibility and present limitations
 
-The implementation, partition certificate, manifests, and detailed results
-are under `tmr_postselection/`.  The primary raw result is
+The preparation implementation, partition certificate, manifests, and detailed
+post-selection results are under `tmr_postselection/`.  The primary raw result is
 `tmr_postselection/results/noisy_pi32_initial/full-single-n2-pi32-p1e-3-1m.json`;
 the exact generated Stim circuit is stored beside it.
 
-The present certificates establish static distance, the tracked ZX basis
-change, disjoint logical-Z preparation supports, schedule depth, circuit fault
-distance for memory extraction, and resource-state post-selection acceptance.
-They do not yet establish:
+The subsequent teleportation-based fidelity estimator, exact joint terminal
+decoder, operational dyadic-angle calibration, and two-logical stochastic RUS
+analysis are under `teleportation/`.  At `theta=pi/32` and `p=10^-3`, the full
+RUS model gives an any-logical error estimate of
 
-- conditional logical infidelity of accepted resource states;
-- teleportation performance;
+\[
+(7.60\pm0.28)\times10^{-4}
+\]
+
+and requires `17.352 +/- 0.013` syndrome-extraction cycles on average.  See
+`teleportation/RESULTS.md` for the estimator convention and modeling caveats.
+
+The present certificates and simulations establish static distance, the
+tracked ZX basis change, disjoint logical-Z preparation supports, schedule
+depth, memory-extraction circuit fault distance, resource-state post-selection
+acceptance, conditional logical infidelity, and a first stochastic RUS gate
+estimate.  They do not yet establish:
+
 - memory cost while successful factory blocks wait;
-- correlated logical errors across the two accepted resources;
+- a complete circuit-location MLE comparison with the residual-Pauli decoder;
 - collision-free continuous neutral-atom motion trajectories; or
 - a separate pure-permutation logical `C2` translation.

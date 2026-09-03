@@ -1,0 +1,9 @@
+{
+  "description": "Small-angle extension of the operational RUS calibration at p=1e-3",
+  "tasks": [
+    {"slug": "pi64-n1-m3", "arguments": {"theta": 0.04908738521234052, "partition_count": 3, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 15000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224100}},
+    {"slug": "pi64-n2-m3", "arguments": {"theta": 0.04908738521234052, "partition_count": 3, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 25000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224101}},
+    {"slug": "pi128-n1-m3", "arguments": {"theta": 0.02454369260617026, "partition_count": 3, "logical_count": 1, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 20000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224102}},
+    {"slug": "pi128-n2-m3", "arguments": {"theta": 0.02454369260617026, "partition_count": 3, "logical_count": 2, "preparation_probability": 0.001, "teleportation_probability": 0.001, "max_shots": 30000000, "checkpoint_shots": 1000000, "threads": 1, "seed": 224103}}
+  ]
+}
