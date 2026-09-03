@@ -1,0 +1,53 @@
+{
+  "description": "Initial analytic-acceptance validation for the certified one-final-check protocol",
+  "tasks": [
+    {
+      "slug": "ideal-n1-theta-pi128",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n2-theta-pi128",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 2, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n4-theta-pi128",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 4, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n8-theta-pi128",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 8, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n1-theta-pi32",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n2-theta-pi32",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 2, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n4-theta-pi32",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 4, "max_shots": 50000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n8-theta-pi32",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 8, "max_shots": 100000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n1-theta-pi8",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n2-theta-pi8",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 2, "max_shots": 30000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n4-theta-pi8",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 4, "max_shots": 100000, "checkpoint_shots": 10000, "threads": 2}
+    },
+    {
+      "slug": "ideal-n8-theta-pi8",
+      "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 8, "max_shots": 1000000, "checkpoint_shots": 100000, "threads": 2}
+    }
+  ]
+}

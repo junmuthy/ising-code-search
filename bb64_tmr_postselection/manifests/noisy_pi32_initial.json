@@ -1,0 +1,38 @@
+{
+  "description": "Initial BB64 postselection comparison at theta=pi/32 and p=1e-3",
+  "tasks": [
+    {
+      "slug": "full-single-n8-pi32-p1e-3-target400",
+      "arguments": {
+        "mode": "full",
+        "protocol": "single-final-check",
+        "theta": 0.09817477042468103,
+        "partition_count": 3,
+        "logical_count": 8,
+        "probability": 0.001,
+        "max_shots": 1000000,
+        "target_survivors": 400,
+        "checkpoint_shots": 1000,
+        "threads": 16,
+        "clifft_batch_size": 1,
+        "seed": 641032
+      }
+    },
+    {
+      "slug": "full-two-projection-n8-pi32-p1e-3-200k",
+      "arguments": {
+        "mode": "full",
+        "protocol": "two-projection",
+        "theta": 0.09817477042468103,
+        "partition_count": 3,
+        "logical_count": 8,
+        "probability": 0.001,
+        "max_shots": 200000,
+        "checkpoint_shots": 50000,
+        "threads": 16,
+        "clifft_batch_size": 1,
+        "seed": 642032
+      }
+    }
+  ]
+}
