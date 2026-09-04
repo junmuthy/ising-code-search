@@ -42,6 +42,8 @@ always records the verified distance five.
 
 The frozen arrays and human-readable presentation are in `code_data/`.
 The exact paper schedule is `schedule/paper_table_ii_schedule.json`.
+The consolidated Ising-facing reference is
+`N28_K4_D5_BICYCLE_CHAIN_REFERENCE.md`.
 
 ## Results
 
