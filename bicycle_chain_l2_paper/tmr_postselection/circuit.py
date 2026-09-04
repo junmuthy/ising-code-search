@@ -10,9 +10,6 @@ import numpy as np
 import stim
 
 from .model import (
-    BATCHES,
-    NUM_CHECKS,
-    NUM_DATA,
     CodeArtifact,
     independent_indices,
     initialization_correction_map,
@@ -24,14 +21,6 @@ from .partitions import Partition, PartitionCertificate, certify_partitions
 
 Mode = Literal["ideal-projection", "scheduled-tmr-only", "full"]
 Protocol = Literal["two-projection", "single-final-check"]
-
-DATA_QUBITS = tuple(range(NUM_DATA))
-X_ANCILLA_START = NUM_DATA
-Z_ANCILLA_START = NUM_DATA + NUM_CHECKS
-X_ANCILLAS = tuple(range(X_ANCILLA_START, Z_ANCILLA_START))
-Z_ANCILLAS = tuple(range(Z_ANCILLA_START, Z_ANCILLA_START + NUM_CHECKS))
-FACTORY_QUBITS = DATA_QUBITS + X_ANCILLAS + Z_ANCILLAS
-
 
 @dataclass(frozen=True)
 class NoiseModel:
@@ -168,8 +157,10 @@ def ideal_tmr_acceptance(theta: float, partitions: int) -> float:
     ) ** (2 * partitions)
 
 
-def _pauli_string(axis: str, support: Sequence[int]) -> stim.PauliString:
-    characters = ["I"] * NUM_DATA
+def _pauli_string(
+    axis: str, support: Sequence[int], num_data: int
+) -> stim.PauliString:
+    characters = ["I"] * num_data
     for qubit in support:
         characters[int(qubit)] = axis
     return stim.PauliString("".join(characters))
@@ -181,12 +172,14 @@ def encoded_plus_circuit(code: CodeArtifact) -> stim.Circuit:
     x_rows = independent_indices(code.matrix_x)
     z_rows = independent_indices(code.matrix_z)
     stabilizers = [
-        *(_pauli_string("X", code.checks_x[row]) for row in x_rows),
-        *(_pauli_string("Z", code.checks_z[row]) for row in z_rows),
-        *(_pauli_string("X", support) for support in code.logicals_x),
+        *(_pauli_string("X", code.checks_x[row], code.num_data) for row in x_rows),
+        *(_pauli_string("Z", code.checks_z[row], code.num_data) for row in z_rows),
+        *(_pauli_string("X", support, code.num_data) for support in code.logicals_x),
     ]
-    if len(stabilizers) != NUM_DATA:
-        raise ValueError(f"encoded plus state needs exactly {NUM_DATA} independent stabilizers")
+    if len(stabilizers) != code.num_data:
+        raise ValueError(
+            f"encoded plus state needs exactly {code.num_data} independent stabilizers"
+        )
     tableau = stim.Tableau.from_stabilizers(stabilizers)
     return tableau.to_circuit("graph_state")
 
@@ -279,7 +272,7 @@ def _append_ladder_tmr(
     maximum = max((len(controls) for controls, _pivot in records), default=0)
     for layer in range(maximum):
         pairs = [(controls[layer], pivot) for controls, pivot in records if layer < len(controls)]
-        _append_cnot_layer(builder, pairs, noise, DATA_QUBITS)
+        _append_cnot_layer(builder, pairs, noise, tuple(range(code.num_data)))
 
     pivots = tuple(pivot for _controls, pivot in records)
     alpha = theta_star / math.pi
@@ -292,7 +285,7 @@ def _append_ladder_tmr(
 
     for layer in reversed(range(maximum)):
         pairs = [(controls[layer], pivot) for controls, pivot in records if layer < len(controls)]
-        _append_cnot_layer(builder, pairs, noise, DATA_QUBITS)
+        _append_cnot_layer(builder, pairs, noise, tuple(range(code.num_data)))
 
 
 def _append_projection_detectors(
@@ -328,31 +321,37 @@ def _append_full_syndrome_round(
     noise: NoiseModel,
     label: str,
 ) -> None:
-    builder.append(f"RX {' '.join(map(str, X_ANCILLAS))}")
-    builder.append(f"R {' '.join(map(str, Z_ANCILLAS))}")
-    builder.operation_counts["ancilla_preparations"] += 2 * NUM_CHECKS
+    data_qubits = tuple(range(code.num_data))
+    x_ancilla_start = code.num_data
+    z_ancilla_start = code.num_data + code.num_checks
+    x_ancillas = tuple(range(x_ancilla_start, z_ancilla_start))
+    z_ancillas = tuple(range(z_ancilla_start, z_ancilla_start + code.num_checks))
+    factory_qubits = data_qubits + x_ancillas + z_ancillas
+    builder.append(f"RX {' '.join(map(str, x_ancillas))}")
+    builder.append(f"R {' '.join(map(str, z_ancillas))}")
+    builder.operation_counts["ancilla_preparations"] += 2 * code.num_checks
     if noise.active and noise.preparation:
-        _append_depolarize1(builder, X_ANCILLAS + Z_ANCILLAS, noise)
+        _append_depolarize1(builder, x_ancillas + z_ancillas, noise)
     builder.tick()
 
     for layer in code.schedule:
         pairs = []
         for gate in layer:
             if gate.kind == "X":
-                pairs.append((X_ANCILLA_START + gate.check, gate.data))
+                pairs.append((x_ancilla_start + gate.check, gate.data))
             else:
-                pairs.append((gate.data, Z_ANCILLA_START + gate.check))
-        _append_cnot_layer(builder, pairs, noise, FACTORY_QUBITS)
+                pairs.append((gate.data, z_ancilla_start + gate.check))
+        _append_cnot_layer(builder, pairs, noise, factory_qubits)
 
     if noise.active and noise.measurement:
         builder.append(
-            f"Z_ERROR({noise.probability:.17g}) {' '.join(map(str, X_ANCILLAS))}"
+            f"Z_ERROR({noise.probability:.17g}) {' '.join(map(str, x_ancillas))}"
         )
         builder.append(
-            f"X_ERROR({noise.probability:.17g}) {' '.join(map(str, Z_ANCILLAS))}"
+            f"X_ERROR({noise.probability:.17g}) {' '.join(map(str, z_ancillas))}"
         )
-    x_measurements = builder.measurement("MX", X_ANCILLAS, f"{label}_raw_X")
-    z_measurements = builder.measurement("M", Z_ANCILLAS, f"{label}_raw_Z")
+    x_measurements = builder.measurement("MX", x_ancillas, f"{label}_raw_X")
+    z_measurements = builder.measurement("M", z_ancillas, f"{label}_raw_Z")
     _append_projection_detectors(builder, x_measurements, z_measurements, label)
     builder.tick()
 
@@ -360,30 +359,33 @@ def _append_full_syndrome_round(
 def _append_initialization(
     builder: _TextBuilder, code: CodeArtifact, noise: NoiseModel
 ) -> None:
-    builder.append(f"RX {' '.join(map(str, DATA_QUBITS))}")
-    builder.operation_counts["data_preparations"] += NUM_DATA
+    data_qubits = tuple(range(code.num_data))
+    z_ancilla_start = code.num_data + code.num_checks
+    z_ancillas = tuple(range(z_ancilla_start, z_ancilla_start + code.num_checks))
+    builder.append(f"RX {' '.join(map(str, data_qubits))}")
+    builder.operation_counts["data_preparations"] += code.num_data
     if noise.active and noise.preparation:
-        _append_depolarize1(builder, DATA_QUBITS, noise)
+        _append_depolarize1(builder, data_qubits, noise)
     builder.tick()
 
-    builder.append(f"R {' '.join(map(str, Z_ANCILLAS))}")
-    builder.operation_counts["ancilla_preparations"] += NUM_CHECKS
+    builder.append(f"R {' '.join(map(str, z_ancillas))}")
+    builder.operation_counts["ancilla_preparations"] += code.num_checks
     if noise.active and noise.preparation:
-        _append_depolarize1(builder, Z_ANCILLAS, noise)
+        _append_depolarize1(builder, z_ancillas, noise)
     builder.tick()
-    live = DATA_QUBITS + Z_ANCILLAS
+    live = data_qubits + z_ancillas
     for layer in code.schedule:
         pairs = [
-            (gate.data, Z_ANCILLA_START + gate.check)
+            (gate.data, z_ancilla_start + gate.check)
             for gate in layer
             if gate.kind == "Z"
         ]
         _append_cnot_layer(builder, pairs, noise, live)
     if noise.active and noise.measurement:
         builder.append(
-            f"X_ERROR({noise.probability:.17g}) {' '.join(map(str, Z_ANCILLAS))}"
+            f"X_ERROR({noise.probability:.17g}) {' '.join(map(str, z_ancillas))}"
         )
-    measurements = builder.measurement("M", Z_ANCILLAS, "initialization_raw_Z")
+    measurements = builder.measurement("M", z_ancillas, "initialization_raw_Z")
 
     for relation in row_relations(code.matrix_z):
         builder.detector((measurements[check] for check in relation), "initialization_relations")
@@ -403,11 +405,11 @@ def _append_initialization(
 
 
 def _selected_batches(
-    logical_count: int, batch_order: tuple[int, ...]
+    code: CodeArtifact, logical_count: int, batch_order: tuple[int, ...]
 ) -> list[tuple[int, ...]]:
-    if logical_count not in range(1, len(BATCHES[0]) + 1):
-        raise ValueError(f"logical_count must lie in 1..{len(BATCHES[0])}")
-    return [tuple(BATCHES[batch_order[0]][:logical_count])]
+    if logical_count not in range(1, len(code.batches[0]) + 1):
+        raise ValueError(f"logical_count must lie in 1..{len(code.batches[0])}")
+    return [tuple(code.batches[batch_order[0]][:logical_count])]
 
 
 def build_circuit(
@@ -438,13 +440,13 @@ def build_circuit(
         raise ValueError("ideal projection mode cannot contain physical noise")
 
     certificate = certify_partitions(code, partition_certificate.partitions)
-    selected_batches = _selected_batches(logical_count, batch_order)
+    selected_batches = _selected_batches(code, logical_count, batch_order)
     selected_logicals = tuple(logical for batch in selected_batches for logical in batch)
     theta_star = physical_tmr_angle(theta, partition_count)
     builder = _TextBuilder()
 
-    for qubit in DATA_QUBITS:
-        half, within = divmod(qubit, NUM_DATA // 2)
+    for qubit in range(code.num_data):
+        half, within = divmod(qubit, code.num_data // 2)
         builder.append(
             f"QUBIT_COORDS({half}, {within}) {qubit}"
         )

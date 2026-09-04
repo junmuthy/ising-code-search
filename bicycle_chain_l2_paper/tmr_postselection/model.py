@@ -38,11 +38,24 @@ class CodeArtifact:
     matrix_z: np.ndarray
     logical_x: np.ndarray
     logical_z: np.ndarray
+    batches: tuple[tuple[int, ...], ...]
     schedule: tuple[tuple[ScheduledGate, ...], ...]
     basis_path: Path
     schedule_path: Path
     basis_sha256: str
     schedule_sha256: str
+
+    @property
+    def num_data(self) -> int:
+        return int(self.matrix_x.shape[1])
+
+    @property
+    def num_checks(self) -> int:
+        return int(self.matrix_x.shape[0])
+
+    @property
+    def num_logicals(self) -> int:
+        return int(self.logical_z.shape[0])
 
     @property
     def checks_x(self) -> tuple[tuple[int, ...], ...]:
@@ -206,13 +219,14 @@ def _validate_schedule(
         raise ValueError("schedule does not contain exactly the Tanner edges")
     if len(schedule) != 8:
         raise ValueError("expected an eight-layer syndrome schedule")
+    num_data = int(matrix_x.shape[1])
     for layer_index, layer in enumerate(schedule):
         data = [gate.data for gate in layer]
         ancillas = [(gate.kind, gate.check) for gate in layer]
         if (
-            len(layer) != NUM_DATA
-            or len(set(data)) != NUM_DATA
-            or len(set(ancillas)) != NUM_DATA
+            len(layer) != num_data
+            or len(set(data)) != num_data
+            or len(set(ancillas)) != num_data
         ):
             raise ValueError(f"schedule layer {layer_index} is not a perfect matching")
 
@@ -277,6 +291,7 @@ def load_code_artifact(
         matrix_z=matrix_z,
         logical_x=logical_x,
         logical_z=logical_z,
+        batches=BATCHES,
         schedule=schedule,
         basis_path=basis_path,
         schedule_path=schedule_path,

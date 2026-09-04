@@ -9,7 +9,7 @@ from typing import Iterable, Mapping, Sequence
 
 import numpy as np
 
-from .model import BATCHES, NUM_LOGICALS, CodeArtifact, gf2_rank, vector_from_support
+from .model import CodeArtifact, gf2_rank, vector_from_support
 
 
 Partition = tuple[tuple[int, ...], ...]
@@ -56,15 +56,19 @@ def syndrome_matrix(
     columns = []
     for logical in logicals:
         for part in partitions[int(logical)]:
-            columns.append((code.matrix_x @ vector_from_support(part)) % 2)
+            columns.append(
+                (code.matrix_x @ vector_from_support(part, code.num_data)) % 2
+            )
     return np.stack(columns, axis=1)
 
 
 def _validate_partition_supports(
     code: CodeArtifact, partitions: Mapping[int, Partition]
 ) -> None:
-    if set(partitions) != set(range(NUM_LOGICALS)):
-        raise ValueError(f"partitions must cover logicals 0 through {NUM_LOGICALS - 1}")
+    if set(partitions) != set(range(code.num_logicals)):
+        raise ValueError(
+            f"partitions must cover logicals 0 through {code.num_logicals - 1}"
+        )
     for logical, parts in partitions.items():
         if len(parts) != 3 or sorted(map(len, parts)) != [2, 2, 3]:
             raise ValueError(f"logical {logical} is not partitioned as 2+2+3")
@@ -81,7 +85,9 @@ def _validate_partition_supports(
             for index, part in enumerate(parts):
                 if mask & (1 << index):
                     support.symmetric_difference_update(part)
-            syndrome = (code.matrix_x @ vector_from_support(support)) % 2
+            syndrome = (
+                code.matrix_x @ vector_from_support(support, code.num_data)
+            ) % 2
             if not np.any(syndrome):
                 raise ValueError(
                     f"logical {logical} has an undetected proper partition product"
@@ -93,18 +99,23 @@ def certify_partitions(
     partitions: Mapping[int, Partition],
 ) -> PartitionCertificate:
     _validate_partition_supports(code, partitions)
-    ranks = tuple(gf2_rank(syndrome_matrix(code, partitions, batch)) for batch in BATCHES)
-    combined_rank = gf2_rank(syndrome_matrix(code, partitions, range(NUM_LOGICALS)))
-    expected_batch_ranks = tuple(2 * len(batch) for batch in BATCHES)
-    expected_combined_rank = 2 * NUM_LOGICALS
+    ranks = tuple(
+        gf2_rank(syndrome_matrix(code, partitions, batch)) for batch in code.batches
+    )
+    combined_rank = gf2_rank(
+        syndrome_matrix(code, partitions, range(code.num_logicals))
+    )
+    expected_batch_ranks = tuple(2 * len(batch) for batch in code.batches)
+    expected_combined_rank = 2 * code.num_logicals
     certificate = PartitionCertificate(
         partitions={logical: tuple(tuple(part) for part in parts) for logical, parts in partitions.items()},
         batch_ranks=tuple(map(int, ranks)),
         combined_rank=int(combined_rank),
         batch_kernel_dimensions=tuple(
-            3 * len(batch) - int(rank) for batch, rank in zip(BATCHES, ranks, strict=True)
+            3 * len(batch) - int(rank)
+            for batch, rank in zip(code.batches, ranks, strict=True)
         ),
-        combined_kernel_dimension=3 * NUM_LOGICALS - int(combined_rank),
+        combined_kernel_dimension=3 * code.num_logicals - int(combined_rank),
         single_final_check_certified=(
             ranks == expected_batch_ranks and combined_rank == expected_combined_rank
         ),

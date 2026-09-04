@@ -1,0 +1,22 @@
+{
+  "classes": [
+    {
+      "logical_index": 0,
+      "minimum_weight": 6,
+      "solver_status": "optimal",
+      "support": [0, 22, 24, 43, 49, 54]
+    },
+    {
+      "logical_index": 4,
+      "minimum_weight": 6,
+      "solver_status": "optimal",
+      "support": [8, 13, 19, 34, 38, 40]
+    }
+  ],
+  "code": "[[56,8,6]]",
+  "distance": 6,
+  "method": "exact minimum-weight parity MILP on one translation class per physical half",
+  "schema_version": 1,
+  "solver": "HiGHS",
+  "translation_representatives": [0, 4]
+}
