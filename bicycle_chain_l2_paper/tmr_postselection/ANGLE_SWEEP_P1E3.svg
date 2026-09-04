@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#1f2937}.axis{stroke:#374151;stroke-width:1.5}.grid{stroke:#d1d5db;stroke-width:1}.minor{stroke:#e5e7eb;stroke-width:1}.measured{fill:none;stroke:#1d4ed8;stroke-width:3}.ideal{fill:none;stroke:#dc2626;stroke-width:2.5;stroke-dasharray:9 7}</style>
+<text x="500" y="31" font-size="22" text-anchor="middle">[[28,4,5]] four-logical post-selection acceptance</text>
+<text x="500" y="54" font-size="15" text-anchor="middle">M=3, full circuit, p=10^-3, 1,000,000 attempts per angle</text>
+<line class="grid" x1="105" y1="560.00" x2="965" y2="560.00"/>
+<text x="91" y="565.00" font-size="14" text-anchor="end">0.0</text>
+<line class="grid" x1="105" y1="461.00" x2="965" y2="461.00"/>
+<text x="91" y="466.00" font-size="14" text-anchor="end">0.2</text>
+<line class="grid" x1="105" y1="362.00" x2="965" y2="362.00"/>
+<text x="91" y="367.00" font-size="14" text-anchor="end">0.4</text>
+<line class="grid" x1="105" y1="263.00" x2="965" y2="263.00"/>
+<text x="91" y="268.00" font-size="14" text-anchor="end">0.6</text>
+<line class="grid" x1="105" y1="164.00" x2="965" y2="164.00"/>
+<text x="91" y="169.00" font-size="14" text-anchor="end">0.8</text>
+<line class="grid" x1="105" y1="65.00" x2="965" y2="65.00"/>
+<text x="91" y="70.00" font-size="14" text-anchor="end">1.0</text>
+<line class="grid" x1="105.00" y1="65" x2="105.00" y2="560"/>
+<text x="105.00" y="587" font-size="15" text-anchor="middle">10^-3</text>
+<line class="minor" x1="191.30" y1="65" x2="191.30" y2="560"/>
+<line class="minor" x1="305.37" y1="65" x2="305.37" y2="560"/>
+<line class="grid" x1="391.67" y1="65" x2="391.67" y2="560"/>
+<text x="391.67" y="587" font-size="15" text-anchor="middle">10^-2</text>
+<line class="minor" x1="477.96" y1="65" x2="477.96" y2="560"/>
+<line class="minor" x1="592.04" y1="65" x2="592.04" y2="560"/>
+<line class="grid" x1="678.33" y1="65" x2="678.33" y2="560"/>
+<text x="678.33" y="587" font-size="15" text-anchor="middle">10^-1</text>
+<line class="minor" x1="764.63" y1="65" x2="764.63" y2="560"/>
+<line class="minor" x1="878.70" y1="65" x2="878.70" y2="560"/>
+<line class="grid" x1="965.00" y1="65" x2="965.00" y2="560"/>
+<text x="965.00" y="587" font-size="15" text-anchor="middle">10^0</text>
+<line class="axis" x1="105" y1="560" x2="965" y2="560"/>
+<line class="axis" x1="105" y1="65" x2="105" y2="560"/>
+<text x="535.00" y="623" font-size="17" text-anchor="middle">Target logical angle theta (radians, log scale)</text>
+<text x="27" y="312.50" font-size="17" text-anchor="middle" transform="rotate(-90 27 312.50)">Block acceptance probability</text>
+<polyline class="ideal" points="105.00,100.93 176.67,116.76 248.33,138.93 320.00,169.32 391.67,209.69 463.33,260.96 535.00,321.96 606.67,388.21 678.33,451.52 750.00,502.44 821.67,535.18 893.33,551.20 965.00,556.97"/>
+<polyline class="measured" points="105.00,306.15 176.67,314.84 248.33,327.02 320.00,343.92 391.67,366.09 463.33,394.43 535.00,428.25 606.67,464.87 678.33,499.77 750.00,528.03 821.67,546.17 893.33,555.08 965.00,558.30"/>
+<line x1="105.00" y1="306.39" x2="105.00" y2="305.90" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="105.00" cy="306.15" r="4.5" fill="#1d4ed8"/>
+<line x1="176.67" y1="315.08" x2="176.67" y2="314.59" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="176.67" cy="314.84" r="4.5" fill="#1d4ed8"/>
+<line x1="248.33" y1="327.26" x2="248.33" y2="326.77" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="248.33" cy="327.02" r="4.5" fill="#1d4ed8"/>
+<line x1="320.00" y1="344.16" x2="320.00" y2="343.67" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="320.00" cy="343.92" r="4.5" fill="#1d4ed8"/>
+<line x1="391.67" y1="366.33" x2="391.67" y2="365.84" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="391.67" cy="366.09" r="4.5" fill="#1d4ed8"/>
+<line x1="463.33" y1="394.66" x2="463.33" y2="394.20" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="463.33" cy="394.43" r="4.5" fill="#1d4ed8"/>
+<line x1="535.00" y1="428.47" x2="535.00" y2="428.03" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="535.00" cy="428.25" r="4.5" fill="#1d4ed8"/>
+<line x1="606.67" y1="465.06" x2="606.67" y2="464.67" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="606.67" cy="464.87" r="4.5" fill="#1d4ed8"/>
+<line x1="678.33" y1="499.93" x2="678.33" y2="499.61" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="678.33" cy="499.77" r="4.5" fill="#1d4ed8"/>
+<line x1="750.00" y1="528.16" x2="750.00" y2="527.91" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="750.00" cy="528.03" r="4.5" fill="#1d4ed8"/>
+<line x1="821.67" y1="546.25" x2="821.67" y2="546.09" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="821.67" cy="546.17" r="4.5" fill="#1d4ed8"/>
+<line x1="893.33" y1="555.12" x2="893.33" y2="555.03" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="893.33" cy="555.08" r="4.5" fill="#1d4ed8"/>
+<line x1="965.00" y1="558.33" x2="965.00" y2="558.27" stroke="#1d4ed8" stroke-width="1.5"/>
+<circle cx="965.00" cy="558.30" r="4.5" fill="#1d4ed8"/>
+<line x1="130" y1="95" x2="175" y2="95" class="measured"/>
+<circle cx="152.5" cy="95" r="4.5" fill="#1d4ed8"/>
+<text x="185" y="100" font-size="15">Measured full-circuit acceptance (+/-1 s.e.)</text>
+<line x1="130" y1="121" x2="175" y2="121" class="ideal"/>
+<text x="185" y="126" font-size="15">Ideal TMR-only acceptance</text>
+</svg>
