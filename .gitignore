@@ -24,6 +24,8 @@ results/cache/
 results/**/*.json
 results/**/*.jsonl
 results/**/*.stim
+results/**/*.csv
 **/results/**/*.json
 **/results/**/*.jsonl
 **/results/**/*.stim
+**/results/**/*.csv

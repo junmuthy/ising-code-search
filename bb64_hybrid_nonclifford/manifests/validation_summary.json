@@ -1,0 +1,77 @@
+{
+  "schema": "bb64-hybrid-nonclifford-validation-summary-v1",
+  "theta": 0.09817477042468103,
+  "status": "component-and-history-validation-complete-circuit-decoder-pending",
+  "tests": {
+    "count": 13,
+    "passed": 13
+  },
+  "ideal_clifft": [
+    {
+      "branch_labels": "00000000",
+      "attempted": 20000,
+      "passed": 1003,
+      "expected_probability": 0.049706149631890115,
+      "logical_errors": 0,
+      "final_detector_errors": 0
+    },
+    {
+      "branch_labels": "10000000",
+      "attempted": 20000,
+      "passed": 153,
+      "expected_probability": 0.00754352595777963,
+      "logical_errors": 0,
+      "final_detector_errors": 0
+    }
+  ],
+  "measurement_decoder": {
+    "shots_per_configuration": 1000,
+    "measurement_probabilities": [0.001, 0.01, 0.03],
+    "rounds": [1, 3, 5, 7],
+    "only_nonperfect_configuration": {
+      "measurement_probability": 0.03,
+      "rounds": 1,
+      "class_accuracy": 0.993,
+      "alternative_mask_accuracy": 0.995
+    }
+  },
+  "repair_component_p1e3": [
+    {
+      "alternative_mask": "10000000",
+      "attempted": 4500,
+      "passed": 1014,
+      "any_logical_infidelity": 0.015779092702169626
+    },
+    {
+      "alternative_mask": "10010000",
+      "attempted": 4500,
+      "passed": 1107,
+      "any_logical_infidelity": 0.026196928635953028
+    }
+  ],
+  "full_raw_branch_feasibility_p1e3": {
+    "branch_labels": "00000000",
+    "attempted": 3000,
+    "passed": 20,
+    "sampling_seconds": 86.88469458703185,
+    "logical_errors": 0,
+    "interpretation": "feasibility-only; exact raw-branch and final-syndrome postselection"
+  },
+  "retained_syndrome_history_p1e3": {
+    "shots": 200,
+    "rounds": 3,
+    "raw_x_image_fraction_by_round": [0.285, 0.2, 0.145],
+    "mean_x_hamming_residual_by_round": [2.9, 3.25, 3.85],
+    "mean_z_syndrome_weight_by_round": [3.185, 4.33, 5.395],
+    "x_history_changed_fraction": 0.75,
+    "measurement_only_decoder_ambiguous_fraction": 0.095,
+    "interpretation": "diagnostic; establishes need for a circuit-fault latent-boundary decoder"
+  },
+  "independent_local_crosscheck": {
+    "backends": ["clifft", "tsim"],
+    "shots_per_branch_per_backend": 10000,
+    "branches": 4,
+    "logical_errors": 0,
+    "final_detector_errors": 0
+  }
+}

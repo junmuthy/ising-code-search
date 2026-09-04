@@ -1,0 +1,60 @@
+{
+  "branch_prior_sum": 0.9999999999999993,
+  "created_utc": "2026-09-04T17:16:40.096519+00:00",
+  "logical_x_frames_exercised": 256,
+  "policies": [
+    {
+      "acceptance_probability": 0.049706149631890115,
+      "accepted_classes": 1,
+      "logical_resources_per_attempt": 0.3976491970551209,
+      "maximum_angle_error": 0.0,
+      "repair_rotations_per_accepted_block": 0.0,
+      "repair_rotations_per_attempt": 0.0,
+      "reset_probability": 0.9502938503681099,
+      "threshold": 0
+    },
+    {
+      "acceptance_probability": 0.23075077261860122,
+      "accepted_classes": 25,
+      "logical_resources_per_attempt": 1.8460061809488097,
+      "maximum_angle_error": 0.0,
+      "repair_rotations_per_accepted_block": 0.7845894552472532,
+      "repair_rotations_per_attempt": 0.18104462298671112,
+      "reset_probability": 0.7692492273813988,
+      "threshold": 1
+    },
+    {
+      "acceptance_probability": 0.5192463741261258,
+      "accepted_classes": 277,
+      "logical_resources_per_attempt": 4.153970993009007,
+      "maximum_angle_error": 0.0,
+      "repair_rotations_per_accepted_block": 1.459876975120932,
+      "repair_rotations_per_attempt": 0.7580358260017603,
+      "reset_probability": 0.48075362587387416,
+      "threshold": 2
+    },
+    {
+      "acceptance_probability": 0.7819431319471365,
+      "accepted_classes": 1789,
+      "logical_resources_per_attempt": 6.255545055577092,
+      "maximum_angle_error": 0.0,
+      "repair_rotations_per_accepted_block": 1.9772871405811114,
+      "repair_rotations_per_attempt": 1.5461260994647923,
+      "reset_probability": 0.2180568680528635,
+      "threshold": 3
+    },
+    {
+      "acceptance_probability": 0.9999999999999993,
+      "accepted_classes": 65536,
+      "logical_resources_per_attempt": 7.999999999999995,
+      "maximum_angle_error": 0.0,
+      "repair_rotations_per_accepted_block": 2.502803613470404,
+      "repair_rotations_per_attempt": 2.502803613470402,
+      "reset_probability": 6.661338147750939e-16,
+      "threshold": 8
+    }
+  ],
+  "schema": "bb64-hybrid-action-audit-v1",
+  "syndrome_classes": 65536,
+  "theta": 0.09817477042468103
+}

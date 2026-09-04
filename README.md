@@ -289,6 +289,26 @@ Run the first weight-eight `n = 14` tranche with:
   --checkpoint-every-models 5 --stop-on-hit
 ```
 
+## BB64 non-Clifford resource recovery
+
+The preferred `[[64,8,8]]` basis has three successive simulation layers:
+
+- [`bb64_tmr_postselection/README.md`](bb64_tmr_postselection/README.md)
+  implements postselection-only resource preparation;
+- [`bb64_syndrome_recovery/README.md`](bb64_syndrome_recovery/README.md)
+  exhaustively certifies all `65,536` ideal TMR syndrome branches and the
+  reset-or-repair policies; and
+- [`bb64_hybrid_nonclifford/README.md`](bb64_hybrid_nonclifford/README.md)
+  implements decoder-to-action logic, exact non-Clifford branch validation,
+  scheduled noisy `M=1` repair components, and retained circuit-level syndrome
+  histories.
+
+The current hybrid milestone validates the exact recovery machinery but does
+not yet claim an end-to-end circuit-noise logical error.  Its retained-history
+preflight demonstrates that the final decoder must jointly infer the latent
+TMR class and circuit faults; see
+[`bb64_hybrid_nonclifford/DECODER_PLAN.md`](bb64_hybrid_nonclifford/DECODER_PLAN.md).
+
 ## Tests
 
 ```bash

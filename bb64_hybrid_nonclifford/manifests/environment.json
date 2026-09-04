@@ -1,0 +1,15 @@
+{
+  "schema": "bb64-hybrid-environment-v1",
+  "python": "3.12.3",
+  "numpy": "2.5.2",
+  "qldpc": "0.3.3",
+  "stim": "1.16.0",
+  "clifft_revision": "dbc721208c34729d16a1becdc723f3f8e9ea33b5",
+  "tsim_revision": "44f64ba79c91e6ada77d6b609595ad0a3d767c11",
+  "frozen_inputs": {
+    "bb64_basis_sha256": "8cbf96d32e5e16b357c2a4b751a94f09b3e136d8d0d722226a267be3395ad03e",
+    "bb64_schedule_sha256": "0d07ff49c000900b65928fd5f26cb463315448ffbf2b42c4b822ba3d68fc656c",
+    "partitions_m3_sha256": "52f7db4a166cae1cfa567a1ee071cb23b875208eb5b1c7ad6891c5d6cba041f8",
+    "syndrome_classes_sha256": "f705194590f8a0871227a142e028750dd6f5ff67edc261715b2139346ee4ee52"
+  }
+}
