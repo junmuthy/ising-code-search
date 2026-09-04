@@ -70,3 +70,35 @@ def decompose_boundary_pauli(code: CodeArtifact, x_mask: int, z_mask: int) -> Bo
     """Split a data Pauli into canonical corrections and logical frame bits."""
 
     return BoundaryFrameDecomposer(code).decompose(x_mask, z_mask)
+
+
+class GF2RowReducer:
+    """Canonicalize a binary vector modulo the row span of a matrix."""
+
+    def __init__(self, rows: np.ndarray):
+        basis: dict[int, int] = {}
+        for row in np.asarray(rows, dtype=np.uint8):
+            value = bits_to_int(row)
+            while value:
+                pivot = value.bit_length() - 1
+                if pivot in basis:
+                    value ^= basis[pivot]
+                else:
+                    basis[pivot] = value
+                    break
+        # Back-reduce so the result is independent of input row order.
+        pivots = sorted(basis, reverse=True)
+        for pivot in reversed(pivots):
+            for higher in pivots:
+                if higher <= pivot:
+                    continue
+                if (basis[higher] >> pivot) & 1:
+                    basis[higher] ^= basis[pivot]
+        self.basis = tuple((pivot, basis[pivot]) for pivot in sorted(basis, reverse=True))
+
+    def reduce(self, value: int) -> int:
+        reduced = int(value)
+        for pivot, row in self.basis:
+            if (reduced >> pivot) & 1:
+                reduced ^= row
+        return reduced

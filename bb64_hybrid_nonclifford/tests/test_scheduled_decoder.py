@@ -13,14 +13,29 @@ from bb64_hybrid_nonclifford.circuit_decoder.branches import (
     rotation_layout,
     signed_local_branch,
 )
+from bb64_hybrid_nonclifford.circuit_decoder.belief_propagation import (
+    CategoricalBPDecoder,
+)
 from bb64_hybrid_nonclifford.circuit_decoder.catalog import (
     FaultCatalog,
     SignatureGroup,
     build_fault_catalog,
 )
 from bb64_hybrid_nonclifford.circuit_decoder.decoder import ScheduledActionDecoder
-from bb64_hybrid_nonclifford.circuit_decoder.frames import BoundaryFrame
+from bb64_hybrid_nonclifford.circuit_decoder.factor_graph import (
+    D3FactorGraph,
+    _branch_variable,
+    _component_data,
+    _physical_variable,
+)
+from bb64_hybrid_nonclifford.circuit_decoder.frames import (
+    BoundaryFrame,
+    GF2RowReducer,
+    bits_to_int,
+)
 from bb64_hybrid_nonclifford.circuit_decoder.ledger import FaultMechanism, build_fault_ledger
+from bb64_hybrid_nonclifford.circuit_decoder.list_decoder import D3ListDecoder
+from bb64_hybrid_nonclifford.circuit_decoder.labeled_noise import labeled_trajectory
 from bb64_hybrid_nonclifford.circuit_decoder.propagate import (
     PauliSignature,
     parse_circuit,
@@ -143,9 +158,14 @@ class ScheduledDecoderTest(unittest.TestCase):
         self.assertFalse(result.reset)
         self.assertIsNotNone(result.action)
         assert result.action is not None
-        self.assertEqual(result.action.physical_z_correction, tuple(np.flatnonzero(
+        action_mask = sum(1 << qubit for qubit in result.action.physical_z_correction)
+        original_mask = bits_to_int(
             self.model.recovery.correction_physical_supports[class_id]
-        )))
+        )
+        self.assertEqual(
+            GF2RowReducer(self.model.code.matrix_z).reduce(action_mask ^ original_mask),
+            0,
+        )
 
     def test_equivalent_explanations_are_summed_by_action(self) -> None:
         empty = PauliSignature(0, 0, 0, 0)
@@ -183,6 +203,132 @@ class ScheduledDecoderTest(unittest.TestCase):
             # Divide out the seven all-target logical factors.
             probabilities += data.probability / angle_table(self.theta)["probability_target"] ** 7
         self.assertAlmostEqual(probabilities, 1.0, places=13)
+
+    def test_row_reducer_canonicalizes_stabilizer_cosets(self) -> None:
+        reducer = GF2RowReducer(self.model.code.matrix_z)
+        for row in self.model.code.matrix_z[:8]:
+            row_mask = bits_to_int(row)
+            self.assertEqual(reducer.reduce(row_mask), 0)
+            value = (1 << 1) | (1 << 17) | (1 << 53)
+            self.assertEqual(reducer.reduce(value), reducer.reduce(value ^ row_mask))
+
+    def test_branch_only_d3_graph_decodes_every_local_label(self) -> None:
+        variables = tuple(
+            _branch_variable(self.model, self.history, logical, self.theta)
+            for logical in range(8)
+        )
+        offsets, detectors = _component_data(variables)
+        graph = D3FactorGraph(
+            variables=variables,
+            physical_variable_count=0,
+            parsed_circuit=self.parsed,
+            history=self.history,
+            ledger=self.ledger,
+            component_offsets=offsets,
+            component_detector_masks=detectors,
+        )
+        labels = (0, 1, 2, 3, 0, 3, 2, 1)
+        codes = tuple(
+            variable.state_semantics.index(label)
+            for variable, label in zip(variables, labels, strict=True)
+        )
+        observed = graph.detector_mask(codes)
+        bp = CategoricalBPDecoder(graph).decode(observed)
+        self.assertEqual(bp.residual_detector_mask, 0)
+        decoder = D3ListDecoder(
+            graph,
+            self.model,
+            theta=self.theta,
+            osd_order=0,
+            osd_window=0,
+            maximum_candidates=1,
+            minimum_action_probability=0.0,
+        )
+        result = decoder.decode(observed)
+        expected, _probability = decoder.action_builder.from_signature(
+            class_id_for_labels(self.model, labels),
+            final_x_mask=0,
+            final_z_mask=0,
+            rotation_sign_mask=0,
+        )
+        self.assertFalse(result.reset)
+        self.assertEqual(result.action, expected)
+
+    def test_categorical_locations_preserve_native_pauli_channels(self) -> None:
+        expected_sizes = {
+            "DEPOLARIZE1": 4,
+            "DEPOLARIZE2": 16,
+            "X_ERROR": 2,
+            "Z_ERROR": 2,
+        }
+        for kind, size in expected_sizes.items():
+            location = next(item for item in self.ledger.locations if item.channel == kind)
+            variable = _physical_variable(self.parsed, self.ledger, location)
+            self.assertEqual(len(variable.state_codes), size)
+            self.assertAlmostEqual(
+                sum(math.exp(value) for value in variable.log_priors), 1.0, places=14
+            )
+            for code, signature in enumerate(variable.signatures):
+                predicted = PauliSignature(0, 0, 0, 0)
+                for bit in range(variable.bit_width):
+                    if (code >> bit) & 1:
+                        basis = variable.signatures[1 << bit]
+                        predicted = PauliSignature(
+                            predicted.detector_mask ^ basis.detector_mask,
+                            predicted.final_x_mask ^ basis.final_x_mask,
+                            predicted.final_z_mask ^ basis.final_z_mask,
+                            predicted.rotation_sign_mask ^ basis.rotation_sign_mask,
+                        )
+                self.assertEqual(signature, predicted)
+
+    def test_labeled_multifault_trajectory_matches_direct_propagation(self) -> None:
+        locations = tuple(
+            next(item for item in self.ledger.locations if item.channel == kind)
+            for kind in ("DEPOLARIZE1", "DEPOLARIZE2", "X_ERROR", "Z_ERROR")
+        )
+        physical = tuple(
+            _physical_variable(self.parsed, self.ledger, location)
+            for location in locations
+        )
+        branches = tuple(
+            _branch_variable(self.model, self.history, logical, self.theta)
+            for logical in range(8)
+        )
+        variables = physical + branches
+        offsets, detectors = _component_data(variables)
+        graph = D3FactorGraph(
+            variables=variables,
+            physical_variable_count=len(physical),
+            parsed_circuit=self.parsed,
+            history=self.history,
+            ledger=self.ledger,
+            component_offsets=offsets,
+            component_detector_masks=detectors,
+        )
+        branch_labels = (3, 0, 1, 0, 2, 0, 0, 1)
+        codes = tuple(1 for _ in physical) + tuple(
+            variable.state_semantics.index(label)
+            for variable, label in zip(branches, branch_labels, strict=True)
+        )
+        from bb64_hybrid_nonclifford.circuit_decoder.action_model import RepairActionBuilder
+
+        trajectory = labeled_trajectory(
+            graph,
+            self.model,
+            RepairActionBuilder(self.model, theta=self.theta),
+            codes,
+        )
+        mechanisms = tuple(
+            self.ledger.mechanisms[variable.state_semantics[1]] for variable in physical
+        )
+        direct = propagate_faults(self.parsed, mechanisms)
+        self.assertEqual(trajectory.fault_count, 4)
+        self.assertEqual(trajectory.physical_signature, direct)
+        branch_detector = graph.detector_mask((0,) * len(physical) + codes[len(physical) :])
+        self.assertEqual(
+            trajectory.observed_detector_mask,
+            direct.detector_mask ^ branch_detector,
+        )
 
 
 if __name__ == "__main__":

@@ -1,10 +1,10 @@
 {
   "schema": "bb64-hybrid-nonclifford-validation-summary-v1",
   "theta": 0.09817477042468103,
-  "status": "scheduled-decoder-kernel-complete-scalable-higher-fault-inference-pending",
+  "status": "d3-arbitrary-weight-prototype-implemented-production-calibration-pending",
   "tests": {
-    "count": 24,
-    "passed": 24
+    "count": 28,
+    "passed": 28
   },
   "ideal_clifft": [
     {
@@ -128,5 +128,32 @@
     "logical_errors": 0,
     "final_detector_errors": 0,
     "maximum_acceptance_z_score": 2.188412603130119
+  },
+  "d3_factor_graph": {
+    "detectors": 196,
+    "physical_variables": 3016,
+    "tmr_branch_variables": 8,
+    "binary_components": 9568,
+    "variable_detector_edges": 54846,
+    "archive_bytes": 161074,
+    "build_seconds": 56.592662329028826
+  },
+  "d3_list_audit_p1e3": {
+    "shots": 20,
+    "mean_fault_locations": 2.9,
+    "bp_converged_fraction": 0.4,
+    "bp_exact_hard_fraction": 0.3,
+    "leading_list_action_accuracy": 0.6,
+    "literal_truth_in_list_fraction": 0.3,
+    "mean_leading_list_probability": 0.8795891818345923,
+    "interpretation": "the finite-list normalization is not a calibrated posterior"
+  },
+  "d3_posterior_audit_p1e3": {
+    "shots": 10,
+    "accepted": 0,
+    "resets_no_action_mixing": 4,
+    "resets_insufficient_effective_samples": 6,
+    "accepted_action_errors": 0,
+    "interpretation": "fail-closed MCMC prototype; global action-sector mixing remains insufficient"
   }
 }

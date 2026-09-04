@@ -28,9 +28,16 @@ The implementation currently provides:
     every single fault, with selected distinct-location fault pairs;
 12. an action-posterior decoder that sums physically different explanations
     whenever they prescribe the same correction and fails closed when its
-    posterior lower bound is insufficient; and
+    posterior lower bound is insufficient;
 13. independent ClifT checks of every before/after Pauli fault at all 24
-    rotations and of all signed local TMR branch angles.
+    rotations and of all signed local TMR branch angles;
+14. an exact categorical factor graph retaining the native 4-state and
+    16-state depolarizing channels, all 196 detector equations, and the eight
+    four-state TMR branch variables;
+15. sparse categorical belief propagation followed by exact-syndrome OSD
+    list construction and complete-action aggregation; and
+16. detector-conditioned nullspace MCMC with explicit effective-sample,
+    cross-chain, and action-mixing guards.
 
 At `theta=pi/32`, each logical has one target class with probability
 
@@ -57,10 +64,12 @@ Logical-Z frame changes commute with the repair rotation and are tracked.
 
 ## Scientific boundary
 
-The exact algebra, noiseless branch recovery, and scheduled single-fault
-signature engine are complete.  The action-posterior decoder is deliberately
-fail closed: it makes no confidence claim from probability mass that its
-catalog does not contain.
+The exact algebra, noiseless branch recovery, scheduled single-fault signature
+engine, and arbitrary-weight categorical graph are complete.  The scalable
+decoder is deliberately fail closed.  Probabilities normalized over an OSD
+list are labeled as list probabilities, not posteriors, and MCMC output is
+rejected unless it shows effective sampling, cross-chain agreement, and an
+observed transition between repair actions.
 
 The retained-history runner demonstrates this distinction directly: scheduled
 circuit faults frequently move raw syndromes outside the ideal TMR image.  It
@@ -74,8 +83,9 @@ two-qubit Pauli outcomes and rotation-sign flips.  At `p=10^-3`, however, zero
 and one fault contain only about `19.66%` of total probability after the small
 selected-pair extension.  Consequently, a strict `0.99` posterior-lower-bound
 policy currently resets every audited history.  This is the correct behavior,
-not a production-yield result: scalable higher-fault inference is still
-needed before end-to-end repair decisions can be accepted.
+not a production-yield result: better global posterior proposals and held-out
+calibration are still needed before end-to-end repair decisions can be
+accepted.
 
 Similarly, the noisy `M=1` calibration begins in a selected ideal branch and
 postselects the final syndrome.  The raw-branch calibration trusts one exact
@@ -204,3 +214,25 @@ Cross-check every physical rotation boundary in ClifT:
 The companion `run_signed_toy_crosscheck` runner verifies the phase-sensitive
 angle and Pauli-frame convention for all eight rotation-sign patterns and all
 four local syndrome branches.
+
+Build the complete Stage-D3 categorical graph.  This takes about one minute
+on the recorded workstation and prints a checkpoint every 250 locations:
+
+```bash
+.venv/bin/python -m bb64_hybrid_nonclifford.run_d3_build_graph \
+  --output bb64_hybrid_nonclifford/results/d3_factor_graph_p1e3_v1.npz
+```
+
+Run a labeled arbitrary-weight BP+OSD audit:
+
+```bash
+.venv/bin/python -m bb64_hybrid_nonclifford.run_d3_decoder_audit \
+  --graph bb64_hybrid_nonclifford/results/d3_factor_graph_p1e3_v1.npz \
+  --shots 20 --checkpoint-every 2 \
+  --osd-window 32 --maximum-candidates 128 \
+  --output bb64_hybrid_nonclifford/results/d3_list_audit_p1e3_20.json
+```
+
+Add `--posterior` to enable the more expensive fail-closed MCMC audit.  The
+runner writes an atomic checkpoint after each requested interval and refuses
+to overwrite an existing result without `--overwrite`.

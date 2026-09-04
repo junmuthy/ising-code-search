@@ -69,7 +69,7 @@ currently records all displayed X and Z syndromes by time.  The pilot reports
 ideal-image membership, drift between rounds, Z-syndrome activity, and the
 behavior of the Stage-B decoder.
 
-### Stage C2: labeled circuit-fault data — next
+### Stage C2: labeled circuit-fault data — implemented for the exact Pauli model
 
 For supervised decoder calibration, each trajectory must additionally record:
 
@@ -78,12 +78,18 @@ For supervised decoder calibration, each trajectory must additionally record:
 - final stabilizer syndromes; and
 - eight final logical observables after the ideal inverse target rotation.
 
-Generate separate training, validation, and held-out test seeds.  Store only
-compact sufficient statistics and explicitly requested samples, not every raw
+`circuit_decoder/labeled_noise.py` now samples the native categorical channel
+at every scheduled location and the eight ideal TMR branch variables.  It
+composes the exact detector, boundary-frame, rotation-sign, and repair-action
+label without inferring any label from the syndrome being decoded.  Direct
+four-location composition is covered by a propagation regression test.
+
+Separate large training, validation, and held-out test seeds are still needed
+before any acceptance threshold can be calibrated.  Store only compact
+sufficient statistics and explicitly requested samples, not every raw
 trajectory.  A noisy coherent trajectory does not carry a simulator-provided
-classical “true TMR branch,” so labels must be defined through a conditioned
-branch experiment or a verified fault ledger rather than inferred from the
-same noisy syndrome being evaluated.
+classical “true TMR branch,” so ClifT end-to-end labels must continue to use a
+conditioned branch experiment or the verified fault ledger.
 
 ### Stage D1: bounded latent-boundary oracle — implemented
 
@@ -130,7 +136,7 @@ All 144 before/after `X`, `Y`, and `Z` cases at the 24 rotation pivots were
 checked with ClifT.  A separate phase-sensitive fixture checked all 32 signed
 local TMR branch cases.
 
-### Stage D3: scalable higher-fault inference — next
+### Stage D3: scalable higher-fault inference — prototype implemented
 
 At `p=10^-3`, the circuit has 3,016 noisy locations.  The exact no-fault mass
 is only `0.0489`; all zero-, one-, and two-location terms together contain
@@ -139,12 +145,34 @@ implemented posterior therefore assigns every omitted term adversarially
 against the leading action and correctly resets all cases at a `0.99`
 threshold.
 
-The next decoder must absorb arbitrary-weight combinations without explicitly
-enumerating all location subsets.  Candidate approaches are a factor graph
-over detector/sign/frame transformations, belief propagation plus ordered
-statistics, or an integer-programming shortlist followed by exact
-action-level probability summation.  The present catalog, direct pair oracle,
-and ClifT boundary tests are the regression standards for that implementation.
+The categorical factor graph now absorbs arbitrary-weight combinations without
+enumerating location subsets.  Its 3,024 variables comprise 3,016 physical
+locations and eight four-state TMR branches.  The physical alphabets retain
+the true channel exclusivity: 4 states for `DEPOLARIZE1`, 16 for
+`DEPOLARIZE2`, and 2 for `X_ERROR` or `Z_ERROR`.  Their 9,568 binary
+symplectic/quotient components couple sparsely to all 196 detector equations.
+
+The implemented inference path is:
+
+1. categorical log-domain belief propagation;
+2. ordered-statistics construction of exact-syndrome candidates;
+3. exact probability summation by canonical complete repair action; and
+4. detector-nullspace MCMC targeting the full categorical posterior.
+
+The MCMC target is exact, but finite-chain estimates are not automatically
+calibrated.  The controller therefore resets unless the leading action clears
+the posterior lower-bound threshold, the effective sample count is adequate,
+chains agree, and at least one retained transition between actions occurred.
+This last condition prevents a chain trapped in one wrong action basin from
+claiming unit confidence.
+
+The first `p=10^-3` audit is diagnostic rather than production-ready.  A
+20-history BP+OSD run selected the labeled action in 12 cases, while its mean
+finite-list probability was `0.880`; this mismatch confirms that list
+probabilities are not calibrated posteriors.  A ten-history MCMC audit safely
+reset every case: four lacked action mixing and six had insufficient effective
+samples.  The next D3 milestone is a global proposal or importance sampler
+that mixes across action sectors, followed by larger held-out calibration.
 
 ### Stage E: frame-aware action — implemented for bounded and scheduled decoders
 

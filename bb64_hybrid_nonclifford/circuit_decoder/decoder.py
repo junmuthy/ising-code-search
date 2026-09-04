@@ -4,24 +4,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import math
-from typing import Iterable
 
 import numpy as np
 
 from bb64_hybrid_nonclifford.model import HybridModel
 
-from .branches import branch_action_data
+from .action_model import RepairActionBuilder, ScheduledRepairAction
 from .catalog import FaultCatalog
 from .frames import BoundaryFrame, bits_to_int
-
-
-@dataclass(frozen=True)
-class ScheduledRepairAction:
-    physical_x_correction: tuple[int, ...]
-    physical_z_correction: tuple[int, ...]
-    logical_x_frame: tuple[int, ...]
-    logical_z_frame: tuple[int, ...]
-    signed_residual_angles: tuple[float, ...]
 
 
 @dataclass(frozen=True)
@@ -36,18 +26,6 @@ class ScheduledDecodeResult:
     distinct_actions: int
     modeled_evidence: float
     omitted_probability_upper_bound: float
-
-
-def _indices(mask: int, width: int = 64) -> tuple[int, ...]:
-    return tuple(index for index in range(width) if (mask >> index) & 1)
-
-
-def _frame_bits(mask: int) -> tuple[int, ...]:
-    return tuple((mask >> index) & 1 for index in range(8))
-
-
-def _rounded_angles(values: Iterable[float]) -> tuple[float, ...]:
-    return tuple(round(float(value), 15) for value in values)
 
 
 class ScheduledActionDecoder:
@@ -77,6 +55,7 @@ class ScheduledActionDecoder:
         self.theta = float(theta)
         self.minimum_posterior = float(minimum_posterior)
         self.maximum_repairs = int(maximum_repairs)
+        self.action_builder = RepairActionBuilder(model, theta=theta)
         self.class_from_syndrome = {
             bits_to_int(syndrome): class_id
             for class_id, syndrome in enumerate(model.displayed_syndromes)
@@ -110,23 +89,7 @@ class ScheduledActionDecoder:
         frame: BoundaryFrame,
         rotation_sign_mask: int,
     ) -> tuple[ScheduledRepairAction, float]:
-        branch = branch_action_data(
-            self.model,
-            theta=self.theta,
-            class_id=class_id,
-            rotation_sign_mask=rotation_sign_mask,
-            logical_x_frame=frame.logical_x_frame,
-        )
-        branch_z = bits_to_int(self.model.recovery.correction_physical_supports[class_id])
-        logical_z = frame.logical_z_frame ^ branch.angle_z_frame
-        action = ScheduledRepairAction(
-            physical_x_correction=_indices(frame.physical_x_correction),
-            physical_z_correction=_indices(frame.physical_z_correction ^ branch_z),
-            logical_x_frame=_frame_bits(frame.logical_x_frame),
-            logical_z_frame=_frame_bits(logical_z),
-            signed_residual_angles=_rounded_angles(branch.signed_residual_angles),
-        )
-        return action, branch.probability
+        return self.action_builder.from_frame(class_id, frame, rotation_sign_mask)
 
     def decode_mask(self, observed_detector_mask: int) -> ScheduledDecodeResult:
         p0 = self.catalog.ledger.no_fault_probability

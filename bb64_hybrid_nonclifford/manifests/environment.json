@@ -2,6 +2,7 @@
   "schema": "bb64-hybrid-environment-v1",
   "python": "3.12.3",
   "numpy": "2.5.2",
+  "numba": "0.67.0",
   "qldpc": "0.3.3",
   "stim": "1.16.0",
   "clifft_revision": "dbc721208c34729d16a1becdc723f3f8e9ea33b5",

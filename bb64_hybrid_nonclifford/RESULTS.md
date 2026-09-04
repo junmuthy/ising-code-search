@@ -182,13 +182,71 @@ ClifT supplied two independent non-Clifford checks:
   probabilities agreed with the analytic values within `2.19` standard errors
   at worst.
 
+## Stage-D3 arbitrary-weight decoder prototype
+
+The exact scheduled model has now been converted into a categorical factor
+graph without splitting a depolarizing location into mutually compatible
+binary faults.  The frozen graph contains:
+
+| Quantity | Count |
+|---|---:|
+| Physical categorical variables | 3,016 |
+| Four-state TMR branch variables | 8 |
+| Binary symplectic/quotient components | 9,568 |
+| Detector equations | 196 |
+| Variable-detector edges | 54,846 |
+
+The variables retain 920 one-qubit depolarizing locations, 1,872 two-qubit
+depolarizing locations, 128 `X_ERROR` locations, and 96 `Z_ERROR` locations.
+Building and validating the complete graph took `56.6 s`; loading its 161,074
+byte compressed archive took about `0.2 s`.
+
+The decoder first runs sparse categorical BP, then constructs a finite OSD
+list whose candidates satisfy the complete observed detector history exactly.
+It evaluates each candidate with the original categorical likelihood and sums
+equivalent explanations by a canonical action modulo stabilizers.  On 20
+labeled `p=10^-3` trajectories:
+
+| Diagnostic | Result |
+|---|---:|
+| Mean physical fault locations | `2.90` |
+| BP converged | `8/20` |
+| BP hard decision already satisfied all detectors | `6/20` |
+| Leading finite-list action matched the label | `12/20` |
+| Literal injected state occurred in the 128-entry list | `6/20` |
+| Mean leading finite-list probability | `0.8796` |
+
+The `0.8796` value is normalized only over the finite list.  Its disagreement
+with the 60% labeled accuracy is direct evidence that it must not be reported
+or thresholded as a posterior.
+
+A detector-nullspace Metropolis sampler was added for full-posterior
+refinement.  Its stationary target is the exact categorical distribution
+conditioned on the detector history, but the first ten-history audit found
+poor action-sector mixing.  The strengthened controller reset all ten cases:
+
+| Reset reason | Cases |
+|---|---:|
+| No retained transition between distinct repair actions | 4 |
+| Insufficient effective samples | 6 |
+| Accepted actions | 0 |
+
+An earlier smoke setting would have falsely accepted two wrong actions because
+a constant chain was assigned an optimistic effective-sample count.  That
+failure was retained as a design lesson and fixed: a chain with constant
+action has zero empirical mixing information, and the production-facing
+controller requires at least one action transition.  D3 is therefore an
+implemented, tested, fail-closed prototype—not yet a decoder with useful
+acceptance at `p=10^-3`.
+
 ## Current conclusion
 
 The non-Clifford algebra, exact branch correction, residual-angle action,
 scheduled single-fault signatures, selected-pair composition, and independent
 simulator convention are validated.  The new decoder is already a correct
 fail-closed circuit-location kernel, but it is not yet an accepting production
-decoder at `p=10^-3`: the schedule has an expected fault count near three and
-the current bounded catalog omits too much probability.  The next required
-scientific milestone is scalable arbitrary-weight inference followed by the
+decoder at `p=10^-3`: the schedule has an expected fault count near three, the
+bounded catalog omits too much probability, and the first scalable posterior
+proposal mixes poorly across action sectors.  The next required scientific
+milestone is improving and calibrating that posterior engine before the
 thresholded end-to-end comparison specified in `DECODER_PLAN.md`.
