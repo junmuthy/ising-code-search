@@ -22,9 +22,15 @@ The implementation currently provides:
 8. a full scheduled `M=3` preparation followed by one branch-conditioned
    `M=1` continuation, used only as a feasibility calibration;
 9. retained repeated X/Z syndrome histories for circuit-decoder development;
-   and
-10. an independent three-qubit TMR fixture cross-checked in both ClifT and
-   tsim.
+10. an exact fault ledger for all 3,016 scheduled noisy locations and all
+    31,064 elementary Pauli outcomes;
+11. compressed detector, boundary-frame, and rotation-sign signatures for
+    every single fault, with selected distinct-location fault pairs;
+12. an action-posterior decoder that sums physically different explanations
+    whenever they prescribe the same correction and fails closed when its
+    posterior lower bound is insufficient; and
+13. independent ClifT checks of every before/after Pauli fault at all 24
+    rotations and of all signed local TMR branch angles.
 
 At `theta=pi/32`, each logical has one target class with probability
 
@@ -51,20 +57,25 @@ Logical-Z frame changes commute with the repair rotation and are tracked.
 
 ## Scientific boundary
 
-The exact algebra and noiseless branch recovery are complete.  The current MAP
-decoder models independent syndrome-readout flips around a persistent ideal
-branch.  It is an oracle and regression target, not yet the final decoder for
-gate faults that can change the latent data syndrome between rounds.
+The exact algebra, noiseless branch recovery, and scheduled single-fault
+signature engine are complete.  The action-posterior decoder is deliberately
+fail closed: it makes no confidence claim from probability mass that its
+catalog does not contain.
 
 The retained-history runner demonstrates this distinction directly: scheduled
 circuit faults frequently move raw syndromes outside the ideal TMR image.  It
 records all repeated X/Z outcomes for decoder development but does not assign
 a ground-truth ideal branch to a noisy coherent trajectory.
 
-The bounded decoder is exact only for its phenomenological event catalog.  It
-uses repeated X and Z histories, returns a physical Pauli correction, and
-forces a reset on out-of-radius or tied results.  Its event catalog is not yet
-derived from every location in the actual 40-layer scheduled circuit.
+The bounded decoder remains exact only for its phenomenological event catalog.
+The new scheduled decoder replaces that catalog with actual preparation,
+CNOT, idle, rotation, and measurement locations, including correlated
+two-qubit Pauli outcomes and rotation-sign flips.  At `p=10^-3`, however, zero
+and one fault contain only about `19.66%` of total probability after the small
+selected-pair extension.  Consequently, a strict `0.99` posterior-lower-bound
+policy currently resets every audited history.  This is the correct behavior,
+not a production-yield result: scalable higher-fault inference is still
+needed before end-to-end repair decisions can be accepted.
 
 Similarly, the noisy `M=1` calibration begins in a selected ideal branch and
 postselects the final syndrome.  The raw-branch calibration trusts one exact
@@ -164,3 +175,32 @@ given.  Raw run JSON remains ignored by the repository-wide results policy;
 the compact, reviewed findings are versioned in `RESULTS.md` and
 `manifests/validation_summary.json`.  Exact software revisions and frozen-input
 hashes are in `manifests/environment.json`.
+
+Build the complete scheduled single-fault catalog and the first selected-pair
+extension (about one minute on the recorded workstation):
+
+```bash
+.venv/bin/python -m bb64_hybrid_nonclifford.run_scheduled_catalog \
+  --pair-top-groups 64 \
+  --output bb64_hybrid_nonclifford/results/scheduled_fault_catalog_p1e3_pairs64.npz
+```
+
+Audit ideal classes, injected single signatures, and direct pair composition:
+
+```bash
+.venv/bin/python -m bb64_hybrid_nonclifford.run_scheduled_decoder_audit \
+  --catalog bb64_hybrid_nonclifford/results/scheduled_fault_catalog_p1e3_pairs64.npz
+```
+
+Cross-check every physical rotation boundary in ClifT:
+
+```bash
+/home/judah_unmuth/Documents/multistaq/star-simulators/.venv-clifft/bin/python \
+  -m bb64_hybrid_nonclifford.run_rotation_fault_validation \
+  --shots 200 --max-cases 144 \
+  --output bb64_hybrid_nonclifford/results/rotation_fault_validation_all_200.json
+```
+
+The companion `run_signed_toy_crosscheck` runner verifies the phase-sensitive
+angle and Pauli-frame convention for all eight rotation-sign patterns and all
+four local syndrome branches.

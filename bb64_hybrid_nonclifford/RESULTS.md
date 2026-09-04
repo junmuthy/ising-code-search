@@ -126,13 +126,69 @@ seen among only 20 survivors, which is insufficient to estimate infidelity.
 This run establishes that full scheduled branch continuations are executable
 at the expected cost; it is not the final hybrid simulation.
 
+## Scheduled circuit-location decoder
+
+The frozen three-round circuit contains 3,016 independent noisy locations.
+Expanding depolarizing channels into their mutually exclusive Pauli outcomes
+gives 31,064 elementary single-fault mechanisms.  Exact propagation compresses
+these to 15,433 distinct tuples containing:
+
+- all 196 detector changes;
+- the final 64-data-qubit X and Z Pauli;
+- its canonical physical correction and eight logical X/Z frame bits; and
+- the subset of 24 non-Clifford rotations whose signs reverse.
+
+The complete single catalog took `61.0 s` to build and compresses to a 193 KB
+local NPZ archive.  The first important-pair pilot combines the 64 most
+probable single-signature groups, producing 2,017 distinct pair signatures in
+`0.20 s`.
+
+At `p=10^-3`, the exact global fault-count masses are:
+
+| Included fault locations | Probability mass |
+|---|---:|
+| 0 | `0.0489229` |
+| exactly 1 | `0.147699` |
+| exactly 2, all distinct-location pairs | `0.222880` |
+| 0 through 2, all pairs | `0.419502` |
+| 0, 1, and the selected pair pilot | `0.198935` |
+
+Thus `0.801065` remains an adversarial omitted-probability bound for the
+current pilot.  The decoder does not renormalize that mass away.
+
+A labeled audit gave:
+
+| Audit | Cases | Result |
+|---|---:|---:|
+| Ideal histories: best action equals no-fault truth | 32 | 32 |
+| Random single signatures: best action equals injected truth | 64 | 52 |
+| Direct two-fault propagation equals composed signatures | 100 | 100 |
+| Ideal histories accepted at rigorous posterior threshold `0.99` | 32 | 0 |
+
+The 12 single-signature disagreements are Bayesian/action ambiguities: another
+latent-branch-plus-fault explanation has greater aggregate probability.  They
+are not propagation mismatches.  This is exactly why the decision rule sums
+probability by complete repair action and exposes a reset instead of treating
+the injected label as observable truth.
+
+ClifT supplied two independent non-Clifford checks:
+
+- all 144 combinations of 24 rotations, three Pauli axes, and before/after
+  insertion were sampled for 200 shots each; all 28,800 histories returned to
+  the ideal persistent syndrome image after the symbolic detector delta;
+- all 32 local combinations of eight rotation-sign patterns and four syndrome
+  labels were sampled for 5,000 attempts; after the derived frame and angle
+  repair there were zero final-detector and zero logical errors.  Acceptance
+  probabilities agreed with the analytic values within `2.19` standard errors
+  at worst.
+
 ## Current conclusion
 
-The non-Clifford algebra, exact branch correction, residual-angle action, and
-independent simulator convention are validated.  Retained scheduled histories
-are now available, and they rule out using the cheap persistent-syndrome MAP
-decoder as the final circuit decoder.  A bounded latent-boundary oracle and its
-fail-closed controller integration are also implemented.  The next required
-scientific milestone is replacing the phenomenological event catalog with
-actual scheduled circuit-location signatures, followed by the thresholded
-end-to-end comparison specified in `DECODER_PLAN.md`.
+The non-Clifford algebra, exact branch correction, residual-angle action,
+scheduled single-fault signatures, selected-pair composition, and independent
+simulator convention are validated.  The new decoder is already a correct
+fail-closed circuit-location kernel, but it is not yet an accepting production
+decoder at `p=10^-3`: the schedule has an expected fault count near three and
+the current bounded catalog omits too much probability.  The next required
+scientific milestone is scalable arbitrary-weight inference followed by the
+thresholded end-to-end comparison specified in `DECODER_PLAN.md`.

@@ -109,25 +109,52 @@ fault sets through at least total fault weight two.  Any tie must be surfaced
 as ambiguity rather than resolved silently.  The implemented labeled audit
 covers zero, one, and two injected phenomenological events.
 
-### Stage D2: scheduled circuit-location decoder — next
+### Stage D2: scheduled circuit-location decoder kernel — implemented
 
-Replace the phenomenological catalog with detector and frame signatures from
-the actual preparation, CNOT, idle, rotation, and measurement locations.  This
-must account for correlated two-qubit faults and for Pauli faults crossing
-non-Clifford rotations.  The exact 65,536-class Stage-B oracle remains
-practical as an outer latent-state enumeration for small pilots; later
-acceleration can shortlist candidates from the quotient map and solve the
-Pauli portion with matching, belief propagation plus ordered statistics, or
-integer programming.
+`circuit_decoder` now enumerates every elementary Pauli outcome of the actual
+preparation, CNOT, idle, rotation, and measurement locations.  It propagates
+each outcome exactly through the scheduled Clifford circuit, records all 196
+detector deltas, decomposes the final data Pauli into a canonical physical
+correction and logical frame, and records every non-Clifford rotation whose
+sign is reversed.  Correlated two-qubit depolarizing outcomes are individual
+15-way mechanisms, not independent one-qubit approximations.
 
-### Stage E: frame-aware action — implemented for the bounded oracle
+Mechanisms with identical detector/frame/sign transformations are compressed.
+Selected pairs are composed only across distinct physical locations.  At
+decode time the ideal 65,536-class model remains an outer latent variable, but
+only classes compatible with a given signature and the complete repeated X/Z
+history are scored.  Explanation probabilities are summed by complete repair
+action rather than maximized by literal fault.
 
-`repair_action` already converts a decoded ideal class into reset or repair,
-including X-frame-dependent angle signs.  `boundary_repair_action` adds the
-bounded decoder's physical X/Z corrections and fails closed on ambiguity or an
-out-of-radius history.  The scheduled circuit-location decoder must still
-supply verified logical frames.  Before end-to-end simulation, verify for every
-retained trajectory that:
+All 144 before/after `X`, `Y`, and `Z` cases at the 24 rotation pivots were
+checked with ClifT.  A separate phase-sensitive fixture checked all 32 signed
+local TMR branch cases.
+
+### Stage D3: scalable higher-fault inference — next
+
+At `p=10^-3`, the circuit has 3,016 noisy locations.  The exact no-fault mass
+is only `0.0489`; all zero-, one-, and two-location terms together contain
+`0.4195`.  The initial top-64-signature pair pilot models `0.1989`.  The
+implemented posterior therefore assigns every omitted term adversarially
+against the leading action and correctly resets all cases at a `0.99`
+threshold.
+
+The next decoder must absorb arbitrary-weight combinations without explicitly
+enumerating all location subsets.  Candidate approaches are a factor graph
+over detector/sign/frame transformations, belief propagation plus ordered
+statistics, or an integer-programming shortlist followed by exact
+action-level probability summation.  The present catalog, direct pair oracle,
+and ClifT boundary tests are the regression standards for that implementation.
+
+### Stage E: frame-aware action — implemented for bounded and scheduled decoders
+
+`repair_action` converts a decoded ideal class into reset or repair, including
+X-frame-dependent angle signs.  `boundary_repair_action` adds the bounded
+decoder's physical X/Z corrections and fails closed on ambiguity or an
+out-of-radius history.  `ScheduledActionDecoder` supplies canonical physical
+X/Z corrections, logical X/Z frames, and signed residual angles.  It groups
+posterior weight by that complete action and refuses low-confidence output.
+Before end-to-end simulation, still verify for every retained trajectory that:
 
 - the physical Pauli correction returns the data to the codespace;
 - the reported logical frames reproduce the residual Pauli action;

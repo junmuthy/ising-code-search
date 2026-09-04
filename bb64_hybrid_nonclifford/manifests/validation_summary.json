@@ -1,10 +1,10 @@
 {
   "schema": "bb64-hybrid-nonclifford-validation-summary-v1",
   "theta": 0.09817477042468103,
-  "status": "bounded-decoder-complete-scheduled-circuit-decoder-pending",
+  "status": "scheduled-decoder-kernel-complete-scalable-higher-fault-inference-pending",
   "tests": {
-    "count": 16,
-    "passed": 16
+    "count": 24,
+    "passed": 24
   },
   "ideal_clifft": [
     {
@@ -85,5 +85,48 @@
     "branches": 4,
     "logical_errors": 0,
     "final_detector_errors": 0
+  },
+  "scheduled_fault_catalog_p1e3": {
+    "syndrome_rounds": 3,
+    "noisy_locations": 3016,
+    "elementary_single_fault_mechanisms": 31064,
+    "unique_single_signatures": 15433,
+    "selected_pair_source_groups": 64,
+    "unique_selected_pair_signatures": 2017,
+    "zero_fault_probability": 0.04892293343266666,
+    "exactly_one_fault_probability": 0.14769926649942205,
+    "all_exactly_two_fault_probability": 0.2228795237716504,
+    "all_through_two_fault_probability": 0.4195017237037391,
+    "modeled_probability": 0.19893518327282994,
+    "conservative_omitted_probability": 0.8010648167271701,
+    "catalog_seconds": 60.996574012038764
+  },
+  "scheduled_decoder_audit": {
+    "ideal_histories_tested": 32,
+    "ideal_best_action_matches": 32,
+    "single_signature_histories_tested": 64,
+    "single_best_action_matches_injected_truth": 52,
+    "direct_pair_compositions_tested": 100,
+    "direct_pair_linearity_failures": 0,
+    "mean_ideal_modeled_posterior": 0.9228645935268972,
+    "strict_0p99_conservative_accepts": 0,
+    "interpretation": "working fail-closed kernel; omitted higher-fault mass prevents production acceptance"
+  },
+  "rotation_fault_clifft": {
+    "physical_rotations": 24,
+    "axes": 3,
+    "boundaries": 2,
+    "cases": 144,
+    "shots_per_case": 200,
+    "invalid_corrected_histories": 0
+  },
+  "signed_local_clifft": {
+    "sign_patterns": 8,
+    "branch_labels": 4,
+    "cases": 32,
+    "attempts_per_case": 5000,
+    "logical_errors": 0,
+    "final_detector_errors": 0,
+    "maximum_acceptance_z_score": 2.188412603130119
   }
 }
