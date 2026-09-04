@@ -1,0 +1,1488 @@
+{
+  "created_utc": "2026-09-04T15:58:36.391316+00:00",
+  "shots_per_policy": 1000000,
+  "thresholds": [
+    0,
+    1,
+    2,
+    3,
+    8
+  ],
+  "records": [
+    {
+      "angle_label": "pi/128",
+      "angle_table": {
+        "theta": 0.02454369260617026,
+        "physical_angle": -0.45339526664284285,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.856103676293698,
+          "logical_angle": 0.02454369260617026,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.047965441235433955,
+          "logical_angle": -0.45339526664284285,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.856103676293698,
+        "probability_any_alternative": 0.14389632370630187
+      },
+      "analytic": {
+        "theta": 0.02454369260617026,
+        "threshold": 0,
+        "policy": "zero-syndrome STAR post-selection",
+        "keep_probability_per_attempt": 0.28854323466489795,
+        "reset_probability_per_attempt": 0.711456765335102,
+        "immediate_success_probability_per_attempt": 0.28854323466489795,
+        "correction_probability_given_kept": 0.0,
+        "expected_initial_attempts": 3.465685137831626,
+        "expected_resets": 2.465685137831626,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_correction": 0.0,
+        "expected_m3_stages": 3.465685137831626,
+        "expected_m1_stages": 0.0,
+        "expected_total_tmr_stages": 3.465685137831626,
+        "expected_physical_cnots": 2938.900996881219,
+        "expected_cnot_layers": 83.17644330795902,
+        "expected_physical_rotations": 83.17644330795902,
+        "expected_syndrome_cycles": 6.931370275663252,
+        "residual_correction_angle": 0.4779389592490131,
+        "final_angle_error": 2.7755575615628914e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20260904,
+        "kept_shots": 288277,
+        "keep_probability": 0.288277,
+        "keep_probability_se": 0.0004529606729849734,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_bad_logicals_given_kept_se": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept_se": 0.0,
+        "correction_probability_given_kept": 0.0,
+        "correction_probability_given_kept_se": 0.0
+      }
+    },
+    {
+      "angle_label": "pi/128",
+      "angle_table": {
+        "theta": 0.02454369260617026,
+        "physical_angle": -0.45339526664284285,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.856103676293698,
+          "logical_angle": 0.02454369260617026,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.047965441235433955,
+          "logical_angle": -0.45339526664284285,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.856103676293698,
+        "probability_any_alternative": 0.14389632370630187
+      },
+      "analytic": {
+        "theta": 0.02454369260617026,
+        "threshold": 1,
+        "policy": "repair at most one alternative logical",
+        "keep_probability_per_attempt": 0.6765365289196884,
+        "reset_probability_per_attempt": 0.3234634710803116,
+        "immediate_success_probability_per_attempt": 0.28854323466489795,
+        "correction_probability_given_kept": 0.5734994012434902,
+        "expected_initial_attempts": 1.4781167863867257,
+        "expected_resets": 0.4781167863867257,
+        "expected_bad_logicals_given_kept": 0.5734994012434901,
+        "expected_nonempty_batches_given_kept": 0.5734994012434901,
+        "expected_nonempty_batches_given_correction": 0.9999999999999998,
+        "expected_m3_stages": 1.4781167863867257,
+        "expected_m1_stages": 0.5734994012434902,
+        "expected_total_tmr_stages": 2.051616187630216,
+        "expected_physical_cnots": 1555.1037199100192,
+        "expected_cnot_layers": 48.0917897006382,
+        "expected_physical_rotations": 36.04830227452491,
+        "expected_syndrome_cycles": 3.529732974016942,
+        "residual_correction_angle": 0.4779389592490131,
+        "final_angle_error": 2.7755575615628914e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20260905,
+        "kept_shots": 676795,
+        "keep_probability": 0.676795,
+        "keep_probability_se": 0.0004677002544098089,
+        "expected_bad_logicals_given_kept": 0.572993299300379,
+        "expected_bad_logicals_given_kept_se": 0.0006012621517847914,
+        "expected_nonempty_batches_given_kept": 0.572993299300379,
+        "expected_nonempty_batches_given_kept_se": 0.0006012621517847914,
+        "correction_probability_given_kept": 0.572993299300379,
+        "correction_probability_given_kept_se": 0.0006012617075864936
+      }
+    },
+    {
+      "angle_label": "pi/128",
+      "angle_table": {
+        "theta": 0.02454369260617026,
+        "physical_angle": -0.45339526664284285,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.856103676293698,
+          "logical_angle": 0.02454369260617026,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.047965441235433955,
+          "logical_angle": -0.45339526664284285,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.856103676293698,
+        "probability_any_alternative": 0.14389632370630187
+      },
+      "analytic": {
+        "theta": 0.02454369260617026,
+        "threshold": 2,
+        "policy": "repair at most two alternative logicals",
+        "keep_probability_per_attempt": 0.9047890592403606,
+        "reset_probability_per_attempt": 0.09521094075963943,
+        "immediate_success_probability_per_attempt": 0.28854323466489795,
+        "correction_probability_given_kept": 0.6810933645604069,
+        "expected_initial_attempts": 1.1052299867988857,
+        "expected_resets": 0.10522998679888573,
+        "expected_bad_logicals_given_kept": 0.9333649056335358,
+        "expected_nonempty_batches_given_kept": 0.8252485308879092,
+        "expected_nonempty_batches_given_correction": 1.2116525777938583,
+        "expected_m3_stages": 1.1052299867988857,
+        "expected_m1_stages": 0.6810933645604069,
+        "expected_total_tmr_stages": 1.7863233513592927,
+        "expected_physical_cnots": 1299.021940139253,
+        "expected_cnot_layers": 43.527746032087244,
+        "expected_physical_rotations": 27.458884588806793,
+        "expected_syndrome_cycles": 2.8915533381581784,
+        "residual_correction_angle": 0.4779389592490131,
+        "final_angle_error": 2.7755575615628914e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20260906,
+        "kept_shots": 904941,
+        "keep_probability": 0.904941,
+        "keep_probability_se": 0.00029329641409161486,
+        "expected_bad_logicals_given_kept": 0.9327016899444274,
+        "expected_bad_logicals_given_kept_se": 0.0007914918977814214,
+        "expected_nonempty_batches_given_kept": 0.8246935435569833,
+        "expected_nonempty_batches_given_kept_se": 0.0006914836661837369,
+        "correction_probability_given_kept": 0.680632218012003,
+        "correction_probability_given_kept_se": 0.0004901078626950896
+      }
+    },
+    {
+      "angle_label": "pi/128",
+      "angle_table": {
+        "theta": 0.02454369260617026,
+        "physical_angle": -0.45339526664284285,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.856103676293698,
+          "logical_angle": 0.02454369260617026,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.047965441235433955,
+          "logical_angle": -0.45339526664284285,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.856103676293698,
+        "probability_any_alternative": 0.14389632370630187
+      },
+      "analytic": {
+        "theta": 0.02454369260617026,
+        "threshold": 3,
+        "policy": "repair at most three alternative logicals",
+        "keep_probability_per_attempt": 0.9815197190875402,
+        "reset_probability_per_attempt": 0.01848028091245979,
+        "immediate_success_probability_per_attempt": 0.28854323466489795,
+        "correction_probability_given_kept": 0.706024006391701,
+        "expected_initial_attempts": 1.018828231927566,
+        "expected_resets": 0.018828231927566108,
+        "expected_bad_logicals_given_kept": 1.0949248533047804,
+        "expected_nonempty_batches_given_kept": 0.9059172439115352,
+        "expected_nonempty_batches_given_correction": 1.283125270118554,
+        "expected_m3_stages": 1.018828231927566,
+        "expected_m1_stages": 0.706024006391701,
+        "expected_total_tmr_stages": 1.7248522383192673,
+        "expected_physical_cnots": 1240.779579893394,
+        "expected_cnot_layers": 42.78291103215669,
+        "expected_physical_rotations": 25.54680241956637,
+        "expected_syndrome_cycles": 2.7436804702468334,
+        "residual_correction_angle": 0.4779389592490131,
+        "final_angle_error": 2.7755575615628914e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20260907,
+        "kept_shots": 981568,
+        "keep_probability": 0.981568,
+        "keep_probability_se": 0.00013450747702637206,
+        "expected_bad_logicals_given_kept": 1.0948268484710177,
+        "expected_bad_logicals_given_kept_se": 0.0009197684590778333,
+        "expected_nonempty_batches_given_kept": 0.9061124649540327,
+        "expected_nonempty_batches_given_kept_se": 0.0007031968580588747,
+        "correction_probability_given_kept": 0.7059633158375171,
+        "correction_probability_given_kept_se": 0.00045986634760104947
+      }
+    },
+    {
+      "angle_label": "pi/128",
+      "angle_table": {
+        "theta": 0.02454369260617026,
+        "physical_angle": -0.45339526664284285,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.856103676293698,
+          "logical_angle": 0.02454369260617026,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.047965441235433955,
+          "logical_angle": -0.45339526664284285,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.856103676293698,
+        "probability_any_alternative": 0.14389632370630187
+      },
+      "analytic": {
+        "theta": 0.02454369260617026,
+        "threshold": 8,
+        "policy": "fully adaptive all-syndrome recovery",
+        "keep_probability_per_attempt": 0.9999999999999999,
+        "reset_probability_per_attempt": 1.1102230246251565e-16,
+        "immediate_success_probability_per_attempt": 0.28854323466489795,
+        "correction_probability_given_kept": 0.711456765335102,
+        "expected_initial_attempts": 1.0000000000000002,
+        "expected_resets": 2.220446049250313e-16,
+        "expected_bad_logicals_given_kept": 1.1511705896504156,
+        "expected_nonempty_batches_given_kept": 0.9256755896566478,
+        "expected_nonempty_batches_given_correction": 1.301098864694395,
+        "expected_m3_stages": 1.0000000000000002,
+        "expected_m1_stages": 0.711456765335102,
+        "expected_total_tmr_stages": 1.7114567653351023,
+        "expected_physical_cnots": 1228.3822521066784,
+        "expected_cnot_layers": 42.65111237787389,
+        "expected_physical_rotations": 25.151170589650423,
+        "expected_syndrome_cycles": 2.7114567653351025,
+        "residual_correction_angle": 0.4779389592490131,
+        "final_angle_error": 2.7755575615628914e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20260908,
+        "kept_shots": 1000000,
+        "keep_probability": 1.0,
+        "keep_probability_se": 0.0,
+        "expected_bad_logicals_given_kept": 1.151441,
+        "expected_bad_logicals_given_kept_se": 0.000993003328078315,
+        "expected_nonempty_batches_given_kept": 0.926064,
+        "expected_nonempty_batches_given_kept_se": 0.0007049694779818237,
+        "correction_probability_given_kept": 0.711808,
+        "correction_probability_given_kept_se": 0.0004529209325434187
+      }
+    },
+    {
+      "angle_label": "pi/64",
+      "angle_table": {
+        "theta": 0.04908738521234052,
+        "physical_angle": -0.5656792863386355,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.7845365143268134,
+          "logical_angle": 0.049087385212340504,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.07182116189106223,
+          "logical_angle": -0.5656792863386355,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.7845365143268134,
+        "probability_any_alternative": 0.21546348567318668
+      },
+      "analytic": {
+        "theta": 0.04908738521234052,
+        "threshold": 0,
+        "policy": "zero-syndrome STAR post-selection",
+        "keep_probability_per_attempt": 0.14351764273671622,
+        "reset_probability_per_attempt": 0.8564823572632838,
+        "immediate_success_probability_per_attempt": 0.14351764273671622,
+        "correction_probability_given_kept": 0.0,
+        "expected_initial_attempts": 6.967784454448605,
+        "expected_resets": 5.967784454448605,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_correction": 0.0,
+        "expected_m3_stages": 6.967784454448605,
+        "expected_m1_stages": 0.0,
+        "expected_total_tmr_stages": 6.967784454448605,
+        "expected_physical_cnots": 5908.681217372417,
+        "expected_cnot_layers": 167.22682690676652,
+        "expected_physical_rotations": 167.22682690676652,
+        "expected_syndrome_cycles": 13.93556890889721,
+        "residual_correction_angle": 0.6147666715509761,
+        "final_angle_error": 5.551115123125783e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261004,
+        "kept_shots": 143348,
+        "keep_probability": 0.143348,
+        "keep_probability_se": 0.00035042738319942976,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_bad_logicals_given_kept_se": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept_se": 0.0,
+        "correction_probability_given_kept": 0.0,
+        "correction_probability_given_kept_se": 0.0
+      }
+    },
+    {
+      "angle_label": "pi/64",
+      "angle_table": {
+        "theta": 0.04908738521234052,
+        "physical_angle": -0.5656792863386355,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.7845365143268134,
+          "logical_angle": 0.049087385212340504,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.07182116189106223,
+          "logical_angle": -0.5656792863386355,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.7845365143268134,
+        "probability_any_alternative": 0.21546348567318668
+      },
+      "analytic": {
+        "theta": 0.04908738521234052,
+        "threshold": 1,
+        "policy": "repair at most one alternative logical",
+        "keep_probability_per_attempt": 0.4588407512978099,
+        "reset_probability_per_attempt": 0.5411592487021901,
+        "immediate_success_probability_per_attempt": 0.14351764273671622,
+        "correction_probability_given_kept": 0.6872168779020104,
+        "expected_initial_attempts": 2.179405375768273,
+        "expected_resets": 1.179405375768273,
+        "expected_bad_logicals_given_kept": 0.6872168779020102,
+        "expected_nonempty_batches_given_kept": 0.6872168779020102,
+        "expected_nonempty_batches_given_correction": 0.9999999999999999,
+        "expected_m3_stages": 2.179405375768273,
+        "expected_m1_stages": 0.6872168779020104,
+        "expected_total_tmr_stages": 2.8666222536702834,
+        "expected_physical_cnots": 2209.6118364279528,
+        "expected_cnot_layers": 67.42450033228278,
+        "expected_physical_rotations": 52.992945896340565,
+        "expected_syndrome_cycles": 5.046027629438556,
+        "residual_correction_angle": 0.6147666715509761,
+        "final_angle_error": 5.551115123125783e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261005,
+        "kept_shots": 458910,
+        "keep_probability": 0.45891,
+        "keep_probability_se": 0.0004983087515787778,
+        "expected_bad_logicals_given_kept": 0.6872131790547166,
+        "expected_bad_logicals_given_kept_se": 0.000684394759318149,
+        "expected_nonempty_batches_given_kept": 0.6872131790547166,
+        "expected_nonempty_batches_given_kept_se": 0.000684394759318149,
+        "correction_probability_given_kept": 0.6872131790547166,
+        "correction_probability_given_kept_se": 0.000684394013643472
+      }
+    },
+    {
+      "angle_label": "pi/64",
+      "angle_table": {
+        "theta": 0.04908738521234052,
+        "physical_angle": -0.5656792863386355,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.7845365143268134,
+          "logical_angle": 0.049087385212340504,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.07182116189106223,
+          "logical_angle": -0.5656792863386355,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.7845365143268134,
+        "probability_any_alternative": 0.21546348567318668
+      },
+      "analytic": {
+        "theta": 0.04908738521234052,
+        "threshold": 2,
+        "policy": "repair at most two alternative logicals",
+        "keep_probability_per_attempt": 0.7619396535810451,
+        "reset_probability_per_attempt": 0.2380603464189549,
+        "immediate_success_probability_per_attempt": 0.14351764273671622,
+        "correction_probability_given_kept": 0.8116417198367392,
+        "expected_initial_attempts": 1.3124398963882422,
+        "expected_resets": 0.3124398963882422,
+        "expected_bad_logicals_given_kept": 1.209440811744738,
+        "expected_nonempty_batches_given_kept": 1.03895548664131,
+        "expected_nonempty_batches_given_correction": 1.2800666368533824,
+        "expected_m3_stages": 1.3124398963882422,
+        "expected_m1_stages": 0.8116417198367392,
+        "expected_total_tmr_stages": 2.1240816162249816,
+        "expected_physical_cnots": 1545.441764058066,
+        "expected_cnot_layers": 52.53706808499007,
+        "expected_physical_rotations": 32.70799832506255,
+        "expected_syndrome_cycles": 3.436521512613224,
+        "residual_correction_angle": 0.6147666715509761,
+        "final_angle_error": 5.551115123125783e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261006,
+        "kept_shots": 761873,
+        "keep_probability": 0.761873,
+        "keep_probability_se": 0.00042593723935692684,
+        "expected_bad_logicals_given_kept": 1.2091175300870356,
+        "expected_bad_logicals_given_kept_se": 0.0008441785524475202,
+        "expected_nonempty_batches_given_kept": 1.0386429234268704,
+        "expected_nonempty_batches_given_kept_se": 0.0007377792053736569,
+        "correction_probability_given_kept": 0.8112244429189642,
+        "correction_probability_given_kept_se": 0.00044833444117092563
+      }
+    },
+    {
+      "angle_label": "pi/64",
+      "angle_table": {
+        "theta": 0.04908738521234052,
+        "physical_angle": -0.5656792863386355,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.7845365143268134,
+          "logical_angle": 0.049087385212340504,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.07182116189106223,
+          "logical_angle": -0.5656792863386355,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.7845365143268134,
+        "probability_any_alternative": 0.21546348567318668
+      },
+      "analytic": {
+        "theta": 0.04908738521234052,
+        "threshold": 3,
+        "policy": "repair at most three alternative logicals",
+        "keep_probability_per_attempt": 0.9284245648555703,
+        "reset_probability_per_attempt": 0.07157543514442966,
+        "immediate_success_probability_per_attempt": 0.14351764273671622,
+        "correction_probability_given_kept": 0.8454180897733543,
+        "expected_initial_attempts": 1.0770934310161906,
+        "expected_resets": 0.0770934310161906,
+        "expected_bad_logicals_given_kept": 1.530523534965055,
+        "expected_nonempty_batches_given_kept": 1.18567268579801,
+        "expected_nonempty_batches_given_correction": 1.4024690270300149,
+        "expected_m3_stages": 1.0770934310161906,
+        "expected_m1_stages": 0.8454180897733543,
+        "expected_total_tmr_stages": 1.922511520789545,
+        "expected_physical_cnots": 1367.656620955198,
+        "expected_cnot_layers": 49.213004663747554,
+        "expected_physical_rotations": 27.380765879353632,
+        "expected_syndrome_cycles": 2.9996049518057353,
+        "residual_correction_angle": 0.6147666715509761,
+        "final_angle_error": 5.551115123125783e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261007,
+        "kept_shots": 928425,
+        "keep_probability": 0.928425,
+        "keep_probability_se": 0.00025778289193621837,
+        "expected_bad_logicals_given_kept": 1.530664297062229,
+        "expected_bad_logicals_given_kept_se": 0.000994213465718617,
+        "expected_nonempty_batches_given_kept": 1.185586342461696,
+        "expected_nonempty_batches_given_kept_se": 0.0007047632090374521,
+        "correction_probability_given_kept": 0.8450020195492366,
+        "correction_probability_given_kept_se": 0.00037559385656120035
+      }
+    },
+    {
+      "angle_label": "pi/64",
+      "angle_table": {
+        "theta": 0.04908738521234052,
+        "physical_angle": -0.5656792863386355,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.7845365143268134,
+          "logical_angle": 0.049087385212340504,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.07182116189106223,
+          "logical_angle": -0.5656792863386355,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.7845365143268134,
+        "probability_any_alternative": 0.21546348567318668
+      },
+      "analytic": {
+        "theta": 0.04908738521234052,
+        "threshold": 8,
+        "policy": "fully adaptive all-syndrome recovery",
+        "keep_probability_per_attempt": 1.0,
+        "reset_probability_per_attempt": 0.0,
+        "immediate_success_probability_per_attempt": 0.14351764273671622,
+        "correction_probability_given_kept": 0.8564823572632836,
+        "expected_initial_attempts": 1.0,
+        "expected_resets": 0.0,
+        "expected_bad_logicals_given_kept": 1.7237078853854937,
+        "expected_nonempty_batches_given_kept": 1.2423255508156124,
+        "expected_nonempty_batches_given_correction": 1.4504975383091525,
+        "expected_m3_stages": 1.0,
+        "expected_m1_stages": 0.8564823572632836,
+        "expected_total_tmr_stages": 1.8564823572632836,
+        "expected_physical_cnots": 1310.6508773141982,
+        "expected_cnot_layers": 48.244416569524844,
+        "expected_physical_rotations": 25.723707885385494,
+        "expected_syndrome_cycles": 2.8564823572632836,
+        "residual_correction_angle": 0.6147666715509761,
+        "final_angle_error": 5.551115123125783e-17
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261008,
+        "kept_shots": 1000000,
+        "keep_probability": 1.0,
+        "keep_probability_se": 0.0,
+        "expected_bad_logicals_given_kept": 1.723625,
+        "expected_bad_logicals_given_kept_se": 0.0011619015489232336,
+        "expected_nonempty_batches_given_kept": 1.242523,
+        "expected_nonempty_batches_given_kept_se": 0.0006862070134814022,
+        "correction_probability_given_kept": 0.856413,
+        "correction_probability_given_kept_se": 0.00035067046272961176
+      }
+    },
+    {
+      "angle_label": "pi/32",
+      "angle_table": {
+        "theta": 0.09817477042468103,
+        "physical_angle": -0.7021479830745353,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.6871495483161995,
+          "logical_angle": 0.09817477042468102,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.10428348389460015,
+          "logical_angle": -0.7021479830745352,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.6871495483161995,
+        "probability_any_alternative": 0.31285045168380043
+      },
+      "analytic": {
+        "theta": 0.09817477042468103,
+        "threshold": 0,
+        "policy": "zero-syndrome STAR post-selection",
+        "keep_probability_per_attempt": 0.04970614963189015,
+        "reset_probability_per_attempt": 0.9502938503681099,
+        "immediate_success_probability_per_attempt": 0.04970614963189015,
+        "correction_probability_given_kept": 0.0,
+        "expected_initial_attempts": 20.118235015299323,
+        "expected_resets": 19.118235015299323,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_correction": 0.0,
+        "expected_m3_stages": 20.118235015299323,
+        "expected_m1_stages": 0.0,
+        "expected_total_tmr_stages": 20.118235015299323,
+        "expected_physical_cnots": 17060.263292973825,
+        "expected_cnot_layers": 482.8376403671838,
+        "expected_physical_rotations": 482.8376403671838,
+        "expected_syndrome_cycles": 40.236470030598646,
+        "residual_correction_angle": 0.8003227534992162,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261104,
+        "kept_shots": 49597,
+        "keep_probability": 0.049597,
+        "keep_probability_se": 0.00021711088777626975,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_bad_logicals_given_kept_se": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept_se": 0.0,
+        "correction_probability_given_kept": 0.0,
+        "correction_probability_given_kept_se": 0.0
+      }
+    },
+    {
+      "angle_label": "pi/32",
+      "angle_table": {
+        "theta": 0.09817477042468103,
+        "physical_angle": -0.7021479830745353,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.6871495483161995,
+          "logical_angle": 0.09817477042468102,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.10428348389460015,
+          "logical_angle": -0.7021479830745352,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.6871495483161995,
+        "probability_any_alternative": 0.31285045168380043
+      },
+      "analytic": {
+        "theta": 0.09817477042468103,
+        "threshold": 1,
+        "policy": "repair at most one alternative logical",
+        "keep_probability_per_attempt": 0.23075077261860133,
+        "reset_probability_per_attempt": 0.7692492273813987,
+        "immediate_success_probability_per_attempt": 0.04970614963189015,
+        "correction_probability_given_kept": 0.7845894552472532,
+        "expected_initial_attempts": 4.3336799641094155,
+        "expected_resets": 3.3336799641094155,
+        "expected_bad_logicals_given_kept": 0.7845894552472532,
+        "expected_nonempty_batches_given_kept": 0.7845894552472532,
+        "expected_nonempty_batches_given_correction": 1.0,
+        "expected_m3_stages": 4.3336799641094155,
+        "expected_m1_stages": 0.7845894552472532,
+        "expected_total_tmr_stages": 5.118269419356668,
+        "expected_physical_cnots": 4087.6546630248395,
+        "expected_cnot_layers": 121.26928715406555,
+        "expected_physical_rotations": 104.79290859387324,
+        "expected_syndrome_cycles": 9.451949383466085,
+        "residual_correction_angle": 0.8003227534992162,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261105,
+        "kept_shots": 230862,
+        "keep_probability": 0.230862,
+        "keep_probability_se": 0.0004213843102869399,
+        "expected_bad_logicals_given_kept": 0.7866041184777053,
+        "expected_bad_logicals_given_kept_se": 0.0008526991664043543,
+        "expected_nonempty_batches_given_kept": 0.7866041184777053,
+        "expected_nonempty_batches_given_kept_se": 0.0008526991664043543,
+        "correction_probability_given_kept": 0.7866041184777053,
+        "correction_probability_given_kept_se": 0.0008526973196298964
+      }
+    },
+    {
+      "angle_label": "pi/32",
+      "angle_table": {
+        "theta": 0.09817477042468103,
+        "physical_angle": -0.7021479830745353,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.6871495483161995,
+          "logical_angle": 0.09817477042468102,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.10428348389460015,
+          "logical_angle": -0.7021479830745352,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.6871495483161995,
+        "probability_any_alternative": 0.31285045168380043
+      },
+      "analytic": {
+        "theta": 0.09817477042468103,
+        "threshold": 2,
+        "policy": "repair at most two alternative logicals",
+        "keep_probability_per_attempt": 0.5192463741261261,
+        "reset_probability_per_attempt": 0.48075362587387394,
+        "immediate_success_probability_per_attempt": 0.04970614963189015,
+        "correction_probability_given_kept": 0.90427251472763,
+        "expected_initial_attempts": 1.9258680461331403,
+        "expected_resets": 0.9258680461331403,
+        "expected_bad_logicals_given_kept": 1.4598769751209315,
+        "expected_nonempty_batches_given_kept": 1.2217607778095168,
+        "expected_nonempty_batches_given_correction": 1.3510979908280363,
+        "expected_m3_stages": 1.9258680461331403,
+        "expected_m1_stages": 0.90427251472763,
+        "expected_total_tmr_stages": 2.8301405608607704,
+        "expected_physical_cnots": 2116.561908313143,
+        "expected_cnot_layers": 70.55966411434964,
+        "expected_physical_rotations": 47.6807100823163,
+        "expected_syndrome_cycles": 4.756008606993911,
+        "residual_correction_angle": 0.8003227534992162,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261106,
+        "kept_shots": 518598,
+        "keep_probability": 0.518598,
+        "keep_probability_se": 0.000499653994676316,
+        "expected_bad_logicals_given_kept": 1.4601541078060463,
+        "expected_bad_logicals_given_kept_se": 0.0009207160081272898,
+        "expected_nonempty_batches_given_kept": 1.2220988125677308,
+        "expected_nonempty_batches_given_kept_se": 0.0008377710008544971,
+        "correction_probability_given_kept": 0.9043941550102391,
+        "correction_probability_given_kept_se": 0.0004083247236330809
+      }
+    },
+    {
+      "angle_label": "pi/32",
+      "angle_table": {
+        "theta": 0.09817477042468103,
+        "physical_angle": -0.7021479830745353,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.6871495483161995,
+          "logical_angle": 0.09817477042468102,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.10428348389460015,
+          "logical_angle": -0.7021479830745352,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.6871495483161995,
+        "probability_any_alternative": 0.31285045168380043
+      },
+      "analytic": {
+        "theta": 0.09817477042468103,
+        "threshold": 3,
+        "policy": "repair at most three alternative logicals",
+        "keep_probability_per_attempt": 0.7819431319471366,
+        "reset_probability_per_attempt": 0.2180568680528634,
+        "immediate_success_probability_per_attempt": 0.04970614963189015,
+        "correction_probability_given_kept": 0.9364325260992887,
+        "expected_initial_attempts": 1.2788653792634184,
+        "expected_resets": 0.27886537926341837,
+        "expected_bad_logicals_given_kept": 1.9772871405811119,
+        "expected_nonempty_batches_given_kept": 1.4352197947111762,
+        "expected_nonempty_batches_given_correction": 1.532646244881718,
+        "expected_m3_stages": 1.2788653792634184,
+        "expected_m1_stages": 0.9364325260992887,
+        "expected_total_tmr_stages": 2.215297905362707,
+        "expected_physical_cnots": 1591.6133149463503,
+        "expected_cnot_layers": 58.27730643707281,
+        "expected_physical_rotations": 32.67005624290315,
+        "expected_syndrome_cycles": 3.4941632846261257,
+        "residual_correction_angle": 0.8003227534992162,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261107,
+        "kept_shots": 781991,
+        "keep_probability": 0.781991,
+        "keep_probability_se": 0.0004128935406603014,
+        "expected_bad_logicals_given_kept": 1.9762912872398788,
+        "expected_bad_logicals_given_kept_se": 0.0010256329028944353,
+        "expected_nonempty_batches_given_kept": 1.4351111457804502,
+        "expected_nonempty_batches_given_kept_se": 0.0006912379537036102,
+        "correction_probability_given_kept": 0.9360734330702015,
+        "correction_probability_given_kept_se": 0.00027662713155972014
+      }
+    },
+    {
+      "angle_label": "pi/32",
+      "angle_table": {
+        "theta": 0.09817477042468103,
+        "physical_angle": -0.7021479830745353,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.6871495483161995,
+          "logical_angle": 0.09817477042468102,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.10428348389460015,
+          "logical_angle": -0.7021479830745352,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.6871495483161995,
+        "probability_any_alternative": 0.31285045168380043
+      },
+      "analytic": {
+        "theta": 0.09817477042468103,
+        "threshold": 8,
+        "policy": "fully adaptive all-syndrome recovery",
+        "keep_probability_per_attempt": 0.9999999999999998,
+        "reset_probability_per_attempt": 2.220446049250313e-16,
+        "immediate_success_probability_per_attempt": 0.04970614963189015,
+        "correction_probability_given_kept": 0.9502938503681096,
+        "expected_initial_attempts": 1.0000000000000002,
+        "expected_resets": 2.220446049250313e-16,
+        "expected_bad_logicals_given_kept": 2.5028036134704035,
+        "expected_nonempty_batches_given_kept": 1.554102479792093,
+        "expected_nonempty_batches_given_correction": 1.6353914941047858,
+        "expected_m3_stages": 1.0000000000000002,
+        "expected_m1_stages": 0.9502938503681096,
+        "expected_total_tmr_stages": 1.95029385036811,
+        "expected_physical_cnots": 1369.589701977058,
+        "expected_cnot_layers": 53.35978552003419,
+        "expected_physical_rotations": 26.502803613470412,
+        "expected_syndrome_cycles": 2.95029385036811,
+        "residual_correction_angle": 0.8003227534992162,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261108,
+        "kept_shots": 1000000,
+        "keep_probability": 1.0,
+        "keep_probability_se": 0.0,
+        "expected_bad_logicals_given_kept": 2.502841,
+        "expected_bad_logicals_given_kept_se": 0.0013116842795561166,
+        "expected_nonempty_batches_given_kept": 1.553712,
+        "expected_nonempty_batches_given_kept_se": 0.0005882681081916366,
+        "correction_probability_given_kept": 0.950528,
+        "correction_probability_given_kept_se": 0.0002168513804798115
+      }
+    },
+    {
+      "angle_label": "pi/16",
+      "angle_table": {
+        "theta": 0.19634954084936207,
+        "physical_angle": -0.865268077594109,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.5653519927312735,
+          "logical_angle": 0.19634954084936207,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.1448826690895756,
+          "logical_angle": -0.865268077594109,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.5653519927312735,
+        "probability_any_alternative": 0.43464800726872677
+      },
+      "analytic": {
+        "theta": 0.19634954084936207,
+        "threshold": 0,
+        "policy": "zero-syndrome STAR post-selection",
+        "keep_probability_per_attempt": 0.010436416874836828,
+        "reset_probability_per_attempt": 0.9895635831251631,
+        "immediate_success_probability_per_attempt": 0.010436416874836828,
+        "correction_probability_given_kept": 0.0,
+        "expected_initial_attempts": 95.81832653801833,
+        "expected_resets": 94.81832653801833,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_correction": 0.0,
+        "expected_m3_stages": 95.81832653801833,
+        "expected_m1_stages": 0.0,
+        "expected_total_tmr_stages": 95.81832653801833,
+        "expected_physical_cnots": 81253.94090423954,
+        "expected_cnot_layers": 2299.63983691244,
+        "expected_physical_rotations": 2299.63983691244,
+        "expected_syndrome_cycles": 191.63665307603665,
+        "residual_correction_angle": 1.0616176184434711,
+        "final_angle_error": 1.1102230246251565e-16
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261204,
+        "kept_shots": 10338,
+        "keep_probability": 0.010338,
+        "keep_probability_se": 0.00010114902745948673,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_bad_logicals_given_kept_se": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept_se": 0.0,
+        "correction_probability_given_kept": 0.0,
+        "correction_probability_given_kept_se": 0.0
+      }
+    },
+    {
+      "angle_label": "pi/16",
+      "angle_table": {
+        "theta": 0.19634954084936207,
+        "physical_angle": -0.865268077594109,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.5653519927312735,
+          "logical_angle": 0.19634954084936207,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.1448826690895756,
+          "logical_angle": -0.865268077594109,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.5653519927312735,
+        "probability_any_alternative": 0.43464800726872677
+      },
+      "analytic": {
+        "theta": 0.19634954084936207,
+        "threshold": 1,
+        "policy": "repair at most one alternative logical",
+        "keep_probability_per_attempt": 0.07462535199483311,
+        "reset_probability_per_attempt": 0.9253746480051669,
+        "immediate_success_probability_per_attempt": 0.010436416874836828,
+        "correction_probability_given_kept": 0.8601491772452958,
+        "expected_initial_attempts": 13.400271801320786,
+        "expected_resets": 12.400271801320786,
+        "expected_bad_logicals_given_kept": 0.8601491772452957,
+        "expected_nonempty_batches_given_kept": 0.8601491772452957,
+        "expected_nonempty_batches_given_correction": 0.9999999999999999,
+        "expected_m3_stages": 13.400271801320786,
+        "expected_m1_stages": 0.8601491772452958,
+        "expected_total_tmr_stages": 14.260420978566081,
+        "expected_physical_cnots": 11815.868954751053,
+        "expected_cnot_layers": 340.5298051310954,
+        "expected_physical_rotations": 322.4666724089442,
+        "expected_syndrome_cycles": 27.66069277988687,
+        "residual_correction_angle": 1.0616176184434711,
+        "final_angle_error": 1.1102230246251565e-16
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261205,
+        "kept_shots": 74568,
+        "keep_probability": 0.074568,
+        "keep_probability_se": 0.00026269300214508954,
+        "expected_bad_logicals_given_kept": 0.8609323034009226,
+        "expected_bad_logicals_given_kept_se": 0.0012671391144173732,
+        "expected_nonempty_batches_given_kept": 0.8609323034009226,
+        "expected_nonempty_batches_given_kept_se": 0.0012671391144173732,
+        "correction_probability_given_kept": 0.8609323034009226,
+        "correction_probability_given_kept_se": 0.0012671306178547545
+      }
+    },
+    {
+      "angle_label": "pi/16",
+      "angle_table": {
+        "theta": 0.19634954084936207,
+        "physical_angle": -0.865268077594109,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.5653519927312735,
+          "logical_angle": 0.19634954084936207,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.1448826690895756,
+          "logical_angle": -0.865268077594109,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.5653519927312735,
+        "probability_any_alternative": 0.43464800726872677
+      },
+      "analytic": {
+        "theta": 0.19634954084936207,
+        "threshold": 2,
+        "policy": "repair at most two alternative logicals",
+        "keep_probability_per_attempt": 0.24734708259912022,
+        "reset_probability_per_attempt": 0.7526529174008798,
+        "immediate_success_probability_per_attempt": 0.010436416874836828,
+        "correction_probability_given_kept": 0.9578065899740114,
+        "expected_initial_attempts": 4.042901939622703,
+        "expected_resets": 3.042901939622703,
+        "expected_bad_logicals_given_kept": 1.6561036096490738,
+        "expected_nonempty_batches_given_kept": 1.3568334583597612,
+        "expected_nonempty_batches_given_correction": 1.4166048475366795,
+        "expected_m3_stages": 4.042901939622703,
+        "expected_m1_stages": 0.9578065899740114,
+        "expected_total_tmr_stages": 5.000708529596714,
+        "expected_physical_cnots": 3941.963269401833,
+        "expected_cnot_layers": 123.68776768777361,
+        "expected_physical_rotations": 98.68575016059395,
+        "expected_syndrome_cycles": 9.043610469219416,
+        "residual_correction_angle": 1.0616176184434711,
+        "final_angle_error": 1.1102230246251565e-16
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261206,
+        "kept_shots": 247582,
+        "keep_probability": 0.247582,
+        "keep_probability_se": 0.00043160763811128276,
+        "expected_bad_logicals_given_kept": 1.6579153573361554,
+        "expected_bad_logicals_given_kept_se": 0.0011160238722504711,
+        "expected_nonempty_batches_given_kept": 1.3582611013724746,
+        "expected_nonempty_batches_given_kept_se": 0.0011247613555429754,
+        "correction_probability_given_kept": 0.9583491530078924,
+        "correction_probability_given_kept_se": 0.0004015265497049625
+      }
+    },
+    {
+      "angle_label": "pi/16",
+      "angle_table": {
+        "theta": 0.19634954084936207,
+        "physical_angle": -0.865268077594109,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.5653519927312735,
+          "logical_angle": 0.19634954084936207,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.1448826690895756,
+          "logical_angle": -0.865268077594109,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.5653519927312735,
+        "probability_any_alternative": 0.43464800726872677
+      },
+      "analytic": {
+        "theta": 0.19634954084936207,
+        "threshold": 3,
+        "policy": "repair at most three alternative logicals",
+        "keep_probability_per_attempt": 0.5129273122060706,
+        "reset_probability_per_attempt": 0.4870726877939294,
+        "immediate_success_probability_per_attempt": 0.010436416874836828,
+        "correction_probability_given_kept": 0.9796532244891576,
+        "expected_initial_attempts": 1.9495939798936774,
+        "expected_resets": 0.9495939798936774,
+        "expected_bad_logicals_given_kept": 2.351937704313075,
+        "expected_nonempty_batches_given_kept": 1.6158804652969712,
+        "expected_nonempty_batches_given_correction": 1.6494412766717281,
+        "expected_m3_stages": 1.9495939798936774,
+        "expected_m1_stages": 0.9796532244891576,
+        "expected_total_tmr_stages": 2.9292472043828353,
+        "expected_physical_cnots": 2187.7652737486706,
+        "expected_cnot_layers": 77.24980782751912,
+        "expected_physical_rotations": 49.14219322176133,
+        "expected_syndrome_cycles": 4.878841184276513,
+        "residual_correction_angle": 1.0616176184434711,
+        "final_angle_error": 1.1102230246251565e-16
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261207,
+        "kept_shots": 513232,
+        "keep_probability": 0.513232,
+        "keep_probability_se": 0.000499824883510215,
+        "expected_bad_logicals_given_kept": 2.354582333135892,
+        "expected_bad_logicals_given_kept_se": 0.0010787999780554058,
+        "expected_nonempty_batches_given_kept": 1.6178258565327182,
+        "expected_nonempty_batches_given_kept_se": 0.0007332624928492328,
+        "correction_probability_given_kept": 0.9800830813355363,
+        "correction_probability_given_kept_se": 0.00019502292133657468
+      }
+    },
+    {
+      "angle_label": "pi/16",
+      "angle_table": {
+        "theta": 0.19634954084936207,
+        "physical_angle": -0.865268077594109,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.5653519927312735,
+          "logical_angle": 0.19634954084936207,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.1448826690895756,
+          "logical_angle": -0.865268077594109,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.5653519927312735,
+        "probability_any_alternative": 0.43464800726872677
+      },
+      "analytic": {
+        "theta": 0.19634954084936207,
+        "threshold": 8,
+        "policy": "fully adaptive all-syndrome recovery",
+        "keep_probability_per_attempt": 0.9999999999999997,
+        "reset_probability_per_attempt": 3.3306690738754696e-16,
+        "immediate_success_probability_per_attempt": 0.010436416874836828,
+        "correction_probability_given_kept": 0.9895635831251632,
+        "expected_initial_attempts": 1.0000000000000004,
+        "expected_resets": 4.440892098500626e-16,
+        "expected_bad_logicals_given_kept": 3.4771840581498137,
+        "expected_nonempty_batches_given_kept": 1.7956824346774192,
+        "expected_nonempty_batches_given_correction": 1.8146205714305228,
+        "expected_m3_stages": 1.0000000000000004,
+        "expected_m1_stages": 0.9895635831251632,
+        "expected_total_tmr_stages": 1.9895635831251637,
+        "expected_physical_cnots": 1403.3371313741811,
+        "expected_cnot_layers": 57.05606275048518,
+        "expected_physical_rotations": 27.477184058149824,
+        "expected_syndrome_cycles": 2.989563583125164,
+        "residual_correction_angle": 1.0616176184434711,
+        "final_angle_error": 1.1102230246251565e-16
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261208,
+        "kept_shots": 1000000,
+        "keep_probability": 1.0,
+        "keep_probability_se": 0.0,
+        "expected_bad_logicals_given_kept": 3.48006,
+        "expected_bad_logicals_given_kept_se": 0.0014037928504713106,
+        "expected_nonempty_batches_given_kept": 1.795636,
+        "expected_nonempty_batches_given_kept_se": 0.00042821669616391523,
+        "correction_probability_given_kept": 0.989615,
+        "correction_probability_given_kept_se": 0.00010137628803127473
+      }
+    },
+    {
+      "angle_label": "pi/8",
+      "angle_table": {
+        "theta": 0.39269908169872414,
+        "physical_angle": -1.0567579178127438,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.4313250122848239,
+          "logical_angle": 0.39269908169872403,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.189558329238392,
+          "logical_angle": -1.0567579178127438,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.4313250122848239,
+        "probability_any_alternative": 0.568674987715176
+      },
+      "analytic": {
+        "theta": 0.39269908169872414,
+        "threshold": 0,
+        "policy": "zero-syndrome STAR post-selection",
+        "keep_probability_per_attempt": 0.0011979457383315848,
+        "reset_probability_per_attempt": 0.9988020542616685,
+        "immediate_success_probability_per_attempt": 0.0011979457383315848,
+        "correction_probability_given_kept": 0.0,
+        "expected_initial_attempts": 834.7623502486266,
+        "expected_resets": 833.7623502486266,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_correction": 0.0,
+        "expected_m3_stages": 834.7623502486266,
+        "expected_m1_stages": 0.0,
+        "expected_total_tmr_stages": 834.7623502486266,
+        "expected_physical_cnots": 707878.4730108354,
+        "expected_cnot_layers": 20034.296405967038,
+        "expected_physical_rotations": 20034.296405967038,
+        "expected_syndrome_cycles": 1669.5247004972532,
+        "residual_correction_angle": 1.449456999511468,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261304,
+        "kept_shots": 1182,
+        "keep_probability": 0.001182,
+        "keep_probability_se": 3.435990215352774e-05,
+        "expected_bad_logicals_given_kept": 0.0,
+        "expected_bad_logicals_given_kept_se": 0.0,
+        "expected_nonempty_batches_given_kept": 0.0,
+        "expected_nonempty_batches_given_kept_se": 0.0,
+        "correction_probability_given_kept": 0.0,
+        "correction_probability_given_kept_se": 0.0
+      }
+    },
+    {
+      "angle_label": "pi/8",
+      "angle_table": {
+        "theta": 0.39269908169872414,
+        "physical_angle": -1.0567579178127438,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.4313250122848239,
+          "logical_angle": 0.39269908169872403,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.189558329238392,
+          "logical_angle": -1.0567579178127438,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.4313250122848239,
+        "probability_any_alternative": 0.568674987715176
+      },
+      "analytic": {
+        "theta": 0.39269908169872414,
+        "threshold": 1,
+        "policy": "repair at most one alternative logical",
+        "keep_probability_per_attempt": 0.01383327656545841,
+        "reset_probability_per_attempt": 0.9861667234345416,
+        "immediate_success_probability_per_attempt": 0.0011979457383315848,
+        "correction_probability_given_kept": 0.9134011575158667,
+        "expected_initial_attempts": 72.2894532808657,
+        "expected_resets": 71.2894532808657,
+        "expected_bad_logicals_given_kept": 0.9134011575158666,
+        "expected_nonempty_batches_given_kept": 0.9134011575158666,
+        "expected_nonempty_batches_given_correction": 0.9999999999999999,
+        "expected_m3_stages": 72.2894532808657,
+        "expected_m1_stages": 0.9134011575158667,
+        "expected_total_tmr_stages": 73.20285443838156,
+        "expected_physical_cnots": 61781.90539102746,
+        "expected_cnot_layers": 1755.0417042061258,
+        "expected_physical_rotations": 1735.8602798982927,
+        "expected_syndrome_cycles": 145.49230771924726,
+        "residual_correction_angle": 1.449456999511468,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261305,
+        "kept_shots": 13799,
+        "keep_probability": 0.013799,
+        "keep_probability_se": 0.00011665585111343537,
+        "expected_bad_logicals_given_kept": 0.9168055656206971,
+        "expected_bad_logicals_given_kept_se": 0.002351135651362897,
+        "expected_nonempty_batches_given_kept": 0.9168055656206971,
+        "expected_nonempty_batches_given_kept_se": 0.002351135651362897,
+        "correction_probability_given_kept": 0.9168055656206971,
+        "correction_probability_given_kept_se": 0.0023510504575717153
+      }
+    },
+    {
+      "angle_label": "pi/8",
+      "angle_table": {
+        "theta": 0.39269908169872414,
+        "physical_angle": -1.0567579178127438,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.4313250122848239,
+          "logical_angle": 0.39269908169872403,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.189558329238392,
+          "logical_angle": -1.0567579178127438,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.4313250122848239,
+        "probability_any_alternative": 0.568674987715176
+      },
+      "analytic": {
+        "theta": 0.39269908169872414,
+        "threshold": 2,
+        "policy": "repair at most two alternative logicals",
+        "keep_probability_per_attempt": 0.07213939699401443,
+        "reset_probability_per_attempt": 0.9278606030059856,
+        "immediate_success_probability_per_attempt": 0.0011979457383315848,
+        "correction_probability_given_kept": 0.9833940150840053,
+        "expected_initial_attempts": 13.862050996669298,
+        "expected_resets": 12.862050996669298,
+        "expected_bad_logicals_given_kept": 1.7916364298825909,
+        "expected_nonempty_batches_given_kept": 1.44524682354034,
+        "expected_nonempty_batches_given_correction": 1.4696518398242249,
+        "expected_m3_stages": 13.862050996669298,
+        "expected_m1_stages": 0.9833940150840053,
+        "expected_total_tmr_stages": 14.845445011753304,
+        "expected_physical_cnots": 12283.599890916932,
+        "expected_cnot_layers": 360.78983157029995,
+        "expected_physical_rotations": 334.4808603499458,
+        "expected_syndrome_cycles": 28.707496008422602,
+        "residual_correction_angle": 1.449456999511468,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261306,
+        "kept_shots": 72023,
+        "keep_probability": 0.072023,
+        "keep_probability_se": 0.0002585259899333141,
+        "expected_bad_logicals_given_kept": 1.7915526984435528,
+        "expected_bad_logicals_given_kept_se": 0.0016580025144841744,
+        "expected_nonempty_batches_given_kept": 1.4446912791747082,
+        "expected_nonempty_batches_given_kept_se": 0.001971480334027231,
+        "correction_probability_given_kept": 0.9835052691501326,
+        "correction_probability_given_kept_se": 0.00047459740426969947
+      }
+    },
+    {
+      "angle_label": "pi/8",
+      "angle_table": {
+        "theta": 0.39269908169872414,
+        "physical_angle": -1.0567579178127438,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.4313250122848239,
+          "logical_angle": 0.39269908169872403,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.189558329238392,
+          "logical_angle": -1.0567579178127438,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.4313250122848239,
+        "probability_any_alternative": 0.568674987715176
+      },
+      "analytic": {
+        "theta": 0.39269908169872414,
+        "threshold": 3,
+        "policy": "repair at most three alternative logicals",
+        "keep_probability_per_attempt": 0.22588532581361853,
+        "reset_probability_per_attempt": 0.7741146741863815,
+        "immediate_success_probability_per_attempt": 0.0011979457383315848,
+        "correction_probability_given_kept": 0.9946966641856139,
+        "expected_initial_attempts": 4.427025068574466,
+        "expected_resets": 3.4270250685744656,
+        "expected_bad_logicals_given_kept": 2.6140934831254596,
+        "expected_nonempty_batches_given_kept": 1.7255985375581946,
+        "expected_nonempty_batches_given_correction": 1.7347987579419408,
+        "expected_m3_stages": 4.427025068574466,
+        "expected_m1_stages": 0.9946966641856139,
+        "expected_total_tmr_stages": 5.42172173276008,
+        "expected_physical_cnots": 4299.999258977938,
+        "expected_cnot_layers": 138.3645544850868,
+        "expected_physical_rotations": 108.86269512891263,
+        "expected_syndrome_cycles": 9.848746801334546,
+        "residual_correction_angle": 1.449456999511468,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261307,
+        "kept_shots": 226129,
+        "keep_probability": 0.226129,
+        "keep_probability_se": 0.0004183236490553695,
+        "expected_bad_logicals_given_kept": 2.613640886396703,
+        "expected_bad_logicals_given_kept_se": 0.001299513532018436,
+        "expected_nonempty_batches_given_kept": 1.7257936841360462,
+        "expected_nonempty_batches_given_kept_se": 0.0009635013239411733,
+        "correction_probability_given_kept": 0.9945473601351441,
+        "correction_probability_given_kept_se": 0.0001548595563008475
+      }
+    },
+    {
+      "angle_label": "pi/8",
+      "angle_table": {
+        "theta": 0.39269908169872414,
+        "physical_angle": -1.0567579178127438,
+        "target": {
+          "local_weight": 0,
+          "probability_per_pattern": 0.4313250122848239,
+          "logical_angle": 0.39269908169872403,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "alternative": {
+          "local_weight": 1,
+          "probability_per_pattern": 0.189558329238392,
+          "logical_angle": -1.0567579178127438,
+          "logical_z_frame": 0,
+          "unitarity_error": 0.0
+        },
+        "probability_target": 0.4313250122848239,
+        "probability_any_alternative": 0.568674987715176
+      },
+      "analytic": {
+        "theta": 0.39269908169872414,
+        "threshold": 8,
+        "policy": "fully adaptive all-syndrome recovery",
+        "keep_probability_per_attempt": 0.9999999999999998,
+        "reset_probability_per_attempt": 2.220446049250313e-16,
+        "immediate_success_probability_per_attempt": 0.0011979457383315848,
+        "correction_probability_given_kept": 0.9988020542616686,
+        "expected_initial_attempts": 1.0000000000000002,
+        "expected_resets": 2.220446049250313e-16,
+        "expected_bad_logicals_given_kept": 4.54939990172141,
+        "expected_nonempty_batches_given_kept": 1.9307772945246555,
+        "expected_nonempty_batches_given_correction": 1.9330930350878373,
+        "expected_m3_stages": 1.0000000000000002,
+        "expected_m1_stages": 0.9988020542616686,
+        "expected_total_tmr_stages": 1.998802054261669,
+        "expected_physical_cnots": 1423.0782504060742,
+        "expected_cnot_layers": 59.02129855743853,
+        "expected_physical_rotations": 28.549399901721415,
+        "expected_syndrome_cycles": 2.998802054261669,
+        "residual_correction_angle": 1.449456999511468,
+        "final_angle_error": 0.0
+      },
+      "monte_carlo": {
+        "shots": 1000000,
+        "seed": 20261308,
+        "kept_shots": 1000000,
+        "keep_probability": 1.0,
+        "keep_probability_se": 0.0,
+        "expected_bad_logicals_given_kept": 4.549936,
+        "expected_bad_logicals_given_kept_se": 0.001399707953498284,
+        "expected_nonempty_batches_given_kept": 1.930957,
+        "expected_nonempty_batches_given_kept_se": 0.0002582404515933374,
+        "correction_probability_given_kept": 0.998794,
+        "correction_probability_given_kept_se": 3.4706563701986405e-05
+      }
+    }
+  ]
+}
