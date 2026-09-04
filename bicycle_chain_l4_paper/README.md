@@ -73,6 +73,11 @@ acceptance model.
 important acceptance-convention caveat. Raw JSON and Stim circuits are kept
 locally under the ignored `results/` directory.
 
+The broader acceptance suite is driven by the manifests in
+`tmr_postselection/manifests/`. It compares `N in {1,2,4,8}`, covers the
+small-angle Trotter regime, and reports both the paper-matching `tmr-x`
+acceptance and the stricter `strict-xz` convention used for BB64.
+
 ## Reproduce
 
 Run the tests:
@@ -94,4 +99,18 @@ PYTHONPATH=/home/judah_unmuth/gala-code-search \
   --probability 0.001 --max-shots 1000000 --checkpoint-shots 100000 \
   --threads 16 --clifft-batch-size 1 --diagnostic \
   --output bicycle_chain_l4_paper/tmr_postselection/results/reproduction.json
+```
+
+Run a resumable suite manifest and regenerate its committed report with:
+
+```bash
+PYTHONPATH=/home/judah_unmuth/gala-code-search \
+/home/judah_unmuth/Documents/multistaq/star-simulators/.venv-clifft/bin/python \
+  -m bicycle_chain_l4_paper.tmr_postselection.run_sweep \
+  --manifest bicycle_chain_l4_paper/tmr_postselection/manifests/pilot_small_angles.json \
+  --output-dir bicycle_chain_l4_paper/tmr_postselection/results/pilot_small_angles
+
+PYTHONPATH=/home/judah_unmuth/gala-code-search \
+/home/judah_unmuth/Documents/multistaq/star-simulators/.venv-clifft/bin/python \
+  -m bicycle_chain_l4_paper.tmr_postselection.analyze_suite
 ```

@@ -1,0 +1,29 @@
+{
+  "description": "BB56 N=8 pilot at small and reference angles under both acceptance policies",
+  "tasks": [
+    {
+      "slug": "n8-theta-1e-2-tmr-x",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.01, "partition_count": 3, "logical_count": 8, "postselection_policy": "tmr-x", "probability": 0.001, "max_shots": 10000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568010}
+    },
+    {
+      "slug": "n8-theta-1e-2-strict-xz",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.01, "partition_count": 3, "logical_count": 8, "postselection_policy": "strict-xz", "probability": 0.001, "max_shots": 10000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568011}
+    },
+    {
+      "slug": "n8-theta-pi128-tmr-x",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.02454369260617026, "partition_count": 3, "logical_count": 8, "postselection_policy": "tmr-x", "probability": 0.001, "max_shots": 10000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568012}
+    },
+    {
+      "slug": "n8-theta-pi128-strict-xz",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.02454369260617026, "partition_count": 3, "logical_count": 8, "postselection_policy": "strict-xz", "probability": 0.001, "max_shots": 10000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568013}
+    },
+    {
+      "slug": "n8-theta-pi32-tmr-x",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.09817477042468103, "partition_count": 3, "logical_count": 8, "postselection_policy": "tmr-x", "probability": 0.001, "max_shots": 30000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568014}
+    },
+    {
+      "slug": "n8-theta-pi32-strict-xz",
+      "arguments": {"mode": "full", "protocol": "single-final-check", "theta": 0.09817477042468103, "partition_count": 3, "logical_count": 8, "postselection_policy": "strict-xz", "probability": 0.001, "max_shots": 30000, "checkpoint_shots": 1000, "threads": 16, "clifft_batch_size": 1, "seed": 568015}
+    }
+  ]
+}

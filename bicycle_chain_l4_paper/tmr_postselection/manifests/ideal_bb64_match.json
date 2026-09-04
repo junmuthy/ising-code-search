@@ -1,0 +1,17 @@
+{
+  "description": "BB56 ideal-projection sweep matching the original BB64 N/theta grid",
+  "tasks": [
+    {"slug": "ideal-n1-pi128", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560101}},
+    {"slug": "ideal-n2-pi128", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 2, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560102}},
+    {"slug": "ideal-n4-pi128", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 4, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560104}},
+    {"slug": "ideal-n8-pi128", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.02454369260617026, "logical_count": 8, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560108}},
+    {"slug": "ideal-n1-pi32", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560201}},
+    {"slug": "ideal-n2-pi32", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 2, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560202}},
+    {"slug": "ideal-n4-pi32", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 4, "max_shots": 50000, "checkpoint_shots": 5000, "threads": 2, "seed": 560204}},
+    {"slug": "ideal-n8-pi32", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.09817477042468103, "logical_count": 8, "max_shots": 100000, "checkpoint_shots": 5000, "threads": 2, "seed": 560208}},
+    {"slug": "ideal-n1-pi8", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 1, "max_shots": 20000, "checkpoint_shots": 5000, "threads": 2, "seed": 560301}},
+    {"slug": "ideal-n2-pi8", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 2, "max_shots": 30000, "checkpoint_shots": 5000, "threads": 2, "seed": 560302}},
+    {"slug": "ideal-n4-pi8", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 4, "max_shots": 100000, "checkpoint_shots": 5000, "threads": 2, "seed": 560304}},
+    {"slug": "ideal-n8-pi8", "arguments": {"mode": "ideal-projection", "protocol": "single-final-check", "theta": 0.39269908169872414, "logical_count": 8, "max_shots": 1000000, "checkpoint_shots": 25000, "threads": 2, "seed": 560308}}
+  ]
+}

@@ -25,6 +25,10 @@ from bicycle_chain_l4_paper.tmr_postselection.model import (
     EXPECTED_SCHEDULE_SHA256,
     load_code_artifact,
 )
+from bicycle_chain_l4_paper.tmr_postselection.analyze_suite import (
+    expected_geometric_maximum,
+    geometric_maximum_quantile,
+)
 
 
 PACKAGE_DIR = Path(__file__).resolve().parents[1]
@@ -118,6 +122,24 @@ class BicycleChainL4Test(unittest.TestCase):
         sample = clifft.sample_survivors(program, shots=16, seed=17)
         self.assertEqual(sample.passed_shots, 16)
         self.assertEqual(program.num_qubits, 112)
+        all_logicals = build_circuit(
+            code=self.code,
+            partition_certificate=self.certificate,
+            mode="full",
+            protocol="single-final-check",
+            theta=math.pi / 32,
+            logical_count=8,
+            noise=NoiseModel(probability=1e-3),
+        )
+        self.assertEqual(all_logicals.operation_counts["physical_cnots"], 736)
+        self.assertEqual(all_logicals.operation_counts["cnot_layers"], 20)
+        self.assertEqual(all_logicals.operation_counts["physical_rotations"], 24)
+
+    def test_geometric_block_pool_statistics(self) -> None:
+        self.assertAlmostEqual(expected_geometric_maximum(0.5, 1), 2.0)
+        self.assertAlmostEqual(expected_geometric_maximum(1.0, 16), 1.0)
+        self.assertEqual(geometric_maximum_quantile(0.5, 1, 0.5), 1)
+        self.assertEqual(geometric_maximum_quantile(0.5, 2, 0.5), 2)
 
 
 if __name__ == "__main__":

@@ -14,6 +14,7 @@ FIELDS = (
     "file",
     "mode",
     "protocol",
+    "postselection_policy",
     "N",
     "M",
     "theta_over_pi",
@@ -53,6 +54,7 @@ def row(path: Path) -> dict[str, Any]:
         "file": path.name,
         "mode": config["mode"],
         "protocol": config["protocol"],
+        "postselection_policy": config.get("postselection_policy", "strict-xz"),
         "N": config["logical_count"],
         "M": config["partition_count"],
         "theta_over_pi": config["theta"] / __import__("math").pi,
@@ -91,7 +93,7 @@ def main() -> None:
         writer.writerows(rows)
 
     headers = (
-        "file", "mode", "protocol", "N", "M", "theta/pi", "p",
+        "file", "mode", "protocol", "policy", "N", "M", "theta/pi", "p",
         "acceptance", "s.e.", "95% Wilson", "ideal", "yield", "shots/s",
     )
     lines = [
@@ -103,6 +105,7 @@ def main() -> None:
             f"`{item['file']}`",
             f"`{item['mode']}`",
             f"`{item['protocol']}`",
+            f"`{item['postselection_policy']}`",
             item["N"],
             item["M"],
             item["theta_over_pi"],
