@@ -1,10 +1,10 @@
 {
   "schema": "bb64-hybrid-nonclifford-validation-summary-v1",
   "theta": 0.09817477042468103,
-  "status": "component-and-history-validation-complete-circuit-decoder-pending",
+  "status": "bounded-decoder-complete-scheduled-circuit-decoder-pending",
   "tests": {
-    "count": 13,
-    "passed": 13
+    "count": 16,
+    "passed": 16
   },
   "ideal_clifft": [
     {
@@ -66,6 +66,18 @@
     "x_history_changed_fraction": 0.75,
     "measurement_only_decoder_ambiguous_fraction": 0.095,
     "interpretation": "diagnostic; establishes need for a circuit-fault latent-boundary decoder"
+  },
+  "bounded_latent_boundary_decoder": {
+    "rounds": 3,
+    "maximum_faults_per_channel": 2,
+    "elementary_events_per_channel": 288,
+    "unique_patterns_per_channel": 41521,
+    "shots_per_configuration": 100,
+    "zero_and_single_fault_class_accuracy": 1.0,
+    "two_x_fault_class_accuracy": 0.94,
+    "two_x_fault_repair_mask_accuracy": 0.95,
+    "two_x_fault_ambiguous_fraction": 0.06,
+    "interpretation": "exact joint maximum-score decoder for its phenomenological event model; fail closed on ties or out-of-radius histories"
   },
   "independent_local_crosscheck": {
     "backends": ["clifft", "tsim"],

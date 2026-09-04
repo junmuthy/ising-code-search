@@ -1,0 +1,89 @@
+{
+  "catalog_seconds": 0.5493424639571458,
+  "created_utc": "2026-09-04T17:29:30.409576+00:00",
+  "interpretation": "exact maximum-score oracle for the bounded phenomenological event catalog; not a scheduled circuit-location decoder",
+  "maximum_faults_per_channel": 2,
+  "phenomenological_data_probability": 0.001,
+  "phenomenological_measurement_probability": 0.001,
+  "records": [
+    {
+      "alternative_mask_accuracy": 1.0,
+      "ambiguous_fraction": 0.0,
+      "class_accuracy": 1.0,
+      "decode_seconds": 2.7419451742316596,
+      "histories_per_second": 36.47045934389324,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 1.0,
+      "x_faults": 0,
+      "z_faults": 0
+    },
+    {
+      "alternative_mask_accuracy": 1.0,
+      "ambiguous_fraction": 0.0,
+      "class_accuracy": 1.0,
+      "decode_seconds": 1.878039845090825,
+      "histories_per_second": 53.247006585828764,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 1.0,
+      "x_faults": 1,
+      "z_faults": 0
+    },
+    {
+      "alternative_mask_accuracy": 1.0,
+      "ambiguous_fraction": 0.0,
+      "class_accuracy": 1.0,
+      "decode_seconds": 2.4801651973393746,
+      "histories_per_second": 40.3198948631632,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 1.0,
+      "x_faults": 0,
+      "z_faults": 1
+    },
+    {
+      "alternative_mask_accuracy": 0.95,
+      "ambiguous_fraction": 0.06,
+      "class_accuracy": 0.94,
+      "decode_seconds": 2.6528001427068375,
+      "histories_per_second": 37.696017272512286,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 0.93,
+      "x_faults": 2,
+      "z_faults": 0
+    },
+    {
+      "alternative_mask_accuracy": 1.0,
+      "ambiguous_fraction": 0.01,
+      "class_accuracy": 0.99,
+      "decode_seconds": 2.6956536970101297,
+      "histories_per_second": 37.09675323314507,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 0.99,
+      "x_faults": 1,
+      "z_faults": 1
+    },
+    {
+      "alternative_mask_accuracy": 1.0,
+      "ambiguous_fraction": 0.0,
+      "class_accuracy": 1.0,
+      "decode_seconds": 2.705763016885612,
+      "histories_per_second": 36.9581516843637,
+      "in_radius_fraction": 1.0,
+      "shots": 100,
+      "unambiguous_correct_fraction": 1.0,
+      "x_faults": 0,
+      "z_faults": 2
+    }
+  ],
+  "rounds": 3,
+  "schema": "bb64-bounded-latent-boundary-audit-v1",
+  "theta": 0.09817477042468103,
+  "x_event_count": 288,
+  "x_unique_pattern_count": 41521,
+  "z_event_count": 288,
+  "z_unique_pattern_count": 41521
+}

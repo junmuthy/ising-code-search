@@ -87,6 +87,29 @@ measurements cannot be treated merely as independent flips around an ideal TMR
 class.  The circuit-level decoder must infer a latent TMR class together with
 boundary/data faults and must use the Z history as well.
 
+## Bounded latent-boundary decoder
+
+The first joint decoder enumerates all phenomenological data and measurement
+events through weight two in each CSS channel.  With three rounds it contains
+288 elementary events and 41,521 distinct bounded history patterns per
+channel.  A labeled audit drew 100 cases in each configuration:
+
+| X-channel faults | Z-channel faults | In radius | Class accuracy | Repair-mask accuracy | Ambiguous |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 0 | `1.00` | `1.00` | `1.00` | `0.00` |
+| 1 | 0 | `1.00` | `1.00` | `1.00` | `0.00` |
+| 0 | 1 | `1.00` | `1.00` | `1.00` | `0.00` |
+| 2 | 0 | `1.00` | `0.94` | `0.95` | `0.06` |
+| 1 | 1 | `1.00` | `0.99` | `1.00` | `0.01` |
+| 0 | 2 | `1.00` | `1.00` | `1.00` | `0.00` |
+
+The two-X-fault failures are not an implementation surprise: maximum joint
+probability can favor a different latent branch and lower-cost fault
+explanation, and not every wrong result is tied.  The bounded decoder therefore
+serves as an exact oracle for its small event model and a fail-closed
+controller prefilter.  These results rule out treating it as the final
+scheduled-circuit decoder without a calibrated confidence/reset rule.
+
 ## Full scheduled feasibility point
 
 One preliminary trajectory includes noisy initialization, all eight scheduled
@@ -108,6 +131,8 @@ at the expected cost; it is not the final hybrid simulation.
 The non-Clifford algebra, exact branch correction, residual-angle action, and
 independent simulator convention are validated.  Retained scheduled histories
 are now available, and they rule out using the cheap persistent-syndrome MAP
-decoder as the final circuit decoder.  The next required scientific milestone
-is the latent-boundary decoder for circuit faults, followed by the thresholded
+decoder as the final circuit decoder.  A bounded latent-boundary oracle and its
+fail-closed controller integration are also implemented.  The next required
+scientific milestone is replacing the phenomenological event catalog with
+actual scheduled circuit-location signatures, followed by the thresholded
 end-to-end comparison specified in `DECODER_PLAN.md`.

@@ -12,15 +12,18 @@ The implementation currently provides:
    its target branch from its three equivalent alternative branches;
 3. an exact MAP reference decoder for a persistent TMR syndrome observed
    through repeated, independently flipped check measurements;
-4. frame-aware reset-or-repair actions for thresholds zero through eight;
-5. direct non-Clifford circuits that validate exact branch correction and
+4. a bounded latent-boundary oracle for data and measurement events through
+   weight two in each CSS channel;
+5. fail-closed, frame-aware reset-or-repair actions for thresholds zero through
+   eight;
+6. direct non-Clifford circuits that validate exact branch correction and
    residual-angle repair;
-6. scheduled noisy `M=1` repair-component circuits;
-7. a full scheduled `M=3` preparation followed by one branch-conditioned
-   `M=1` continuation, used only as a feasibility calibration; and
-8. retained repeated X/Z syndrome histories for circuit-decoder development;
+7. scheduled noisy `M=1` repair-component circuits;
+8. a full scheduled `M=3` preparation followed by one branch-conditioned
+   `M=1` continuation, used only as a feasibility calibration;
+9. retained repeated X/Z syndrome histories for circuit-decoder development;
    and
-9. an independent three-qubit TMR fixture cross-checked in both ClifT and
+10. an independent three-qubit TMR fixture cross-checked in both ClifT and
    tsim.
 
 At `theta=pi/32`, each logical has one target class with probability
@@ -57,6 +60,11 @@ The retained-history runner demonstrates this distinction directly: scheduled
 circuit faults frequently move raw syndromes outside the ideal TMR image.  It
 records all repeated X/Z outcomes for decoder development but does not assign
 a ground-truth ideal branch to a noisy coherent trajectory.
+
+The bounded decoder is exact only for its phenomenological event catalog.  It
+uses repeated X and Z histories, returns a physical Pauli correction, and
+forces a reset on out-of-radius or tied results.  Its event catalog is not yet
+derived from every location in the actual 40-layer scheduled circuit.
 
 Similarly, the noisy `M=1` calibration begins in a selected ideal branch and
 postselects the final syndrome.  The raw-branch calibration trusts one exact
@@ -101,6 +109,13 @@ Audit every ideal decoder output, policy threshold, and logical-X-frame sign:
 
 ```bash
 .venv/bin/python -m bb64_hybrid_nonclifford.run_action_audit
+```
+
+Audit the bounded latent-boundary oracle on labeled zero-, one-, and two-fault
+phenomenological histories:
+
+```bash
+.venv/bin/python -m bb64_hybrid_nonclifford.run_bounded_decoder_audit
 ```
 
 Validate an all-target branch and a one-alternative branch with direct exact

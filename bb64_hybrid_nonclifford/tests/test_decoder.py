@@ -7,6 +7,8 @@ import unittest
 
 import numpy as np
 
+from bb64_hybrid_nonclifford.actions import boundary_repair_action
+from bb64_hybrid_nonclifford.bounded_decoder import BoundedLatentBoundaryDecoder
 from bb64_hybrid_nonclifford.decoder import (
     MeasurementMapDecoder,
     NoiselessTableDecoder,
@@ -77,6 +79,68 @@ class MeasurementMapDecoderTest(unittest.TestCase):
         )
         result = decoder.decode_batch(histories, batch_size=10)
         self.assertGreaterEqual(float(np.mean(result.syndrome_class_id == ids)), 0.99)
+
+
+class BoundedLatentBoundaryDecoderTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.model = load_hybrid_model()
+        cls.decoder = BoundedLatentBoundaryDecoder(
+            cls.model,
+            theta=math.pi / 32,
+            rounds=3,
+            data_probability=0.001,
+            measurement_probability=0.001,
+            max_faults=2,
+        )
+
+    def clean_histories(self, class_id: int) -> tuple[np.ndarray, np.ndarray]:
+        x_history = np.repeat(
+            self.model.displayed_syndromes[class_id][None, :], 3, axis=0
+        )
+        z_history = np.zeros((3, 32), dtype=np.uint8)
+        return x_history, z_history
+
+    def test_clean_branch_decodes(self) -> None:
+        x_history, z_history = self.clean_histories(12345)
+        result = self.decoder.decode(x_history, z_history)
+        self.assertTrue(result.in_radius)
+        self.assertFalse(result.ambiguous)
+        self.assertEqual(result.branch.syndrome_class_id, 12345)
+
+    def test_measurement_and_persistent_data_events_decode(self) -> None:
+        x_history, z_history = self.clean_histories(23456)
+        x_history = self.decoder.apply_events(
+            x_history, channel="x", event_indices=(70, 194)
+        )
+        z_history = self.decoder.apply_events(z_history, channel="z", event_indices=(3,))
+        result = self.decoder.decode(x_history, z_history)
+        self.assertTrue(result.in_radius)
+        self.assertFalse(result.ambiguous)
+        self.assertEqual(result.branch.syndrome_class_id, 23456)
+        self.assertEqual(len(result.x_syndrome_decode.events), 2)
+        self.assertEqual(result.data_x_correction, (3,))
+        action = boundary_repair_action(result, theta=math.pi / 32, threshold=8)
+        self.assertFalse(action.reset)
+        self.assertEqual(action.physical_x_correction, (3,))
+
+    def test_out_of_radius_is_explicit(self) -> None:
+        decoder = BoundedLatentBoundaryDecoder(
+            self.model,
+            theta=math.pi / 32,
+            rounds=3,
+            data_probability=0.001,
+            measurement_probability=0.001,
+            max_faults=0,
+        )
+        x_history, z_history = self.clean_histories(34567)
+        x_history[1, 0] ^= 1
+        result = decoder.decode(x_history, z_history)
+        self.assertFalse(result.in_radius)
+        self.assertTrue(result.ambiguous)
+        action = boundary_repair_action(result, theta=math.pi / 32, threshold=8)
+        self.assertTrue(action.reset)
+        self.assertEqual(action.reset_reason, "circuit_decoder_out_of_radius")
 
 
 if __name__ == "__main__":

@@ -85,33 +85,49 @@ classical “true TMR branch,” so labels must be defined through a conditioned
 branch experiment or a verified fault ledger rather than inferred from the
 same noisy syndrome being evaluated.
 
-### Stage D: latent-boundary circuit decoder — next
+### Stage D1: bounded latent-boundary oracle — implemented
 
 Model the first post-TMR syndrome as the sum of an ideal TMR class and a
 circuit-fault boundary syndrome.  Subsequent time differences constrain data
-and measurement faults.  The reference implementation should jointly score
+and measurement faults.  `BoundedLatentBoundaryDecoder` exactly maximizes the
+joint class-and-explanation score through phenomenological fault weight two in
+each CSS channel:
 
 \[
 (s_{\rm TMR},e_{\rm boundary},e_{1},\ldots,e_R)
 \]
 
-subject to the BB64 detector equations.  The exact 65,536-class Stage-B oracle
-remains practical as an outer latent-state enumeration for small pilots;
-later acceleration can shortlist candidates from the quotient map and solve
-the Pauli portion with matching, belief propagation plus ordered statistics,
-or integer programming.
+The X history is decomposed into a repeated ideal TMR syndrome plus persistent
+data-Z and transient check-measurement events.  The Z history is decomposed
+into data-X and measurement events around zero.  The decoder reports
+out-of-radius and likelihood-tied cases explicitly; `boundary_repair_action`
+resets both rather than guessing.
 
 The first correctness criterion is not logical infidelity.  It is exact
 agreement with an exhaustive or maximum-likelihood oracle on small enumerated
 fault sets through at least total fault weight two.  Any tie must be surfaced
-as ambiguity rather than resolved silently.
+as ambiguity rather than resolved silently.  The implemented labeled audit
+covers zero, one, and two injected phenomenological events.
 
-### Stage E: frame-aware action — partially implemented
+### Stage D2: scheduled circuit-location decoder — next
+
+Replace the phenomenological catalog with detector and frame signatures from
+the actual preparation, CNOT, idle, rotation, and measurement locations.  This
+must account for correlated two-qubit faults and for Pauli faults crossing
+non-Clifford rotations.  The exact 65,536-class Stage-B oracle remains
+practical as an outer latent-state enumeration for small pilots; later
+acceleration can shortlist candidates from the quotient map and solve the
+Pauli portion with matching, belief propagation plus ordered statistics, or
+integer programming.
+
+### Stage E: frame-aware action — implemented for the bounded oracle
 
 `repair_action` already converts a decoded ideal class into reset or repair,
-including X-frame-dependent angle signs.  Connect Stage D's inferred physical
-correction and logical frames to this action.  Before simulation, verify for
-every retained trajectory that:
+including X-frame-dependent angle signs.  `boundary_repair_action` adds the
+bounded decoder's physical X/Z corrections and fails closed on ambiguity or an
+out-of-radius history.  The scheduled circuit-location decoder must still
+supply verified logical frames.  Before end-to-end simulation, verify for every
+retained trajectory that:
 
 - the physical Pauli correction returns the data to the codespace;
 - the reported logical frames reproduce the residual Pauli action;

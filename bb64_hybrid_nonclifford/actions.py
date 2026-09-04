@@ -2,16 +2,19 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from functools import lru_cache
 import math
-from typing import Sequence
+from typing import TYPE_CHECKING, Sequence
 
 import numpy as np
 
 from bb64_syndrome_recovery.algebra import angle_table
 
 from .decoder import DecoderResult
+
+if TYPE_CHECKING:
+    from .bounded_decoder import LatentBoundaryResult
 
 
 @dataclass(frozen=True)
@@ -24,6 +27,8 @@ class RepairAction:
     logical_z_frame: tuple[int, ...]
     signed_residual_angles: tuple[float, ...]
     repaired_logicals: tuple[int, ...]
+    physical_x_correction: tuple[int, ...] = ()
+    physical_z_correction: tuple[int, ...] = ()
 
 
 @lru_cache(maxsize=32)
@@ -90,3 +95,49 @@ def verify_action_angles(decoded: DecoderResult, action: RepairAction, *, theta:
     corrected_added = frame_sign * np.asarray(action.signed_residual_angles)
     final = initial + corrected_added
     return float(np.max(np.abs(final - theta)))
+
+
+def boundary_repair_action(
+    decoded: "LatentBoundaryResult",
+    *,
+    theta: float,
+    threshold: int,
+    logical_x_frame: Sequence[int] = (0,) * 8,
+    logical_z_frame: Sequence[int] = (0,) * 8,
+) -> RepairAction:
+    """Convert a bounded circuit decode into a fail-closed repair action."""
+
+    if not 0 <= threshold <= 8:
+        raise ValueError("threshold must lie in 0..8")
+    if not decoded.in_radius or decoded.branch is None or decoded.ambiguous:
+        frame_x = tuple(map(int, logical_x_frame))
+        frame_z = tuple(map(int, logical_z_frame))
+        if (
+            len(frame_x) != 8
+            or len(frame_z) != 8
+            or any(value not in (0, 1) for value in (*frame_x, *frame_z))
+        ):
+            raise ValueError("logical frames must contain eight binary values")
+        reason = "circuit_decoder_out_of_radius" if not decoded.in_radius else "decoder_ambiguity"
+        return RepairAction(
+            reset=True,
+            reset_reason=reason,
+            threshold=int(threshold),
+            alternative_mask=(0,) * 8,
+            logical_x_frame=frame_x,
+            logical_z_frame=frame_z,
+            signed_residual_angles=(0.0,) * 8,
+            repaired_logicals=(),
+        )
+    action = repair_action(
+        decoded.branch,
+        theta=theta,
+        threshold=threshold,
+        logical_x_frame=logical_x_frame,
+        logical_z_frame=logical_z_frame,
+    )
+    return replace(
+        action,
+        physical_x_correction=decoded.data_x_correction,
+        physical_z_correction=decoded.data_z_correction,
+    )
