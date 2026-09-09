@@ -1,0 +1,97 @@
+{
+  "analytic_upper_bound": {
+    "source": "Theorem D.3 of arXiv:2607.27644v1",
+    "value": 6
+  },
+  "meet_in_the_middle": {
+    "X": {
+      "found": false,
+      "maximum_weight": 5,
+      "seconds": 0.274571
+    },
+    "Z": {
+      "found": false,
+      "maximum_weight": 5,
+      "seconds": 0.338034
+    }
+  },
+  "milp": {
+    "X_exact": {
+      "infeasible": false,
+      "maximum_weight": 6,
+      "seconds": 6.361371,
+      "solver": "HIGHS",
+      "status": "optimal",
+      "support": [
+        3,
+        6,
+        10,
+        38,
+        45,
+        61
+      ],
+      "weight": 6
+    },
+    "X_lower_bound": {
+      "infeasible": true,
+      "maximum_weight": 5,
+      "seconds": 19.629136,
+      "solver": "HIGHS",
+      "status": "infeasible",
+      "support": null,
+      "weight": null
+    },
+    "Z_exact": {
+      "infeasible": false,
+      "maximum_weight": 6,
+      "seconds": 2.883518,
+      "solver": "HIGHS",
+      "status": "optimal",
+      "support": [
+        2,
+        12,
+        17,
+        71,
+        83,
+        86
+      ],
+      "weight": 6
+    },
+    "Z_lower_bound": {
+      "infeasible": true,
+      "maximum_weight": 5,
+      "seconds": 13.243842,
+      "solver": "HIGHS",
+      "status": "infeasible",
+      "support": null,
+      "weight": null
+    }
+  },
+  "parameters": "[[160,32,6]]",
+  "stored_witnesses": {
+    "X": {
+      "support": [
+        84,
+        87,
+        91,
+        110,
+        119,
+        126
+      ],
+      "valid": true,
+      "weight": 6
+    },
+    "Z": {
+      "support": [
+        34,
+        47,
+        56,
+        105,
+        108,
+        125
+      ],
+      "valid": true,
+      "weight": 6
+    }
+  }
+}

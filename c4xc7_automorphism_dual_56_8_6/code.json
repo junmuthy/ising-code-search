@@ -1,0 +1,370 @@
+{
+  "a_indices": [
+    0,
+    1,
+    7,
+    9
+  ],
+  "a_support": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "b_indices": [
+    0,
+    6,
+    7,
+    12
+  ],
+  "b_support": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "check_weight": 8,
+  "code": "[[56,8,6]]",
+  "complete": true,
+  "distance_lower_certificate": {
+    "certified": true,
+    "directions": {
+      "Z": {
+        "exact_weight": null,
+        "infeasible": true,
+        "maximum_weight": 5,
+        "pauli": "Z",
+        "seconds": 1.104389,
+        "solver": "HIGHS",
+        "solver_status": "infeasible",
+        "support": null,
+        "time_limit": null,
+        "weight": null
+      }
+    },
+    "equal_xz_distance_by_identity_fold": false,
+    "equal_xz_distance_by_permutation_fold": true,
+    "minimum_distance": 6
+  },
+  "exact_x_distance": {
+    "exact_weight": null,
+    "infeasible": false,
+    "maximum_weight": null,
+    "pauli": "X",
+    "seconds": 0.636488,
+    "solver": "HIGHS",
+    "solver_status": "optimal",
+    "support": [
+      2,
+      9,
+      10,
+      29,
+      35,
+      36
+    ],
+    "time_limit": null,
+    "weight": 6
+  },
+  "exact_z_distance": {
+    "exact_weight": null,
+    "infeasible": false,
+    "maximum_weight": null,
+    "pauli": "Z",
+    "seconds": 0.767619,
+    "solver": "HIGHS",
+    "solver_status": "optimal",
+    "support": [
+      0,
+      1,
+      7,
+      33,
+      34,
+      41
+    ],
+    "time_limit": null,
+    "weight": 6
+  },
+  "family": "C4xC7-automorphism-dual-BB",
+  "grid": {
+    "hadamard_permutation": [
+      1,
+      0,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2
+    ],
+    "logical_generator_orders": [
+      4,
+      2
+    ],
+    "logical_signatures": [
+      225,
+      16,
+      210,
+      32,
+      180,
+      64,
+      120,
+      128
+    ],
+    "orbit_supports": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    ],
+    "orbit_weights": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "pairing": [
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "pairing_rows_bitmasks": [
+      2,
+      1,
+      128,
+      64,
+      32,
+      16,
+      8,
+      4
+    ],
+    "physical_generator_orders": [
+      4,
+      2
+    ],
+    "rank_x": 24,
+    "rank_z": 24,
+    "seed_class_mask": 1,
+    "seed_support": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "group_coordinate_order": [
+    4,
+    7
+  ],
+  "logical_hadamard_affine_map": "(x,y) -> (-x,y+1)",
+  "logical_site_order": "site=2*x+y for x in C4 and y in C2",
+  "matrix_artifact": "/tmp/relaxed-k8-c4xc7-hit-v2.npz",
+  "polynomials": {
+    "a": "1 + y + x + x*y^2",
+    "b": "1 + y^-1 + x + x*y^-2"
+  },
+  "qubit_index": "half*28 + 7*x + y",
+  "relations": {
+    "css_commutes": true,
+    "fold_maps_x_to_z": true,
+    "fold_maps_z_to_x": true,
+    "fold_physical_order": 2,
+    "k": 8,
+    "logical_hadamard_commutes_with_t2": true,
+    "logical_hadamard_is_permutation": true,
+    "logical_hadamard_normalizes_t4_by_inversion": true,
+    "logical_orbit_rank": 8,
+    "rank_x": 24,
+    "rank_z": 24,
+    "tanner_connected": true,
+    "translation_four_physical_order": 4,
+    "translation_four_preserves_x": true,
+    "translation_four_preserves_z": true,
+    "translation_two_physical_order": 2,
+    "translation_two_preserves_x": true,
+    "translation_two_preserves_z": true,
+    "translations_commute": true,
+    "uniform_x_check_weight": [
+      8
+    ],
+    "uniform_z_check_weight": [
+      8
+    ]
+  },
+  "verification_note": "Distance lower bound was independently certified by the repository CVXPY/HIGHS logical MILP; unconstrained minimizations supplied weight-six X and Z witnesses."
+}

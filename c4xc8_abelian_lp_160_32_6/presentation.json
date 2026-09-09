@@ -1,0 +1,104 @@
+{
+  "a": [
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "b": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "blocks": 5,
+  "c": [
+    [
+      0,
+      0
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "construction": "abelian five-block lifted/balanced product",
+  "d": [
+    [
+      0,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "fold_block_map_zero_based": [
+    0,
+    2,
+    1,
+    3,
+    4
+  ],
+  "group": {
+    "name": "C4 x C8",
+    "orders": [
+      4,
+      8
+    ]
+  },
+  "indexing": "qubit = 32*block + 8*x_exponent + y_exponent",
+  "novelty": "This explicit abelian C4 x C8 instance is not listed in the source paper.",
+  "parameters": {
+    "d": 6,
+    "k": 32,
+    "n": 160
+  },
+  "phi": {
+    "x": [
+      3,
+      2
+    ],
+    "y": [
+      0,
+      1
+    ]
+  },
+  "schema_version": 1,
+  "source_construction": "arXiv:2607.27644v1",
+  "theta_formula": "theta(r,s) = (r, -2*r-s mod 8)",
+  "translations": {
+    "C4": [
+      1,
+      0
+    ],
+    "C8": [
+      0,
+      1
+    ]
+  }
+}

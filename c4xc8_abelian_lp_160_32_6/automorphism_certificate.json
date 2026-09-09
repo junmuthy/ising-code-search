@@ -1,0 +1,93 @@
+{
+  "canonical_css_merged_tanner_group_order": 64,
+  "canonical_css_preserving_tanner_group_order": 32,
+  "connected": true,
+  "css_commutation": true,
+  "fold_involution": true,
+  "fold_maps_x_to_z": true,
+  "fold_maps_z_to_x": true,
+  "hadamard_actions_are_transposes": true,
+  "hadamard_x_to_z_is_permutation": true,
+  "hadamard_z_to_x_is_permutation": true,
+  "k": 32,
+  "logical_hadamard_formula": "(r,s) -> (r,-2*r-s mod 8)",
+  "logical_hadamard_permutation": [
+    0,
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8,
+    15,
+    20,
+    19,
+    18,
+    17,
+    16,
+    23,
+    22,
+    21,
+    26,
+    25,
+    24,
+    31,
+    30,
+    29,
+    28,
+    27
+  ],
+  "logical_pairing_identity": true,
+  "logical_weights_x": [
+    10
+  ],
+  "logical_weights_z": [
+    10
+  ],
+  "logical_x_cycles": true,
+  "logical_z_cycles": true,
+  "n": 160,
+  "rank_x": 64,
+  "rank_z": 64,
+  "row_weights_x": [
+    9
+  ],
+  "row_weights_z": [
+    9
+  ],
+  "translations": [
+    {
+      "exact_action_on_logical_basis": true,
+      "logical_action_is_permutation": true,
+      "name": "C4",
+      "order": 4,
+      "preserves_x_check_space": true,
+      "preserves_z_check_space": true,
+      "shift": [
+        1,
+        0
+      ]
+    },
+    {
+      "exact_action_on_logical_basis": true,
+      "logical_action_is_permutation": true,
+      "name": "C8",
+      "order": 8,
+      "preserves_x_check_space": true,
+      "preserves_z_check_space": true,
+      "shift": [
+        0,
+        1
+      ]
+    }
+  ],
+  "translations_commute": true
+}

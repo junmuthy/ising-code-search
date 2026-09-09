@@ -1,0 +1,3 @@
+file,mode,protocol,N,M,theta_over_pi,p,attempted,accepted,acceptance,standard_error,ideal_acceptance,noise_survival_ratio,candidate_yield,peak_active_width,physical_cnots,cnot_layers,shots_per_second
+full-single-n8-pi32-p1e-3-target400.json,full,single-final-check,8,3,0.03125,0.001,41000,401,0.009780487804878049,0.0004860199198762376,0.049706149631890184,0.19676615222280544,0.07824390243902439,24,848,24,38.59647808657515
+full-two-projection-n8-pi32-p1e-3-200k.json,full,two-projection,8,3,0.03125,0.001,200000,1122,0.00561,0.0001670108963511064,0.049706149631890184,0.11286329843582914,0.04488,16,1360,32,433172.9183342194
