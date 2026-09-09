@@ -1,20 +1,45 @@
-# Paired-polynomial GALA search
+# GALA quantum-code search and STAR simulations
 
-This standalone project searches the self-dual minimal-GALA family
+This repository develops and certifies quantum error-correcting codes with
+logical symmetries suited to GALA/Ising operations.  It also contains syndrome
+schedules, circuit-fault analyses, and transversal multi-rotation (TMR)
+simulations.  The original paired-polynomial search targets the self-dual
+minimal-GALA family
 
-\[
+$$
 Q_{4,m}(a)=\operatorname{CSS}([A\mid A^T],[A\mid A^T])
-\]
+$$
 
 over `GF(2)[C_4 × C_m]`.  Its first search family is
 
-\[
+$$
 a(x,y)=1+y^r+xy^s+xy^{s+t}.
-\]
+$$
 
 The project uses the editable qLDPC checkout at
 `/home/judah_unmuth/Documents/multistaq/qLDPC`, but keeps scripts, caches, and
 results outside that repository.
+
+## Latest certified results
+
+The newest compact artifacts and result summaries are:
+
+| Area | Latest result | Reproduction and data |
+|---|---|---|
+| `C4 x C8` automorphism-fold code | A connected `[[160,32,6]]` CSS code with weight-nine checks, exact `X/Z` distance six, a regular 32-site logical action, and four disjoint symplectic logical pairs. | [Overview](c4xc8_abelian_lp_160_32_6/README.md), [`code.py`](c4xc8_abelian_lp_160_32_6/code.py), [`verify.py`](c4xc8_abelian_lp_160_32_6/verify.py), and [`checks.npz`](c4xc8_abelian_lp_160_32_6/checks.npz) |
+| `C4 x C7` automorphism-dual BB code | A `[[56,8,6]]` CSS code with weight-eight checks, a regular `C4 x C2` logical grid, and exact `X/Z` distance six. | [Overview](c4xc7_automorphism_dual_56_8_6/README.md), [`verify.py`](c4xc7_automorphism_dual_56_8_6/verify.py), and [`code.npz`](c4xc7_automorphism_dual_56_8_6/code.npz) |
+| Coset-2BGA reference code | The published `[[36,4,6]]` code has a cyclic, pairwise-disjoint weight-seven logical basis; exhaustive enumeration proves the corresponding four-logical weight-six basis is impossible. | [Overview](n36_k4_d6_coset2bga/README.md), [`code.py`](n36_k4_d6_coset2bga/code_data/code.py), and [`presentation.json`](n36_k4_d6_coset2bga/code_data/presentation.json) |
+| BB64 two-batch basis | The `[[64,8,8]]` BB code now has minimum-weight `X` and `Z` representatives partitioned into two internally disjoint `4+4` batches while retaining its regular `C4 x C2` action and Hadamard permutation. | [Search summary](bb64_simultaneous_basis_search/README.md), [complete representation](bb64_simultaneous_basis_search/BB64_TWO_BATCH_REPRESENTATION.md), and [`basis_batches2_candidate0.npz`](bb64_simultaneous_basis_search/fewer_batch_search/results/run_001_weight8_60s/basis_batches2_candidate0.npz) |
+| BB56/BB64 postselection | Direct noisy ClifT measurements at `p=10^-3`, `M=3`, and `N=1,2,4,8` compare the paper-matching TMR-X rule with strict X/Z rejection at two angles. BB56 has higher acceptance at every matched point. | [Report and plot](postselection_comparison/BB56_BB64_ACCEPTANCE_VS_N.md), [CSV](postselection_comparison/BB56_BB64_ACCEPTANCE_VS_N.csv), and [`plot_acceptance_vs_n.py`](postselection_comparison/plot_acceptance_vs_n.py) |
+| Distance-three TMR demonstration | A noiseless `tsim` implementation certifies the `[[9,1,3]]` rotated surface code and verifies that both ideal projection and explicit syndrome extraction produce the accepted logical rotation. | [Overview](surface_d3_rz_tsim/README.md) and [results](surface_d3_rz_tsim/RESULTS.md) |
+| BB64 measurement decoder pilot | Across 1,000 histories per configuration, logical-class accuracy is `99.3%` in the hardest one-round `p=0.03` case and `100%` in the other eleven tested cases. | [Pilot CSV](bb64_hybrid_nonclifford/results/measurement_decoder_pilot_1000.csv); implementation is on branch `bb64-hybrid-nonclifford` |
+
+Each linked result documents its certification boundary.  In particular,
+"smallest found" statements are not global lower bounds, and the
+distance-three TMR demonstration is a noiseless mechanism check rather than a
+logical-fidelity estimate.
+
+## Results index
 
 The completed chain findings are summarized in [`RESULTS.md`](RESULTS.md).  The
 packed 2D Ising-lattice search is summarized in
