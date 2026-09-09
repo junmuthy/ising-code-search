@@ -7,7 +7,7 @@ simulations.  The original paired-polynomial search targets the self-dual
 minimal-GALA family
 
 $$
-Q_{4,m}(a)=\operatorname{CSS}([A\mid A^T],[A\mid A^T])
+Q_{4,m}(a)=CSS([A | A^T],[A | A^T])
 $$
 
 over `GF(2)[C_4 × C_m]`.  Its first search family is
