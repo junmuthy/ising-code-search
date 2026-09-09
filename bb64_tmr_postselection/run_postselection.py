@@ -93,6 +93,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--partition-count", type=int, choices=(1, 3), default=3)
     parser.add_argument("--logical-count", type=int, choices=(1, 2, 4, 8), default=8)
     parser.add_argument("--batch-order", type=_parse_batch_order, default=(0, 1))
+    parser.add_argument(
+        "--postselection-policy",
+        choices=("tmr-x", "strict-xz"),
+        default="strict-xz",
+        help=(
+            "tmr-x accepts on the TMR-sensitive X projection; strict-xz "
+            "additionally rejects every nonzero raw Z syndrome"
+        ),
+    )
     parser.add_argument("--probability", type=float, default=0.0)
     parser.add_argument("--disable-preparation-noise", action="store_true")
     parser.add_argument("--disable-measurement-noise", action="store_true")
@@ -132,6 +141,7 @@ def _configuration(args: argparse.Namespace, circuit_hash: str) -> dict[str, Any
         "partition_count": args.partition_count,
         "logical_count": args.logical_count,
         "batch_order": list(args.batch_order),
+        "postselection_policy": args.postselection_policy,
         "probability": args.probability,
         "noise": {
             "preparation": not args.disable_preparation_noise,
@@ -221,12 +231,33 @@ def _diagnostic_update(
     return accepted
 
 
+def _selected_postselection_detectors(bundle: Any, policy: str) -> tuple[int, ...]:
+    if policy == "strict-xz":
+        return tuple(bundle.postselection_detectors)
+    if policy == "tmr-x":
+        return tuple(
+            detector
+            for group, detectors in bundle.detector_groups.items()
+            if group.startswith("post_") and group.endswith("_X")
+            for detector in detectors
+        )
+    raise ValueError(f"unknown postselection policy: {policy}")
+
+
+def _postselection_mask(bundle: Any, selected: tuple[int, ...]) -> list[int]:
+    mask = [0] * sum(len(group) for group in bundle.detector_groups.values())
+    for detector in selected:
+        mask[detector] = 1
+    return mask
+
+
 def _result_payload(
     *,
     configuration: dict[str, Any],
     counts: dict[str, Any],
     bundle: Any,
     program: Any,
+    selected_postselection: tuple[int, ...],
     compile_seconds: float,
     completed: bool,
 ) -> dict[str, Any]:
@@ -273,7 +304,8 @@ def _result_payload(
             "partition_certificate": bundle.partition_certificate,
             "theta_star": bundle.theta_star,
             "theta_star_over_pi": bundle.theta_star / math.pi,
-            "postselection_detector_count": len(bundle.postselection_detectors),
+            "postselection_detector_count": len(selected_postselection),
+            "postselection_detectors": list(selected_postselection),
             "detector_groups": {
                 name: list(indices) for name, indices in bundle.detector_groups.items()
             },
@@ -334,6 +366,9 @@ def main() -> None:
     circuit_hash = hashlib.sha256(bundle.text.encode()).hexdigest()
     configuration = _configuration(args, circuit_hash)
     counts = _load_resume(args.output, configuration) if args.resume else _initial_counts()
+    selected_postselection = _selected_postselection_detectors(
+        bundle, args.postselection_policy
+    )
 
     if args.save_circuit:
         circuit_path = args.output.with_suffix(".stim")
@@ -342,7 +377,11 @@ def main() -> None:
         circuit_path.parent.mkdir(parents=True, exist_ok=True)
         circuit_path.write_text(bundle.text, encoding="utf-8")
 
-    postselection_mask = None if args.diagnostic else bundle.postselection_mask
+    postselection_mask = (
+        None
+        if args.diagnostic
+        else _postselection_mask(bundle, selected_postselection)
+    )
     print(
         f"checkpoint {utc_now()} phase=compile status=start mode={args.mode} "
         f"protocol={args.protocol} N={args.logical_count} M={args.partition_count} "
@@ -377,7 +416,7 @@ def main() -> None:
                 counts,
                 sample.detectors,
                 bundle.detector_groups,
-                bundle.postselection_detectors,
+                selected_postselection,
             )
         else:
             sample = clifft.sample_survivors(
@@ -398,6 +437,7 @@ def main() -> None:
             counts=counts,
             bundle=bundle,
             program=program,
+            selected_postselection=selected_postselection,
             compile_seconds=compile_seconds,
             completed=False,
         )
@@ -421,6 +461,7 @@ def main() -> None:
         counts=counts,
         bundle=bundle,
         program=program,
+        selected_postselection=selected_postselection,
         compile_seconds=compile_seconds,
         completed=completed,
     )

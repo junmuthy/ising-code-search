@@ -26,6 +26,10 @@ from bb64_tmr_postselection.partitions import (
     certify_partitions,
     load_partitions,
 )
+from bb64_tmr_postselection.run_postselection import (
+    _postselection_mask,
+    _selected_postselection_detectors,
+)
 
 
 PACKAGE_DIR = Path(__file__).resolve().parents[1]
@@ -119,6 +123,24 @@ class BB64PostselectionTest(unittest.TestCase):
         self.assertEqual(double.operation_counts["cnot_layers"], 32)
         self.assertEqual(sum(double.postselection_mask), 128)
         self.assertEqual(len(double.postselection_mask), 132)
+
+    def test_postselection_policy_masks(self) -> None:
+        bundle = build_circuit(
+            code=self.code,
+            partition_certificate=self.certificate,
+            mode="full",
+            protocol="single-final-check",
+            theta=math.pi / 32,
+            logical_count=8,
+            noise=NoiseModel(),
+        )
+        tmr_x = _selected_postselection_detectors(bundle, "tmr-x")
+        strict_xz = _selected_postselection_detectors(bundle, "strict-xz")
+        self.assertEqual(len(tmr_x), 32)
+        self.assertEqual(len(strict_xz), 64)
+        self.assertLessEqual(set(tmr_x), set(strict_xz))
+        self.assertEqual(sum(_postselection_mask(bundle, tmr_x)), 32)
+        self.assertEqual(sum(_postselection_mask(bundle, strict_xz)), 64)
 
     def test_zero_angle_full_circuit_always_survives(self) -> None:
         bundle = build_circuit(
