@@ -1,0 +1,41 @@
+{
+  "directory": "n64_k16_d8",
+  "n": 64,
+  "k": 16,
+  "distance": 8,
+  "logical_shape": [
+    4,
+    4
+  ],
+  "construction": "folded_c8xc4",
+  "component_sizes": [
+    64
+  ],
+  "schema_version": 1,
+  "distance_witnesses": {
+    "X": [
+      21,
+      28,
+      32,
+      35,
+      38,
+      41,
+      45,
+      58
+    ],
+    "Z": [
+      10,
+      16,
+      17,
+      20,
+      27,
+      29,
+      53,
+      62
+    ]
+  },
+  "candidate_sha256": "1d8ed89cc4a66319e0568d3b54e33edbda04513e0c28ba04a1bdb993e4a3d02f",
+  "distance_audit_sha256": "8e80ec0b26e6e44bb2b5fa147e1191425b69e2da2be2ce85f45dcba1de00fff3",
+  "coordinates": "zero-based; bit q denotes qubit q; permutations map old coordinate to new coordinate",
+  "lower_bound_note": "Candidate JSON may retain a historical lower bound; the final exact distance is in metadata and the archived audit"
+}

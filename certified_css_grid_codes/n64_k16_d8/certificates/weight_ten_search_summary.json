@@ -1,0 +1,37 @@
+{
+  "status": "saved_fold_weight_ten_found",
+  "unit_orbits": 2048,
+  "saved_fold_eligible_orbits": 256,
+  "enumerated_cosets": 256,
+  "hit_seeds": [
+    7,
+    259,
+    265,
+    1837,
+    1933,
+    4956,
+    5068,
+    5721,
+    5737,
+    14317,
+    15294,
+    15735,
+    16091,
+    22461
+  ],
+  "minimum_distribution": {
+    "12": 220,
+    "10": 14,
+    "14": 22
+  },
+  "source_candidate": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/independent/candidate.json",
+  "source_candidate_sha256": "3ed07677e814bb46b303b1201d7a2561b87987c90a6d73cd838abbd0a7d8b1db",
+  "source_distance_audit": {
+    "value": 8,
+    "provenance": "Unchanged check matrices; inherited exact distance certificate",
+    "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/full_audit.json",
+    "source_sha256": "8e80ec0b26e6e44bb2b5fa147e1191425b69e2da2be2ce85f45dcba1de00fff3"
+  },
+  "source_sha256": "065a9e52ebabae410da75a89a4c06fda7952d6357968e10226a42ab814dcd2ed",
+  "elapsed_seconds": 13.241670939998585
+}

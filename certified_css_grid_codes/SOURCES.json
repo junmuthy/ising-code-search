@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "source_files": {
+    "n64_k16_d8/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_handoff_v1/best/candidate.json",
+      "sha256": "1d8ed89cc4a66319e0568d3b54e33edbda04513e0c28ba04a1bdb993e4a3d02f"
+    },
+    "n64_k16_d8/certificates/distance_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/full_audit.json",
+      "sha256": "8e80ec0b26e6e44bb2b5fa147e1191425b69e2da2be2ce85f45dcba1de00fff3"
+    },
+    "n64_k16_d8/checks.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/independent/checks.npz",
+      "sha256": "4d35a487cec8b923b98078e8cd3a8acd9a95dfe8bfa502a665f9e889b0c0947f"
+    },
+    "n64_k16_d8/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_handoff_v1/best/logical_bases.npz",
+      "sha256": "9d2c67891a52d0ccbd5f249a9efd1d7796c77bcc28bfc9409780b8726e6d4ba5"
+    },
+    "n128_k32_d6/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/extension_128_32_6/candidate.json",
+      "sha256": "ead4befca79fb6d806ce9a3597c36d7888ba7de5bbe36c963f6f1b1fe0a7a001"
+    },
+    "n128_k32_d6/certificates/distance_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/extension_128_32_6/audit.json",
+      "sha256": "3f308327fce272f72ccdd15e71fe6f71eff76ec66a83912b823a47cbf6bd611a"
+    },
+    "n128_k32_d6/checks.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/extension_128_32_6/checks.npz",
+      "sha256": "17e4feef6f46864b12d4f35e207eba488a61707af2f815c5b82a5a3954b768e2"
+    },
+    "n128_k32_d6/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/extension_128_32_6/logical_bases.npz",
+      "sha256": "6268a45d28efd11219c26a98752f06716b2fe6006e9df14e1eaad4be7f98d39a"
+    },
+    "n128_k32_d6/provenance/original_physical_permutations.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/extension_128_32_6/physical_permutations.json",
+      "sha256": "4f542dc3c637f3c9300058229b080e0e70472455b608eeb69fcc6f88208a9f4c"
+    },
+    "n128_k32_d7/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/connected_128_32_7/candidate.json",
+      "sha256": "21eff4748b7759f6499665e988658a1f5cd7d1749f93cea7b3b3f5a815fc280f"
+    },
+    "n128_k32_d7/certificates/distance_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/connected_128_32_7/audit.json",
+      "sha256": "9cff80d770d4e535db44746c01bab8e6f21079ae165fd566fdb3b0dad28cec47"
+    },
+    "n128_k32_d7/checks.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/connected_128_32_7/checks.npz",
+      "sha256": "3df3d2f292c21d527acd8d9430e37dcd5f5c68eb7cf0ec91a876265478f31e01"
+    },
+    "n128_k32_d7/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/connected_128_32_7/logical_bases.npz",
+      "sha256": "ae2b6ce912015037a5f90dec649058445c77cb80ab3c4f62cf997dc67b5d7d2a"
+    },
+    "n128_k32_d7/provenance/original_physical_permutations.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certified/connected_128_32_7/physical_permutations.json",
+      "sha256": "7d76601095b4d9715bd287bf487685062bac6e850b8e7e129f05ecf7ff01bccd"
+    },
+    "n64_k16_d8/certificates/logical_basis_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_handoff_v1/best/audit.json",
+      "sha256": "51201c20eb53a89e42610b1b66fd94fb468fb76524c4ab887529ccf78833e8d7"
+    },
+    "n64_k16_d8/certificates/logical_search_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_audit_v1/full_audit.json",
+      "sha256": "ea08c0fb5620456dc80ee2070749c4c720221fb0e2295055383bbe7255a575d4"
+    },
+    "n64_k16_d8/certificates/weight_ten_handoff_report.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_handoff_v1/report.json",
+      "sha256": "356e04837336d21d0bac66c7af4237eff4fca47134d82b3ed122c9beae558b8f"
+    },
+    "n64_k16_d8/certificates/weight_ten_search_summary.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_saved_fold_v1/summary.json",
+      "sha256": "24fd126576e15e3d69231efe27642bd1b2a8e917c248c4b3ee6bfc822cc4de48"
+    },
+    "n64_k16_d8/certificates/weight_ten_unit_orbits.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_saved_fold_v1/catalog.json",
+      "sha256": "592d15e2defdf7cc38de7169d517878d8ad29aa697c2e59e0c4e59f022913508"
+    },
+    "n64_k16_d8/certificates/weight_ten_cosets.jsonl": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_saved_fold_v1/cosets.jsonl",
+      "sha256": "ce234147c62d0b7872c8e59fd650c291db3f8a20603922f4e314ed837972e0bb"
+    },
+    "n64_k16_d8/certificates/weight_eight_catalog.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_eight_v1/report.json",
+      "sha256": "ec8d614246ffabdd246f3b02068523759175c55fb774dc8cc4e4e92fcaf249cc"
+    },
+    "n64_k16_d8/certificates/weight_eight_words.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_eight_v1/weight_eight_words.json",
+      "sha256": "092d1ab0108f6ddce60e2b0ca80a919051d14a18116cd953a4055c37b1994de9"
+    },
+    "n64_k16_d8/certificates/weight_eight_grid_obstruction.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_eight_grid_v1/report.json",
+      "sha256": "e460b2dfe2b4ac231dbe2271b314e13ee96c7ce63ac9bbdc125bfbdb69cbd922"
+    },
+    "n64_k16_d8/certificates/check_weight_enumeration.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/report.json",
+      "sha256": "430a5979ee7b999fd67413dfd3be9a91d9655cc0153424a660bb72c3963693e9"
+    },
+    "n64_k16_d8/provenance/original_logical_basis_candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/distance8_handoff_v1/independent/candidate.json",
+      "sha256": "3ed07677e814bb46b303b1201d7a2561b87987c90a6d73cd838abbd0a7d8b1db"
+    },
+    "n64_k16_d8/provenance/original_study.md": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/README.md",
+      "sha256": "f8f656f502069dc88f97bf7cc18a043faf88b4f856e38af852723e7cfb333625"
+    },
+    "n64_k16_d8/alternatives/lower_overlap/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_audit_v1/lower_overlap/candidate.json",
+      "sha256": "058c844239220da0822fd1f8b0b3a15aa39f1dfb9b1f88822ee8e6c07469e8f1"
+    },
+    "n64_k16_d8/alternatives/lower_overlap/audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_audit_v1/lower_overlap/audit.json",
+      "sha256": "8e377dc4f2d2b172ef40dc504987813aef34c7a3895b3fbe914a6deb3a68a350"
+    },
+    "n64_k16_d8/alternatives/lower_overlap/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_audit_v1/lower_overlap/logical_bases.npz",
+      "sha256": "d2e44455d5d8ba9c50df4a8f6c85656a98c9a486535a37094933c22676291ecc"
+    },
+    "n64_k16_d8/alternatives/lower_overlap/logical_supports.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_code_study/weight_ten_audit_v1/lower_overlap/logical_supports.json",
+      "sha256": "aec10f66648a399326fe63e222734464476076addb97343927993205534661de"
+    },
+    "provenance/original_n128_report.md": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/README.md",
+      "sha256": "125bb8bb836a15e32ed8d91a62de13a8d042a9b57bb9ad7fb17a00dea5737dac"
+    },
+    "provenance/source_snapshots/gala_n128_k32/algebra.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/algebra.py",
+      "sha256": "69403776daa8634938444d2261b0bc601014fa0708e51d6f66f664f8bea438ae"
+    },
+    "provenance/source_snapshots/gala_n128_k32/certify.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certify.py",
+      "sha256": "50aa5b3b8c19b71f83b8b273d8541d8b807df178d662a1e4eb656a46d53ba391"
+    },
+    "provenance/source_snapshots/gala_n128_k32/fallback.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/fallback.py",
+      "sha256": "6415cb4996f9a24795e3014c6be61858117ef2937b4d2023cee4b9dbef6e0215"
+    },
+    "provenance/source_snapshots/gala_n128_k32/models.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/models.py",
+      "sha256": "2ce49651b252d8af01ac3e36099788d88914ce2e36a6ce2692a26b53aabf80b9"
+    },
+    "provenance/source_snapshots/gala_n128_k32/preflight.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/preflight.py",
+      "sha256": "70190a7b97a41f5f89da5defb1eff80854cec1514585abd49a4a31643e29e0e8"
+    },
+    "provenance/source_snapshots/gala_n128_k32/search.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/search.py",
+      "sha256": "d25adc41eb01a46962d733c1965abcb7a97b67b9ce3fe3866735550761bc8680"
+    },
+    "provenance/source_snapshots/gala_n128_k32/test_search.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/test_search.py",
+      "sha256": "1d09aa51d513e076b916d2951bb394250a9b5f3d525ed446811e5ea531198c1e"
+    },
+    "provenance/source_snapshots/gala_n64_k16/sparse_core.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_core.py",
+      "sha256": "a356c0d34f76f4de85146494e4f25d64c97f92f0534adc7a958f7f0d06bbc00c"
+    },
+    "provenance/source_snapshots/gala_n64_k16/sparse_models.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_models.py",
+      "sha256": "91d9d8e6febe059a2c287db24e064e3d4bbbaf3a59817f802b334934fb82e584"
+    },
+    "provenance/source_snapshots/gala_n64_k16/sparse_distance_upgrade.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_distance_upgrade.py",
+      "sha256": "bedd4a661f0eb2ec664365ac1b917cda8f5fc17fab919d46fcc1395bc48a06f5"
+    },
+    "provenance/source_snapshots/gala_n64_k16/distance8_logical_handoff.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_logical_handoff.py",
+      "sha256": "6ea7291a9d08ed68bcb3bfb4e4da64054ecf180a88e927bbcd9cf42e2c304be6"
+    },
+    "provenance/source_snapshots/gala_n64_k16/distance8_logical_search.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_logical_search.py",
+      "sha256": "3be219a3dd3e1a391e661fd28179d2fdf5fb67d6a8b87422bbd4b33dbbe06773"
+    },
+    "provenance/source_snapshots/gala_n64_k16/distance8_weight10_search.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_search.py",
+      "sha256": "ac4c3499194b0c00dd1902871e6e6da12f739e57fe16152ac89491964f4531b1"
+    },
+    "provenance/source_snapshots/gala_n64_k16/distance8_weight10_finalize.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_finalize.py",
+      "sha256": "5065830053a055f62efd2240d66578aaeb2ab8289455aa7135268237d6462d43"
+    },
+    "provenance/source_snapshots/gala_n64_k16/distance8_weight10_audit.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_audit.py",
+      "sha256": "5abe381546582293b587e1824a4ede8b8532c60dffc4eb3eb7fd36221d64ca80"
+    }
+  },
+  "note": "Copied files are byte-identical. Original absolute paths and historical audit bounds are retained only as provenance; use local metadata and verify.py."
+}

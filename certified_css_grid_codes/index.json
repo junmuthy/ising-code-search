@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "codes": [
+    {
+      "directory": "n64_k16_d8",
+      "n": 64,
+      "k": 16,
+      "distance": 8
+    },
+    {
+      "directory": "n128_k32_d6",
+      "n": 128,
+      "k": 32,
+      "distance": 6
+    },
+    {
+      "directory": "n128_k32_d7",
+      "n": 128,
+      "k": 32,
+      "distance": 7
+    }
+  ]
+}

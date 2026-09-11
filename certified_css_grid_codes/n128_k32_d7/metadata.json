@@ -1,0 +1,39 @@
+{
+  "directory": "n128_k32_d7",
+  "n": 128,
+  "k": 32,
+  "distance": 7,
+  "logical_shape": [
+    4,
+    8
+  ],
+  "construction": "equivariant_orthogonal",
+  "component_sizes": [
+    128
+  ],
+  "schema_version": 1,
+  "distance_witnesses": {
+    "X": [
+      1,
+      21,
+      30,
+      42,
+      64,
+      75,
+      94
+    ],
+    "Z": [
+      1,
+      21,
+      30,
+      42,
+      64,
+      75,
+      94
+    ]
+  },
+  "candidate_sha256": "21eff4748b7759f6499665e988658a1f5cd7d1749f93cea7b3b3f5a815fc280f",
+  "distance_audit_sha256": "9cff80d770d4e535db44746c01bab8e6f21079ae165fd566fdb3b0dad28cec47",
+  "coordinates": "zero-based; bit q denotes qubit q; permutations map old coordinate to new coordinate",
+  "lower_bound_note": "Candidate JSON may retain a historical lower bound; the final exact distance is in metadata and the archived audit"
+}
