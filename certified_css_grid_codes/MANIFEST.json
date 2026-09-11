@@ -7,20 +7,20 @@
       "sha256": "e047d710d3b3dfc678f9fb1fe61215cf93db340b1a306b1da7cf343a45bc5d54"
     },
     "README.md": {
-      "bytes": 5355,
-      "sha256": "44afdbabe11632d295a2b2bd0bb15935521f927f535893bac897a1756af9ec0e"
+      "bytes": 5680,
+      "sha256": "99dcb2415a5a2a99ca13accd1b7657f37be6f47452de4be3e6aae2744df33ba1"
     },
     "SOURCES.json": {
-      "bytes": 13085,
-      "sha256": "fa8aa453638fca908d70354630f8ec84029a433914247d971b3579dd56c2ed09"
+      "bytes": 18114,
+      "sha256": "8ad005510e638df5d362a851a1a29b4de776aa1552e03db77d755832ef076e9e"
     },
     "__init__.py": {
       "bytes": 76,
       "sha256": "c54f2dfde84c59a8b67f942871cbf440148c4c92c3168d1151273ad518a38f82"
     },
     "index.json": {
-      "bytes": 335,
-      "sha256": "57cd7184733a8b2504f29dcbdcce864a2e573eac57dbc735682beca25ba0a82a"
+      "bytes": 431,
+      "sha256": "428c7ccf44c2bad003a70a297f7bd132cf113fd8cee722f40bf934b0c6fe03c1"
     },
     "n128_k32_d6/README.md": {
       "bytes": 1552,
@@ -94,9 +94,93 @@
       "bytes": 25493,
       "sha256": "8b3846da04cee7cabb452ffccaf63068907244bb6153d678012c3bfdd02dd1d4"
     },
+    "n64_k16_d6/README.md": {
+      "bytes": 3493,
+      "sha256": "eb3529e114efba53a63c2b36b9ddaea9b3778c70198cb05787eba3e660a626ff"
+    },
+    "n64_k16_d6/alternatives/translation_closed/candidate.json": {
+      "bytes": 5808,
+      "sha256": "fd6f002b1387938d52e276dee21992f629890e99c14bb97e0a94058118cafad3"
+    },
+    "n64_k16_d6/alternatives/translation_closed/certificates/distance_audit.json": {
+      "bytes": 24830,
+      "sha256": "094adacf0dd795eca2bdad1c2483f151a6c29ec90a5942f85dd6246ca23ae233"
+    },
+    "n64_k16_d6/alternatives/translation_closed/checks.npz": {
+      "bytes": 786,
+      "sha256": "72faff38eb82aa04f51106faee3d90b41a372dec7a6070876cdb9586a81809d1"
+    },
+    "n64_k16_d6/alternatives/translation_closed/logical_bases.npz": {
+      "bytes": 603,
+      "sha256": "85e2234e3dcbbd5361f31e97ecfa8d0da313d8af114fe55c4fe6e0b1baf874f6"
+    },
+    "n64_k16_d6/alternatives/translation_closed/metadata.json": {
+      "bytes": 744,
+      "sha256": "fe280befc44ad1b7a981b3bf870abb7ac807a0094a73c3ad1a40f466f371e4eb"
+    },
+    "n64_k16_d6/alternatives/translation_closed/physical_permutations.json": {
+      "bytes": 2074,
+      "sha256": "3d6acb7413e5cf0bc93c7cc05294f46c9929c3411ab8c6825419b8e1baa99506"
+    },
+    "n64_k16_d6/alternatives/translation_closed/provenance/original_physical_permutations.json": {
+      "bytes": 2074,
+      "sha256": "496c9fb639877dea337dc3ab6c2b9302c7c1baa097b94d47e16b39f08851b9a0"
+    },
+    "n64_k16_d6/alternatives/translation_closed/supports.json": {
+      "bytes": 12305,
+      "sha256": "0e2b7053408ef6cb7ac6c246a41e5b9cf8e384d3abf89e64ba4911de2bdfd7ea"
+    },
+    "n64_k16_d6/candidate.json": {
+      "bytes": 5450,
+      "sha256": "ddebc67a93c6c8e85631982bcfa3564dfc27371c8cd5044c2d36d0a3da62e2bd"
+    },
+    "n64_k16_d6/certificates/check_presentation_report.json": {
+      "bytes": 82426,
+      "sha256": "f439b194802514161647f4190ee761b1e47852adcf36e649e0ba66c909d4ca95"
+    },
+    "n64_k16_d6/certificates/check_weight_enumeration.json": {
+      "bytes": 11255,
+      "sha256": "eef9df98a3330229208932e8ed6ca662546f187a95bb3ad7856f55b5cc47ace2"
+    },
+    "n64_k16_d6/certificates/distance_audit.json": {
+      "bytes": 25553,
+      "sha256": "ddc7e040b5d8a5dac5c21d881de2b9548311544faff8f3e1acb5ba78ca05b0c4"
+    },
+    "n64_k16_d6/checks.npz": {
+      "bytes": 753,
+      "sha256": "92fc8f6ca7be2419abaf8c595f57c059e2f344d0d2b39afaa0f6feafec357981"
+    },
+    "n64_k16_d6/logical_bases.npz": {
+      "bytes": 603,
+      "sha256": "85e2234e3dcbbd5361f31e97ecfa8d0da313d8af114fe55c4fe6e0b1baf874f6"
+    },
+    "n64_k16_d6/metadata.json": {
+      "bytes": 727,
+      "sha256": "e8d732e0b8c9b42c16ab156ef70040b915bad1f4e86cacddb1e776ec923cd957"
+    },
+    "n64_k16_d6/physical_permutations.json": {
+      "bytes": 2074,
+      "sha256": "3d6acb7413e5cf0bc93c7cc05294f46c9929c3411ab8c6825419b8e1baa99506"
+    },
+    "n64_k16_d6/provenance/original_check_supports.json": {
+      "bytes": 5962,
+      "sha256": "195f3c003c31067b0e815aabaa2dec806d2c868578df29de18df933dd1afee3d"
+    },
+    "n64_k16_d6/provenance/original_physical_permutations.json": {
+      "bytes": 2074,
+      "sha256": "496c9fb639877dea337dc3ab6c2b9302c7c1baa097b94d47e16b39f08851b9a0"
+    },
+    "n64_k16_d6/provenance/original_sparse_campaign.md": {
+      "bytes": 19334,
+      "sha256": "51c010d8524f34f960c74e8022b3bb74601b85ca3fee3cda3e5aa149bd780a79"
+    },
+    "n64_k16_d6/supports.json": {
+      "bytes": 9908,
+      "sha256": "1aa40f36d071ded1ed796b1c80120188afc729ed31a521a55de236fa15c91105"
+    },
     "n64_k16_d8/README.md": {
-      "bytes": 2637,
-      "sha256": "0bfdf2f3066175fc3f870c0884de7f13e7954c2bdb8a25b2cd04ba748c5c6bd0"
+      "bytes": 2830,
+      "sha256": "e8645480a8e9c4d5b793656a6e7c17d0ce9ae07917594f2e347ee8a917e1d89f"
     },
     "n64_k16_d8/alternatives/lower_overlap/audit.json": {
       "bytes": 1627,
@@ -222,6 +306,10 @@
       "bytes": 8396,
       "sha256": "1d09aa51d513e076b916d2951bb394250a9b5f3d525ed446811e5ea531198c1e"
     },
+    "provenance/source_snapshots/gala_n64_k16/check_weight_reduction.py": {
+      "bytes": 11806,
+      "sha256": "41b45f0f7c5262a4a57f7aa7efe4729cf1c45c21167c44eeab57ea3e6d39735c"
+    },
     "provenance/source_snapshots/gala_n64_k16/distance8_logical_handoff.py": {
       "bytes": 5566,
       "sha256": "6ea7291a9d08ed68bcb3bfb4e4da64054ecf180a88e927bbcd9cf42e2c304be6"
@@ -250,13 +338,21 @@
       "bytes": 2748,
       "sha256": "bedd4a661f0eb2ec664365ac1b917cda8f5fc17fab919d46fcc1395bc48a06f5"
     },
+    "provenance/source_snapshots/gala_n64_k16/sparse_finalize.py": {
+      "bytes": 5694,
+      "sha256": "ea093953c93a99669ea7ef8c9ffc96956f44ed4a689aa032fb2497049233253a"
+    },
     "provenance/source_snapshots/gala_n64_k16/sparse_models.py": {
       "bytes": 5696,
       "sha256": "91d9d8e6febe059a2c287db24e064e3d4bbbaf3a59817f802b334934fb82e584"
     },
+    "provenance/source_snapshots/gala_n64_k16/test_sparse_search.py": {
+      "bytes": 11965,
+      "sha256": "9900524a2bea53a62af52c29474f8a792ed89ee26059b4b79c28d2fdb80cb91d"
+    },
     "verify.py": {
-      "bytes": 11943,
-      "sha256": "e1503905ba98610fe1d5d1cea80c0b34e6a868d265dcb7dc2f0afdcf5b8f72a5"
+      "bytes": 11960,
+      "sha256": "dca3ed43508a652358e615cb6225f73b1d9ee3ddb2f555fae2447f4f9fc6fda5"
     }
   }
 }

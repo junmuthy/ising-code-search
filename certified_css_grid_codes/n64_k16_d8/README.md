@@ -7,6 +7,10 @@ supports: total support is 320. The maximum pairwise support overlap is
 four. Checks are unchanged: 24 independent weight-12 rows per Pauli type,
 with exact X and Z distances both eight.
 
+The lower-total-check-support distance-six comparison is also backed up as
+[`[[64,16,6]]`](../n64_k16_d6/README.md), including both its independent and
+translation-closed check presentations.
+
 ## Construction and actions
 
 Use two sheets over `C8 x C4`, flattening physical `(s,i,j)` to

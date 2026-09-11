@@ -260,7 +260,7 @@ def verify_code(folder, exact_distance=False):
             distance[side]['lower_bound_certificate'] = exclude_through(checks, stabilizers, n, d-1)
             distance[side]['lower_bound'] = d
     loads = list(map(int, np.vstack((lx, lz)).sum(axis=0)))
-    if n == 64:
+    if (n, k, d) == (64, 16, 8):
         assert all(w.bit_count() == 10 for w in x+z) and loads == [5]*64
     return dict(code=folder.name, status='exact_distance_verified' if exact_distance else 'algebra_and_upper_witnesses_verified',
                 n=n, k=k, claimed_distance=d, distance=distance, physical_orders=actions,

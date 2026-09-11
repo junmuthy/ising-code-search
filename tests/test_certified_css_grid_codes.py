@@ -10,6 +10,8 @@ from certified_css_grid_codes import verify as v
 
 @pytest.mark.parametrize("name,n,k,d", [
     ("n64_k16_d8", 64, 16, 8),
+    ("n64_k16_d6", 64, 16, 6),
+    ("n64_k16_d6/alternatives/translation_closed", 64, 16, 6),
     ("n128_k32_d6", 128, 32, 6),
     ("n128_k32_d7", 128, 32, 7),
 ])
@@ -20,6 +22,25 @@ def test_saved_codes_exact(name, n, k, d):
     for side in ("X", "Z"):
         assert report["distance"][side]["lower_bound"] == d
         assert report["distance"][side]["upper_bound"] == d
+
+
+def test_distance_six_presentations_and_fold():
+    folder = v.ROOT / "n64_k16_d6"
+    independent = json.loads((folder / "candidate.json").read_text())
+    symmetric = json.loads((folder / "alternatives/translation_closed/candidate.json").read_text())
+    for side in ("hx", "hz"):
+        assert v.same_space(independent[side], symmetric[side])
+        assert sorted(map(int.bit_count, independent[side])) == [8] * 4 + [12] * 20
+        assert list(map(int.bit_count, symmetric[side])) == [12] * 32
+        for key in ("px", "py"):
+            assert {v.move(word, symmetric[key]) for word in symmetric[side]} == set(symmetric[side])
+    assert independent["certificate"] == symmetric["certificate"]
+    fold = independent["certificate"]["fold"]
+    tx2 = v.compose(independent["px"], independent["px"])
+    tx4 = v.compose(tx2, tx2)
+    assert v.order(fold) == 4
+    assert v.compose(fold, fold) == tx4 == independent["central"]
+    assert v.compose(independent["px"], independent["py"]) == v.compose(independent["py"], independent["px"])
 
 
 def test_package_manifest_is_complete():

@@ -1,7 +1,7 @@
 # Certified CSS codes with regular logical grids
 
 Portable backup of the 64- and 128-qubit results from the September 11,
-2026 searches. All three codes have canonical CSS logical bases, a regular
+2026 searches. All four codes have canonical CSS logical bases, a regular
 logical grid, and transversal Hadamard followed by a physical permutation
 that applies Hadamard to each logical up to a logical permutation. Logical
 supports may overlap. The Hadamard and translation actions use the **same**
@@ -10,6 +10,7 @@ saved canonical basis.
 | Code | Logical grid | Displayed check weights | Saved logical weights | Physical components |
 | --- | --- | --- | --- | --- |
 | [`[[64,16,8]]`](n64_k16_d8/README.md) | `C4 x C4` | `12` | All `X/Z: 10` | `64` |
+| [`[[64,16,6]]`](n64_k16_d6/README.md) | `C4 x C4` | `8, 12` | `X: 9,13,19`, `Z: 9` (unoptimized) | `64` |
 | [`[[128,32,6]]`](n128_k32_d6/README.md) | `C4 x C8` | `12` | `X: 33–57`, `Z: 43` (unoptimized) | `64 + 64` |
 | [`[[128,32,7]]`](n128_k32_d7/README.md) | `C4 x C8` | `14, 18` | All `X/Z: 11` | `128` |
 
@@ -18,6 +19,10 @@ the connected distance-seven result is an equivariant orthogonal control,
 not a nonabelian square-GALA construction. Both earlier results are retained
 to distinguish them explicitly. The 64-qubit distance-eight code is not a
 component of that distance-six parent.
+
+The distance-six 64-qubit bundle is the later sparse-search alternative
+with total independent check support 544, not the original weight-14
+component. Its translation-closed presentation is retained as an alternative.
 
 ## Data and conventions
 
@@ -32,8 +37,8 @@ Each code directory contains:
   plus a logically trivial `central` action when present.
 - `metadata.json`: final parameters, construction identifier, component
   sizes, and exact-distance upper witnesses.
-- `certificates/`: original exact-distance audit and, for the 64-qubit
-  code, the logical-support search and audit artifacts.
+- `certificates/`: original exact-distance audit, plus check-weight and
+  logical-support search artifacts where applicable.
 
 All coordinates are zero-based. In integer rows, bit `q` means physical
 qubit `q`; permutation entry `p[q]` is its **destination**. Logical grid

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "directory": "n64_k16_d6",
+  "n": 64,
+  "k": 16,
+  "distance": 6,
+  "logical_shape": [
+    4,
+    4
+  ],
+  "construction": "folded_c8xc4",
+  "presentation": "minimum_total_support_independent",
+  "component_sizes": [
+    64
+  ],
+  "distance_witnesses": {
+    "X": [
+      0,
+      2,
+      12,
+      14,
+      48,
+      50
+    ],
+    "Z": [
+      0,
+      2,
+      32,
+      34,
+      36,
+      38
+    ]
+  },
+  "candidate_sha256": "ddebc67a93c6c8e85631982bcfa3564dfc27371c8cd5044c2d36d0a3da62e2bd",
+  "distance_audit_sha256": "ddc7e040b5d8a5dac5c21d881de2b9548311544faff8f3e1acb5ba78ca05b0c4",
+  "coordinates": "zero-based; bit q denotes qubit q; permutations map old coordinate to new coordinate"
+}

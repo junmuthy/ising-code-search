@@ -8,6 +8,12 @@
       "distance": 8
     },
     {
+      "directory": "n64_k16_d6",
+      "n": 64,
+      "k": 16,
+      "distance": 6
+    },
+    {
       "directory": "n128_k32_d6",
       "n": 128,
       "k": 32,

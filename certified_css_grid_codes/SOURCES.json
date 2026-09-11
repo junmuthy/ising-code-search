@@ -184,6 +184,74 @@
     "provenance/source_snapshots/gala_n64_k16/distance8_weight10_audit.py": {
       "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_audit.py",
       "sha256": "5abe381546582293b587e1824a4ede8b8532c60dffc4eb3eb7fd36221d64ca80"
+    },
+    "n64_k16_d6/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/candidate.json",
+      "sha256": "ddebc67a93c6c8e85631982bcfa3564dfc27371c8cd5044c2d36d0a3da62e2bd"
+    },
+    "n64_k16_d6/checks.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/checks.npz",
+      "sha256": "92fc8f6ca7be2419abaf8c595f57c059e2f344d0d2b39afaa0f6feafec357981"
+    },
+    "n64_k16_d6/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/logical_bases.npz",
+      "sha256": "85e2234e3dcbbd5361f31e97ecfa8d0da313d8af114fe55c4fe6e0b1baf874f6"
+    },
+    "n64_k16_d6/certificates/distance_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/audit.json",
+      "sha256": "ddc7e040b5d8a5dac5c21d881de2b9548311544faff8f3e1acb5ba78ca05b0c4"
+    },
+    "n64_k16_d6/provenance/original_physical_permutations.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/physical_permutations.json",
+      "sha256": "496c9fb639877dea337dc3ab6c2b9302c7c1baa097b94d47e16b39f08851b9a0"
+    },
+    "n64_k16_d6/provenance/original_check_supports.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_independent/supports.json",
+      "sha256": "195f3c003c31067b0e815aabaa2dec806d2c868578df29de18df933dd1afee3d"
+    },
+    "n64_k16_d6/alternatives/translation_closed/candidate.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_symmetric/candidate.json",
+      "sha256": "fd6f002b1387938d52e276dee21992f629890e99c14bb97e0a94058118cafad3"
+    },
+    "n64_k16_d6/alternatives/translation_closed/checks.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_symmetric/checks.npz",
+      "sha256": "72faff38eb82aa04f51106faee3d90b41a372dec7a6070876cdb9586a81809d1"
+    },
+    "n64_k16_d6/alternatives/translation_closed/logical_bases.npz": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_symmetric/logical_bases.npz",
+      "sha256": "85e2234e3dcbbd5361f31e97ecfa8d0da313d8af114fe55c4fe6e0b1baf874f6"
+    },
+    "n64_k16_d6/alternatives/translation_closed/certificates/distance_audit.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_symmetric/audit.json",
+      "sha256": "094adacf0dd795eca2bdad1c2483f151a6c29ec90a5942f85dd6246ca23ae233"
+    },
+    "n64_k16_d6/alternatives/translation_closed/provenance/original_physical_permutations.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/best_symmetric/physical_permutations.json",
+      "sha256": "496c9fb639877dea337dc3ab6c2b9302c7c1baa097b94d47e16b39f08851b9a0"
+    },
+    "n64_k16_d6/certificates/check_weight_enumeration.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/weights_d9173bb8cd878461c62a0dd5b7f9cb5f494b401aaf662cf40e45eb883551ebcf.json",
+      "sha256": "eef9df98a3330229208932e8ed6ca662546f187a95bb3ad7856f55b5cc47ace2"
+    },
+    "n64_k16_d6/certificates/check_presentation_report.json": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/finalists_v1/report.json",
+      "sha256": "f439b194802514161647f4190ee761b1e47852adcf36e649e0ba66c909d4ca95"
+    },
+    "n64_k16_d6/provenance/original_sparse_campaign.md": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_campaign/README.md",
+      "sha256": "51c010d8524f34f960c74e8022b3bb74601b85ca3fee3cda3e5aa149bd780a79"
+    },
+    "provenance/source_snapshots/gala_n64_k16/sparse_finalize.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_finalize.py",
+      "sha256": "ea093953c93a99669ea7ef8c9ffc96956f44ed4a689aa032fb2497049233253a"
+    },
+    "provenance/source_snapshots/gala_n64_k16/check_weight_reduction.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/check_weight_reduction.py",
+      "sha256": "41b45f0f7c5262a4a57f7aa7efe4729cf1c45c21167c44eeab57ea3e6d39735c"
+    },
+    "provenance/source_snapshots/gala_n64_k16/test_sparse_search.py": {
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_sparse_search.py",
+      "sha256": "9900524a2bea53a62af52c29474f8a792ed89ee26059b4b79c28d2fdb80cb91d"
     }
   },
   "note": "Copied files are byte-identical. Original absolute paths and historical audit bounds are retained only as provenance; use local metadata and verify.py."
