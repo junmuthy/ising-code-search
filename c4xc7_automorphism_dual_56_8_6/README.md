@@ -104,6 +104,10 @@ indexed CNOTs, and the certificate.
 - `code.npz`: `matrix_x`, `matrix_z`, physical permutations, the logical Z
   orbit, and the logical Hadamard permutation.
 - `verify.py`: rebuilds the code and reruns all exact checks.
+- `verify_with_qldpc.py`: independently rebuilds the matrices and verifies
+  stabilizer validity, ranks, canonical logical pairing, and both exact CSS
+  distances using qLDPC's native full enumeration (no saved distance results,
+  custom MILP, randomized bounds, or assumed X/Z distance equality).
 - `construction.py`, `common.py`, `distance.py`: local supporting code.
 - `schedule/`: the depth-optimal syndrome schedule, its structural verifier,
   and circuit-fault certificate.
@@ -115,3 +119,19 @@ dependencies available, rerun the full verification with:
 python verify.py --output /tmp/c4xc7-code-check.json \
   --matrix-output /tmp/c4xc7-code-check.npz
 ```
+
+For the standalone qLDPC verification (tested with qLDPC 0.3.3):
+
+```bash
+../.venv/bin/python verify_with_qldpc.py
+# Optionally save a fresh JSON report (existing files are never overwritten):
+../.venv/bin/python verify_with_qldpc.py --output /tmp/c4xc7-qldpc-verification.json
+```
+
+This script constructs `qldpc.codes.CSSCode` directly from the polynomials
+above. It calls `get_distance_exact(Pauli.X, cutoff=0)` and then the analogous
+Z calculation, with no early exit, and checks `d_X=d_Z=6`. Full enumeration
+can take several minutes; progress goes to stderr and the final JSON report
+goes to stdout. This verifies **code distance**, not syndrome-circuit fault
+distance; the report explicitly leaves `fault_distance` unset. It does not
+run Stim or read the separate circuit certificates.

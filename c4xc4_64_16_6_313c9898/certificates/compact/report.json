@@ -1,0 +1,585 @@
+{
+  "cases": [
+    {
+      "basis": "X",
+      "circuit_sha256": "9f6872e3cc0910db2f9ab225fa415a30dc34a11965e339199287aaba6e5bd973",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.008,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 25.007,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 4.564003863008111,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "sat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 16480,
+          "elapsed_seconds": 4.564003863008111,
+          "full_syndrome_comparisons": 5719,
+          "index_bits": 15,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 135786960,
+          "projection_bits": 34,
+          "projection_seed": 3139898,
+          "table_bytes": 1086295680,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": 4,
+        "distinct_fault_effect_count": 16480,
+        "elapsed_seconds": 25.453,
+        "lower_bound": 4,
+        "witness": {
+          "effects": [
+            {
+              "dem_instruction_index": 6009,
+              "detector_mask": 794064076380193723252736,
+              "observable_mask": 16,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 6350,
+              "detector_mask": 919240910261766047399936,
+              "observable_mask": 4352,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 6927,
+              "detector_mask": 180865905359687889453056,
+              "observable_mask": 0,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 5774,
+              "detector_mask": 362490637420240176152576,
+              "observable_mask": 1,
+              "probability": 0.0002667378157289138
+            }
+          ],
+          "fault_count": 4
+        }
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_exact3_v1/report.json",
+        "sha256": "0d5a0e96a19abb067a4bbf705a8da26c0a04d2217bb55677cd28cf05c1b12b3f"
+      },
+      "schedule_id": "9d6fcfa7878e43d1",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/9d6fcfa7878e43d1",
+      "upper_bound": 4,
+      "wall_seconds": 5.018675165993045
+    },
+    {
+      "basis": "Z",
+      "circuit_sha256": "552dbe9ea9f69013e131ba37fece5d07306bd243cf91aadf99d54dc11d5affb9",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.024,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 23.704,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 3.4455420290032635,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "sat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 16480,
+          "elapsed_seconds": 3.4455420290032635,
+          "full_syndrome_comparisons": 29489,
+          "index_bits": 15,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 135786960,
+          "projection_bits": 34,
+          "projection_seed": 3139898,
+          "table_bytes": 1086295680,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": 4,
+        "distinct_fault_effect_count": 16480,
+        "elapsed_seconds": 24.163,
+        "lower_bound": 4,
+        "witness": {
+          "effects": [
+            {
+              "dem_instruction_index": 10114,
+              "detector_mask": 261685332614252289748286367625904128,
+              "observable_mask": 4096,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 10195,
+              "detector_mask": 530045375477043021438210534453280768,
+              "observable_mask": 16,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 10170,
+              "detector_mask": 110360583629065453770773681372397568,
+              "observable_mask": 256,
+              "probability": 0.0002667378157289138
+            },
+            {
+              "dem_instruction_index": 10073,
+              "detector_mask": 338521504056708040586360608666943488,
+              "observable_mask": 1,
+              "probability": 0.0002667378157289138
+            }
+          ],
+          "fault_count": 4
+        }
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_exact3_v1/report.json",
+        "sha256": "0d5a0e96a19abb067a4bbf705a8da26c0a04d2217bb55677cd28cf05c1b12b3f"
+      },
+      "schedule_id": "9d6fcfa7878e43d1",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/9d6fcfa7878e43d1",
+      "upper_bound": 4,
+      "wall_seconds": 3.899275910007418
+    },
+    {
+      "basis": "X",
+      "circuit_sha256": "01df4d35196ba7645d1a3c325ede107156f472d1d22ae00635c82cbf6ca00174",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.008,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 27.44,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 4.140190363003057,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "unsat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 17152,
+          "elapsed_seconds": 4.140190363003057,
+          "full_syndrome_comparisons": 2163341,
+          "index_bits": 15,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 147086976,
+          "projection_bits": 34,
+          "projection_seed": 3139898,
+          "table_bytes": 1176695808,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": null,
+        "distinct_fault_effect_count": 17152,
+        "elapsed_seconds": 27.915,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_exact3_v1/report.json",
+        "sha256": "0d5a0e96a19abb067a4bbf705a8da26c0a04d2217bb55677cd28cf05c1b12b3f"
+      },
+      "schedule_id": "cd91029936d21197",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197",
+      "upper_bound": null,
+      "wall_seconds": 4.654348249998293
+    },
+    {
+      "basis": "Z",
+      "circuit_sha256": "04347bd6640f0ea961d26187513bfa317c798a31176cf9fe920ba08e9519ef12",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.008,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 27.698,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 4.04052360400965,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "unsat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 17152,
+          "elapsed_seconds": 4.04052360400965,
+          "full_syndrome_comparisons": 2162820,
+          "index_bits": 15,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 147086976,
+          "projection_bits": 34,
+          "projection_seed": 3139898,
+          "table_bytes": 1176695808,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": null,
+        "distinct_fault_effect_count": 17152,
+        "elapsed_seconds": 28.16,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_exact3_v1/report.json",
+        "sha256": "0d5a0e96a19abb067a4bbf705a8da26c0a04d2217bb55677cd28cf05c1b12b3f"
+      },
+      "schedule_id": "cd91029936d21197",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197",
+      "upper_bound": null,
+      "wall_seconds": 4.5543644040008076
+    },
+    {
+      "basis": "X",
+      "circuit_sha256": "00836c690e59fd983f1cc63d912724d5569185901e89446e1f51b36fe6d58efb",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.006,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 12.609,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 1.9968074229982449,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "unsat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 12368,
+          "elapsed_seconds": 1.9968074229982449,
+          "full_syndrome_comparisons": 1261151,
+          "index_bits": 14,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 76477528,
+          "projection_bits": 36,
+          "projection_seed": 3139898,
+          "table_bytes": 611820224,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": null,
+        "distinct_fault_effect_count": 12368,
+        "elapsed_seconds": 12.851,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json",
+        "sha256": "645d0ecfdfddc77382cbd007468a3425a9f3c1a4449dea1ad60672a9c1e291db"
+      },
+      "schedule_id": "30f5d7baeecc8a92",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+      "upper_bound": null,
+      "wall_seconds": 2.209806253988063
+    },
+    {
+      "basis": "Z",
+      "circuit_sha256": "fd626ffa3d2ee9eb5518fdcbd677ead0a3d82ae99151aebf0f1dfe7e07445c07",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.006,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 12.655,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 2.03018939300091,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "unsat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 12413,
+          "elapsed_seconds": 2.03018939300091,
+          "full_syndrome_comparisons": 1261192,
+          "index_bits": 14,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 77035078,
+          "projection_bits": 36,
+          "projection_seed": 3139898,
+          "table_bytes": 616280624,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": null,
+        "distinct_fault_effect_count": 12413,
+        "elapsed_seconds": 12.896,
+        "lower_bound": 5,
+        "witness": null
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json",
+        "sha256": "645d0ecfdfddc77382cbd007468a3425a9f3c1a4449dea1ad60672a9c1e291db"
+      },
+      "schedule_id": "30f5d7baeecc8a92",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+      "upper_bound": null,
+      "wall_seconds": 2.3084602000017185
+    },
+    {
+      "basis": "X",
+      "circuit_sha256": "1ed9a1e260bdd0c67add9d85ca2d02159816fcf1b74c2086b240277d16be7f16",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.001,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.006,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 11.607,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 1.779682230000617,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "sat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 12026,
+          "elapsed_seconds": 1.779682230000617,
+          "full_syndrome_comparisons": 2483,
+          "index_bits": 14,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 72306325,
+          "projection_bits": 36,
+          "projection_seed": 3139898,
+          "table_bytes": 578450600,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": 4,
+        "distinct_fault_effect_count": 12026,
+        "elapsed_seconds": 11.842,
+        "lower_bound": 4,
+        "witness": {
+          "effects": [
+            {
+              "dem_instruction_index": 3279,
+              "detector_mask": 1243077974018752346794754048,
+              "observable_mask": 34976,
+              "probability": 0.00013338669987616076
+            },
+            {
+              "dem_instruction_index": 3127,
+              "detector_mask": 1238261160206225325923762176,
+              "observable_mask": 35083,
+              "probability": 0.00013338669987616076
+            },
+            {
+              "dem_instruction_index": 4595,
+              "detector_mask": 18889465931478647963648,
+              "observable_mask": 0,
+              "probability": 0.002595185921473992
+            },
+            {
+              "dem_instruction_index": 6253,
+              "detector_mask": 4835703278458533878693888,
+              "observable_mask": 0,
+              "probability": 0.002595185921473992
+            }
+          ],
+          "fault_count": 4
+        }
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json",
+        "sha256": "645d0ecfdfddc77382cbd007468a3425a9f3c1a4449dea1ad60672a9c1e291db"
+      },
+      "schedule_id": "457e8a04b6704209",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/457e8a04b6704209",
+      "upper_bound": 4,
+      "wall_seconds": 2.031563130003633
+    },
+    {
+      "basis": "Z",
+      "circuit_sha256": "c88c94e329ccf47b97684b70303144061e5abdfa4a69acae5ef9e204f8bf2814",
+      "exact": {
+        "attempts": [
+          {
+            "elapsed_seconds": 0.0,
+            "fault_count": 1,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 0.003,
+            "fault_count": 2,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 10.81,
+            "fault_count": 3,
+            "method": "exact-direct-enumeration",
+            "status": "unsat"
+          },
+          {
+            "elapsed_seconds": 1.7945943660015473,
+            "fault_count": 4,
+            "method": "exact-linear-projection-full-syndrome-checked",
+            "status": "sat"
+          }
+        ],
+        "compact_search": {
+          "distinct_fault_effects": 12045,
+          "elapsed_seconds": 1.7945943660015473,
+          "full_syndrome_comparisons": 3979,
+          "index_bits": 14,
+          "method": "exact-linear-projection-full-syndrome-checked",
+          "pair_count": 72534990,
+          "projection_bits": 36,
+          "projection_seed": 3139898,
+          "table_bytes": 580279920,
+          "unique_single_effect_syndromes": true
+        },
+        "distance": 4,
+        "distinct_fault_effect_count": 12045,
+        "elapsed_seconds": 10.927,
+        "lower_bound": 4,
+        "witness": {
+          "effects": [
+            {
+              "dem_instruction_index": 2264,
+              "detector_mask": 288230382594163712,
+              "observable_mask": 0,
+              "probability": 6.669779853440971e-05
+            },
+            {
+              "dem_instruction_index": 1714,
+              "detector_mask": 166059258735195587648,
+              "observable_mask": 7433,
+              "probability": 0.00013338669987616076
+            },
+            {
+              "dem_instruction_index": 908,
+              "detector_mask": 1125906349293572,
+              "observable_mask": 0,
+              "probability": 6.669779853440971e-05
+            },
+            {
+              "dem_instruction_index": 787,
+              "detector_mask": 166348615011254140996,
+              "observable_mask": 4177,
+              "probability": 0.00013338669987616076
+            }
+          ],
+          "fault_count": 4
+        }
+      },
+      "reused_lower_certificate": {
+        "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json",
+        "sha256": "645d0ecfdfddc77382cbd007468a3425a9f3c1a4449dea1ad60672a9c1e291db"
+      },
+      "schedule_id": "457e8a04b6704209",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/457e8a04b6704209",
+      "upper_bound": 4,
+      "wall_seconds": 2.1426067569991574
+    }
+  ],
+  "maximum_faults": 4,
+  "source_sha256": {
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/compact_fault4.py": "d610e94843d418caa65fc0b287b1c9cd7bc2d4597f554023e8bfdd0671b2044f",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/circuit.py": "deb55e4bf786b43de2fc562dc075a91ed6c803f47eee0c17ac1fd3465915942f",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/faults.py": "54316bdce68135fed4763d0c1deb889ffe19b8d1ac54703e10a29619b85f398e",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/model.py": "aee2ed2b01e401c505af74d871676cc55c53e3cdf38f2d93703899186f680e66",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/schedule.py": "c1dee0d8108e7955f545f7a3331c8b8060414d06b565396170be7bcee67f873b",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/search.py": "9b650c23e91b35beca0e01573ef678a5e9f5a3a75b43d5bae83e5c859b95c1cd",
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/test_regression.py": "94f3512b0aa10fd05c40afadb12c9e6bdecc0302545ae5260f4d5752a827a556",
+    "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/schedule_fault_search/screening.py": "afafa1b4a0ba78e64d4e9017b2cb7d18073aee7c78715033cdfc37c3f25e366d",
+    "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/stim_fault_distance/fault_distance.py": "322549d832bbea44837382b5a9c29c86ec7768c93ae94d8ecd93b2eca7fe8b28"
+  },
+  "status": "complete"
+}

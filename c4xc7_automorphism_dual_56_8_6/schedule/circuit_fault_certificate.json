@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "code": "[[56,8,6]]",
+  "schedule_id": "8c613cb8afa703e4",
+  "schedule": "optimal_depth8_schedule.json",
+  "conclusion": {
+    "d_fault_x": 6,
+    "d_fault_z": 6,
+    "exact": true
+  },
+  "experiment": {
+    "name": "isolated guarded bulk syndrome cycle",
+    "syndrome_rounds": 3,
+    "noisy_round": 1,
+    "guard_rounds": [
+      0,
+      2
+    ],
+    "fault_model": "all nonidentity two-qubit Pauli outcomes after each CNOT in the noisy round",
+    "probability_used_to_materialize_detector_error_model": 0.001,
+    "data_boundary_noise": false,
+    "ancilla_preparation_noise": false,
+    "ancilla_measurement_noise": false,
+    "idle_noise": false,
+    "logical_observables": "the eight weight-seven C7 fibres",
+    "detectors": 192,
+    "distinct_fault_effects": 3472
+  },
+  "lower_bound": {
+    "fault_counts_1_to_3": {
+      "status": "unsat",
+      "method": "exact direct enumeration of distinct detector/observable signatures",
+      "verified_bases": [
+        "X",
+        "Z"
+      ]
+    },
+    "fault_count_4": {
+      "status": "unsat",
+      "method": "exact pair meet-in-the-middle",
+      "pair_count": 6025656,
+      "verified_bases": [
+        "X",
+        "Z"
+      ]
+    },
+    "fault_count_5": {
+      "status": "unsat",
+      "method": "exact translation-anchored pair-plus-pair meet-in-the-middle",
+      "directly_verified_basis": "X",
+      "transferred_to_basis": "Z",
+      "transfer_reason": "the Z circuit is the ZX-fold and time-reversal image of the X circuit",
+      "translation_group_order": 28,
+      "translation_anchors": 184,
+      "pair_count": 6025656,
+      "pair_signature_groups": 5827500,
+      "anchor_batches_tested": 5520
+    }
+  },
+  "upper_bound": {
+    "fault_count": 6,
+    "method": "concrete Stim hypergraph-search witness",
+    "independently_found_in_bases": [
+      "X",
+      "Z"
+    ],
+    "x_basis_witness": {
+      "combined_detector_set": [],
+      "combined_logical_observables": [
+        2,
+        3
+      ],
+      "faults": [
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            77,
+            28
+          ],
+          "pauli": "Z77*Z28",
+          "effect": "D36 D37 D57 D59 L1"
+        },
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            1,
+            97
+          ],
+          "pauli": "Z1",
+          "effect": "D36 D37 D58 D63 L0"
+        },
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            56,
+            35
+          ],
+          "pauli": "Z56*Z35",
+          "effect": "D36 D38 D43 D44 L3"
+        },
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            83,
+            34
+          ],
+          "pauli": "Z83*Z34",
+          "effect": "D36 D42 D58 D63 L1"
+        },
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            2,
+            91
+          ],
+          "pauli": "Z2",
+          "effect": "D37 D38 D57 D59 L0"
+        },
+        {
+          "tick_count_before_location": 12,
+          "cnot_pair": [
+            8,
+            104
+          ],
+          "pauli": "Z8",
+          "effect": "D37 D42 D43 D44 L2"
+        }
+      ],
+      "validated_zero_detector_nonzero_observable": true
+    }
+  },
+  "scope_note": "This is an exact circuit-fault result for the stated CNOT-only guarded-bulk model. It is not yet a full phenomenological or hardware noise-model memory threshold result."
+}

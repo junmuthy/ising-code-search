@@ -1,0 +1,24 @@
+{
+  "basis": "Z",
+  "distinct_fault_effects": 12905,
+  "effects_sha256": "3e1ee02cf76818504f6daf5e8d9d6f4312c1fae1227f7278d685441ddfa603b2",
+  "fault_distance_lower_bound": 2,
+  "fault_distance_upper_bound": 2,
+  "ideal_detectors_and_observables_verified": true,
+  "no_faults_at_most_2": false,
+  "noise_model": "CNOT depolarizing faults in middle of three rounds; ideal guard rounds and boundaries",
+  "witness": [
+    {
+      "detector_mask": "56944462351022241991298235929114276163472955984984915437431031773265920",
+      "explanation": "ExplainedError {\n    dem_error_terms: D220 D221 D230 D235 L4 L5 L6 L7\n    CircuitErrorLocation {\n        flipped_pauli_product: X130\n        Circuit location stack trace:\n            (after 63 TICKs)\n            at instruction #206 (DEPOLARIZE2) in the circuit\n            at targets #37 to #38 of the instruction\n            resolving to DEPOLARIZE2(0.001) 130 87\n    }\n}",
+      "observable_mask": 240
+    },
+    {
+      "detector_mask": "56944462351022241991298235929114276163472955984984915437431031773265920",
+      "explanation": "ExplainedError {\n    dem_error_terms: D220 D221 D230 D235 L12 L13 L14 L15\n    CircuitErrorLocation {\n        flipped_pauli_product: X129\n        Circuit location stack trace:\n            (after 63 TICKs)\n            at instruction #206 (DEPOLARIZE2) in the circuit\n            at targets #35 to #36 of the instruction\n            resolving to DEPOLARIZE2(0.001) 129 108\n    }\n}",
+      "observable_mask": 61440
+    }
+  ],
+  "witness_combined_detector_mask": "0",
+  "witness_combined_observable_mask": 61680
+}

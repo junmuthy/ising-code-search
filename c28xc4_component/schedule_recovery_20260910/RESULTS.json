@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-10",
+  "code": "[[112,16,7]]",
+  "noise_model": "All 15 nonidentity two-qubit Pauli faults after CNOTs in one middle syndrome round, between two ideal guard rounds, with ideal data preparation and readout",
+  "depth_counts_cnot_layers_only": true,
+  "ancillas": 96,
+  "data_qubits": 112,
+  "independent_checks_per_css_type": 48,
+  "all_check_weights": 16,
+  "cnot_count_per_round": 1536,
+  "schedules": [
+    {"file": "original_sequential32.json", "depth": 32, "d_fault_x_memory": 2, "d_fault_z_memory": 2, "exact": true},
+    {"file": "recovered_depth24.json", "depth": 24, "d_fault_x_memory": 3, "d_fault_z_memory": 3, "exact": true},
+    {"file": "recovered_depth32_hook_candidate.json", "depth": 32, "d_fault_x_memory": 4, "d_fault_z_memory": 4, "exact": true, "certificate": "pair_results.json"}
+  ],
+  "verified_depth18_recovered": false,
+  "depth18_ruled_out": false,
+  "depth_lower_bound_in_bare_ancilla_measurement_model": 16,
+  "best_verified_depth_recovered": 24,
+  "global_depth_optimality_proved": false,
+  "fault_distance_at_least5_established": false
+}

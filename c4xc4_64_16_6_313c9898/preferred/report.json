@@ -1,0 +1,96 @@
+{
+  "all_canonical_logical_weights": 6,
+  "bounds": [
+    {
+      "basis": "X",
+      "certificates": [
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/compact_exact4_v1/report.json",
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/independent_reference_exact4_v1/report.json",
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json"
+      ],
+      "check_weights": {
+        "X": {
+          "12": 24
+        },
+        "Z": {
+          "12": 24
+        }
+      },
+      "checks_per_type": {
+        "X": 24,
+        "Z": 24
+      },
+      "circuit_sha256": "00836c690e59fd983f1cc63d912724d5569185901e89446e1f51b36fe6d58efb",
+      "cnots": 576,
+      "depth": 12,
+      "lower_bound": 5,
+      "qubits": 112,
+      "schedule_id": "30f5d7baeecc8a92",
+      "six_fault_witness": "experiments/gala_n64_k16/schedule_313c9898_campaign/audit_v3/subsets_paired_v1_30f5d7baeecc8a92_X_six_fault_witness.json",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+      "upper_bound": 6
+    },
+    {
+      "basis": "Z",
+      "certificates": [
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/compact_exact4_v1/report.json",
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/independent_reference_exact4_v1/report.json",
+        "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json"
+      ],
+      "check_weights": {
+        "X": {
+          "12": 24
+        },
+        "Z": {
+          "12": 24
+        }
+      },
+      "checks_per_type": {
+        "X": 24,
+        "Z": 24
+      },
+      "circuit_sha256": "fd626ffa3d2ee9eb5518fdcbd677ead0a3d82ae99151aebf0f1dfe7e07445c07",
+      "cnots": 576,
+      "depth": 12,
+      "lower_bound": 5,
+      "qubits": 112,
+      "schedule_id": "30f5d7baeecc8a92",
+      "six_fault_witness": "experiments/gala_n64_k16/schedule_313c9898_campaign/audit_v3/subsets_paired_v1_30f5d7baeecc8a92_Z_six_fault_witness.json",
+      "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+      "upper_bound": 6
+    }
+  ],
+  "circuit_audit": "experiments/gala_n64_k16/schedule_313c9898_campaign/audit_v3/report.json",
+  "circuit_contract": {
+    "bases": [
+      "X",
+      "Z"
+    ],
+    "noise": "full_wait",
+    "observables": 16,
+    "rounds": 3
+  },
+  "gates_preserved": [
+    "regular logical C4 x C4",
+    "individual logical H up to permutation"
+  ],
+  "original_engine_certificate": "experiments/gala_n64_k16/schedule_313c9898_campaign/independent_reference_exact4_v1/report.json",
+  "resources": {
+    "ancillas": 48,
+    "cnot_depth": 12,
+    "cnots_per_round": 576,
+    "data_qubits": 64,
+    "total_qubits": 112
+  },
+  "schedule_id": "30f5d7baeecc8a92",
+  "source_sha256": {
+    "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/handoff_schedule_313c9898.py": "098c05d5d68034923fc11eefa5cd3d7bbe4a6440fc6ed8f5774e89d7ea8e7660"
+  },
+  "static_audit": "experiments/gala_n64_k16/schedule_313c9898_campaign/handoff_v1/code/audit.json",
+  "static_parameters": {
+    "d": 6,
+    "k": 16,
+    "n": 64
+  },
+  "status": "complete_certified_handoff"
+}

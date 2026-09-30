@@ -1,0 +1,33 @@
+{
+  "angles": [
+    "zero",
+    "0p001",
+    "pi128",
+    "pi32"
+  ],
+  "checkpoint_shots": 100000,
+  "logical_counts": [
+    1,
+    4
+  ],
+  "mode": "full",
+  "partition_count": 3,
+  "presentations": [
+    "preferred",
+    "original"
+  ],
+  "probability": 0.001,
+  "seed": 3139898,
+  "shots": 1000000,
+  "source_hashes": {
+    "__init__.py": "ea85ddb9a0209de34b04a8e1a414e9e889425d70559b3c8fe9fa62afc531a192",
+    "bicycle_chain_l2_paper.tmr_postselection.circuit": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324",
+    "bicycle_chain_l2_paper.tmr_postselection.model": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5",
+    "model.py": "851911a20814dde9a3922abe8c58048030b15f9a77b448f5c9d8631dc216c579",
+    "protocol.py": "17da14c18ef748fef87deace2b005f04bb20eeb065e3651b9e62e4ad3bd04e2d",
+    "run.py": "8dbc0f607adb2ba2c7250f8bed23acdae96f3bc080d31f00580c96ee66309ccf",
+    "summarize.py": "f6c3736b44df4b429150d6e24b8d92984c8cfb490bf438c46f2104158b7c5a95",
+    "validate.py": "433a74b3e0dfab8e0df33dccfada1bcca31468f2b3f478e61d8cd6ae8dbf311c"
+  },
+  "threads": 4
+}

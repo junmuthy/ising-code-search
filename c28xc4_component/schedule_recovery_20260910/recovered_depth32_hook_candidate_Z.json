@@ -1,0 +1,39 @@
+{
+  "basis": "Z",
+  "distinct_fault_effects": 12908,
+  "effects_sha256": "1df1c9d18089ec0b6c0759dfde1f3565aa84f8a0547531175eb919dfad65b87f",
+  "fault_distance_lower_bound": 3,
+  "fault_distance_upper_bound": 5,
+  "ideal_detectors_and_observables_verified": true,
+  "no_faults_at_most_2": true,
+  "noise_model": "CNOT depolarizing faults in middle of three rounds; ideal guard rounds and boundaries",
+  "witness": [
+    {
+      "detector_mask": "883431963961097172863152447240198226729680776280938717699762696881176576",
+      "explanation": "ExplainedError {\n    dem_error_terms: D50 D146 D194 D196 D202 D212 D220 D222 D239 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z114*X17\n        Circuit location stack trace:\n            (after 64 TICKs)\n            at instruction #209 (DEPOLARIZE2) in the circuit\n            at targets #5 to #6 of the instruction\n            resolving to DEPOLARIZE2(0.001) 114 17\n    }\n}",
+      "observable_mask": 2
+    },
+    {
+      "detector_mask": "13913024059060198368567248797701494966502534668965726920957611879694336",
+      "explanation": "ExplainedError {\n    dem_error_terms: D50 D146 D194 D196 D212 D220 D226 D233 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z114*X65\n        Circuit location stack trace:\n            (after 61 TICKs)\n            at instruction #200 (DEPOLARIZE2) in the circuit\n            at targets #5 to #6 of the instruction\n            resolving to DEPOLARIZE2(0.001) 114 65\n    }\n}",
+      "observable_mask": 2
+    },
+    {
+      "detector_mask": "897341611650267842119598028713807192619257930941627589831318149160501248",
+      "explanation": "ExplainedError {\n    dem_error_terms: D50 D146 D194 D202 D207 D212 D222 D226 D233 D239 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z114*X49\n        Circuit location stack trace:\n            (after 55 TICKs)\n            at instruction #182 (DEPOLARIZE2) in the circuit\n            at targets #3 to #4 of the instruction\n            resolving to DEPOLARIZE2(0.001) 114 49\n    }\n}",
+      "observable_mask": 2
+    },
+    {
+      "detector_mask": "14672959406832700386370035817585818552363677120296300458434641608572928",
+      "explanation": "ExplainedError {\n    dem_error_terms: D50 D146 D194 D207 D210 D212 D222 D229 D233 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: Z114*X81\n        Circuit location stack trace:\n            (after 66 TICKs)\n            at instruction #215 (DEPOLARIZE2) in the circuit\n            at targets #5 to #6 of the instruction\n            resolving to DEPOLARIZE2(0.001) 114 81\n    }\n}",
+      "observable_mask": 2
+    },
+    {
+      "detector_mask": "14672952619101293029453565116079616551477520834703572206420503226744832",
+      "explanation": "ExplainedError {\n    dem_error_terms: D210 D222 D229 D233 L1\n    CircuitErrorLocation {\n        flipped_pauli_product: X130\n        Circuit location stack trace:\n            (after 53 TICKs)\n            at instruction #176 (DEPOLARIZE2) in the circuit\n            at targets #57 to #58 of the instruction\n            resolving to DEPOLARIZE2(0.001) 130 1\n    }\n}",
+      "observable_mask": 2
+    }
+  ],
+  "witness_combined_detector_mask": "0",
+  "witness_combined_observable_mask": 2
+}

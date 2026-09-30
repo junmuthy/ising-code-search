@@ -1,0 +1,57 @@
+{
+  "basis": "X",
+  "circuit_sha256": "00836c690e59fd983f1cc63d912724d5569185901e89446e1f51b36fe6d58efb",
+  "exact": {
+    "attempts": [
+      {
+        "elapsed_seconds": 0.001,
+        "fault_count": 1,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 0.006,
+        "fault_count": 2,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 12.609,
+        "fault_count": 3,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 1.9968074229982449,
+        "fault_count": 4,
+        "method": "exact-linear-projection-full-syndrome-checked",
+        "status": "unsat"
+      }
+    ],
+    "compact_search": {
+      "distinct_fault_effects": 12368,
+      "elapsed_seconds": 1.9968074229982449,
+      "full_syndrome_comparisons": 1261151,
+      "index_bits": 14,
+      "method": "exact-linear-projection-full-syndrome-checked",
+      "pair_count": 76477528,
+      "projection_bits": 36,
+      "projection_seed": 3139898,
+      "table_bytes": 611820224,
+      "unique_single_effect_syndromes": true
+    },
+    "distance": null,
+    "distinct_fault_effect_count": 12368,
+    "elapsed_seconds": 12.851,
+    "lower_bound": 5,
+    "witness": null
+  },
+  "reused_lower_certificate": {
+    "path": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_exact3_v1/report.json",
+    "sha256": "645d0ecfdfddc77382cbd007468a3425a9f3c1a4449dea1ad60672a9c1e291db"
+  },
+  "schedule_id": "30f5d7baeecc8a92",
+  "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+  "upper_bound": null,
+  "wall_seconds": 2.209806253988063
+}

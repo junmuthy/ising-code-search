@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "bytes": 70,
+      "path": "bicycle_chain_l2_paper/__init__.py",
+      "sha256": "0665cc7de8cc45c74cd58cef7951ee8614131e5353e2ab8c83f8f6875905dad7"
+    },
+    {
+      "bytes": 76,
+      "path": "bicycle_chain_l2_paper/tmr_postselection/__init__.py",
+      "sha256": "a7a1d53afe526816012a53f24120ece25d82b2ba44b52e2c6794b76b938c2263"
+    },
+    {
+      "bytes": 11162,
+      "path": "bicycle_chain_l2_paper/tmr_postselection/model.py",
+      "sha256": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5"
+    },
+    {
+      "bytes": 5442,
+      "path": "bicycle_chain_l2_paper/tmr_postselection/partitions.py",
+      "sha256": "c1efdf29654e412cf880a424c898902f479f13609ec1cf5479f5a71dda1beecb"
+    },
+    {
+      "bytes": 18961,
+      "path": "bicycle_chain_l2_paper/tmr_postselection/circuit.py",
+      "sha256": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324"
+    }
+  ],
+  "purpose": "Byte-identical shared helpers required by the frozen TMR experiment; no branch switch needed.",
+  "source_branch": "bicycle-chain-l4-postselection",
+  "source_revision": "b1271109039529901b31f6de9a0b375209642489"
+}

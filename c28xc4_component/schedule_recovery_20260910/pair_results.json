@@ -1,0 +1,24 @@
+{
+  "code": "[[112,16,7]]",
+  "schedule": "recovered_depth32_hook_candidate.json",
+  "noise_model": "Independent two-qubit Pauli faults after middle-round CNOTs, two ideal guard rounds, ideal preparation and measurement",
+  "method": "Exhaustive singles, pair-versus-single enumeration, and pair-versus-pair enumeration with full detector equality checked after hashing",
+  "X": {
+    "effects": 12908,
+    "pairs": 83301778,
+    "effects_file": "recovered_depth32_hook_candidate_X.bin",
+    "effects_sha256": "ed2f0c192fad4984c3828e747dd616ffb110723e0cdc6757888ae7d9fbc91c6a",
+    "no_faults_at_most_3": true,
+    "fault_distance": 4,
+    "witness_effect_indices": [137, 3558, 138, 3557]
+  },
+  "Z": {
+    "effects": 12908,
+    "pairs": 83301778,
+    "effects_file": "recovered_depth32_hook_candidate_Z.bin",
+    "effects_sha256": "1df1c9d18089ec0b6c0759dfde1f3565aa84f8a0547531175eb919dfad65b87f",
+    "no_faults_at_most_3": true,
+    "fault_distance": 4,
+    "witness_effect_indices": [7334, 7996, 5358, 6816]
+  }
+}

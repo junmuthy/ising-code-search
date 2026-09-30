@@ -1,0 +1,74 @@
+{
+  "X": {
+    "combined_observables": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "four_fault_witness_verified": true,
+    "signature_reconstruction_verified": true,
+    "witness": [
+      {
+        "effect": "D52 D54 D55 D63 D64 D70 D71 D72 D74 D79 D80 D90 L11 L14 L15",
+        "effect_index": 137,
+        "explanation": "ExplainedError {\n    dem_error_terms: D52 D54 D55 D63 D64 D70 D71 D72 D74 D79 D80 D90 L11 L14 L15\n    CircuitErrorLocation {\n        flipped_pauli_product: Z202\n        Circuit location stack trace:\n            (after 38 TICKs)\n            at instruction #131 (DEPOLARIZE2) in the circuit\n            at targets #85 to #86 of the instruction\n            resolving to DEPOLARIZE2(0.001) 43 202\n    }\n}"
+      },
+      {
+        "effect": "D54 D58 D71 D75 D77 D91 D125 D221 L12",
+        "effect_index": 3558,
+        "explanation": "ExplainedError {\n    dem_error_terms: D54 D58 D71 D75 D77 D91 D125 D221 L12\n    CircuitErrorLocation {\n        flipped_pauli_product: Z12*X189\n        Circuit location stack trace:\n            (after 40 TICKs)\n            at instruction #137 (DEPOLARIZE2) in the circuit\n            at targets #59 to #60 of the instruction\n            resolving to DEPOLARIZE2(0.001) 12 189\n    }\n}"
+      },
+      {
+        "effect": "D55 D64 D66 D70 D72 D74 D75 D79 D80 D90 L8 L9 L10",
+        "effect_index": 138,
+        "explanation": "ExplainedError {\n    dem_error_terms: D55 D64 D66 D70 D72 D74 D75 D79 D80 D90 L8 L9 L10\n    CircuitErrorLocation {\n        flipped_pauli_product: Z192\n        Circuit location stack trace:\n            (after 38 TICKs)\n            at instruction #131 (DEPOLARIZE2) in the circuit\n            at targets #65 to #66 of the instruction\n            resolving to DEPOLARIZE2(0.001) 41 192\n    }\n}"
+      },
+      {
+        "effect": "D52 D58 D63 D66 D77 D91 D125 D221 L13",
+        "effect_index": 3557,
+        "explanation": "ExplainedError {\n    dem_error_terms: D52 D58 D63 D66 D77 D91 D125 D221 L13\n    CircuitErrorLocation {\n        flipped_pauli_product: Y189\n        Circuit location stack trace:\n            (after 50 TICKs)\n            at instruction #167 (DEPOLARIZE2) in the circuit\n            at targets #59 to #60 of the instruction\n            resolving to DEPOLARIZE2(0.001) 44 189\n    }\n}"
+      }
+    ]
+  },
+  "Z": {
+    "combined_observables": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "four_fault_witness_verified": true,
+    "signature_reconstruction_verified": true,
+    "witness": [
+      {
+        "effect": "D196 D202 D207 D210 D221 D235 L13",
+        "effect_index": 7334,
+        "explanation": "ExplainedError {\n    dem_error_terms: D196 D202 D207 D210 D221 D235 L13\n    CircuitErrorLocation {\n        flipped_pauli_product: X13\n        Circuit location stack trace:\n            (after 51 TICKs)\n            at instruction #170 (DEPOLARIZE2) in the circuit\n            at targets #59 to #60 of the instruction\n            resolving to DEPOLARIZE2(0.001) 13 189\n    }\n}"
+      },
+      {
+        "effect": "D201 D208 D216 D218 D219 D223 D231 D234 D235 L8 L10",
+        "effect_index": 7996,
+        "explanation": "ExplainedError {\n    dem_error_terms: D201 D208 D216 D218 D219 D223 D231 D234 D235 L8 L10\n    CircuitErrorLocation {\n        flipped_pauli_product: X144\n        Circuit location stack trace:\n            (after 52 TICKs)\n            at instruction #173 (DEPOLARIZE2) in the circuit\n            at targets #61 to #62 of the instruction\n            resolving to DEPOLARIZE2(0.001) 144 42\n    }\n}"
+      },
+      {
+        "effect": "D198 D199 D201 D202 D210 D214 D215 D219 D221 D224 D231 L9 L12",
+        "effect_index": 5358,
+        "explanation": "ExplainedError {\n    dem_error_terms: D198 D199 D201 D202 D210 D214 D215 D219 D221 D224 D231 L9 L12\n    CircuitErrorLocation {\n        flipped_pauli_product: X155\n        Circuit location stack trace:\n            (after 65 TICKs)\n            at instruction #212 (DEPOLARIZE2) in the circuit\n            at targets #83 to #84 of the instruction\n            resolving to DEPOLARIZE2(0.001) 155 89\n    }\n}"
+      },
+      {
+        "effect": "D196 D198 D199 D207 D208 D214 D215 D216 D218 D223 D224 D234 L11 L14 L15",
+        "effect_index": 6816,
+        "explanation": "ExplainedError {\n    dem_error_terms: D196 D198 D199 D207 D208 D214 D215 D216 D218 D223 D224 D234 L11 L14 L15\n    CircuitErrorLocation {\n        flipped_pauli_product: X154\n        Circuit location stack trace:\n            (after 53 TICKs)\n            at instruction #176 (DEPOLARIZE2) in the circuit\n            at targets #69 to #70 of the instruction\n            resolving to DEPOLARIZE2(0.001) 154 43\n    }\n}"
+      }
+    ]
+  }
+}

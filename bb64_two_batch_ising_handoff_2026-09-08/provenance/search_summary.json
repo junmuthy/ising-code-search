@@ -1,0 +1,50 @@
+{
+  "candidate_count": 8,
+  "case_count": 16,
+  "code": "self-dual [[64,8,8]] Liang-Chen BB code",
+  "config": {
+    "basis_npz": "/home/judah_unmuth/gala-code-search/bb64_simultaneous_basis_search/results/run_003_low_weight/simultaneous_basis_weight64.npz",
+    "batch_counts": [
+      1,
+      2
+    ],
+    "candidate_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "candidates_json": "/home/judah_unmuth/gala-code-search/bb64_simultaneous_basis_search/results/run_002/class_candidates.json",
+    "heartbeat_seconds": 15.0,
+    "random_seed": 0,
+    "seconds_per_case": 60.0,
+    "target_weight": 8
+  },
+  "elapsed_this_invocation_seconds": 32.495626,
+  "hadamard_permutation": [
+    5,
+    4,
+    7,
+    6,
+    1,
+    0,
+    3,
+    2
+  ],
+  "interpretation": "sat gives an exact witness; unsat is exact for the configured weight; unknown is unresolved because the per-case timeout expired",
+  "logical_map_preserved": "physical H maps Z_i to X_{p(i)} exactly",
+  "one_batch_found": false,
+  "solutions": [
+    "batches2:candidate0",
+    "batches2:candidate1"
+  ],
+  "status_histogram": {
+    "sat": 2,
+    "unsat": 14
+  },
+  "two_batch_found": true
+}

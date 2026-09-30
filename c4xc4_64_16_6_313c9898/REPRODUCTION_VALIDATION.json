@@ -1,0 +1,15 @@
+{
+  "status": "verified",
+  "tested_from": "/tmp with PYTHONPATH unset",
+  "qldpc_runtime_dependency": false,
+  "vendored_engine_import_locations_checked": true,
+  "portable_tests_passed": 67,
+  "code_reconstructed_from_coefficients": true,
+  "schedule_reconstructed_from_seed_edge_times": true,
+  "exact_static_distance": 6,
+  "all_32_canonical_logical_weights": 6,
+  "both_memory_circuits_rebuilt": true,
+  "six_fault_witnesses_replayed": true,
+  "fresh_exclusion_through_four_both_bases": true,
+  "fresh_reproduction_report": "validation/fresh_certification/report.json"
+}

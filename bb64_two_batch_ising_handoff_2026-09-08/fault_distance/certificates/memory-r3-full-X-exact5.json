@@ -1,0 +1,48 @@
+{
+  "active": null,
+  "completed": "2026-09-01T21:45:07+00:00",
+  "conclusion_by_basis": {
+    "X": {
+      "distance": null,
+      "lower_bound": 6
+    }
+  },
+  "configuration": {
+    "bases": [
+      "X"
+    ],
+    "batch_groups": 200000,
+    "experiment": "memory",
+    "fault_model": "full",
+    "method": "translation-anchored pair-plus-pair exact five-fault search",
+    "probability": 0.001,
+    "required_prior_lower_bound": 5,
+    "rounds": 3,
+    "schedule": "/home/judah_unmuth/gala-code-search/bb64_simultaneous_basis_search/schedule_fault_search/baseline_schedule.json",
+    "schema_version": 1,
+    "workers": 12
+  },
+  "elapsed_seconds_this_invocation": 1322.184,
+  "results": {
+    "X": {
+      "distance": null,
+      "elapsed_seconds": 1321.961,
+      "lower_bound": 6,
+      "schema_version": 1,
+      "statistics": {
+        "anchors_tested": 262,
+        "batches_tested": 66810,
+        "pair_count": 51770400,
+        "pair_groups": 50913624
+      },
+      "status": "unsat",
+      "tested_fault_count": 5,
+      "timestamp": "2026-09-01T21:45:07+00:00",
+      "witness": null
+    }
+  },
+  "schema_version": 1,
+  "started": "2026-09-01T21:23:05+00:00",
+  "status": "complete",
+  "updated": "2026-09-01T21:45:07+00:00"
+}

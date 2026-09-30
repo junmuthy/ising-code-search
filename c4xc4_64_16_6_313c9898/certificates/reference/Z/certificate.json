@@ -1,0 +1,41 @@
+{
+  "basis": "Z",
+  "circuit_sha256": "fd626ffa3d2ee9eb5518fdcbd677ead0a3d82ae99151aebf0f1dfe7e07445c07",
+  "exact": {
+    "attempts": [
+      {
+        "elapsed_seconds": 0.001,
+        "fault_count": 1,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 0.005,
+        "fault_count": 2,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 9.901,
+        "fault_count": 3,
+        "method": "exact-direct-enumeration",
+        "status": "unsat"
+      },
+      {
+        "elapsed_seconds": 161.239,
+        "fault_count": 4,
+        "method": "exact-pair-meet-in-the-middle",
+        "status": "unsat"
+      }
+    ],
+    "distance": null,
+    "distinct_fault_effect_count": 12413,
+    "elapsed_seconds": 171.328,
+    "lower_bound": 5,
+    "witness": null
+  },
+  "schedule_id": "30f5d7baeecc8a92",
+  "source": "experiments/gala_n64_k16/schedule_313c9898_campaign/subsets_paired_v1/30f5d7baeecc8a92",
+  "upper_bound": null,
+  "wall_seconds": 171.33047826999973
+}

@@ -1,0 +1,92 @@
+{
+  "circuit_sha256": "fd626ffa3d2ee9eb5518fdcbd677ead0a3d82ae99151aebf0f1dfe7e07445c07",
+  "detector_mask": 0,
+  "fault_count": 6,
+  "faults": [
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          0,
+          "X"
+        ]
+      ],
+      "target_range": [
+        0,
+        1
+      ]
+    },
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          4,
+          "X"
+        ]
+      ],
+      "target_range": [
+        4,
+        5
+      ]
+    },
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          7,
+          "X"
+        ]
+      ],
+      "target_range": [
+        7,
+        8
+      ]
+    },
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          13,
+          "X"
+        ]
+      ],
+      "target_range": [
+        13,
+        14
+      ]
+    },
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          29,
+          "X"
+        ]
+      ],
+      "target_range": [
+        29,
+        30
+      ]
+    },
+    {
+      "gate": "X_ERROR",
+      "instruction_offset": 297,
+      "paulis": [
+        [
+          57,
+          "X"
+        ]
+      ],
+      "target_range": [
+        57,
+        58
+      ]
+    }
+  ],
+  "observable_mask": 1
+}

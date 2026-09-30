@@ -1,0 +1,250 @@
+{
+  "circuit": {
+    "artifact": {
+      "basis_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/preferred/code.json",
+      "basis_sha256": "f92ea7ebe5578ed2d182f3282cab980bf847a6f594b068885da0f08698a53d94",
+      "schedule_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/preferred/schedule.json",
+      "schedule_sha256": "f4d45dff84d2655ca4287628db8539b3cb2702770cd47b3ddd0956e8e7dd0934"
+    },
+    "compile_seconds": 0.011866845001350157,
+    "detector_groups": {
+      "post_X": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "post_Z": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "logical_indices": [
+      0
+    ],
+    "operation_counts": {
+      "ancilla_preparations": 72,
+      "cnot_layers": 26,
+      "data_preparations": 64,
+      "ideal_mpp_measurements": 0,
+      "idle_locations": 788,
+      "measurements": 72,
+      "physical_cnots": 870,
+      "physical_rotations": 3,
+      "rotation_layers": 1,
+      "virtual_feedback_x": 270
+    },
+    "partition_certificate": {
+      "kernel_dimension": 1,
+      "logicals": [
+        0
+      ],
+      "partial_syndrome_rank": 2,
+      "partitions": {
+        "0": [
+          [
+            0,
+            41
+          ],
+          [
+            44,
+            53
+          ],
+          [
+            54,
+            60
+          ]
+        ]
+      },
+      "single_final_projection_certified": true
+    },
+    "peak_active_width": 3,
+    "qubits": 112,
+    "theta_star": -0.45339526664284285
+  },
+  "completed": true,
+  "configuration": {
+    "angle_label": "pi128",
+    "basis_sha256": "f92ea7ebe5578ed2d182f3282cab980bf847a6f594b068885da0f08698a53d94",
+    "checkpoint_shots": 100000,
+    "circuit_sha256": "e8e5457c3af2c3a97e80c95427578cf1ef6564225242ca1864f00bdf4623116f",
+    "clifft": "0.10.0rc2.dev1+gdbc721208",
+    "logical_count": 1,
+    "mode": "full",
+    "numpy": "2.5.2",
+    "partition_count": 3,
+    "presentation": "preferred",
+    "probability": 0.001,
+    "python": "3.12.3",
+    "schedule_sha256": "f4d45dff84d2655ca4287628db8539b3cb2702770cd47b3ddd0956e8e7dd0934",
+    "seed": 3339898,
+    "shots": 1000000,
+    "source_hashes": {
+      "__init__.py": "ea85ddb9a0209de34b04a8e1a414e9e889425d70559b3c8fe9fa62afc531a192",
+      "bicycle_chain_l2_paper.tmr_postselection.circuit": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324",
+      "bicycle_chain_l2_paper.tmr_postselection.model": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5",
+      "model.py": "851911a20814dde9a3922abe8c58048030b15f9a77b448f5c9d8631dc216c579",
+      "protocol.py": "17da14c18ef748fef87deace2b005f04bb20eeb065e3651b9e62e4ad3bd04e2d",
+      "run.py": "8dbc0f607adb2ba2c7250f8bed23acdae96f3bc080d31f00580c96ee66309ccf",
+      "summarize.py": "f6c3736b44df4b429150d6e24b8d92984c8cfb490bf438c46f2104158b7c5a95",
+      "validate.py": "433a74b3e0dfab8e0df33dccfada1bcca31468f2b3f478e61d8cd6ae8dbf311c"
+    },
+    "stim": "1.16.0",
+    "theta": 0.02454369260617026,
+    "threads": 4
+  },
+  "counts": {
+    "accepted": {
+      "strict-xz": 153872,
+      "tmr-x": 255809,
+      "z-only-diagnostic": 316622
+    },
+    "attempted": 1000000,
+    "batches": 10,
+    "sampling_seconds": 0.32301748398458585,
+    "syndrome_weight_histograms": {
+      "initialization_relations": {
+        "0": 1000000
+      },
+      "post_X": {
+        "0": 255809,
+        "1": 55181,
+        "10": 47067,
+        "11": 32754,
+        "12": 20712,
+        "13": 11889,
+        "14": 5994,
+        "15": 2758,
+        "16": 1080,
+        "17": 339,
+        "18": 84,
+        "19": 32,
+        "2": 36207,
+        "20": 4,
+        "21": 1,
+        "3": 47734,
+        "4": 78400,
+        "5": 99100,
+        "6": 90783,
+        "7": 77201,
+        "8": 65606,
+        "9": 71265
+      },
+      "post_Z": {
+        "0": 316622,
+        "1": 138872,
+        "10": 15494,
+        "11": 8312,
+        "12": 4498,
+        "13": 2137,
+        "14": 977,
+        "15": 410,
+        "16": 143,
+        "17": 54,
+        "18": 9,
+        "19": 4,
+        "2": 94699,
+        "20": 1,
+        "3": 96733,
+        "4": 95521,
+        "5": 79788,
+        "6": 53477,
+        "7": 38212,
+        "8": 29747,
+        "9": 24290
+      }
+    }
+  },
+  "estimates": {
+    "strict-xz": {
+      "acceptance": 0.153872,
+      "acceptance_over_ideal": 0.1797352403229397,
+      "accepted": 153872,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 18924.820630134138,
+      "attempts_per_accepted_block": 6.4989081834251845,
+      "cnot_layers_per_candidate_resource": 168.9716127690548,
+      "cnots_per_candidate_resource": 5654.050119579911,
+      "resources_per_attempt": 0.153872,
+      "standard_error": 0.0003608260073996884,
+      "wilson_95": [
+        0.1531661237605758,
+        0.1545805355021262
+      ]
+    },
+    "tmr-x": {
+      "acceptance": 0.255809,
+      "acceptance_over_ideal": 0.29880609917184986,
+      "accepted": 255809,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 11383.49315309469,
+      "attempts_per_accepted_block": 3.9091666047715288,
+      "cnot_layers_per_candidate_resource": 101.63833172405974,
+      "cnots_per_candidate_resource": 3400.9749461512297,
+      "resources_per_attempt": 0.255809,
+      "standard_error": 0.0004363149728338463,
+      "wilson_95": [
+        0.25495477754144413,
+        0.25666509855069075
+      ]
+    },
+    "z-only-diagnostic": {
+      "acceptance": 0.316622,
+      "acceptance_over_ideal": 0.3698407199589907,
+      "accepted": 316622,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 9197.08674697273,
+      "attempts_per_accepted_block": 3.158340229042833,
+      "cnot_layers_per_candidate_resource": 82.11684595511366,
+      "cnots_per_candidate_resource": 2747.755999267265,
+      "resources_per_attempt": 0.316622,
+      "standard_error": 0.0004651585849105658,
+      "wilson_95": [
+        0.31571101184176986,
+        0.31753439703088937
+      ]
+    }
+  },
+  "ideal_acceptance": 0.8561036762936981,
+  "schema_version": 1,
+  "stopping_rule": "fixed shots; wall-time interruption is resumable, never survivor-target stopping"
+}

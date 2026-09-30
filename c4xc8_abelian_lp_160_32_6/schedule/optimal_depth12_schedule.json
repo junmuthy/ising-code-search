@@ -1,0 +1,6189 @@
+{
+  "balanced_layers": true,
+  "check_index": "32*family + 8*x + y",
+  "clean_cross_ancilla_backaction": true,
+  "cnot_count": 1152,
+  "cnot_depth": 12,
+  "code": "[[160,32,6]]",
+  "collision_free": true,
+  "cross_ancilla_parity_constraint_orbits": 33,
+  "dedicated_ancillas": 128,
+  "dedicated_x_ancillas": 64,
+  "dedicated_z_ancillas": 64,
+  "depth_optimal": true,
+  "fault_certificate": "circuit_fault_certificate.json",
+  "fold_block_map_zero_based": [
+    0,
+    2,
+    1,
+    3,
+    4
+  ],
+  "fold_data_map": "(block,r,s) -> (block_map[block],r,-2*r-s mod 8)",
+  "fold_plus_time_reversal": true,
+  "fold_x_to_z_orbit": [
+    0,
+    2,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    7,
+    9,
+    11,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "gates_per_layer": 96,
+  "group": "C4 x C8",
+  "layers": [
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 1,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 9,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 17,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 25,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 32,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 33,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 34,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 35,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 36,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 37,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 38,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 39,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 40,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 41,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 42,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 43,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 44,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 45,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 46,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 47,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 48,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 49,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 50,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 51,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 52,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 53,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 54,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 55,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 56,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 57,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 58,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 59,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 60,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 61,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 62,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 63,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 139,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 159,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 132,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 135,
+          "type": "Z"
+        }
+      ],
+      "layer": 1
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 32,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 33,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 34,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 35,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 36,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 37,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 38,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 39,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 40,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 41,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 42,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 43,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 44,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 45,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 46,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 47,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 48,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 49,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 50,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 51,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 52,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 53,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 54,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 55,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 56,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 57,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 58,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 59,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 60,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 61,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 62,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 63,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 122,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 123,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 124,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 125,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 126,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 127,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 120,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 121,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 98,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 99,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 100,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 101,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 102,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 103,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 96,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 97,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 106,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 107,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 108,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 109,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 110,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 111,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 104,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 105,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 114,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 115,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 116,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 117,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 118,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 119,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 112,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 113,
+          "type": "Z"
+        }
+      ],
+      "layer": 2
+    },
+    {
+      "gates": [
+        {
+          "check": 32,
+          "data": 116,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 117,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 118,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 119,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 112,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 113,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 114,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 115,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 124,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 125,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 126,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 127,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 120,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 121,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 122,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 123,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 100,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 101,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 102,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 103,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 96,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 97,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 98,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 99,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 108,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 109,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 110,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 111,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 104,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 105,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 106,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 107,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 139,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 159,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 132,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 135,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 95,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 88,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 89,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 90,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 91,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 92,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 93,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 94,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 71,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 64,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 65,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 66,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 67,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 68,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 69,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 70,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 79,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 72,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 73,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 74,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 75,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 76,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 77,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 78,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 87,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 80,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 81,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 82,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 83,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 84,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 85,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 86,
+          "type": "Z"
+        }
+      ],
+      "layer": 3
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 84,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 85,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 86,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 87,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 80,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 81,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 82,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 83,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 92,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 93,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 94,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 95,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 88,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 89,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 90,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 91,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 68,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 69,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 70,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 71,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 64,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 65,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 66,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 67,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 76,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 77,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 78,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 79,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 72,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 73,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 74,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 75,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 96,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 97,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 98,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 99,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 100,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 101,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 102,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 103,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 104,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 105,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 106,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 107,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 108,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 109,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 110,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 111,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 112,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 113,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 114,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 115,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 116,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 117,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 118,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 119,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 120,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 121,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 122,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 123,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 124,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 125,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 126,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 127,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 139,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 159,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 135,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 132,
+          "type": "Z"
+        }
+      ],
+      "layer": 4
+    },
+    {
+      "gates": [
+        {
+          "check": 32,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 25,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 1,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 9,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 17,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 92,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 93,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 94,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 95,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 88,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 89,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 90,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 91,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 68,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 69,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 70,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 71,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 64,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 65,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 66,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 67,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 76,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 77,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 78,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 79,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 72,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 73,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 74,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 75,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 84,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 85,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 86,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 87,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 80,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 81,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 82,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 83,
+          "type": "Z"
+        }
+      ],
+      "layer": 5
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 88,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 89,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 90,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 91,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 92,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 93,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 94,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 95,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 64,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 65,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 66,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 67,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 68,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 69,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 70,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 71,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 72,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 73,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 74,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 75,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 76,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 77,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 78,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 79,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 80,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 81,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 82,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 83,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 84,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 85,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 86,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 87,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 25,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 1,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 9,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 17,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 22,
+          "type": "Z"
+        }
+      ],
+      "layer": 6
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 25,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 1,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 9,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 17,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 58,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 59,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 60,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 61,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 62,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 63,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 56,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 57,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 34,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 35,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 36,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 37,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 38,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 39,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 32,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 33,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 42,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 43,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 44,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 45,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 46,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 47,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 40,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 41,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 50,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 51,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 52,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 53,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 54,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 55,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 48,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 49,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 159,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 132,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 135,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 139,
+          "type": "Z"
+        }
+      ],
+      "layer": 7
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 30,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 31,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 24,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 25,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 26,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 27,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 28,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 29,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 6,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 7,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 0,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 1,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 2,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 3,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 4,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 5,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 14,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 15,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 8,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 9,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 10,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 11,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 12,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 13,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 22,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 23,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 16,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 17,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 18,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 19,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 20,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 21,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 62,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 63,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 56,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 57,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 58,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 59,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 60,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 61,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 38,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 39,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 32,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 33,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 34,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 35,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 36,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 37,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 46,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 47,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 40,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 41,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 42,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 43,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 44,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 45,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 54,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 55,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 48,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 49,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 50,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 51,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 52,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 53,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 132,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 135,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 139,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 159,
+          "type": "Z"
+        }
+      ],
+      "layer": 8
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 48,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 49,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 50,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 51,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 52,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 53,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 54,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 55,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 56,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 57,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 58,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 59,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 60,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 61,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 62,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 63,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 32,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 33,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 34,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 35,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 36,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 37,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 38,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 39,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 40,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 41,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 42,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 43,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 44,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 45,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 46,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 47,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 96,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 97,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 98,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 99,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 100,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 101,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 102,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 103,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 104,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 105,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 106,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 107,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 108,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 109,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 110,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 111,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 112,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 113,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 114,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 115,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 116,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 117,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 118,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 119,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 120,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 121,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 122,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 123,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 124,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 125,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 126,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 127,
+          "type": "Z"
+        }
+      ],
+      "layer": 9
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 59,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 60,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 61,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 62,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 63,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 56,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 57,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 58,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 35,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 36,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 37,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 38,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 39,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 32,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 33,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 34,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 43,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 44,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 45,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 46,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 47,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 40,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 41,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 42,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 51,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 52,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 53,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 54,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 55,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 48,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 49,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 50,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 112,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 113,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 114,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 115,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 116,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 117,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 118,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 119,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 120,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 121,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 122,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 123,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 124,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 125,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 126,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 127,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 96,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 97,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 98,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 99,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 100,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 101,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 102,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 103,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 104,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 105,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 106,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 107,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 108,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 109,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 110,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 111,
+          "type": "Z"
+        }
+      ],
+      "layer": 10
+    },
+    {
+      "gates": [
+        {
+          "check": 0,
+          "data": 64,
+          "type": "X"
+        },
+        {
+          "check": 1,
+          "data": 65,
+          "type": "X"
+        },
+        {
+          "check": 2,
+          "data": 66,
+          "type": "X"
+        },
+        {
+          "check": 3,
+          "data": 67,
+          "type": "X"
+        },
+        {
+          "check": 4,
+          "data": 68,
+          "type": "X"
+        },
+        {
+          "check": 5,
+          "data": 69,
+          "type": "X"
+        },
+        {
+          "check": 6,
+          "data": 70,
+          "type": "X"
+        },
+        {
+          "check": 7,
+          "data": 71,
+          "type": "X"
+        },
+        {
+          "check": 8,
+          "data": 72,
+          "type": "X"
+        },
+        {
+          "check": 9,
+          "data": 73,
+          "type": "X"
+        },
+        {
+          "check": 10,
+          "data": 74,
+          "type": "X"
+        },
+        {
+          "check": 11,
+          "data": 75,
+          "type": "X"
+        },
+        {
+          "check": 12,
+          "data": 76,
+          "type": "X"
+        },
+        {
+          "check": 13,
+          "data": 77,
+          "type": "X"
+        },
+        {
+          "check": 14,
+          "data": 78,
+          "type": "X"
+        },
+        {
+          "check": 15,
+          "data": 79,
+          "type": "X"
+        },
+        {
+          "check": 16,
+          "data": 80,
+          "type": "X"
+        },
+        {
+          "check": 17,
+          "data": 81,
+          "type": "X"
+        },
+        {
+          "check": 18,
+          "data": 82,
+          "type": "X"
+        },
+        {
+          "check": 19,
+          "data": 83,
+          "type": "X"
+        },
+        {
+          "check": 20,
+          "data": 84,
+          "type": "X"
+        },
+        {
+          "check": 21,
+          "data": 85,
+          "type": "X"
+        },
+        {
+          "check": 22,
+          "data": 86,
+          "type": "X"
+        },
+        {
+          "check": 23,
+          "data": 87,
+          "type": "X"
+        },
+        {
+          "check": 24,
+          "data": 88,
+          "type": "X"
+        },
+        {
+          "check": 25,
+          "data": 89,
+          "type": "X"
+        },
+        {
+          "check": 26,
+          "data": 90,
+          "type": "X"
+        },
+        {
+          "check": 27,
+          "data": 91,
+          "type": "X"
+        },
+        {
+          "check": 28,
+          "data": 92,
+          "type": "X"
+        },
+        {
+          "check": 29,
+          "data": 93,
+          "type": "X"
+        },
+        {
+          "check": 30,
+          "data": 94,
+          "type": "X"
+        },
+        {
+          "check": 31,
+          "data": 95,
+          "type": "X"
+        },
+        {
+          "check": 32,
+          "data": 120,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 121,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 122,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 123,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 124,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 125,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 126,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 127,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 96,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 97,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 98,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 99,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 100,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 101,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 102,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 103,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 104,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 105,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 106,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 107,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 108,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 109,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 110,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 111,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 112,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 113,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 114,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 115,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 116,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 117,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 118,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 119,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 128,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 129,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 130,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 131,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 132,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 133,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 134,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 135,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 136,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 137,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 138,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 139,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 140,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 141,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 142,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 143,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 144,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 145,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 146,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 147,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 148,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 149,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 150,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 151,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 152,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 153,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 154,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 155,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 156,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 157,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 158,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 159,
+          "type": "Z"
+        }
+      ],
+      "layer": 11
+    },
+    {
+      "gates": [
+        {
+          "check": 32,
+          "data": 142,
+          "type": "X"
+        },
+        {
+          "check": 33,
+          "data": 143,
+          "type": "X"
+        },
+        {
+          "check": 34,
+          "data": 136,
+          "type": "X"
+        },
+        {
+          "check": 35,
+          "data": 137,
+          "type": "X"
+        },
+        {
+          "check": 36,
+          "data": 138,
+          "type": "X"
+        },
+        {
+          "check": 37,
+          "data": 139,
+          "type": "X"
+        },
+        {
+          "check": 38,
+          "data": 140,
+          "type": "X"
+        },
+        {
+          "check": 39,
+          "data": 141,
+          "type": "X"
+        },
+        {
+          "check": 40,
+          "data": 150,
+          "type": "X"
+        },
+        {
+          "check": 41,
+          "data": 151,
+          "type": "X"
+        },
+        {
+          "check": 42,
+          "data": 144,
+          "type": "X"
+        },
+        {
+          "check": 43,
+          "data": 145,
+          "type": "X"
+        },
+        {
+          "check": 44,
+          "data": 146,
+          "type": "X"
+        },
+        {
+          "check": 45,
+          "data": 147,
+          "type": "X"
+        },
+        {
+          "check": 46,
+          "data": 148,
+          "type": "X"
+        },
+        {
+          "check": 47,
+          "data": 149,
+          "type": "X"
+        },
+        {
+          "check": 48,
+          "data": 158,
+          "type": "X"
+        },
+        {
+          "check": 49,
+          "data": 159,
+          "type": "X"
+        },
+        {
+          "check": 50,
+          "data": 152,
+          "type": "X"
+        },
+        {
+          "check": 51,
+          "data": 153,
+          "type": "X"
+        },
+        {
+          "check": 52,
+          "data": 154,
+          "type": "X"
+        },
+        {
+          "check": 53,
+          "data": 155,
+          "type": "X"
+        },
+        {
+          "check": 54,
+          "data": 156,
+          "type": "X"
+        },
+        {
+          "check": 55,
+          "data": 157,
+          "type": "X"
+        },
+        {
+          "check": 56,
+          "data": 134,
+          "type": "X"
+        },
+        {
+          "check": 57,
+          "data": 135,
+          "type": "X"
+        },
+        {
+          "check": 58,
+          "data": 128,
+          "type": "X"
+        },
+        {
+          "check": 59,
+          "data": 129,
+          "type": "X"
+        },
+        {
+          "check": 60,
+          "data": 130,
+          "type": "X"
+        },
+        {
+          "check": 61,
+          "data": 131,
+          "type": "X"
+        },
+        {
+          "check": 62,
+          "data": 132,
+          "type": "X"
+        },
+        {
+          "check": 63,
+          "data": 133,
+          "type": "X"
+        },
+        {
+          "check": 0,
+          "data": 0,
+          "type": "Z"
+        },
+        {
+          "check": 1,
+          "data": 1,
+          "type": "Z"
+        },
+        {
+          "check": 2,
+          "data": 2,
+          "type": "Z"
+        },
+        {
+          "check": 3,
+          "data": 3,
+          "type": "Z"
+        },
+        {
+          "check": 4,
+          "data": 4,
+          "type": "Z"
+        },
+        {
+          "check": 5,
+          "data": 5,
+          "type": "Z"
+        },
+        {
+          "check": 6,
+          "data": 6,
+          "type": "Z"
+        },
+        {
+          "check": 7,
+          "data": 7,
+          "type": "Z"
+        },
+        {
+          "check": 8,
+          "data": 8,
+          "type": "Z"
+        },
+        {
+          "check": 9,
+          "data": 9,
+          "type": "Z"
+        },
+        {
+          "check": 10,
+          "data": 10,
+          "type": "Z"
+        },
+        {
+          "check": 11,
+          "data": 11,
+          "type": "Z"
+        },
+        {
+          "check": 12,
+          "data": 12,
+          "type": "Z"
+        },
+        {
+          "check": 13,
+          "data": 13,
+          "type": "Z"
+        },
+        {
+          "check": 14,
+          "data": 14,
+          "type": "Z"
+        },
+        {
+          "check": 15,
+          "data": 15,
+          "type": "Z"
+        },
+        {
+          "check": 16,
+          "data": 16,
+          "type": "Z"
+        },
+        {
+          "check": 17,
+          "data": 17,
+          "type": "Z"
+        },
+        {
+          "check": 18,
+          "data": 18,
+          "type": "Z"
+        },
+        {
+          "check": 19,
+          "data": 19,
+          "type": "Z"
+        },
+        {
+          "check": 20,
+          "data": 20,
+          "type": "Z"
+        },
+        {
+          "check": 21,
+          "data": 21,
+          "type": "Z"
+        },
+        {
+          "check": 22,
+          "data": 22,
+          "type": "Z"
+        },
+        {
+          "check": 23,
+          "data": 23,
+          "type": "Z"
+        },
+        {
+          "check": 24,
+          "data": 24,
+          "type": "Z"
+        },
+        {
+          "check": 25,
+          "data": 25,
+          "type": "Z"
+        },
+        {
+          "check": 26,
+          "data": 26,
+          "type": "Z"
+        },
+        {
+          "check": 27,
+          "data": 27,
+          "type": "Z"
+        },
+        {
+          "check": 28,
+          "data": 28,
+          "type": "Z"
+        },
+        {
+          "check": 29,
+          "data": 29,
+          "type": "Z"
+        },
+        {
+          "check": 30,
+          "data": 30,
+          "type": "Z"
+        },
+        {
+          "check": 31,
+          "data": 31,
+          "type": "Z"
+        },
+        {
+          "check": 32,
+          "data": 64,
+          "type": "Z"
+        },
+        {
+          "check": 33,
+          "data": 65,
+          "type": "Z"
+        },
+        {
+          "check": 34,
+          "data": 66,
+          "type": "Z"
+        },
+        {
+          "check": 35,
+          "data": 67,
+          "type": "Z"
+        },
+        {
+          "check": 36,
+          "data": 68,
+          "type": "Z"
+        },
+        {
+          "check": 37,
+          "data": 69,
+          "type": "Z"
+        },
+        {
+          "check": 38,
+          "data": 70,
+          "type": "Z"
+        },
+        {
+          "check": 39,
+          "data": 71,
+          "type": "Z"
+        },
+        {
+          "check": 40,
+          "data": 72,
+          "type": "Z"
+        },
+        {
+          "check": 41,
+          "data": 73,
+          "type": "Z"
+        },
+        {
+          "check": 42,
+          "data": 74,
+          "type": "Z"
+        },
+        {
+          "check": 43,
+          "data": 75,
+          "type": "Z"
+        },
+        {
+          "check": 44,
+          "data": 76,
+          "type": "Z"
+        },
+        {
+          "check": 45,
+          "data": 77,
+          "type": "Z"
+        },
+        {
+          "check": 46,
+          "data": 78,
+          "type": "Z"
+        },
+        {
+          "check": 47,
+          "data": 79,
+          "type": "Z"
+        },
+        {
+          "check": 48,
+          "data": 80,
+          "type": "Z"
+        },
+        {
+          "check": 49,
+          "data": 81,
+          "type": "Z"
+        },
+        {
+          "check": 50,
+          "data": 82,
+          "type": "Z"
+        },
+        {
+          "check": 51,
+          "data": 83,
+          "type": "Z"
+        },
+        {
+          "check": 52,
+          "data": 84,
+          "type": "Z"
+        },
+        {
+          "check": 53,
+          "data": 85,
+          "type": "Z"
+        },
+        {
+          "check": 54,
+          "data": 86,
+          "type": "Z"
+        },
+        {
+          "check": 55,
+          "data": 87,
+          "type": "Z"
+        },
+        {
+          "check": 56,
+          "data": 88,
+          "type": "Z"
+        },
+        {
+          "check": 57,
+          "data": 89,
+          "type": "Z"
+        },
+        {
+          "check": 58,
+          "data": 90,
+          "type": "Z"
+        },
+        {
+          "check": 59,
+          "data": 91,
+          "type": "Z"
+        },
+        {
+          "check": 60,
+          "data": 92,
+          "type": "Z"
+        },
+        {
+          "check": 61,
+          "data": 93,
+          "type": "Z"
+        },
+        {
+          "check": 62,
+          "data": 94,
+          "type": "Z"
+        },
+        {
+          "check": 63,
+          "data": 95,
+          "type": "Z"
+        }
+      ],
+      "layer": 12
+    }
+  ],
+  "lower_bound_from_maximum_combined_data_degree": 12,
+  "name": "depth-optimal balanced C4 x C8 fold/time-reversed LP160 schedule",
+  "qubit_index": "32*block + 8*x + y",
+  "schedule_id": "d3a5767a062eaae9",
+  "schema_version": 1,
+  "stabilizer_weight": 9,
+  "translation_invariant_layers": true,
+  "x_cnot_direction": "X-check ancilla -> data",
+  "x_edge_orbit_colors_zero_based": [
+    0,
+    6,
+    7,
+    10,
+    3,
+    5,
+    1,
+    8,
+    9,
+    0,
+    9,
+    7,
+    3,
+    2,
+    10,
+    4,
+    11,
+    5
+  ],
+  "x_edge_orbits": [
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        3,
+        3
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        3,
+        6
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 2,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 2,
+      "displacement": [
+        2,
+        4
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 2,
+      "displacement": [
+        3,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        1,
+        1
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        1,
+        4
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 1,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 1,
+      "displacement": [
+        3,
+        3
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 1,
+      "displacement": [
+        3,
+        6
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        2,
+        4
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        3,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        1,
+        6
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        2,
+        0
+      ]
+    }
+  ],
+  "z_cnot_direction": "data -> Z-check ancilla",
+  "z_edge_orbits": [
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        3,
+        4
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 0,
+      "displacement": [
+        3,
+        7
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 1,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 1,
+      "displacement": [
+        2,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 1,
+      "displacement": [
+        3,
+        2
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        1,
+        2
+      ]
+    },
+    {
+      "check_family": 0,
+      "data_block": 4,
+      "displacement": [
+        1,
+        5
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 2,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 2,
+      "displacement": [
+        3,
+        4
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 2,
+      "displacement": [
+        3,
+        7
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        2,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 3,
+      "displacement": [
+        3,
+        2
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        0,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        1,
+        0
+      ]
+    },
+    {
+      "check_family": 1,
+      "data_block": 4,
+      "displacement": [
+        2,
+        4
+      ]
+    }
+  ]
+}

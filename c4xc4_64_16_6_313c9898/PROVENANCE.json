@@ -1,0 +1,567 @@
+{
+  "code_id": "313c98984982b039f1068bfd6001a4ffceb370b2091c3edbc9d3f8b915aaa028",
+  "copied_sources": [
+    {
+      "destination": "original/code.json",
+      "sha256": "08346f20b59e73a1c6d97bfe5607414fe510148bd7d9ec84865d7a9b85af7fb2",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197/code.json"
+    },
+    {
+      "destination": "original/schedule.json",
+      "sha256": "f14daf180a306669119fe107e9d032866737facd52cbd8843623f074abdfd6a1",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197/schedule.json"
+    },
+    {
+      "destination": "original/X.stim",
+      "sha256": "e085835d1857fc3539529ce622fd078459502bbbaa2bd1459303a639ee39902e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197/X.stim"
+    },
+    {
+      "destination": "original/Z.stim",
+      "sha256": "285efc74a3be6cf9483ec3bfce9158be46554f7e139b10011b0a354cf046087b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197/Z.stim"
+    },
+    {
+      "destination": "original/result.json",
+      "sha256": "61b8a2b76e2e1fe663afbe7fd86ddc2d64f2b461bafc03e763e4a67e93abadb7",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/baseline_v1/cd91029936d21197/result.json"
+    },
+    {
+      "destination": "certificates/compact/report.json",
+      "sha256": "f8110e169e7f7dc80a48b3a72aaaa5fb050f1aa3a3a8a5178da696c881005482",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/compact_exact4_v1/report.json"
+    },
+    {
+      "destination": "certificates/reference/report.json",
+      "sha256": "fa3d40424d7b21321caaea4200305766543bd8a6633de1f2351448c3d8d22bef",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_campaign/independent_reference_exact4_v1/report.json"
+    },
+    {
+      "destination": "certificates/stabilizer_weight_enumeration.json",
+      "sha256": "4e9e4972e3194f55119d0ecf9eb5317e4fda507551aa5249237b2bba8f5ad9b9",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_campaign/all_finalists_v1/313c98984982b039f1068bfd6001a4ffceb370b2091c3edbc9d3f8b915aaa028/weight_enumeration.json"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/schedule_313c9898_seeded.py",
+      "sha256": "b2ce82f661d1ce3e2b36f5f1572e9590fdeae1d5e6b90a982d15880f96e3cd0b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_seeded.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/schedule_313c9898.py",
+      "sha256": "966c1e3d454b0df7d6bc8c85477013c8cb00a74d3bb04d6c19b91659eaad8f12",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_archive.py",
+      "sha256": "38808a3a91dea369d794ffab4fc4b3e581dac61cb94acd7bd3dddddfcac98661",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_archive.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/audit_schedule_313c9898.py",
+      "sha256": "2c2b893af5412e8c4c685bdaa65a557b9d0d8857265107af6748851544d4aca6",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/audit_schedule_313c9898.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance8_logical_handoff.py",
+      "sha256": "6ea7291a9d08ed68bcb3bfb4e4da64054ecf180a88e927bbcd9cf42e2c304be6",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_logical_handoff.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance8_logical_search.py",
+      "sha256": "3be219a3dd3e1a391e661fd28179d2fdf5fb67d6a8b87422bbd4b33dbbe06773",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_logical_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance8_weight10_search.py",
+      "sha256": "ac4c3499194b0c00dd1902871e6e6da12f739e57fe16152ac89491964f4531b1",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/d8_shape_pilot.py",
+      "sha256": "80c37264934f9f0fba12e00a392faac8c04059ef31170c8d6d70f7828be607ab",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/d8_shape_pilot.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/schedule_313c9898_staged.py",
+      "sha256": "9e5f42e80954ad6f8ec8eb0cc6fa7b26dc10544d7eb9584d69915445cc735811",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/schedule_313c9898_staged.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/joint_fold_parallel.py",
+      "sha256": "01df9df50fc10ce1d0a685f03e2f1e57ea4ff0c17fb3168b03081ae6c3831dda",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/joint_fold_parallel.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/export_313c9898_bundle.py",
+      "sha256": "277d9e64a2253f5a1474fd5d42902b7522265e4692209542182bf1dd3e13dff1",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/export_313c9898_bundle.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_schedule.py",
+      "sha256": "e9b970b88732289eac5f8b0cb30ec43d5337b39004683c46502d4c67b393405a",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_schedule.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/d8_local_complete.py",
+      "sha256": "c17d54943557cc6e2717499ec8836d8f57b5a83dcf7dae40144b070ffe6c32a5",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/d8_local_complete.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_restrict.py",
+      "sha256": "3707a1677515834bd373995584a89a02d86abf25bf102feb0d843797aba2224f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_restrict.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_joint_fold_search.py",
+      "sha256": "6bea120967aec610af8e39705a8e9ae9047462927184f2105ea94c9fb36e56c1",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_joint_fold_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/joint_fold_search.py",
+      "sha256": "c6a2c7179eaf097f38314f1b1a5dbe0632aae5b4f6ffe04890caf988cd165b3a",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/joint_fold_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/compact_fault4.py",
+      "sha256": "d610e94843d418caa65fc0b287b1c9cd7bc2d4597f554023e8bfdd0671b2044f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/compact_fault4.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_check_weight_reduction.py",
+      "sha256": "7f3111cce421f60ace0298caca22432f935f44e4709bfc83043a45bb3ba628e5",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_check_weight_reduction.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_component.py",
+      "sha256": "f8a8c64d2709548aac28855e025609c7d90fe6d8e39e51433fd612becc7534de",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_component.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_schedule_313c9898.py",
+      "sha256": "0ac0e27339e6bb8051d47d010f15d441cbc17d456f8ee8d992188a198d362149",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_schedule_313c9898.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_local.py",
+      "sha256": "ba8659d951dbd7640f4753485cf59b9346997223eeff4efc47daba55386c33dc",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_local.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_distance8_handoff.py",
+      "sha256": "d9d3ddf83c44a24e792134d0b6d175e0f3e2a902a62713a615a2a8c209df4d91",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_distance8_handoff.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_core.py",
+      "sha256": "a356c0d34f76f4de85146494e4f25d64c97f92f0534adc7a958f7f0d06bbc00c",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_core.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance8_weight10_finalize.py",
+      "sha256": "5065830053a055f62efd2240d66578aaeb2ab8289455aa7135268237d6462d43",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_finalize.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/audit_joint_fold.py",
+      "sha256": "18e348c9b2e407ebfb50ca70e2678cca41bf34cbb314d4cd16ad94612e9103a4",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/audit_joint_fold.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_distance8_logical_handoff.py",
+      "sha256": "19ed4be6639d0335863d22ef9fdda331e21a6064955eb995ed7d39b74f08f767",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_distance8_logical_handoff.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_finalize.py",
+      "sha256": "8f2e31a242130691450cb66d9fbabf62cc7c6d736dfa95e25cff5eaf881930e4",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_finalize.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_models.py",
+      "sha256": "91d9d8e6febe059a2c287db24e064e3d4bbbaf3a59817f802b334934fb82e584",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_models.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_handoff.py",
+      "sha256": "741576c33bf7f0063ce575ef2ef5c297fb3f31bf39bbbf204512df3f18fad9a4",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_handoff.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_sparse_search.py",
+      "sha256": "9900524a2bea53a62af52c29474f8a792ed89ee26059b4b79c28d2fdb80cb91d",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_sparse_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_d8_partner_search.py",
+      "sha256": "49204fccfad58e07b9617f093d17c24b17a648c595333c314c032cf789fe0187",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_d8_partner_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/audit_orbit_campaign.py",
+      "sha256": "ca6f0496eedde40732ec79e13191e8f992654293d6f6fb7f302159330f445d8f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/audit_orbit_campaign.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/joint_fold_orbits.py",
+      "sha256": "a859f9b0dd57f39417e178537e909c3da011face5cd952a648c87d701df8236b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/joint_fold_orbits.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/check_weight_reduction.py",
+      "sha256": "41b45f0f7c5262a4a57f7aa7efe4729cf1c45c21167c44eeab57ea3e6d39735c",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/check_weight_reduction.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_certify.py",
+      "sha256": "9235e0a5bfdc5e866d647ad51bba3e1e4b72b6d77cb06e11758fc05c5a793283",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_certify.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance8_weight10_audit.py",
+      "sha256": "5abe381546582293b587e1824a4ede8b8532c60dffc4eb3eb7fd36221d64ca80",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance8_weight10_audit.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_distance8_weight10_search.py",
+      "sha256": "0f18a3ef53f99d703f82a646a89e2306e5ba4140ae6b585873b94458b95b4fd6",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_distance8_weight10_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_compact_fault4.py",
+      "sha256": "ad71db00f8e73dd517ff81b23310b7ff84cf36e0849b7a96ea3a7060e1967e11",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_compact_fault4.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_orbit_schedule.py",
+      "sha256": "bdde4932e6f85fbaaaff088db5e4e9e2a3fcedcf9db4d75819ab75e48469297e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_orbit_schedule.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_finalize.py",
+      "sha256": "ea093953c93a99669ea7ef8c9ffc96956f44ed4a689aa032fb2497049233253a",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_finalize.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/d8_partner_search.py",
+      "sha256": "e688b163324ac79043f938e06dbf8aaf6ce5cb48cec9b59c320d6317e56c313f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/d8_partner_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/handoff_schedule_313c9898.py",
+      "sha256": "098c05d5d68034923fc11eefa5cd3d7bbe4a6440fc6ed8f5774e89d7ea8e7660",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/handoff_schedule_313c9898.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_campaign.py",
+      "sha256": "b71e410482345c934dece344cb597eef4102390849d5d1c47eb101d25b71393e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_campaign.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/audit_joint_equivalence.py",
+      "sha256": "528db45eac5f3027df166b37fcd45cf6645620fe6a0bb3409912c894f8a5d416",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/audit_joint_equivalence.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/extract_component.py",
+      "sha256": "7a93b20cab9d87501ed28f3c73aca75884b93e5c983a7bf6ca2f6e5df07e5250",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/extract_component.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_orbit_extension.py",
+      "sha256": "425b993c47a781ecc0358b02b88ac4257b1250b472d2326be47540ced3b92aa7",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_orbit_extension.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/joint_equivalence_complete.py",
+      "sha256": "d169a7ff60abf6b916df90742a78dff836bb0b976c364742fbfd33673f46ab29",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/joint_equivalence_complete.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_twisted.py",
+      "sha256": "94a8185b314b18a657505a5ca3b5aefffaf488d0a7b1f520cadd54d76e2c8cbb",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_twisted.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_pilot.py",
+      "sha256": "cd245a7f439cbbb2300d8ed3b07e0138c96753a95406f6ff2cf47fa053bbf51e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_pilot.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/sparse_distance_upgrade.py",
+      "sha256": "bedd4a661f0eb2ec664365ac1b917cda8f5fc17fab919d46fcc1395bc48a06f5",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_distance_upgrade.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/test_distance8_logical_search.py",
+      "sha256": "7f463f9b47bec888c891ac3d1739c89fd592072a4a825a755bd0f9a666247e4d",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_distance8_logical_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/orbit_extension.py",
+      "sha256": "1259e09411621b47ee7101019db44848f37db66bb267e7e14eebddc15f101364",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/orbit_extension.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/algebra.py",
+      "sha256": "69403776daa8634938444d2261b0bc601014fa0708e51d6f66f664f8bea438ae",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/algebra.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/test_search.py",
+      "sha256": "1d09aa51d513e076b916d2951bb394250a9b5f3d525ed446811e5ea531198c1e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/test_search.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/models.py",
+      "sha256": "2ce49651b252d8af01ac3e36099788d88914ce2e36a6ce2692a26b53aabf80b9",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/models.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/preflight.py",
+      "sha256": "70190a7b97a41f5f89da5defb1eff80854cec1514585abd49a4a31643e29e0e8",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/preflight.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/search.py",
+      "sha256": "d25adc41eb01a46962d733c1965abcb7a97b67b9ce3fe3866735550761bc8680",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/search.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/fallback.py",
+      "sha256": "6415cb4996f9a24795e3014c6be61858117ef2937b4d2023cee4b9dbef6e0215",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/fallback.py"
+    },
+    {
+      "destination": "archive/source/gala_n128_k32/certify.py",
+      "sha256": "50aa5b3b8c19b71f83b8b273d8541d8b807df178d662a1e4eb656a46d53ba391",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certify.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/schedule.py",
+      "sha256": "84ad37f59d0157aa9a94ea3c7e525b807baf11e8835e4a782e4885f961b98442",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/schedule.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/run_milestone.py",
+      "sha256": "ce2fdb078f40f8cfc57315c582fd8d12a8d618b994f482320c5d5e541bb65c1b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/run_milestone.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/faults.py",
+      "sha256": "cba90592fe2263e516ce8c8d207cf3bfa09ef88b44ca6e075d99fbdb71b10e8b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/faults.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/test_audit.py",
+      "sha256": "10ae0e5ab5791dc752663eb0559b7eeca114c74608c760482a0462ea7520881e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/test_audit.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/audit.py",
+      "sha256": "1a431033fe6cbf0b602a2cb085b5aa7e0eb123321536c4353dd791628b4714ba",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/audit.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/test_milestone.py",
+      "sha256": "1350b46c967ce13644e23467e5f31dd4c371eaaba88b93ccfda7dd5a152089d6",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/test_milestone.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/model.py",
+      "sha256": "e713e99ac6e713d2eda8d14677e1ab8751bf946efd4bdfb4576c91d541396fcb",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/model.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/fault_distance_milestone1/circuit.py",
+      "sha256": "606c104bd13a5471376b53d3ef13084fc3759281301d6820e11977d2f3be0f33",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/circuit.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/schedule.py",
+      "sha256": "c1dee0d8108e7955f545f7a3331c8b8060414d06b565396170be7bcee67f873b",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/schedule.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/faults.py",
+      "sha256": "54316bdce68135fed4763d0c1deb889ffe19b8d1ac54703e10a29619b85f398e",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/faults.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/test_regression.py",
+      "sha256": "94f3512b0aa10fd05c40afadb12c9e6bdecc0302545ae5260f4d5752a827a556",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/test_regression.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/search.py",
+      "sha256": "9b650c23e91b35beca0e01573ef678a5e9f5a3a75b43d5bae83e5c859b95c1cd",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/search.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/model.py",
+      "sha256": "aee2ed2b01e401c505af74d871676cc55c53e3cdf38f2d93703899186f680e66",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/model.py"
+    },
+    {
+      "destination": "archive/source/gala_n64_k16/distance6_fault_search/circuit.py",
+      "sha256": "deb55e4bf786b43de2fc562dc075a91ed6c803f47eee0c17ac1fd3465915942f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/circuit.py"
+    },
+    {
+      "destination": "README.md",
+      "sha256": "4f87fdf7505790dc5466474e91e80835355e56dfa81fe56997825d391957885a",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/portable_313c9898/README.md"
+    },
+    {
+      "destination": "reproduce.py",
+      "sha256": "37a5e82c5956c7becf30c50d700d9ed17608df4cf1126d605eb9df4984d67f19",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/portable_313c9898/reproduce.py"
+    },
+    {
+      "destination": "tests/test_reproduce.py",
+      "sha256": "bd2ef30a17fc86e3a8870ef7545c4c0fcbae7b0bf828034bdf7faa8ad7cfcfe8",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/portable_313c9898/tests/test_reproduce.py"
+    },
+    {
+      "destination": "tests/conftest.py",
+      "sha256": "08b522398cdec2fd23f71a2790921bc001fe1b2c12fe56aa7def91ca0925bd35",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/portable_313c9898/tests/conftest.py"
+    },
+    {
+      "destination": "tests/test_compact_fault4.py",
+      "sha256": "ad71db00f8e73dd517ff81b23310b7ff84cf36e0849b7a96ea3a7060e1967e11",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/test_compact_fault4.py"
+    },
+    {
+      "destination": "lib/algebra.py",
+      "sha256": "69403776daa8634938444d2261b0bc601014fa0708e51d6f66f664f8bea438ae",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/algebra.py"
+    },
+    {
+      "destination": "lib/certify.py",
+      "sha256": "50aa5b3b8c19b71f83b8b273d8541d8b807df178d662a1e4eb656a46d53ba391",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n128_k32/certify.py"
+    },
+    {
+      "destination": "lib/circuit.py",
+      "sha256": "deb55e4bf786b43de2fc562dc075a91ed6c803f47eee0c17ac1fd3465915942f",
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/circuit.py"
+    },
+    {
+      "destination": "lib/n32_k4_d6_reference_code/stim_fault_distance/fault_distance.py",
+      "sha256": "322549d832bbea44837382b5a9c29c86ec7768c93ae94d8ecd93b2eca7fe8b28",
+      "source": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/stim_fault_distance/fault_distance.py"
+    },
+    {
+      "destination": "lib/n32_k4_d6_reference_code/schedule_fault_search/screening.py",
+      "sha256": "afafa1b4a0ba78e64d4e9017b2cb7d18073aee7c78715033cdfc37c3f25e366d",
+      "source": "/home/judah_unmuth/gala-code-search/n32_k4_d6_reference_code/schedule_fault_search/screening.py"
+    }
+  ],
+  "dependencies": {
+    "galois": "0.4.11",
+    "llvmlite": "0.49.0",
+    "numba": "0.67.0",
+    "numpy": "2.5.2",
+    "pytest": "9.1.1",
+    "stim": "1.16.0",
+    "z3-solver": "5.1.0.0"
+  },
+  "extracted_sources": [
+    {
+      "body_sha256": [
+        "35ff28b481e6941e3cdd0f01b49640326c5ecdafe41de10a2e9037ad9d65354b",
+        "634fd2b3ca70d33c4bbe5d8325234f974e0509224278b9f485d2a56d666c4361",
+        "cb6367beb62d3072100716de705256e41511372cb4d6dd8abcfe11321a252762",
+        "b0c0865d82f9e3d452104308f65cfdd0a805195c789b7ec8fcd222a524cddaea",
+        "48632801c0ee3c29f2332a1ed7a17214d473ca066449082ca3bc5c03989ca591",
+        "1ce6201b6f1f4cad997115579f9a95137009e0c52fdaa142d63524c87dec4316",
+        "205d9d2679e70f04b21798aa0ee03d85a0118a952c7d76bf96087e42252ec813",
+        "4e54b4afaeeb2e6438cdd1eb8e47776adec4cfee5afe7fce4e4e118b1ee8586f",
+        "c09ae816e0caa895219a7006903f361acfcef68400902d00a89f74d6557f2624"
+      ],
+      "destination": "lib/model.py",
+      "functions": [
+        "digest",
+        "save",
+        "pivots",
+        "residual",
+        "same_space",
+        "move",
+        "supports",
+        "array",
+        "relations"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/model.py",
+      "source_sha256": "e713e99ac6e713d2eda8d14677e1ab8751bf946efd4bdfb4576c91d541396fcb",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    },
+    {
+      "body_sha256": [
+        "65d51c9b142c3de693e26272b992102f5ced2f54aadf33237e7065c4b3ec8bbc"
+      ],
+      "destination": "lib/schedule.py",
+      "functions": [
+        "verify"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/distance6_fault_search/schedule.py",
+      "source_sha256": "c1dee0d8108e7955f545f7a3331c8b8060414d06b565396170be7bcee67f873b",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    },
+    {
+      "body_sha256": [
+        "497bfbe1f198ae0d7778df8825f558cf3ef91da410d7990d4543b727389a37b9"
+      ],
+      "destination": "lib/replay.py",
+      "functions": [
+        "replay_saved"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/fault_distance_milestone1/audit.py",
+      "source_sha256": "1a431033fe6cbf0b602a2cb085b5aa7e0eb123321536c4353dd791628b4714ba",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    },
+    {
+      "body_sha256": [
+        "139230527ecbe0bd90ffdb7971a50f3f4099148f0a22fddfecfb06a20fc9976c",
+        "43d0fc3da9c2a97d172f02f98acb0557eec448e2559906124d021c128ae34095"
+      ],
+      "destination": "lib/static_audit.py",
+      "functions": [
+        "rref",
+        "independent_audit"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/sparse_core.py",
+      "source_sha256": "a356c0d34f76f4de85146494e4f25d64c97f92f0534adc7a958f7f0d06bbc00c",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    },
+    {
+      "body_sha256": [
+        "85a2dcbc498f0175913d385e61f5b81563e8cf8689d0c3b47975d60f71683bf9"
+      ],
+      "destination": "lib/extract_component.py",
+      "functions": [
+        "components"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/extract_component.py",
+      "source_sha256": "7a93b20cab9d87501ed28f3c73aca75884b93e5c983a7bf6ca2f6e5df07e5250",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    },
+    {
+      "body_sha256": [
+        "7772b26aa3a4c05f91b0a82820e4a8396325f31a7f967fbc8d0b37e15c7d07a8",
+        "e1996c95a66f31d89088ac0f4e5c5aa327d275555023a4f4f0fbad12f8cf54bb"
+      ],
+      "destination": "lib/compact_fault4.py",
+      "functions": [
+        "scan_pairs",
+        "find_four"
+      ],
+      "source": "/home/judah_unmuth/Documents/multistaq/qLDPC/experiments/gala_n64_k16/compact_fault4.py",
+      "source_sha256": "d610e94843d418caa65fc0b287b1c9cd7bc2d4597f554023e8bfdd0671b2044f",
+      "transformation": "unchanged function bodies/decorators with portable import header"
+    }
+  ],
+  "gala_revision": "b1271109039529901b31f6de9a0b375209642489",
+  "note": "Source snapshots are preserved. Reproduction uses only bundled local modules and data.",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "qldpc_revision": "ca2be1e72a47855b990d3d3245c360f7ec104d6d"
+}

@@ -1,0 +1,293 @@
+{
+  "circuit": {
+    "artifact": {
+      "basis_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/original/code.json",
+      "basis_sha256": "08346f20b59e73a1c6d97bfe5607414fe510148bd7d9ec84865d7a9b85af7fb2",
+      "schedule_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/original/schedule.json",
+      "schedule_sha256": "f14daf180a306669119fe107e9d032866737facd52cbd8843623f074abdfd6a1"
+    },
+    "compile_seconds": 0.020957195985829458,
+    "detector_groups": {
+      "initialization_relations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "post_X": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "post_Z": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    "logical_indices": [
+      0
+    ],
+    "operation_counts": {
+      "ancilla_preparations": 96,
+      "cnot_layers": 26,
+      "data_preparations": 64,
+      "ideal_mpp_measurements": 0,
+      "idle_locations": 500,
+      "measurements": 96,
+      "physical_cnots": 1158,
+      "physical_rotations": 3,
+      "rotation_layers": 1,
+      "virtual_feedback_x": 288
+    },
+    "partition_certificate": {
+      "kernel_dimension": 1,
+      "logicals": [
+        0
+      ],
+      "partial_syndrome_rank": 2,
+      "partitions": {
+        "0": [
+          [
+            0,
+            41
+          ],
+          [
+            44,
+            53
+          ],
+          [
+            54,
+            60
+          ]
+        ]
+      },
+      "single_final_projection_certified": true
+    },
+    "peak_active_width": 3,
+    "qubits": 128,
+    "theta_star": -0.7021479830745353
+  },
+  "completed": true,
+  "configuration": {
+    "angle_label": "pi32",
+    "basis_sha256": "08346f20b59e73a1c6d97bfe5607414fe510148bd7d9ec84865d7a9b85af7fb2",
+    "checkpoint_shots": 100000,
+    "circuit_sha256": "e20a0fb733146986e75957bcc5e98ab5ef2c586cdfe7f708b3da61d4152189ca",
+    "clifft": "0.10.0rc2.dev1+gdbc721208",
+    "logical_count": 1,
+    "mode": "full",
+    "numpy": "2.5.2",
+    "partition_count": 3,
+    "presentation": "original",
+    "probability": 0.001,
+    "python": "3.12.3",
+    "schedule_sha256": "f14daf180a306669119fe107e9d032866737facd52cbd8843623f074abdfd6a1",
+    "seed": 4239898,
+    "shots": 1000000,
+    "source_hashes": {
+      "__init__.py": "ea85ddb9a0209de34b04a8e1a414e9e889425d70559b3c8fe9fa62afc531a192",
+      "bicycle_chain_l2_paper.tmr_postselection.circuit": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324",
+      "bicycle_chain_l2_paper.tmr_postselection.model": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5",
+      "model.py": "851911a20814dde9a3922abe8c58048030b15f9a77b448f5c9d8631dc216c579",
+      "protocol.py": "17da14c18ef748fef87deace2b005f04bb20eeb065e3651b9e62e4ad3bd04e2d",
+      "run.py": "8dbc0f607adb2ba2c7250f8bed23acdae96f3bc080d31f00580c96ee66309ccf",
+      "summarize.py": "f6c3736b44df4b429150d6e24b8d92984c8cfb490bf438c46f2104158b7c5a95",
+      "validate.py": "433a74b3e0dfab8e0df33dccfada1bcca31468f2b3f478e61d8cd6ae8dbf311c"
+    },
+    "stim": "1.16.0",
+    "theta": 0.09817477042468103,
+    "threads": 4
+  },
+  "counts": {
+    "accepted": {
+      "strict-xz": 118431,
+      "tmr-x": 191779,
+      "z-only-diagnostic": 300812
+    },
+    "attempted": 1000000,
+    "batches": 10,
+    "sampling_seconds": 0.41708380200725514,
+    "syndrome_weight_histograms": {
+      "initialization_relations": {
+        "0": 584779,
+        "1": 94133,
+        "2": 48560,
+        "3": 40694,
+        "4": 48625,
+        "5": 130867,
+        "6": 48281,
+        "7": 3767,
+        "8": 294
+      },
+      "post_X": {
+        "0": 191779,
+        "1": 43034,
+        "10": 138501,
+        "11": 44116,
+        "12": 85102,
+        "13": 31525,
+        "14": 54655,
+        "15": 19356,
+        "16": 29030,
+        "17": 8509,
+        "18": 10021,
+        "19": 2583,
+        "2": 18188,
+        "20": 2399,
+        "21": 555,
+        "22": 398,
+        "23": 67,
+        "24": 36,
+        "25": 8,
+        "26": 2,
+        "3": 13808,
+        "4": 20484,
+        "5": 20169,
+        "6": 119821,
+        "7": 35209,
+        "8": 73014,
+        "9": 37631
+      },
+      "post_Z": {
+        "0": 300812,
+        "1": 67727,
+        "10": 59975,
+        "11": 29123,
+        "12": 40798,
+        "13": 15362,
+        "14": 14764,
+        "15": 7174,
+        "16": 6101,
+        "17": 2462,
+        "18": 1864,
+        "19": 640,
+        "2": 47175,
+        "20": 393,
+        "21": 127,
+        "22": 33,
+        "23": 18,
+        "24": 3,
+        "3": 26153,
+        "4": 37177,
+        "5": 32367,
+        "6": 161004,
+        "7": 41518,
+        "8": 72978,
+        "9": 34252
+      }
+    }
+  },
+  "estimates": {
+    "strict-xz": {
+      "acceptance": 0.118431,
+      "acceptance_over_ideal": 0.172351128353653,
+      "accepted": 118431,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 28100.750648056677,
+      "attempts_per_accepted_block": 8.443735170690108,
+      "cnot_layers_per_candidate_resource": 219.5371144379428,
+      "cnots_per_candidate_resource": 9777.845327659144,
+      "resources_per_attempt": 0.118431,
+      "standard_error": 0.0003231177776585498,
+      "wilson_95": [
+        0.1177991660891116,
+        0.11906576546282847
+      ]
+    },
+    "tmr-x": {
+      "acceptance": 0.191779,
+      "acceptance_over_ideal": 0.2790935400742645,
+      "accepted": 191779,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 17353.307713566137,
+      "attempts_per_accepted_block": 5.214335250470594,
+      "cnot_layers_per_candidate_resource": 135.57271651223544,
+      "cnots_per_candidate_resource": 6038.200220044948,
+      "resources_per_attempt": 0.191779,
+      "standard_error": 0.0003937001589522158,
+      "wilson_95": [
+        0.19100854645519472,
+        0.19255182157226702
+      ]
+    },
+    "z-only-diagnostic": {
+      "acceptance": 0.300812,
+      "acceptance_over_ideal": 0.43776787853112,
+      "accepted": 300812,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 11063.388428653112,
+      "attempts_per_accepted_block": 3.324335465340478,
+      "cnot_layers_per_candidate_resource": 86.43272209885244,
+      "cnots_per_candidate_resource": 3849.580468864274,
+      "resources_per_attempt": 0.300812,
+      "standard_error": 0.00045861109957784493,
+      "wilson_95": [
+        0.29991390533225987,
+        0.3017116250068607
+      ]
+    }
+  },
+  "ideal_acceptance": 0.6871495483161996,
+  "schema_version": 1,
+  "stopping_rule": "fixed shots; wall-time interruption is resumable, never survivor-target stopping"
+}

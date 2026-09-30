@@ -1,0 +1,299 @@
+{
+  "circuit": {
+    "artifact": {
+      "basis_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/preferred/code.json",
+      "basis_sha256": "f92ea7ebe5578ed2d182f3282cab980bf847a6f594b068885da0f08698a53d94",
+      "schedule_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/preferred/schedule.json",
+      "schedule_sha256": "f4d45dff84d2655ca4287628db8539b3cb2702770cd47b3ddd0956e8e7dd0934"
+    },
+    "compile_seconds": 0.015186966003966518,
+    "detector_groups": {
+      "post_X": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "post_Z": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "logical_indices": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "operation_counts": {
+      "ancilla_preparations": 72,
+      "cnot_layers": 26,
+      "data_preparations": 64,
+      "ideal_mpp_measurements": 0,
+      "idle_locations": 752,
+      "measurements": 72,
+      "physical_cnots": 888,
+      "physical_rotations": 12,
+      "rotation_layers": 1,
+      "virtual_feedback_x": 270
+    },
+    "partition_certificate": {
+      "kernel_dimension": 4,
+      "logicals": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "partial_syndrome_rank": 8,
+      "partitions": {
+        "0": [
+          [
+            0,
+            41
+          ],
+          [
+            44,
+            53
+          ],
+          [
+            54,
+            60
+          ]
+        ],
+        "2": [
+          [
+            2,
+            43
+          ],
+          [
+            46,
+            52
+          ],
+          [
+            55,
+            62
+          ]
+        ],
+        "4": [
+          [
+            4,
+            32
+          ],
+          [
+            45,
+            48
+          ],
+          [
+            57,
+            58
+          ]
+        ],
+        "6": [
+          [
+            6,
+            34
+          ],
+          [
+            47,
+            50
+          ],
+          [
+            56,
+            59
+          ]
+        ]
+      },
+      "single_final_projection_certified": true
+    },
+    "peak_active_width": 12,
+    "qubits": 112,
+    "theta_star": -0.7021479830745353
+  },
+  "completed": true,
+  "configuration": {
+    "angle_label": "pi32",
+    "basis_sha256": "f92ea7ebe5578ed2d182f3282cab980bf847a6f594b068885da0f08698a53d94",
+    "checkpoint_shots": 100000,
+    "circuit_sha256": "087a7b421530a1ff7cc5bf00c5926503e3bbb0d0eeb16b1687d2a26206f7997e",
+    "clifft": "0.10.0rc2.dev1+gdbc721208",
+    "logical_count": 4,
+    "mode": "full",
+    "numpy": "2.5.2",
+    "partition_count": 3,
+    "presentation": "preferred",
+    "probability": 0.001,
+    "python": "3.12.3",
+    "schedule_sha256": "f4d45dff84d2655ca4287628db8539b3cb2702770cd47b3ddd0956e8e7dd0934",
+    "seed": 3839898,
+    "shots": 1000000,
+    "source_hashes": {
+      "__init__.py": "ea85ddb9a0209de34b04a8e1a414e9e889425d70559b3c8fe9fa62afc531a192",
+      "bicycle_chain_l2_paper.tmr_postselection.circuit": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324",
+      "bicycle_chain_l2_paper.tmr_postselection.model": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5",
+      "model.py": "851911a20814dde9a3922abe8c58048030b15f9a77b448f5c9d8631dc216c579",
+      "protocol.py": "17da14c18ef748fef87deace2b005f04bb20eeb065e3651b9e62e4ad3bd04e2d",
+      "run.py": "8dbc0f607adb2ba2c7250f8bed23acdae96f3bc080d31f00580c96ee66309ccf",
+      "summarize.py": "f6c3736b44df4b429150d6e24b8d92984c8cfb490bf438c46f2104158b7c5a95",
+      "validate.py": "433a74b3e0dfab8e0df33dccfada1bcca31468f2b3f478e61d8cd6ae8dbf311c"
+    },
+    "stim": "1.16.0",
+    "theta": 0.09817477042468103,
+    "threads": 4
+  },
+  "counts": {
+    "accepted": {
+      "strict-xz": 40512,
+      "tmr-x": 66855,
+      "z-only-diagnostic": 317102
+    },
+    "attempted": 1000000,
+    "batches": 10,
+    "sampling_seconds": 3.1537496959936107,
+    "syndrome_weight_histograms": {
+      "initialization_relations": {
+        "0": 1000000
+      },
+      "post_X": {
+        "0": 66855,
+        "1": 14429,
+        "10": 109067,
+        "11": 103397,
+        "12": 81298,
+        "13": 70803,
+        "14": 42678,
+        "15": 22327,
+        "16": 10299,
+        "17": 3912,
+        "18": 1183,
+        "19": 285,
+        "2": 9358,
+        "20": 64,
+        "21": 13,
+        "22": 1,
+        "3": 12804,
+        "4": 22182,
+        "5": 33449,
+        "6": 89527,
+        "7": 85516,
+        "8": 110462,
+        "9": 110091
+      },
+      "post_Z": {
+        "0": 317102,
+        "1": 140018,
+        "10": 15534,
+        "11": 8459,
+        "12": 4611,
+        "13": 2219,
+        "14": 993,
+        "15": 391,
+        "16": 121,
+        "17": 56,
+        "18": 7,
+        "19": 2,
+        "2": 95016,
+        "20": 3,
+        "3": 96075,
+        "4": 93843,
+        "5": 79902,
+        "6": 53551,
+        "7": 37797,
+        "8": 29975,
+        "9": 24325
+      }
+    }
+  },
+  "estimates": {
+    "strict-xz": {
+      "acceptance": 0.040512,
+      "acceptance_over_ideal": 0.18170991388833302,
+      "accepted": 40512,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 17969.98420221169,
+      "attempts_per_accepted_block": 24.684044233807267,
+      "cnot_layers_per_candidate_resource": 160.44628751974724,
+      "cnots_per_candidate_resource": 5479.857819905214,
+      "resources_per_attempt": 0.162048,
+      "standard_error": 0.00019715673423953848,
+      "wilson_95": [
+        0.04012734170992691,
+        0.0409001884849732
+      ]
+    },
+    "tmr-x": {
+      "acceptance": 0.066855,
+      "acceptance_over_ideal": 0.2998671083383813,
+      "accepted": 66855,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 10889.23790292424,
+      "attempts_per_accepted_block": 14.95774437214868,
+      "cnot_layers_per_candidate_resource": 97.22533841896642,
+      "cnots_per_candidate_resource": 3320.619250617007,
+      "resources_per_attempt": 0.26742,
+      "standard_error": 0.0002497707128047642,
+      "wilson_95": [
+        0.0663671204133582,
+        0.06734620739121995
+      ]
+    },
+    "z-only-diagnostic": {
+      "acceptance": 0.317102,
+      "acceptance_over_ideal": 1.4223088742549905,
+      "accepted": 317102,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 2295.7912595947046,
+      "attempts_per_accepted_block": 3.1535594225201984,
+      "cnot_layers_per_candidate_resource": 20.49813624638129,
+      "cnots_per_candidate_resource": 700.090191799484,
+      "resources_per_attempt": 1.268408,
+      "standard_error": 0.0004653475277639283,
+      "wilson_95": [
+        0.316190639678933,
+        0.3180147655059399
+      ]
+    }
+  },
+  "ideal_acceptance": 0.22294876010395345,
+  "schema_version": 1,
+  "stopping_rule": "fixed shots; wall-time interruption is resumable, never survivor-target stopping"
+}

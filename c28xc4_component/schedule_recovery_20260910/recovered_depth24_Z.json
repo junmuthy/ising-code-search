@@ -1,0 +1,29 @@
+{
+  "basis": "Z",
+  "distinct_fault_effects": 12906,
+  "effects_sha256": "cce258ff3e113315bee659c1e8c619c2af3fcc5b29b3e424bf4154844b09a33c",
+  "fault_distance_lower_bound": 3,
+  "fault_distance_upper_bound": 3,
+  "ideal_detectors_and_observables_verified": true,
+  "no_faults_at_most_2": true,
+  "noise_model": "CNOT depolarizing faults in middle of three rounds; ideal guard rounds and boundaries",
+  "witness": [
+    {
+      "detector_mask": "125956976580315278271640085196424539909887738776396923231975463641415680",
+      "explanation": "ExplainedError {\n    dem_error_terms: D198 D200 D204 D208 D216 D230 D233 D236\n    CircuitErrorLocation {\n        flipped_pauli_product: X113\n        Circuit location stack trace:\n            (after 36 TICKs)\n            at instruction #133 (DEPOLARIZE2) in the circuit\n            at targets #169 to #170 of the instruction\n            resolving to DEPOLARIZE2(0.001) 113 23\n    }\n}",
+      "observable_mask": 0
+    },
+    {
+      "detector_mask": "125956976168939138941338574657682244270550112530712956823580497804263424",
+      "explanation": "ExplainedError {\n    dem_error_terms: D198 D200 D204 D216 D230 D233 D236 L7\n    CircuitErrorLocation {\n        flipped_pauli_product: X39\n        Circuit location stack trace:\n            (after 39 TICKs)\n            at instruction #142 (DEPOLARIZE2) in the circuit\n            at targets #185 to #186 of the instruction\n            resolving to DEPOLARIZE2(0.001) 39 204\n    }\n}",
+      "observable_mask": 128
+    },
+    {
+      "detector_mask": "411376139330301510538742295639337626245683966408394965837152256",
+      "explanation": "ExplainedError {\n    dem_error_terms: D208\n    CircuitErrorLocation {\n        flipped_pauli_product: X144\n        Circuit location stack trace:\n            (after 47 TICKs)\n            at instruction #166 (DEPOLARIZE2) in the circuit\n            at targets #65 to #66 of the instruction\n            resolving to DEPOLARIZE2(0.001) 144 26\n    }\n}",
+      "observable_mask": 0
+    }
+  ],
+  "witness_combined_detector_mask": "0",
+  "witness_combined_observable_mask": 128
+}

@@ -1,0 +1,33 @@
+{
+  "cases": {
+    "X": {
+      "circuit_sha256": "01df4d35196ba7645d1a3c325ede107156f472d1d22ae00635c82cbf6ca00174",
+      "detectors": 240,
+      "heuristic": {
+        "seconds": 6.0,
+        "status": "timeout",
+        "upper_bound": null
+      },
+      "ideal_validated": true,
+      "qubits": 128,
+      "upper_bound": null
+    },
+    "Z": {
+      "circuit_sha256": "04347bd6640f0ea961d26187513bfa317c798a31176cf9fe920ba08e9519ef12",
+      "detectors": 240,
+      "heuristic": {
+        "seconds": 6.0,
+        "status": "timeout",
+        "upper_bound": null
+      },
+      "ideal_validated": true,
+      "qubits": 128,
+      "upper_bound": null
+    }
+  },
+  "cnots": 768,
+  "depth": 12,
+  "presentation": "redundant",
+  "schedule_id": "cd91029936d21197",
+  "status": "screen_survivor_not_certified"
+}

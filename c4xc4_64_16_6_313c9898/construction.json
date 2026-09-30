@@ -1,0 +1,114 @@
+{
+  "a": 34865219,
+  "b": 1611923744,
+  "code_id": "313c98984982b039f1068bfd6001a4ffceb370b2091c3edbc9d3f8b915aaa028",
+  "coordinate_convention": "q = 32*s + 4*i + j",
+  "group": "C8 x C4",
+  "parent_schedule_id": "cd91029936d21197",
+  "physical_fold_order": 4,
+  "preferred_schedule_id": "30f5d7baeecc8a92",
+  "retained_check_indices": {
+    "X": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "Z": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "x_seed_edge_times": [
+    {
+      "data": 18,
+      "tick": 0
+    },
+    {
+      "data": 50,
+      "tick": 1
+    },
+    {
+      "data": 38,
+      "tick": 2
+    },
+    {
+      "data": 3,
+      "tick": 3
+    },
+    {
+      "data": 30,
+      "tick": 4
+    },
+    {
+      "data": 39,
+      "tick": 5
+    },
+    {
+      "data": 44,
+      "tick": 6
+    },
+    {
+      "data": 0,
+      "tick": 7
+    },
+    {
+      "data": 12,
+      "tick": 8
+    },
+    {
+      "data": 63,
+      "tick": 9
+    },
+    {
+      "data": 56,
+      "tick": 10
+    },
+    {
+      "data": 11,
+      "tick": 11
+    }
+  ]
+}

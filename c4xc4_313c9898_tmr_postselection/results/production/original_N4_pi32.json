@@ -1,0 +1,343 @@
+{
+  "circuit": {
+    "artifact": {
+      "basis_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/original/code.json",
+      "basis_sha256": "08346f20b59e73a1c6d97bfe5607414fe510148bd7d9ec84865d7a9b85af7fb2",
+      "schedule_path": "/home/judah_unmuth/gala-code-search/c4xc4_64_16_6_313c9898/original/schedule.json",
+      "schedule_sha256": "f14daf180a306669119fe107e9d032866737facd52cbd8843623f074abdfd6a1"
+    },
+    "compile_seconds": 0.01683112200407777,
+    "detector_groups": {
+      "initialization_relations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "post_X": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "post_Z": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    "logical_indices": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "operation_counts": {
+      "ancilla_preparations": 96,
+      "cnot_layers": 26,
+      "data_preparations": 64,
+      "ideal_mpp_measurements": 0,
+      "idle_locations": 464,
+      "measurements": 96,
+      "physical_cnots": 1176,
+      "physical_rotations": 12,
+      "rotation_layers": 1,
+      "virtual_feedback_x": 288
+    },
+    "partition_certificate": {
+      "kernel_dimension": 4,
+      "logicals": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "partial_syndrome_rank": 8,
+      "partitions": {
+        "0": [
+          [
+            0,
+            41
+          ],
+          [
+            44,
+            53
+          ],
+          [
+            54,
+            60
+          ]
+        ],
+        "2": [
+          [
+            2,
+            43
+          ],
+          [
+            46,
+            52
+          ],
+          [
+            55,
+            62
+          ]
+        ],
+        "4": [
+          [
+            4,
+            32
+          ],
+          [
+            45,
+            48
+          ],
+          [
+            57,
+            58
+          ]
+        ],
+        "6": [
+          [
+            6,
+            34
+          ],
+          [
+            47,
+            50
+          ],
+          [
+            56,
+            59
+          ]
+        ]
+      },
+      "single_final_projection_certified": true
+    },
+    "peak_active_width": 12,
+    "qubits": 128,
+    "theta_star": -0.7021479830745353
+  },
+  "completed": true,
+  "configuration": {
+    "angle_label": "pi32",
+    "basis_sha256": "08346f20b59e73a1c6d97bfe5607414fe510148bd7d9ec84865d7a9b85af7fb2",
+    "checkpoint_shots": 100000,
+    "circuit_sha256": "1dd374b8ed69c0afaff280229b458a693a0909b3863f86e2cc6e3bcb87b37722",
+    "clifft": "0.10.0rc2.dev1+gdbc721208",
+    "logical_count": 4,
+    "mode": "full",
+    "numpy": "2.5.2",
+    "partition_count": 3,
+    "presentation": "original",
+    "probability": 0.001,
+    "python": "3.12.3",
+    "schedule_sha256": "f14daf180a306669119fe107e9d032866737facd52cbd8843623f074abdfd6a1",
+    "seed": 4639898,
+    "shots": 1000000,
+    "source_hashes": {
+      "__init__.py": "ea85ddb9a0209de34b04a8e1a414e9e889425d70559b3c8fe9fa62afc531a192",
+      "bicycle_chain_l2_paper.tmr_postselection.circuit": "519500b53a3205f60323d554e2a91a60f92e1ab8f28bc5d1f6f5a550f49dc324",
+      "bicycle_chain_l2_paper.tmr_postselection.model": "12765dbd2077ec192fbac0e1e97262e4822d77c128cc4db09c7bd67c5375ffd5",
+      "model.py": "851911a20814dde9a3922abe8c58048030b15f9a77b448f5c9d8631dc216c579",
+      "protocol.py": "17da14c18ef748fef87deace2b005f04bb20eeb065e3651b9e62e4ad3bd04e2d",
+      "run.py": "8dbc0f607adb2ba2c7250f8bed23acdae96f3bc080d31f00580c96ee66309ccf",
+      "summarize.py": "f6c3736b44df4b429150d6e24b8d92984c8cfb490bf438c46f2104158b7c5a95",
+      "validate.py": "433a74b3e0dfab8e0df33dccfada1bcca31468f2b3f478e61d8cd6ae8dbf311c"
+    },
+    "stim": "1.16.0",
+    "theta": 0.09817477042468103,
+    "threads": 4
+  },
+  "counts": {
+    "accepted": {
+      "strict-xz": 38579,
+      "tmr-x": 62292,
+      "z-only-diagnostic": 302351
+    },
+    "attempted": 1000000,
+    "batches": 10,
+    "sampling_seconds": 3.442222120022052,
+    "syndrome_weight_histograms": {
+      "initialization_relations": {
+        "0": 585026,
+        "1": 94357,
+        "2": 48328,
+        "3": 40644,
+        "4": 48446,
+        "5": 130910,
+        "6": 48368,
+        "7": 3643,
+        "8": 278
+      },
+      "post_X": {
+        "0": 62292,
+        "1": 14161,
+        "10": 138138,
+        "11": 46864,
+        "12": 123529,
+        "13": 47357,
+        "14": 116676,
+        "15": 44425,
+        "16": 111082,
+        "17": 31119,
+        "18": 53401,
+        "19": 13115,
+        "2": 6072,
+        "20": 18849,
+        "21": 3562,
+        "22": 3355,
+        "23": 493,
+        "24": 274,
+        "25": 28,
+        "26": 22,
+        "27": 2,
+        "28": 1,
+        "3": 4458,
+        "4": 6705,
+        "5": 6805,
+        "6": 41228,
+        "7": 14604,
+        "8": 62199,
+        "9": 29184
+      },
+      "post_Z": {
+        "0": 302351,
+        "1": 68192,
+        "10": 59729,
+        "11": 29417,
+        "12": 40735,
+        "13": 15188,
+        "14": 15056,
+        "15": 7099,
+        "16": 6135,
+        "17": 2419,
+        "18": 1886,
+        "19": 715,
+        "2": 47417,
+        "20": 411,
+        "21": 136,
+        "22": 42,
+        "23": 10,
+        "24": 3,
+        "3": 25813,
+        "4": 37230,
+        "5": 32580,
+        "6": 158599,
+        "7": 41037,
+        "8": 73611,
+        "9": 34189
+      }
+    }
+  },
+  "estimates": {
+    "strict-xz": {
+      "acceptance": 0.038579,
+      "acceptance_over_ideal": 0.17303976026604465,
+      "accepted": 38579,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 21566.137017548404,
+      "attempts_per_accepted_block": 25.92083776147645,
+      "cnot_layers_per_candidate_resource": 168.4854454495969,
+      "cnots_per_candidate_resource": 7620.726301874076,
+      "resources_per_attempt": 0.154316,
+      "standard_error": 0.00019258935785499676,
+      "wilson_95": [
+        0.038203300881062205,
+        0.03895824416486067
+      ]
+    },
+    "tmr-x": {
+      "acceptance": 0.062292,
+      "acceptance_over_ideal": 0.27940052221396233,
+      "accepted": 62292,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 13356.450266486869,
+      "attempts_per_accepted_block": 16.05342580106595,
+      "cnot_layers_per_candidate_resource": 104.34726770692866,
+      "cnots_per_candidate_resource": 4719.707185513388,
+      "resources_per_attempt": 0.249168,
+      "standard_error": 0.00024168513966729523,
+      "wilson_95": [
+        0.0618199851870773,
+        0.0627673776745194
+      ]
+    },
+    "z-only-diagnostic": {
+      "acceptance": 0.302351,
+      "acceptance_over_ideal": 1.3561456895253599,
+      "accepted": 302351,
+      "allocated_qubit_cnot_layers_per_candidate_resource": 2751.7686397597495,
+      "attempts_per_accepted_block": 3.307414230480468,
+      "cnot_layers_per_candidate_resource": 21.498192498123043,
+      "cnots_per_candidate_resource": 972.3797837612577,
+      "resources_per_attempt": 1.209404,
+      "standard_error": 0.0004592764666287616,
+      "wilson_95": [
+        0.30145159533280363,
+        0.30325192318235195
+      ]
+    }
+  },
+  "ideal_acceptance": 0.22294876010395345,
+  "schema_version": 1,
+  "stopping_rule": "fixed shots; wall-time interruption is resumable, never survivor-target stopping"
+}
