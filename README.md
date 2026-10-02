@@ -7,17 +7,17 @@ syndrome schedules, circuit-fault analysis, and transversal multi-rotation
 
 ## Find your work
 
-| Directory | Contents |
-| --- | --- |
-| [Searches](searches/README.md) | Code, logical-basis, automorphism, and schedule search campaigns; their scripts and reports. |
-| [Simulations](simulations/README.md) | Circuit, recovery, postselection experiments, and comparisons. |
-| [Reference codes](codes/README.md) | Code constructions, matrices, logical bases, schedules, certificates, and portable verifiers. |
-| [Handoffs](handoffs/README.md) | Self-contained colleague packages and local ZIP exports. |
-| [Notebooks](notebooks/README.md) | Executable research walkthroughs. |
-| [Documentation](docs/README.md) | Research background, detailed results index, and repository migration notes. |
-| [`gala_search/`](gala_search/) | Shared Python search and algebra library. |
-| [`results/`](results/) | Existing shared run outputs and caches; many are local and ignored. |
-| [`tests/`](tests/) | Shared regression and integration tests. |
+| Directory                            | Contents                                                                                      |
+| ------------------------------------ | --------------------------------------------------------------------------------------------- |
+| [Searches](searches/README.md)       | Code, logical-basis, automorphism, and schedule search campaigns; their scripts and reports.  |
+| [Simulations](simulations/README.md) | Circuit, recovery, postselection experiments, and comparisons.                                |
+| [Reference codes](codes/README.md)   | Code constructions, matrices, logical bases, schedules, certificates, and portable verifiers. |
+| [Handoffs](handoffs/README.md)       | Self-contained colleague packages and local ZIP exports.                                      |
+| [Notebooks](notebooks/README.md)     | Executable research walkthroughs.                                                             |
+| [Documentation](docs/README.md)      | Research background, detailed results index, and repository migration notes.                  |
+| [`gala_search/`](gala_search/)       | Shared Python search and algebra library.                                                     |
+| [`results/`](results/)               | Existing shared run outputs and caches; many are local and ignored.                           |
+| [`tests/`](tests/)                   | Shared regression and integration tests.                                                      |
 
 Start with the [detailed research guide and results index](docs/RESEARCH_GUIDE.md)
 for the scientific findings and certification boundaries. Useful reference
