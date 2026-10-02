@@ -3,7 +3,7 @@
 The `organize-repository` branch groups research by purpose. The baseline is
 commit `a68edde`; the original `master` and development branch tips are retained.
 The handoff move is isolated in commit `1d3fb4f` with 114 unchanged renames.
-The main layout commit includes the coupled import, data-path, command, notebook,
+The main layout commit `0f96edf` includes the coupled import, data-path, command, notebook,
 and documentation changes.
 
 ## Path mapping
