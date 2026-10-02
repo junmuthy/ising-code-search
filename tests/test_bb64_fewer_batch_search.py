@@ -7,14 +7,14 @@ from pathlib import Path
 
 import numpy as np
 
-from bb64_simultaneous_basis_search.generate_representation_document import (
+from searches.bb64_simultaneous_basis_search.generate_representation_document import (
     DEFAULT_BASIS as DOCUMENT_BASIS,
     DEFAULT_OUTPUT as REPRESENTATION_DOCUMENT,
     DEFAULT_SCHEDULE as DOCUMENT_SCHEDULE,
     markdown_table,
     render_document,
 )
-from bb64_simultaneous_basis_search.fewer_batch_search.search import (
+from searches.bb64_simultaneous_basis_search.fewer_batch_search.search import (
     DEFAULT_BASIS,
     DEFAULT_CANDIDATES,
     base_from_record,

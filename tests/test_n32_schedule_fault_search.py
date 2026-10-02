@@ -9,25 +9,25 @@ from pathlib import Path
 
 import numpy as np
 
-from n32_k4_d6_reference_code.schedule_fault_search.data import code_for_schedule
-from n32_k4_d6_reference_code.schedule_fault_search.materialize_survivor import (
+from codes.n32_k4_d6_reference_code.schedule_fault_search.data import code_for_schedule
+from codes.n32_k4_d6_reference_code.schedule_fault_search.materialize_survivor import (
     DEFAULT_RECORD,
 )
-from n32_k4_d6_reference_code.schedule_fault_search.scheduler import (
+from codes.n32_k4_d6_reference_code.schedule_fault_search.scheduler import (
     ScheduleEnumerator,
     build_schedule_record,
     matrix_from_supports,
     reverse_colors,
 )
-from n32_k4_d6_reference_code.schedule_fault_search.screening import (
+from codes.n32_k4_d6_reference_code.schedule_fault_search.screening import (
     find_four_fault_witness,
 )
-from n32_k4_d6_reference_code.stim_fault_distance.circuit import build_memory_circuit
-from n32_k4_d6_reference_code.stim_fault_distance.fault_distance import FaultEffect
+from codes.n32_k4_d6_reference_code.stim_fault_distance.circuit import build_memory_circuit
+from codes.n32_k4_d6_reference_code.stim_fault_distance.fault_distance import FaultEffect
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REFERENCE = ROOT / "n32_k4_d6_reference_code"
+REFERENCE = ROOT / "codes/n32_k4_d6_reference_code"
 PRESENTATION = (
     REFERENCE / "schedule" / "all_weight8_translation_symmetric_v1" / "presentation.json"
 )

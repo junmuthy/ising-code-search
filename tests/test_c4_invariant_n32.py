@@ -8,11 +8,11 @@ import random
 
 import numpy as np
 
-from c4_invariant_lagrangian.search import (
+from searches.c4_invariant_lagrangian.search import (
     decompose_free_orbits,
     vector_from_mask as vector_from_n28_mask,
 )
-from c4_invariant_n32.search import (
+from searches.c4_invariant_n32.search import (
     NUM_QUBITS,
     TARGET_STABILIZER_RANK,
     coupled_extension_candidate,

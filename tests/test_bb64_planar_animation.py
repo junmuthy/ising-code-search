@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from bb64_simultaneous_basis_search.schedule_fault_search.animate_planar_schedule import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.animate_planar_schedule import (
     animation_frames,
     initial_placements,
     placements,
@@ -14,7 +14,7 @@ from bb64_simultaneous_basis_search.schedule_fault_search.animate_planar_schedul
     to_planar,
     transitions,
 )
-from bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
     ELEMENTS,
     add,
     derive_layers,
@@ -22,7 +22,7 @@ from bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule impor
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DIRECTORY = ROOT / "bb64_simultaneous_basis_search" / "schedule_fault_search"
+DIRECTORY = ROOT / "searches/bb64_simultaneous_basis_search" / "schedule_fault_search"
 SCHEDULE = DIRECTORY / "baseline_schedule.json"
 ANIMATION = DIRECTORY / "planar_schedule_animation.txt"
 

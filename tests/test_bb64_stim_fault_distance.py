@@ -11,28 +11,28 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from bb64_simultaneous_basis_search.schedule_fault_search.enumerate_schedules import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.enumerate_schedules import (
     build_edge_orbits,
     materialize_schedule,
 )
-from bb64_simultaneous_basis_search.stim_fault_distance.circuit import (
+from searches.bb64_simultaneous_basis_search.stim_fault_distance.circuit import (
     NoiseModel,
     build_bulk_circuit,
     build_memory_circuit,
 )
-from bb64_simultaneous_basis_search.stim_fault_distance.effects import (
+from searches.bb64_simultaneous_basis_search.stim_fault_distance.effects import (
     raw_dem_effects,
     translation_anchor_variables,
 )
-from bb64_simultaneous_basis_search.stim_fault_distance.model import (
+from searches.bb64_simultaneous_basis_search.stim_fault_distance.model import (
     BASIS_PATH,
     DEFAULT_SCHEDULE_PATH,
     load_code_data,
 )
-from bb64_simultaneous_basis_search.stim_fault_distance.run_exact_five_mitm import (
+from searches.bb64_simultaneous_basis_search.stim_fault_distance.run_exact_five_mitm import (
     find_five_fault_witness,
 )
-from n32_k4_d6_reference_code.stim_fault_distance.fault_distance import (
+from codes.n32_k4_d6_reference_code.stim_fault_distance.fault_distance import (
     FaultEffect,
     detector_error_model,
     extract_fault_effects,

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from d4_single_row.search import (
+from searches.d4_single_row.search import (
     D4_REFLECTION,
     D4_ROTATION,
     IDENTITY,

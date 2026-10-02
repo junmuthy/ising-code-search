@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from c4xc5_search.search import (
+from searches.c4xc5_search.search import (
     NUM_QUBITS,
     analyze_logical_orbit,
     build_checks,
@@ -12,22 +12,22 @@ from c4xc5_search.search import (
     find_graph_seed,
     translation_orbit,
 )
-from c4xc5_search.general import (
+from searches.c4xc5_search.general import (
     build_checks as build_general_checks,
     rowspace_zx_dual,
     standard_fold,
 )
-from c4xc5_search.seeded import (
+from searches.c4xc5_search.seeded import (
     analyze_known_seed,
     multiply_supports,
     polynomial_pair_from_seed,
 )
-from c4xc5_search.solved import (
+from searches.c4xc5_search.solved import (
     compatible_sparse_pairs,
     seed_constraint_syndromes,
 )
 import random
-from c4xc5_search.automorphism_dual import (
+from searches.c4xc5_search.automorphism_dual import (
     INVOLUTIONS,
     automorphism_fold,
     find_automorphism_seed,

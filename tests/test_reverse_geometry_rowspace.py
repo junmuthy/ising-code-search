@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import numpy as np
 
-from reverse_geometry.n192 import LATTICE_ORDER, cancellation_witness
-from reverse_geometry.rowspace import (
+from searches.reverse_geometry.n192 import LATTICE_ORDER, cancellation_witness
+from searches.reverse_geometry.rowspace import (
     affine_g_system,
     checks_from_coefficients,
     displayed_partner_coefficients,

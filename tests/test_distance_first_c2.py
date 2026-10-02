@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import random
 
-from distance_first_c2.search import (
+from searches.distance_first_c2.search import (
     CSSState,
     analyze_css,
     canonical_basis,
@@ -13,7 +13,7 @@ from distance_first_c2.search import (
     random_css_state,
     span,
 )
-from distance_first_c2.systematic import (
+from searches.distance_first_c2.systematic import (
     SystematicCSSSolver,
     canonical_c_sectors,
     systematic_state,

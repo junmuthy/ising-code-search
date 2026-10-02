@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from c28_one_block.search import (
+from searches.c28_one_block.search import (
     ORDER,
     circulant_matrix,
     circulant_rank_mask,

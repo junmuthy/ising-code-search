@@ -3,10 +3,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
     derive_layers,
 )
-from bb64_simultaneous_basis_search.schedule_fault_search.animate_spatial_schedule import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.animate_spatial_schedule import (
     animation_frames,
     render_all,
     render_contact,
@@ -15,7 +15,7 @@ from bb64_simultaneous_basis_search.schedule_fault_search.animate_spatial_schedu
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DIRECTORY = ROOT / "bb64_simultaneous_basis_search" / "schedule_fault_search"
+DIRECTORY = ROOT / "searches/bb64_simultaneous_basis_search" / "schedule_fault_search"
 SCHEDULE = DIRECTORY / "baseline_schedule.json"
 ANIMATION = DIRECTORY / "spatial_schedule_animation.txt"
 

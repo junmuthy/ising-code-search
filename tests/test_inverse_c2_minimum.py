@@ -6,9 +6,9 @@ import sys
 
 import numpy as np
 
-from inverse_c2_minimum import search
-from inverse_c2_minimum import run_search
-from inverse_c2_minimum import local_refinement
+from searches.inverse_c2_minimum import search
+from searches.inverse_c2_minimum import run_search
+from searches.inverse_c2_minimum import local_refinement
 
 
 def test_n12_pairing_obstruction_for_random_permutations() -> None:

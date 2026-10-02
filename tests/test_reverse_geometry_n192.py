@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from reverse_geometry.n192 import (
+from searches.reverse_geometry.n192 import (
     NUM_QUBITS,
     TARGET_LOGICALS,
     analyze_seed,

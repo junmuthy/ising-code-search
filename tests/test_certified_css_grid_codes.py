@@ -5,7 +5,7 @@ import random
 
 import pytest
 
-from certified_css_grid_codes import verify as v
+from codes.certified_css_grid_codes import verify as v
 
 
 @pytest.mark.parametrize("name,n,k,d", [

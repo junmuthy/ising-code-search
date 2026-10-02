@@ -6,7 +6,7 @@ import random
 
 import numpy as np
 
-from c4_invariant_lagrangian.search import (
+from searches.c4_invariant_lagrangian.search import (
     NUM_QUBITS,
     TARGET_STABILIZER_RANK,
     analyze_candidate,

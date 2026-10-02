@@ -5,18 +5,18 @@ from __future__ import annotations
 import numpy as np
 from qldpc import codes
 
-from batched_c4xc2_search.distance import (
+from searches.batched_c4xc2_search.distance import (
     find_logical_milp,
     find_logical_through_weight_four,
     low_weight_logical_spectrum,
 )
-from batched_c4xc2_search.halfswap_model import (
+from searches.batched_c4xc2_search.halfswap_model import (
     HalfSwapCandidate,
     build_half_swap_code,
     inverse_orbits,
     random_half_swap_candidates,
 )
-from batched_c4xc2_search.faithful_twisted_halfswap_model import (
+from searches.batched_c4xc2_search.faithful_twisted_halfswap_model import (
     FaithfulTwistedHalfSwapCandidate,
     faithful_commutant_g_terms,
     faithful_twisted_check_matrices,
@@ -25,22 +25,22 @@ from batched_c4xc2_search.faithful_twisted_halfswap_model import (
     random_faithful_commutant_candidates,
     random_faithful_twisted_half_swap_candidates,
 )
-from batched_c4xc2_search.faithful_twisted_protograph_model import (
+from searches.batched_c4xc2_search.faithful_twisted_protograph_model import (
     FaithfulTwistedProtographCandidate,
     faithful_twisted_protograph_check_matrices,
     random_faithful_twisted_protograph_candidates,
 )
-from batched_c4xc2_search.analyze_published_bb64_logicals import (
+from searches.batched_c4xc2_search.analyze_published_bb64_logicals import (
     orbit as published_bb64_orbit,
     paper_logical,
 )
-from batched_c4xc2_search.analyze_published_selfdual_bb64 import (
+from searches.batched_c4xc2_search.analyze_published_selfdual_bb64 import (
     affine_permutation as published_bb64_affine_permutation,
     full_permutation as published_bb64_full_permutation,
     published_code as published_bb64_code,
     translation_permutation as published_bb64_translation_permutation,
 )
-from batched_c4xc2_search.logicals import (
+from searches.batched_c4xc2_search.logicals import (
     batch_disjointness,
     batch_schemes,
     exhaustive_logical_seeds,
@@ -48,7 +48,7 @@ from batched_c4xc2_search.logicals import (
     translation_algebra_profile,
     translation_orbit,
 )
-from batched_c4xc2_search.model import (
+from searches.batched_c4xc2_search.model import (
     Candidate,
     Monomial,
     _actual_transpose_checks,
@@ -61,7 +61,7 @@ from batched_c4xc2_search.model import (
     random_candidates,
     zx_fold_permutation,
 )
-from batched_c4xc2_search.twisted_halfswap_model import (
+from searches.batched_c4xc2_search.twisted_halfswap_model import (
     TwistedHalfSwapCandidate,
     build_twisted_half_swap_code,
     random_twisted_half_swap_candidates,

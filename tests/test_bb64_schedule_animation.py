@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
+from searches.bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule import (
     add,
     derive_layers,
     inverse,
@@ -15,7 +15,7 @@ from bb64_simultaneous_basis_search.schedule_fault_search.animate_schedule impor
 ROOT = Path(__file__).resolve().parents[1]
 SCHEDULE = (
     ROOT
-    / "bb64_simultaneous_basis_search"
+    / "searches/bb64_simultaneous_basis_search"
     / "schedule_fault_search"
     / "baseline_schedule.json"
 )

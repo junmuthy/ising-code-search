@@ -5,17 +5,17 @@ from __future__ import annotations
 import numpy as np
 import pytest
 
-from n32_k4_d6_reference_code.stim_fault_distance.circuit import (
+from codes.n32_k4_d6_reference_code.stim_fault_distance.circuit import (
     NoiseModel,
     build_bulk_circuit,
     build_memory_circuit,
 )
-from n32_k4_d6_reference_code.stim_fault_distance.fault_distance import (
+from codes.n32_k4_d6_reference_code.stim_fault_distance.fault_distance import (
     certify_fault_distance,
     detector_error_model,
     extract_fault_effects,
 )
-from n32_k4_d6_reference_code.stim_fault_distance.model import load_code_data
+from codes.n32_k4_d6_reference_code.stim_fault_distance.model import load_code_data
 
 
 def test_saved_inputs_have_expected_shape() -> None:

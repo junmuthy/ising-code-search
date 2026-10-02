@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import numpy as np
 
-from c4xc4_floating.search import analyze_logical_orbit, find_graph_seed
+from searches.c4xc4_floating.search import analyze_logical_orbit, find_graph_seed
 from gala_search.abelian_bb32 import build_checks
 
 
